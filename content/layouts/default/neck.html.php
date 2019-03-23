@@ -1,16 +1,20 @@
-<header>
-    <h1><a href="/">DCSS Cosplay</a></h1>
-    <hr>
+<div class="page information">
+    <div class="toplinks">
     <?php if ($this->request->session('admin')) : ?>
-    <ul id="menu">
-    	<li><a href="/challenges/list">Challenges</a> (<a href="/challenges/add">new</a>)
-    	<li><a href="/submissions/list">Submissions</a> (<a href="/submissions/add">new</a>)
-        <li><a href="/players/list">Players</a> (<a href="/players/add">new</a>)
-    	<li><a href="/logout">Logout</a>
-    </ul>
-    <hr>
+        <a href="/challenges/list">Challenges</a> (<a href="/challenges/add">new</a>)
+    	<a href="/submissions/list">Submissions</a> (<a href="/submissions/add">new</a>)
+        <a href="/players/list">Players</a> (<a href="/players/add">new</a>)
+    	<a href="/logout">Logout</a>
+    
 	<?php else : ?>
-	<div id="login"><a href="/admin">Admin</a></div>
+	   <a href="/admin">Admin</a>
 	<?php endif; ?>		
-</header>
-<article>
+    </div>
+    <div class="page_content">
+        <div class="heading">
+            <h1><a href="/">DCSS Cosplay</a></h1>
+            <div class="fineprint">Things can be here</div>
+        </div>
+        <hr />
+        <div class="content">
+

@@ -1,7 +1,7 @@
 <?php
 use app\models\Player;
 ?>
-<h1>Players</h1>
+<h2>Players</h2>
 <table>
 	<thead>
 		<tr>

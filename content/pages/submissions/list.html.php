@@ -1,7 +1,7 @@
 <?php
 use app\models\Submission;
 ?>
-<h1>Submissions</h1>
+<h2>Submissions</h2>
 <table>
 	<thead>
 		<tr>

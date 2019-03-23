@@ -13,7 +13,7 @@ if (!$challenge) {
 }
 
 ?>
-<h1>Scores for <?=$challenge->name?></h1>
+<h2>Scores for <?=$challenge->name?></h2>
 <table>
 	<thead>
 		<tr>

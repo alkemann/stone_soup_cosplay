@@ -10,6 +10,7 @@ if ($data = $this->request->getPostData()) {
 }
 	
 ?>
+<h2>Adding new Challenge</h2>
 <form method="POST">
 	<fieldset>
 		<label>

@@ -1,7 +1,7 @@
 <?php
 use app\models\{Challenge, Submission};
 ?>
-<h1>Challenges</h1>
+<h2>Challenges</h2>
 <table>
 	<thead>
 		<tr>
