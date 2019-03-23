@@ -1,9 +1,10 @@
 <div class="page information">
     <div class="toplinks">
     <?php if ($this->request->session('admin')) : ?>
-        <a href="/challenges/list">Challenges</a> (<a href="/challenges/add">new</a>)
-    	<a href="/submissions/list">Submissions</a> (<a href="/submissions/add">new</a>)
-        <a href="/players/list">Players</a> (<a href="/players/add">new</a>)
+        <a href="/">Home</a>
+        <a href="/challenges/list">Challenges</a>(<a href="/challenges/add">new</a>)
+    	<a href="/submissions/list">Submissions</a>(<a href="/submissions/add">new</a>)
+        <a href="/players/list">Players</a>(<a href="/players/add">new</a>)
     	<a href="/logout">Logout</a>
     
 	<?php else : ?>

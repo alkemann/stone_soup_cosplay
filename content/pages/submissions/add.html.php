@@ -1,6 +1,8 @@
 <?php
 if ($data = $this->request->getPostData()) {
-    $sub = new app\models\Submission($this->request->getPostData());
+    $data['score'] = (int) $data['score'];
+    $data['stars'] = (int) $data['stars'];
+    $sub = new app\models\Submission($data);
     if ($sub->save()) {
         $_SESSION['message'] = "Submission created";
         $this->request->redirect('/submissions/list');
