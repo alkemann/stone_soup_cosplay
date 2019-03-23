@@ -44,12 +44,12 @@ if ($data = $this->request->getPostData()) {
             <span>Stars</span><br />
             <input type="text" name="stars" value="2" />
         </label>
-        <br /><!-- 
+        <br />
         <label>
-            <span>Morgue URL (online)</span><br />
+            <span>Morgue URL</span><br />
             <input type="text" name="morgue_url" placeholder="http://example.com" />
         </label>
-        <br />
+        <br /><!-- 
         <span style="font-size: smaller; color: red;">Only URL or dump</span>
         <br />
         <label>

@@ -8,6 +8,7 @@ use app\models\Submission;
 			<th>Challenge</th>
 			<th>Player</th>
 			<th>Score **</th>
+			<th>Morgue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -31,6 +32,7 @@ use app\models\Submission;
 			} 
 			?>
 			</td>
+			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
 		</tr>
 
 	<?php

@@ -20,7 +20,7 @@ if (!$challenge) {
 			<!-- <th>id</th> -->
 			<th>Player</th>
 			<th>Score **</th>
-			<!-- <th>stars</th> -->
+			<th>Morgue</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -43,6 +43,7 @@ if (!$challenge) {
 			}
 			?>
 			</td>
+			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
 		</tr>
 
 	<?php
