@@ -23,4 +23,19 @@ class Challenge extends BaseModel
     	}
     	return $list;
     }
+
+    public static function findBySets(array $conditions = [], array $options = []): array
+    {
+        $t = static::$table;
+        $q = "SELECT * FROM `{$t}` ORDER BY `setnr` DESC, `week` DESC";
+        $result = static::db()->query($q);
+        $all = [];
+        foreach ($result as $row) {
+            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE challenge_id = ' . (int) $row['id']);
+            $row['subs'] = $subs[0]['count'];
+            $all[$row['id']] = new Challenge($row);
+        }
+
+        return $all;
+    }
 }

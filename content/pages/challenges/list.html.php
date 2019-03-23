@@ -19,7 +19,7 @@ use app\models\{Challenge, Submission};
 	</thead>
 	<tbody>
 	<?php
-		$challenges = Challenge::find();
+		$challenges = Challenge::findBySets();
 		foreach ($challenges as $c) :
 	?>
 		
@@ -31,10 +31,7 @@ use app\models\{Challenge, Submission};
 			<td><?=$c->background?></td>
 			<td><?=$c->gods?></td>
 			<td><?=$c->species?></td>
-			<td><?php 
-			$subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE challenge_id = ' . (int) $c->id);
-			echo $subs[0]['count'];
-			?></td>
+			<td><?=$c->subs?></td>
 			<td><a href="/challenges/scores?id=<?=$c->id?>">See scores</a></td>
 		</tr>
 
