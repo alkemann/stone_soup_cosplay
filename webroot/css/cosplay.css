@@ -2,6 +2,10 @@ input[type="text"] {
 	width: 70%;
 }
 
+table.challenges_list img {
+  height: 1.5em;
+}
+
 body {
   font-family: "Trebuchet MS", "Tahoma", "Verdana", "Sans-Serif";
   font-size: 14px;

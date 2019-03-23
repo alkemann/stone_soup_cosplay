@@ -43,6 +43,11 @@ if ($data = $this->request->getPostData()) {
 			<input type="text" name="gods" value="" />
 		</label>
 		<br />
+		<label>
+			<span>Character icon image</span><br />
+			<input type="text" name="icon" placeholder="https://i.imgur.com/kjsdasd.png" />
+		</label>
+		<br />
 		<input type="submit" name="Save">
 	</fieldset>
 </form>

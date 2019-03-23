@@ -2,10 +2,10 @@
 use app\models\Challenge;
 ?>
 <h2>Challenges</h2>
-<table>
+<table class="challenges_list">
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
+			<th>&nbsp;</th>
 			<th>Name</th>
 			<th>Set</th>
 			<th>Week</th>
@@ -14,6 +14,7 @@ use app\models\Challenge;
 			<th>Species</th>
 			<th>Submissions</th>
 			<th>Scores</th>
+			<th>Actions</th>
 			
 		</tr>
 	</thead>
@@ -24,7 +25,7 @@ use app\models\Challenge;
 	?>
 		
 		<tr>
-			<!-- <td><?=$c->id?></td> -->
+			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
 			<td><?=$c->name?></td>
 			<td><?=$c->setnr?></td>
 			<td><?=$c->week?></td>
@@ -33,6 +34,7 @@ use app\models\Challenge;
 			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
 			<td><a href="/challenges/scores?id=<?=$c->id?>">See scores</a></td>
+			<td><a href="/challenges/edit?id=<?=$c->id?>">Edit</a></td>
 		</tr>
 
 	<?php

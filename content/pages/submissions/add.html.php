@@ -1,7 +1,22 @@
 <?php
 if ($data = $this->request->getPostData()) {
-    $data['score'] = (int) $data['score'];
-    $data['stars'] = (int) $data['stars'];
+    
+    
+    if (0 <= $data['stars'] <= 2) {
+        $data['stars'] = (int) $data['stars'];
+    } else {
+        $errors['stars'] = "Stars must be 0, 1 or 2";
+    }
+    if (0 <= $data['score'] <= 50) {
+        $data['score'] = (int) $data['score'];
+    } else {
+        $errors['score'] = "Score must be between 0 and 50";
+    }
+    // $pid = $data['player_id'];
+    // $player = app\models\Plauer::get($pid);
+    // if (!$player) {
+    //    $errors['player_id'] = "Player doesn't exist";
+    // }
     $sub = new app\models\Submission($data);
     if ($sub->save()) {
         $_SESSION['message'] = "Submission created";
