@@ -6,6 +6,7 @@ if (!$this->request->session('admin')) {
 if ($data = $this->request->getPostData()) {
 	$challenge = new app\models\Challenge($this->request->getPostData());
 	$challenge->save();
+	$this->request->redirect('/');
 }
 	
 ?>
@@ -13,17 +14,17 @@ if ($data = $this->request->getPostData()) {
 	<fieldset>
 		<label>
 			<span>Name</span><br />
-			<input type="text" name="name" placeholder="Bai Suzhen, Madame White Snake" />
+			<input type="text" name="name" placeholder="Name of character to play" />
 		</label>
 		<br />
 		<label>
 			<span>Set</span><br />
-			<input type="number" name="setnr" value="" />
+			<input type="number" name="setnr" placeholder="2" />
 		</label>
 		<br />
 		<label>
 			<span>Week</span><br />
-			<input type="number" name="week" value="" />
+			<input type="number" name="week" placeholder="2" />
 		</label>
 		<br />
 		<label>
@@ -38,7 +39,7 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<label>
 			<span>God(s)</span><br />
-			<input type="text" name="gods" value="Qaz or Fedhas" />
+			<input type="text" name="gods" value="" />
 		</label>
 		<br />
 		<input type="submit" name="Save">

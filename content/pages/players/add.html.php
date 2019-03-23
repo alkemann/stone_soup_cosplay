@@ -2,8 +2,9 @@
 if ($data = $this->request->getPostData()) {
     $player = new app\models\Player($this->request->getPostData());
     if ($player->save()) {
+        session_start();
         $_SESSION['message'] = "Player created";
-        $this->request->redirect('/players/list');
+        return $this->request->redirect('/players/list');
     }
     dd($player);
 }
