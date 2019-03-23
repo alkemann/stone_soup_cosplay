@@ -18,8 +18,8 @@ if (!$challenge) {
 	<thead>
 		<tr>
 			<!-- <th>id</th> -->
-			<th>name</th>
-			<th>score **</th>
+			<th>Player</th>
+			<th>Score **</th>
 			<!-- <th>stars</th> -->
 		</tr>
 	</thead>

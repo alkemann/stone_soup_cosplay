@@ -6,7 +6,7 @@ use app\models\{Challenge, Submission};
 	<thead>
 		<tr>
 			<!-- <th>id</th> -->
-			<th>name</th>
+			<th>Name</th>
 			<th>Set</th>
 			<th>Week</th>
 			<th>Background</th>
