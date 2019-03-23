@@ -9,12 +9,13 @@ use app\models\Submission;
 			<th>Player</th>
 			<th>Score **</th>
 			<th>Morgue</th>
+			<th>Flags</th>
 			<th>Actions</th>
 		</tr>
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find(['hs' => 1],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
+		$submissions = Submission::find([],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
 		foreach ($submissions as $s) :
 	?>
 		
@@ -34,6 +35,7 @@ use app\models\Submission;
 			?>
 			</td>
 			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
+			<td><?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?></td>
 			<td><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 		</tr>
 
@@ -42,3 +44,4 @@ use app\models\Submission;
 	?>
 	</tbody>
 </table>
+<span style="font-size: 10px;">Flags: HS:Current highscore for this challenge. AC: Accepted as official scored submission</span>
