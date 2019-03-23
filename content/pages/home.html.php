@@ -54,9 +54,10 @@ use app\models\{Challenge, Submission, Player};
 <hr />
 
 <h2>Challenges</h2>
-<table>
+<table class="challenges_list">
 	<thead>
 		<tr>
+			<th>&nbsp;</th>
 			<th>Name</th>
 			<th>Set</th>
 			<th>Week</th>
@@ -74,6 +75,7 @@ use app\models\{Challenge, Submission, Player};
 		foreach ($challenges as $c) :
 	?>
 		<tr>
+			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
 			<td><?=$c->name?></td>
 			<td><?=$c->setnr?></td>
 			<td><?=$c->week?></td>
