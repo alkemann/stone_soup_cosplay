@@ -8,7 +8,11 @@ class Player extends BaseModel
     static $connection = "default";
     static $table = "players";
     static $fields = [
-        'id', 'name', 'created'];
+        'id', 'name', 'created'
+    ];
+    static $relations = [
+        'submissions' => ['type' => 'has_many', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'player_id'],
+    ];
 
     public static function list()
     {
@@ -22,14 +26,17 @@ class Player extends BaseModel
 
     public static function scoreboard()
     {
-        $all = static::findAsArray();
+        $all = static::findAsArray([], ['with' => 'submissions']);
         foreach ($all as $key => &$player) {
-            $subs = Submission::find(['player_id' => $player->id]);
-            $score = 0; $stars = 0;
-            foreach ($subs as $sub) {
-                $score += $sub->score;
-                $stars += $sub->stars;
+            $score = 0; $stars = 0; $subs = 0;
+            foreach ($player->submissions() as $sub) {
+                if ($sub->accepted && $sub->hs) {
+                    $score += $sub->score;
+                    $stars += $sub->stars;
+                    $subs += 1;
+                } 
             }
+            $player->subs = $subs;
             $player->score = $score;
             $player->stars = $stars;
         }

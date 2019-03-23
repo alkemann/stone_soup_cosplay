@@ -26,12 +26,13 @@ if (!$challenge) {
 	<tbody>
 	<?php
 		$subs = Submission::scoreboard($challenge->id);
+		// dd($subs);
 		foreach ($subs as $s) :
 	?>
 		
 		<tr>
 			<!-- <td><?=$s->id?></td> -->
-			<td><?=$s->name?></td>
+			<td><?=$s->player()->name?></td>
 			<td>
 			<?php 
 			echo $s->score . ' ';

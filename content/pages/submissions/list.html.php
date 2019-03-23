@@ -5,20 +5,20 @@ use app\models\Submission;
 <table>
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
-			<th>player</th>
-			<th>score **</th>
+			<th>Challenge</th>
+			<th>Player</th>
+			<th>Score **</th>
 		</tr>
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find();
+		$submissions = Submission::find(['hs' => 1],['with' => ['player', 'challenge']]);
 		foreach ($submissions as $s) :
 	?>
 		
 		<tr>
-			<!-- <td><?=$s->id?></td> -->
-			<td><?=$s->player_id?></td>
+			<td><?=$s->challenge()->name?></td>
+			<td><?=$s->player()->name?></td>
 			<td>
 
 			<?php 

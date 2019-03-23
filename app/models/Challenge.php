@@ -13,7 +13,11 @@ class Challenge extends BaseModel
         'conduct_1', 'conduct_2', 'conduct_3', 'bonus_1', 'bonus_2',
         'created'
     ];
-    
+     static $relations = [
+        'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
+    ];
+   
+
     public static function list()
     {
     	$all = static::find();
