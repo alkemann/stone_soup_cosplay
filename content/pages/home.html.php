@@ -28,6 +28,10 @@ use app\models\{Challenge, Submission, Player};
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php 
 			foreach ($row['week'] as $week) {
+				if ($week == null) {
+					echo "<td>&nbsp;</td>";
+					continue;
+				}
 				$sc = $week['score']; $st = "";
 				for ($i=0; $i < (int) $week['stars'] ; $i++) { 
 					$st .= '*';
