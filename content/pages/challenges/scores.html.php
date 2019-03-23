@@ -26,7 +26,6 @@ if (!$challenge) {
 	<tbody>
 	<?php
 		$subs = Submission::scoreboard($challenge->id);
-		// dd($subs);
 		foreach ($subs as $s) :
 	?>
 		

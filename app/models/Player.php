@@ -46,15 +46,15 @@ class Player extends BaseModel
     public static function scoreboardForSet($set)
     {
         $s = (int) $set;
-        $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total` FROM `players` AS `p`
+        $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total`, `sky` AS `stars` FROM `players` AS `p`
                 LEFT JOIN (
-                    SELECT `s`.`player_id` AS `pid`, SUM(`s`.`score`) AS `total`
+                    SELECT `s`.`player_id` AS `pid`, SUM(`s`.`score`) AS `total`, SUM(`s`.`stars`) AS `sky`
                     FROM `submissions` AS `s`
                     LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`)
                     WHERE `s`.`accepted` = 1 AND `s`.`hs` = 1 AND `c`.`setnr` = {$s}
                     GROUP BY `s`.`player_id`
                 ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-                WHERE `inner`.`total` > 0";
+                WHERE `inner`.`total` > 0 ORDER BY `total` DESC";
         $result = static::db()->query($q);
 
         $challenges_in_set = Challenge::findAsArray(['setnr' => $set]);

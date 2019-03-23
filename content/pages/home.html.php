@@ -25,22 +25,20 @@ use app\models\{Challenge, Submission, Player};
 	foreach ($scores as $row) : ?>
 		<tr>
 			<td><?=$row['player']?></td>
-			<td><?=$row['total']?></td>
-			<?php
-			for ($i=0; $i < $weeks; $i++) { 
-				if (isset($row['week'][$i])) {
-					$week = $row['week'][$i];
-					$sc = $week['score']; $st = "";
-					for ($i=0; $i < (int) $week['stars'] ; $i++) { 
-						$st .= '*';
-					} 
-					for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) { 
-						$st .= '_';
-					}
-					echo "<td>{$sc} {$st}</td>";
-				} else {
-					echo '<td>&nbsp;</td>';
+			<td><?=$row['total']?> <?=$row['stars']?>*</td>
+			<?php 
+			foreach ($row['week'] as $week) {
+				$sc = $week['score']; $st = "";
+				for ($i=0; $i < (int) $week['stars'] ; $i++) { 
+					$st .= '*';
+				} 
+				for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) { 
+					$st .= '_';
 				}
+				echo "<td>{$sc} {$st}</td>";
+			}
+			for ($i=0; $i < $weeks - sizeof($row['week']); $i++) { 
+				echo "<td>&nbsp;</td>";
 			}
 			?>
 		</tr>
