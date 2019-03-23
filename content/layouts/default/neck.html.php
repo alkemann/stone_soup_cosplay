@@ -13,7 +13,7 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/">DCSS Cosplay</a></h1>
+            <h1><a href="/">Crawl Cosplay Challenge</a></h1>
             <div class="fineprint">Things can be here</div>
         </div>
         <hr />
