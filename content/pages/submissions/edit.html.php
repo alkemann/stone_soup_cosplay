@@ -54,7 +54,7 @@ if ($data = $this->request->getPostData()) {
         <br />
         <label>
             <span>Stars</span><br />
-            <input type="text" name="stars" value="<?=$sub->score?>" />
+            <input type="text" name="stars" value="<?=$sub->stars?>" />
         </label>
         <br />
         <label>
