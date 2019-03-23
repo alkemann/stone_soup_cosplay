@@ -17,6 +17,12 @@ class Challenge extends BaseModel
         'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
     ];
    
+    public static function currentSet(): int
+    {
+        $q = "SELECT MAX(`setnr`) AS `current` FROM `challenges`;";
+        $result = static::db()->query($q);
+        return (int) $result[0]['current'];
+    }
 
     public static function list()
     {

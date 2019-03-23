@@ -1,5 +1,5 @@
 <?php
-use app\models\{Challenge, Submission};
+use app\models\Challenge;
 ?>
 <h2>Challenges</h2>
 <table>
