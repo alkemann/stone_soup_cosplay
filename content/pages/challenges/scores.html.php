@@ -2,6 +2,7 @@
 use app\models\{Player, Challenge, Submission};
 
 $id = $_GET['id'] ?? false;
+$is_admin = $this->request->session('admin');
 
 if ($id == false) {
 	return $this->request->redirect('/');
@@ -21,6 +22,9 @@ if (!$challenge) {
 			<th>Player</th>
 			<th>Score **</th>
 			<th>Morgue</th>
+			<?php if ($is_admin): ?>
+			<th>Actions</th>
+			<?php endif; ?>
 		</tr>
 	</thead>
 	<tbody>
@@ -44,6 +48,10 @@ if (!$challenge) {
 			?>
 			</td>
 			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
+			<?php if ($is_admin): ?>
+			<td><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
+			<?php endif; ?>
+			
 		</tr>
 
 	<?php
