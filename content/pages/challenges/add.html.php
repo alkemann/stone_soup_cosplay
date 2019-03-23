@@ -44,6 +44,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Reddit thread</span><br />
+			<input type="text" name="reddit" placeholder="https://www.reddit.com/r/dcss/comments/b19trd/crawl_cosplay_challenge_set_4_week_1_psyche_the/" />
+		</label>
+		<br />
+		<label>
 			<span>Character icon image</span><br />
 			<input type="text" name="icon" placeholder="https://i.imgur.com/kjsdasd.png" />
 		</label>

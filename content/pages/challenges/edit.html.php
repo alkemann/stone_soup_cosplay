@@ -59,6 +59,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Reddit thread</span><br />
+			<input type="text" name="reddit" value="<?=$cha->reddit?>" />
+		</label>
+		<br />
+		<label>
 			<span>Character icon image</span><br />
 			<input type="text" name="icon"  value="<?=$cha->icon?>" />
 		</label>

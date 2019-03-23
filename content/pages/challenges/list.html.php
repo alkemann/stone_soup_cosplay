@@ -26,7 +26,7 @@ use app\models\Challenge;
 		
 		<tr>
 			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
-			<td><?=$c->name?></td>
+			<td><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><?=$c->setnr?></td>
 			<td><?=$c->week?></td>
 			<td><?=$c->background?></td>

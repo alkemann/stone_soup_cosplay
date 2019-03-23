@@ -82,7 +82,7 @@ use app\models\{Challenge, Submission, Player};
 			<td><?=$c->gods?></td>
 			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
-			<td><a href="/challenges/scores?id=<?=$c->id?>">See scores</a></td>
+			<td><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> <a href="<?=$c->reddit?>">Reddit</a></td>
 		</tr>
 	<?php
 		endforeach;
