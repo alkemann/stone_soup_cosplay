@@ -41,7 +41,7 @@ if ($data = $this->request->getPostData()) {
             <span>Stars</span><br />
             <input type="text" name="stars" value="2" />
         </label>
-        <br />
+        <br /><!-- 
         <label>
             <span>Morgue URL (online)</span><br />
             <input type="text" name="morgue_url" placeholder="http://example.com" />
@@ -52,7 +52,7 @@ if ($data = $this->request->getPostData()) {
         <label>
             <span>Morgue Dump (offline)</span><br />
             <textarea name="morgue_text" placeholder="Blah blah"></textarea>
-        </label>
+        </label> -->
         <br />
         <input type="submit" name="Save">
     </fieldset>

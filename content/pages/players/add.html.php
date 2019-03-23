@@ -13,7 +13,7 @@ if ($data = $this->request->getPostData()) {
     <fieldset>
         <label>
             <span>Name</span><br />
-            <input type="text" name="name" value="alkemann" />
+            <input type="text" name="name" placeholder="account name" />
         </label>
         <br />
         <input type="submit" name="Save">

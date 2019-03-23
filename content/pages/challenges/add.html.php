@@ -13,27 +13,27 @@ if ($data = $this->request->getPostData()) {
 	<fieldset>
 		<label>
 			<span>Name</span><br />
-			<input type="text" name="name" value="Bai Suzhen, Madame White Snake" />
+			<input type="text" name="name" placeholder="Bai Suzhen, Madame White Snake" />
 		</label>
 		<br />
 		<label>
 			<span>Set</span><br />
-			<input type="number" name="setnr" value="2" />
+			<input type="number" name="setnr" value="" />
 		</label>
 		<br />
 		<label>
 			<span>Week</span><br />
-			<input type="number" name="week" value="1" />
+			<input type="number" name="week" value="" />
 		</label>
 		<br />
 		<label>
 			<span>Species</span><br />
-			<input type="text" name="species" value="Draconian" />
+			<input type="text" name="species" value="" />
 		</label>
 		<br />
 		<label>
 			<span>Background</span><br />
-			<input type="text" name="background" value="Gladiator" />
+			<input type="text" name="background" value="" />
 		</label>
 		<br />
 		<label>
