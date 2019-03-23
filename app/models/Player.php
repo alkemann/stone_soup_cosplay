@@ -45,7 +45,6 @@ class Player extends BaseModel
 
     public static function scoreboardForSet($set)
     {
-        $set = 1;
         $s = (int) $set;
         $q = "SELECT `p`.`id` AS `pid`, `name` AS `player`, `total` FROM `players` AS `p`
                 LEFT JOIN (
