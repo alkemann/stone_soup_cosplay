@@ -1,0 +1,66 @@
+2019-03-22 15:59:09 DEBUG == REQUEST: GET '/' ==
+2019-03-22 15:59:09 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 15:59:09 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:00:57 DEBUG == REQUEST: GET '/' ==
+2019-03-22 16:00:57 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:00:57 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:01:00 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:01:00 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:01:00 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:01:00 DEBUG == REQUEST: GET 'favicon.ico' ==
+2019-03-22 16:01:00 DEBUG == Response Handler: alkemann\h2l\response\Error
+2019-03-22 16:01:00 DEBUG No error page made at Missing view file: [ /Volumes/Sensation/source/cosplay/content/pages/404.html.php ]
+2019-03-22 16:01:00 DEBUG == RESPONSE: 404 text/html ==
+2019-03-22 16:01:20 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:01:20 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:01:20 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:01:29 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:01:29 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:01:29 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:01:45 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:01:45 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:01:45 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:02:18 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:02:18 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:02:18 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:03:14 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:03:14 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:03:14 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:03:27 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:03:27 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:03:27 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:03:32 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:03:32 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:03:32 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:08:13 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:08:13 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:08:13 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:08:32 DEBUG == REQUEST: POST 'challenge/add' ==
+2019-03-22 16:08:32 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:08:32 ALERT Error: Call to undefined function dd()
+2019-03-22 16:08:58 DEBUG == REQUEST: GET '/' ==
+2019-03-22 16:08:58 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:08:58 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:09:01 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:09:01 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:09:01 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:09:13 DEBUG == REQUEST: POST 'challenge/add' ==
+2019-03-22 16:09:13 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:09:42 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:09:42 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:09:42 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:10:00 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:10:00 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:10:00 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:10:15 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:10:15 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:10:15 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:10:17 DEBUG == REQUEST: POST 'challenge/add' ==
+2019-03-22 16:10:17 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:12:00 DEBUG == REQUEST: POST 'challenge/add' ==
+2019-03-22 16:12:00 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:12:02 DEBUG == REQUEST: GET 'challenge/add' ==
+2019-03-22 16:12:02 DEBUG == Response Handler: alkemann\h2l\response\Page
+2019-03-22 16:12:02 DEBUG == RESPONSE: 200 text/html ==
+2019-03-22 16:12:04 DEBUG == REQUEST: POST 'challenge/add' ==
+2019-03-22 16:12:04 DEBUG == Response Handler: alkemann\h2l\response\Page
