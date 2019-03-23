@@ -12,7 +12,7 @@ use app\models\Submission;
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find(['hs' => 1],['with' => ['player', 'challenge']]);
+		$submissions = Submission::find(['hs' => 1],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
 		foreach ($submissions as $s) :
 	?>
 		

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f0375ac634eb103b2831a5d9d3a85cb",
+    "content-hash": "703f170de7b46ecaaaece547c9e452d6",
     "packages": [
         {
             "name": "alkemann/debug",
@@ -44,16 +44,16 @@
         },
         {
             "name": "alkemann/h2l",
-            "version": "v0.38.0",
+            "version": "v0.39.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "dc226dab7097cbda04cf3870d1d4a2fbaf38d3e6"
+                "reference": "19a644be8fd70c858dbdb3f30f5450f65f421db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/dc226dab7097cbda04cf3870d1d4a2fbaf38d3e6",
-                "reference": "dc226dab7097cbda04cf3870d1d4a2fbaf38d3e6",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/19a644be8fd70c858dbdb3f30f5450f65f421db7",
+                "reference": "19a644be8fd70c858dbdb3f30f5450f65f421db7",
                 "shasum": ""
             },
             "require": {
@@ -100,7 +100,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2018-09-27T14:23:57+00:00"
+            "time": "2019-03-23T18:02:09+00:00"
         }
     ],
     "packages-dev": [
