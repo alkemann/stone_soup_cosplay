@@ -57,7 +57,6 @@ use app\models\{Challenge, Submission, Player};
 <table>
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
 			<th>Name</th>
 			<th>Set</th>
 			<th>Week</th>
@@ -65,7 +64,7 @@ use app\models\{Challenge, Submission, Player};
 			<th>Gods</th>
 			<th>Species</th>
 			<th>Submissions</th>
-			<th>Scores</th>
+			<th>Menu</th>
 			
 		</tr>
 	</thead>

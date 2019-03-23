@@ -1,4 +1,9 @@
 <?php
+
+if (!$this->request->session('admin')) {
+    $this->request->redirect('/');
+}
+
 if ($data = $this->request->getPostData()) {
     $player = new app\models\Player($this->request->getPostData());
     if ($player->save()) {

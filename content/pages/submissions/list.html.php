@@ -1,5 +1,10 @@
 <?php
 use app\models\Submission;
+
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Submissions</h2>
 <table>

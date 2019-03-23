@@ -1,5 +1,10 @@
 <?php
 use app\models\Challenge;
+
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Challenges</h2>
 <table class="challenges_list">
