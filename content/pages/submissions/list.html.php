@@ -5,10 +5,9 @@ use app\models\Submission;
 <table>
 	<thead>
 		<tr>
-			<th>id</th>
+			<!-- <th>id</th> -->
 			<th>player</th>
-			<th>score</th>
-			<th>stars</th>
+			<th>score **</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -18,10 +17,20 @@ use app\models\Submission;
 	?>
 		
 		<tr>
-			<td><?=$s->id?></td>
+			<!-- <td><?=$s->id?></td> -->
 			<td><?=$s->player_id?></td>
-			<td><?=$s->score?></td>
-			<td><?=$s->stars?></td>
+			<td>
+
+			<?php 
+			echo $s->score . ' ';
+			for ($i=0; $i < (int) $s->stars ; $i++) { 
+				echo '*';
+			} 
+			for ($i=0; $i < 2 - (int) $s->stars ; $i++) { 
+				echo '_';
+			} 
+			?>
+			</td>
 		</tr>
 
 	<?php

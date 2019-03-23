@@ -17,7 +17,10 @@ if (!$challenge) {
 <table>
 	<thead>
 		<tr>
-			<th>id</th><th>name</th><th>score</th><th>stars</th>
+			<!-- <th>id</th> -->
+			<th>name</th>
+			<th>score **</th>
+			<!-- <th>stars</th> -->
 		</tr>
 	</thead>
 	<tbody>
@@ -27,10 +30,19 @@ if (!$challenge) {
 	?>
 		
 		<tr>
-			<td><?=$s->id?></td>
+			<!-- <td><?=$s->id?></td> -->
 			<td><?=$s->name?></td>
-			<td><?=$s->score?></td>
-			<td><?=$s->stars?></td>
+			<td>
+			<?php 
+			echo $s->score . ' ';
+			for ($i=0; $i < (int) $s->stars ; $i++) { 
+				echo '*';
+			} 
+			for ($i=0; $i < 2 - (int) $s->stars ; $i++) { 
+				echo '_';
+			}
+			?>
+			</td>
 		</tr>
 
 	<?php

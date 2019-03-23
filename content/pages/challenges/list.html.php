@@ -5,7 +5,16 @@ use app\models\{Challenge, Submission};
 <table>
 	<thead>
 		<tr>
-			<th>id</th><th>name</th><th>Set</th><th>Week</th><th>Background</th><th>Gods</th><th>Species</th><th>Submissions</th><th>Scores</th>
+			<!-- <th>id</th> -->
+			<th>name</th>
+			<th>Set</th>
+			<th>Week</th>
+			<th>Background</th>
+			<th>Gods</th>
+			<th>Species</th>
+			<th>Submissions</th>
+			<th>Scores</th>
+			
 		</tr>
 	</thead>
 	<tbody>
@@ -15,7 +24,7 @@ use app\models\{Challenge, Submission};
 	?>
 		
 		<tr>
-			<td><?=$c->id?></td>
+			<!-- <td><?=$c->id?></td> -->
 			<td><?=$c->name?></td>
 			<td><?=$c->setnr?></td>
 			<td><?=$c->week?></td>

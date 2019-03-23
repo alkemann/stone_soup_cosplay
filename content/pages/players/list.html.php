@@ -5,7 +5,10 @@ use app\models\Player;
 <table>
 	<thead>
 		<tr>
-			<th>id</th><th>name</th><th>score</th><th>stars</th>
+			<!-- <th>id</th> -->
+			<th>name</th>
+			<th>score</th>
+			<th>stars</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -15,7 +18,7 @@ use app\models\Player;
 	?>
 		
 		<tr>
-			<td><?=$player->id?></td>
+			<!-- <td><?=$player->id?></td> -->
 			<td><?=$player->name?></td>
 			<td><?=$player->score?></td>
 			<td><?=$player->stars?></td>
