@@ -1,0 +1,14 @@
+{
+    "require": {
+        "alkemann/h2l": "^0.38.0",
+        "alkemann/debug": "^0.4.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
