@@ -5,7 +5,7 @@ use app\models\{Challenge, Submission, Player};
 if ($active) :
 	$set = $active->setnr;
 	$scores = Player::scoreboardForSet($set);
-	$challenges_in_set = Challenge::findAsArray(['setnr' => $set]);
+	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0]);
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2>Active challenge Scoreboard</h2>
