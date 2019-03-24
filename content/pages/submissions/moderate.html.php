@@ -48,6 +48,7 @@ if (!$this->request->session('admin')) {
 			</td>
 			<td>
 				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
+				<a href="/submissions/delete?id=<?=$s->id?>">Remove</a>
 			</td> 
 		</tr>
 

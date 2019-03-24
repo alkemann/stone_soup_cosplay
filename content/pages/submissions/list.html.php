@@ -20,7 +20,10 @@ if (!$this->request->session('admin')) {
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find(['accepted' => 1],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
+		$submissions = Submission::find(
+			['accepted' => 1],
+			['order' => '`id` DESC', 'with' => ['player', 'challenge']]
+		);
 		foreach ($submissions as $s) :
 	?>
 		
@@ -47,6 +50,7 @@ if (!$this->request->session('admin')) {
 			</td>
 			<td>
 				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
+
 			</td> 
 		</tr>
 
