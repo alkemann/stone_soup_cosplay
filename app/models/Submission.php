@@ -20,7 +20,7 @@ class Submission extends BaseModel
     public static function scoreboard($challenge_id)
     {
     	$id = (int) $challenge_id;
-        return static::findAsArray(['challenge_id' => $id, 'accepted' => 1, 'hs' => 1], ['with' => 'player']);
+        return static::findAsArray(['challenge_id' => $id, 'accepted' => 1, 'hs' => 1], ['order' => '`score` DESC, `stars` DESC', 'with' => 'player']);
 
         // Automatic pick highest
         /*
