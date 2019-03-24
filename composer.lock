@@ -44,16 +44,16 @@
         },
         {
             "name": "alkemann/h2l",
-            "version": "v0.39.0",
+            "version": "v0.39.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "19a644be8fd70c858dbdb3f30f5450f65f421db7"
+                "reference": "cdffe5c1c6bc3caff4f12fc7be2a481a5b596ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/19a644be8fd70c858dbdb3f30f5450f65f421db7",
-                "reference": "19a644be8fd70c858dbdb3f30f5450f65f421db7",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/cdffe5c1c6bc3caff4f12fc7be2a481a5b596ad9",
+                "reference": "cdffe5c1c6bc3caff4f12fc7be2a481a5b596ad9",
                 "shasum": ""
             },
             "require": {
@@ -100,7 +100,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-03-23T18:02:09+00:00"
+            "time": "2019-03-24T16:21:06+00:00"
         }
     ],
     "packages-dev": [

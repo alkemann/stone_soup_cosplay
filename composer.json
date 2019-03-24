@@ -1,6 +1,6 @@
 {
     "require": {
-        "alkemann/h2l": "^0.39.0",
+        "alkemann/h2l": "^0.39.1",
         "alkemann/debug": "^0.4.0"
     },
     "require-dev": {
