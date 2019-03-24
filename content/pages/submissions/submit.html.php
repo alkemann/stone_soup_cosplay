@@ -43,6 +43,11 @@ if ($data = $this->request->getPostData()) {
             <input type="checkbox" name="accepted" value="1" checked="checked" />
         </label>
         <br />
+        <label>
+            <span>Comment</span><br />
+            <input type="text" name="comment" placeholder="Estimate of points and stars?" />
+        </label>
+        <br />
         <!-- 
         <span style="font-size: smaller; color: red;">Only URL or dump</span>
         <br />

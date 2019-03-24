@@ -42,10 +42,10 @@ if (!$this->request->session('admin')) {
 			} 
 			?>
 			</td>
-			<td><?=$s->online==1?'ON':'OF'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->accepted==1?'AC':'---'?></td>
+			<td><?=$s->online==1?'ON':'OF'?> <?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
 			<td>
 				<?php if ($s->morgue_url) : ?>
-				<a href="<?=$s->morgue_url?>">View Morgue</a> 
+				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a> 
 				<?php endif; ?>
 			</td>
 			<td>
@@ -62,5 +62,6 @@ if (!$this->request->session('admin')) {
 <span style="font-size: 10px;">Flags: <br />
 HS:Current highscore for this challenge. <br />
 AC: Accepted as official scored submission <br />
-ON/OF: Played Online or Offline
+ON/OF: Played Online or Offline<br />
+CO: Submission has comments
 </span>

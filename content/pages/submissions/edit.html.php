@@ -65,7 +65,7 @@ if ($data = $this->request->getPostData()) {
             <span>Morgue URL</span><br />
             <input type="text" name="morgue_url" value="<?=$sub->morgue_url?>" /> <br />
             <?php if ($sub->morgue_url) : ?>
-                <a href="<?=$sub->morgue_url?>">View Morgue</a> 
+                <a href="<?=$sub->morgue_url?>" target="_blank">View Morgue</a> 
             <?php endif; ?>
 
         </label>
@@ -80,6 +80,11 @@ if ($data = $this->request->getPostData()) {
             <span>Accepted (use for moderation)</span><br />
             <input type="hidden" name="accepted" value="0" />
             <input type="checkbox" name="accepted" value="1" <?=$sub->accepted?'checked="checked"':''?> />
+        </label>
+        <br />
+        <label>
+            <span>Comment</span><br />
+            <input type="text" name="comment" value="<?=$sub->comment?>"  />
         </label>
         <br />
         <label>
