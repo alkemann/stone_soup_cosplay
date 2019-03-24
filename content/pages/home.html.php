@@ -7,7 +7,7 @@ use app\models\{Challenge, Submission, Player};
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2>Set <?=$set?> scoreboard</h2>
-
+<p>See current <a href="/challenges/details/set/4/week/2">challenge details here</a>.</p>	
 <table>
 	<thead>
 		<tr>

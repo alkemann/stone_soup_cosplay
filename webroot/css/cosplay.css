@@ -6,6 +6,10 @@ table.challenges_list img {
   height: 1em;
 }
 
+dl dt {
+  font-weight: bold;
+}
+
 body {
   font-family: "Trebuchet MS", "Tahoma", "Verdana", "Sans-Serif";
   font-size: 14px;
