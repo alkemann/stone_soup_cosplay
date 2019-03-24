@@ -1,7 +1,7 @@
 <?php
 use app\models\{Challenge, Submission, Player};
 
-	$set = Challenge::currentSet();
+	$set = $_GET['set'] ?? 1;
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set]);
 	$weeks = sizeof($challenges_in_set);
@@ -47,52 +47,5 @@ use app\models\{Challenge, Submission, Player};
 			?>
 		</tr>
 	<?php endforeach; ?>
-	</tbody>
-</table>
-<br />
-<div style="font-size: smaller"><?php
-for ($i=1; $i < $set; $i++) { 
-	echo '<a href="/sets/score?set='.$i.'" >Set totals '.$i.'</a> ';
-}
-?></div>
-
-<br />
-<hr />
-
-<h2>Challenges</h2>
-<table class="challenges_list">
-	<thead>
-		<tr>
-			<th>&nbsp;</th>
-			<th>Name</th>
-			<th>Set</th>
-			<th>Week</th>
-			<th>Background</th>
-			<th>Gods</th>
-			<th>Species</th>
-			<th>Submissions</th>
-			<th>Menu</th>
-			
-		</tr>
-	</thead>
-	<tbody>
-	<?php
-		$challenges = Challenge::findBySets(['draft' => 0]);
-		foreach ($challenges as $c) :
-	?>
-		<tr>
-			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
-			<td><?=$c->name?></td>
-			<td><?=$c->setnr?></td>
-			<td><?=$c->week?></td>
-			<td><?=$c->background?></td>
-			<td><?=$c->gods?></td>
-			<td><?=$c->species?></td>
-			<td><?=$c->subs?></td>
-			<td><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> <a href="<?=$c->reddit?>">Reddit</a></td>
-		</tr>
-	<?php
-		endforeach;
-	?>
 	</tbody>
 </table>
