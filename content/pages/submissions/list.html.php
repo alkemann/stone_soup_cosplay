@@ -41,12 +41,13 @@ if (!$this->request->session('admin')) {
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->accepted==1?'AC':'---'?></td>
 			<td>
-				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td> 
+				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
 				<?php if ($s->morgue_url) : ?>
 				<a href="<?=$s->morgue_url?>">View Morgue</a> 
 				<?php elseif ($s->morgue_text) : ?>
 				<a href="/submissions/morgue?id=<?=$s->id?>">View Morgue</a>
 				<?php endif; ?>
+			</td> 
 		</tr>
 
 	<?php
