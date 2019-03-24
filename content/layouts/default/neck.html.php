@@ -3,7 +3,7 @@
     <?php if ($this->request->session('admin')) : ?>
         <a href="/">Home</a>
         <a href="/challenges/list">Challenges</a>(<a href="/challenges/add">new</a>)
-    	<a href="/submissions/list">Submissions</a>(<a href="/submissions/add">new</a>)
+    	<a href="/submissions/list">Latest Subs</a> <a href="/submissions/moderate">Moderate New Subs</a> (<a href="/submissions/add">new</a>)
         <a href="/players/list">Players</a>(<a href="/players/add">new</a>)
     	<a href="/logout">Logout</a>
     

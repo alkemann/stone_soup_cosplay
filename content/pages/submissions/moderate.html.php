@@ -20,7 +20,7 @@ if (!$this->request->session('admin')) {
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find(['accepted' => 1],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
+		$submissions = Submission::find(['accepted' => 0],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
 		foreach ($submissions as $s) :
 	?>
 		
@@ -44,6 +44,7 @@ if (!$this->request->session('admin')) {
 				<?php if ($s->morgue_url) : ?>
 				<a href="<?=$s->morgue_url?>">View Morgue</a> 
 				<?php endif; ?>
+
 			</td>
 			<td>
 				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
