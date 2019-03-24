@@ -69,13 +69,19 @@ if ($data = $this->request->getPostData()) {
         <label>
             <span>Highscore (use for multiple submissions)</span><br />
             <input type="hidden" name="hs" value="0" />
-            <input type="checkbox" name="hs" value="0" <?=$sub->hs?'checked="checked"':''?> />
+            <input type="checkbox" name="hs" value="1" <?=$sub->hs?'checked="checked"':''?> />
         </label>
         <br />
         <label>
             <span>Accepted (use for moderation)</span><br />
             <input type="hidden" name="accepted" value="0" />
-            <input type="checkbox" name="accepted" value="0" <?=$sub->accepted?'checked="checked"':''?> />
+            <input type="checkbox" name="accepted" value="1" <?=$sub->accepted?'checked="checked"':''?> />
+        </label>
+        <br />
+        <label>
+            <span>Played online</span><br />
+            <input type="hidden" name="accepted" value="0" />
+            <input type="checkbox" name="accepted" value="1" <?=$sub->online?'checked="checked"':''?> />
         </label>
         <br />
         <input type="submit" name="Save">

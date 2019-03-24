@@ -13,8 +13,8 @@ if (!$this->request->session('admin')) {
 			<th>Challenge</th>
 			<th>Player</th>
 			<th>Score **</th>
-			<th>Morgue</th>
 			<th>Flags</th>
+			<th>Morgue</th>
 			<th>Actions</th>
 		</tr>
 	</thead>
@@ -39,9 +39,14 @@ if (!$this->request->session('admin')) {
 			} 
 			?>
 			</td>
-			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
-			<td><?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?></td>
-			<td><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
+			<td><?=$s->online==1?'ON':'OF'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->accepted==1?'AC':'---'?></td>
+			<td>
+				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td> 
+				<?php if ($s->morgue_url) : ?>
+				<a href="<?=$s->morgue_url?>">View Morgue</a> 
+				<?php elseif ($s->morgue_text) : ?>
+				<a href="/submissions/morgue?id=<?=$s->id?>">View Morgue</a>
+				<?php endif; ?>
 		</tr>
 
 	<?php
@@ -49,4 +54,8 @@ if (!$this->request->session('admin')) {
 	?>
 	</tbody>
 </table>
-<span style="font-size: 10px;">Flags: HS:Current highscore for this challenge. AC: Accepted as official scored submission</span>
+<span style="font-size: 10px;">Flags: <br />
+HS:Current highscore for this challenge. <br />
+AC: Accepted as official scored submission <br />
+ON/OF: Played Online or Offline
+</span>
