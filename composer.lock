@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "703f170de7b46ecaaaece547c9e452d6",
+    "content-hash": "21dc3527a78ce1401a504087fe4661b6",
     "packages": [
         {
             "name": "alkemann/debug",
