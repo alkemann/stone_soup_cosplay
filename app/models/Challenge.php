@@ -41,7 +41,7 @@ class Challenge extends BaseModel
         $result = static::find($conditions, $options);
         $all = [];
         foreach ($result as $cha) {
-            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE challenge_id = ' . (int) $cha->id);
+            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE `hs` = 1 AND `accepted` = 1 AND challenge_id = ' . (int) $cha->id);
             $cha->subs = $subs[0]['count'];
             $all[$cha->id] = $cha;
         }

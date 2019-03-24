@@ -15,7 +15,7 @@
     <div class="page_content">
         <div class="heading">
             <h1><a href="/">Crawl Cosplay Challenge</a></h1>
-            <div class="fineprint">Things can be here</div>
+            <div class="fineprint">CCC Discord server: <a href="https://discord.gg/ZQ4kk6n">https://discord.gg/ZQ4kk6n</a></div>
         </div>
         <hr />
         <div class="content">
