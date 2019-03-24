@@ -1,6 +1,6 @@
 <?php
 
-use \app\models\{Challenge, Player}
+use \app\models\{Challenge, Player};
 
 if ($data = $this->request->getPostData()) {
     $data['accepted'] = $data['hs'] = 0;
@@ -17,7 +17,7 @@ if (!$active) {
 }
 
 ?>
-<h2>Adding new Submission for Set <?=$p->setnr?> Week <?=$p->week?> : <?=$p->name?></h2>
+<h2>Adding new Submission for Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
 <form method="POST">
     <input type="hidden" name="challenge_id" value="<?=$active->id?>" />
     <fieldset>
