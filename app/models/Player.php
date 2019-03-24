@@ -8,7 +8,7 @@ class Player extends BaseModel
     static $connection = "default";
     static $table = "players";
     static $fields = [
-        'id', 'name', 'created'
+        'id', 'name', 'reddit', 'created'
     ];
     static $relations = [
         'submissions' => ['type' => 'has_many', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'player_id'],

@@ -5,7 +5,8 @@ if (!$this->request->session('admin')) {
 }
 
 if ($data = $this->request->getPostData()) {
-    $player = new app\models\Player($this->request->getPostData());
+    $data['reddit'] = empty($data['reddit']) ? $data['name'] : $data['reddit'];
+    $player = new app\models\Player($data);
     if ($player->save()) {
         session_start();
         $_SESSION['message'] = "Player created";
@@ -20,7 +21,12 @@ if ($data = $this->request->getPostData()) {
     <fieldset>
         <label>
             <span>Name</span><br />
-            <input type="text" name="name" placeholder="account name" />
+            <input type="text" name="name" />
+        </label>
+        <br />
+        <label>
+            <span>Reddit account (leave empty to duplicate "name" field)</span><br />
+            <input type="text" name="reddit"  />
         </label>
         <br />
         <input type="submit" name="Save">
