@@ -20,7 +20,7 @@ class Challenge extends BaseModel
    
     public static function currentSet(): int
     {
-        $q = "SELECT MAX(`setnr`) AS `current` FROM `challenges`;";
+        $q = "SELECT MAX(`setnr`) AS `current` FROM `challenges` WHERE `draft` = 0;";
         $result = static::db()->query($q);
         return (int) $result[0]['current'];
     }
