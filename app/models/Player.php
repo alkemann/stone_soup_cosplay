@@ -16,7 +16,7 @@ class Player extends BaseModel
 
     public static function list()
     {
-    	$all = static::find();
+    	$all = static::find([],['order' => '`name` ASC']);
     	$list = [];
     	foreach ($all as $p) {
     		$list[$p->id] = $p->name;
@@ -26,7 +26,7 @@ class Player extends BaseModel
 
     public static function scoreboard()
     {
-        $all = static::findAsArray([], ['with' => 'submissions']);
+        $all = static::findAsArray([], ['with' => 'submissions', 'order' => '`name` ASC']);
         foreach ($all as $key => &$player) {
             $score = 0; $stars = 0; $subs = 0;
             foreach ($player->submissions() as $sub) {
