@@ -1,5 +1,6 @@
 <div class="challenge">
 <h2>Set 4, Week 2: Bai Suzhen, Madame White Snake</h2>
+<img src="https://i.imgur.com/edVQdwC.png" />
 <dl>
 	<dt>Species</dt> <dd>Draconian</dd>
 	<dt>Background</dt> <dd>Gladiator (with quarterstaff)</dd>

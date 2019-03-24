@@ -6,8 +6,17 @@ table.challenges_list img {
   height: 1em;
 }
 
-dl dt {
+.challenge {
+  overflow: hidden;
+}
+
+.challenge dt {
   font-weight: bold;
+}
+
+.challenge img {
+  float:right;
+  margin: 0 2em 5em 5em;
 }
 
 body {
