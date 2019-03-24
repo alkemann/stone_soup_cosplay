@@ -27,10 +27,10 @@ class Challenge extends BaseModel
 
     public static function list()
     {
-    	$all = static::find(['draft' => 0]);
+    	$all = static::find(['draft' => 0], ['order' => '`setnr` DESC, `week` DESC']);
     	$list = [];
     	foreach ($all as $p) {
-    		$list[$p->id] = $p->name;
+    		$list[$p->id] = 'Set ' . $p->setnr . ' Week ' . $p->week . ' : ' . $p->name;
     	}
     	return $list;
     }
