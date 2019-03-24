@@ -6,12 +6,12 @@ if (!$this->request->session('admin')) {
 if ($data = $this->request->getPostData()) {
     
     
-    if (0 <= $data['stars'] <= 2) {
+    if (0 <= $data['stars'] && $data['stars'] <= 2) {
         $data['stars'] = (int) $data['stars'];
     } else {
         $errors['stars'] = "Stars must be 0, 1 or 2";
     }
-    if (0 <= $data['score'] <= 50) {
+    if (0 <= $data['score'] && $data['score'] <= 50) {
         $data['score'] = (int) $data['score'];
     } else {
         $errors['score'] = "Score must be between 0 and 50";
