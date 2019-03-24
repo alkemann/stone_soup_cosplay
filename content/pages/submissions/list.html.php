@@ -22,7 +22,7 @@ if (!$this->request->session('admin')) {
 	<?php
 		$submissions = Submission::find(
 			['accepted' => 1],
-			['order' => '`id` DESC', 'with' => ['player', 'challenge']]
+			['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => 50]
 		);
 		foreach ($submissions as $s) :
 	?>
@@ -59,7 +59,7 @@ if (!$this->request->session('admin')) {
 	?>
 	</tbody>
 </table>
-<span style="font-size: 10px;">Flags: <br />
+<span style="font-size: 10px;">Shows 50 latest approved submissions. Flags: <br />
 HS:Current highscore for this challenge. <br />
 AC: Accepted as official scored submission <br />
 ON/OF: Played Online or Offline<br />
