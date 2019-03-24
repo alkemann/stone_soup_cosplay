@@ -1,5 +1,7 @@
 <?php
 
+use \app\models\{Challenge, Player}
+
 if ($data = $this->request->getPostData()) {
     $data['accepted'] = $data['hs'] = 0;
     $sub = new app\models\Submission($data);
@@ -8,24 +10,21 @@ if ($data = $this->request->getPostData()) {
     }
 }
 
+$active = Challenge::active();
+if (!$active) {
+    echo '<h2>No active challenge at this time</h2>';
+    return;
+}
+
 ?>
-<h2>Adding new Submission</h2>
+<h2>Adding new Submission for Set <?=$p->setnr?> Week <?=$p->week?> : <?=$p->name?></h2>
 <form method="POST">
+    <input type="hidden" name="challenge_id" value="<?=$active->id?>" />
     <fieldset>
-        <label>
-            <span>Challenge</span><br />
-            <select name="challenge_id">
-                <?php $challenges = \app\models\Challenge::list();
-                foreach ($challenges as $id => $name) : ?>
-                <option value="<?=$id?>"><?=$name?></option>
-                <?php endforeach; ?>
-            </select>
-        </label>
-        <br />
         <label>
             <span>Player</span><br />
             <select name="player_id">
-                <?php $players = \app\models\Player::list();
+                <?php $players = Player::list();
                 foreach ($players as $id => $name) : ?>
                 <option value="<?=$id?>"><?=$name?></option>
                 <?php endforeach; ?>

@@ -12,17 +12,20 @@ class Challenge extends BaseModel
         'icon', 'reddit',
         'background', 'gods', 'species',
         'conduct_1', 'conduct_2', 'conduct_3', 'bonus_1', 'bonus_2',
-        'draft', 'created'
+        'active', 'draft', 'created'
     ];
      static $relations = [
         'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
     ];
    
-    public static function currentSet(): int
+    public static function active(): ?Challenge
     {
-        $q = "SELECT MAX(`setnr`) AS `current` FROM `challenges` WHERE `draft` = 0;";
-        $result = static::db()->query($q);
-        return (int) $result[0]['current'];
+        $result = static::findAsArray(['active' => 1, 'draft' => 0], ['limit' => 1]);
+        if ($result) {
+            return array_pop($result);
+        } else {
+            return null;
+        }
     }
 
     public static function list()

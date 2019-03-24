@@ -34,9 +34,15 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
-			<span>Draft</span><br />
+			<span>Draft (Drafts are hidden from public)</span><br />
 			<input type="hidden" name="draft" value="0" />
 			<input type="checkbox" name="draft" value="1" <?=($cha->draft)?'checked="checked"':''?> />
+		</label>
+		<br />
+		<label>
+			<span>Active (Only 1 must be active!)</span><br />
+			<input type="hidden" name="active" value="0" />
+			<input type="checkbox" name="active" value="1" <?=($cha->active)?'checked="checked"':''?> />
 		</label>
 		<br />
 		<label>

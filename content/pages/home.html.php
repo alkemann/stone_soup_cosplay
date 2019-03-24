@@ -1,12 +1,15 @@
 <?php
 use app\models\{Challenge, Submission, Player};
 
-	$set = Challenge::currentSet();
+	$active = Challenge::active();
+if ($active) :
+	$set = $active->setnr;
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set]);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2>Set <?=$set?> scoreboard</h2>
+<h2>Active challenge Scoreboard</h2>
+<h3><?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h3>
 <p>See current <a href="/challenges/details/set/4/week/2">challenge details here</a>.</p>	
 <table>
 	<thead>
@@ -55,11 +58,12 @@ for ($i=1; $i < $set; $i++) {
 	echo '<a href="/sets/score?set='.$i.'" >Set totals '.$i.'</a> ';
 }
 ?></div>
-
+<?php else : // no active challengs ?>
+<h3>No currently active challenges</h3>
+<?php endif; // if active ?>
 <br />
 <hr />
-
-<h2>Challenges</h2>
+<h2>Challenge History</h2>
 <table class="challenges_list">
 	<thead>
 		<tr>

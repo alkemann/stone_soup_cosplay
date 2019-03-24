@@ -29,7 +29,7 @@ if (!$this->request->session('admin')) {
 		foreach ($challenges as $c) :
 	?>
 		
-		<tr>
+		<tr <?=($c->active)?'style="active"':''?>>
 			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
 			<td><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><?=$c->setnr?></td>

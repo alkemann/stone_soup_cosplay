@@ -19,6 +19,11 @@ table.challenges_list img {
   margin: 0 2em 5em 5em;
 }
 
+tr.active {
+  font-weight: bold;
+  background-color: #DFF;
+}
+
 body {
   font-family: "Trebuchet MS", "Tahoma", "Verdana", "Sans-Serif";
   font-size: 14px;
