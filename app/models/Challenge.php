@@ -12,7 +12,7 @@ class Challenge extends BaseModel
         'icon', 'reddit',
         'background', 'gods', 'species',
         'conduct_1', 'conduct_2', 'conduct_3', 'bonus_1', 'bonus_2',
-        'created'
+        'draft', 'created'
     ];
      static $relations = [
         'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
@@ -27,7 +27,7 @@ class Challenge extends BaseModel
 
     public static function list()
     {
-    	$all = static::find();
+    	$all = static::find(['draft' => 0]);
     	$list = [];
     	foreach ($all as $p) {
     		$list[$p->id] = $p->name;
@@ -37,14 +37,13 @@ class Challenge extends BaseModel
 
     public static function findBySets(array $conditions = [], array $options = []): array
     {
-        $t = static::$table;
-        $q = "SELECT * FROM `{$t}` ORDER BY `setnr` DESC, `week` DESC";
-        $result = static::db()->query($q);
+        $options['order'] = '`setnr` DESC, `week` DESC';
+        $result = static::find($conditions, $options);
         $all = [];
-        foreach ($result as $row) {
-            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE challenge_id = ' . (int) $row['id']);
-            $row['subs'] = $subs[0]['count'];
-            $all[$row['id']] = new Challenge($row);
+        foreach ($result as $cha) {
+            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE challenge_id = ' . (int) $cha->id);
+            $cha->subs = $subs[0]['count'];
+            $all[$cha->id] = $cha;
         }
 
         return $all;

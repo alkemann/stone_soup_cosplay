@@ -19,6 +19,12 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Draft</span><br />
+			<input type="hidden" name="draft" value="0" />
+			<input type="checkbox" name="draft" value="1" />
+		</label>
+		<br />
+		<label>
 			<span>Set</span><br />
 			<input type="number" name="setnr" placeholder="2" />
 		</label>

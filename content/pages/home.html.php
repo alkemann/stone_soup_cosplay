@@ -71,7 +71,7 @@ use app\models\{Challenge, Submission, Player};
 	</thead>
 	<tbody>
 	<?php
-		$challenges = Challenge::findBySets();
+		$challenges = Challenge::findBySets(['draft' => 0]);
 		foreach ($challenges as $c) :
 	?>
 		<tr>
