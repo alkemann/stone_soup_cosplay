@@ -57,7 +57,7 @@ class Player extends BaseModel
                 WHERE `inner`.`total` > 0 ORDER BY `total` DESC";
         $result = static::db()->query($q);
 
-        $challenges_in_set = Challenge::findAsArray(['setnr' => $set]);
+        $challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0]);
         $scoreboards = [];
         foreach ($challenges_in_set as $c) {
             $scoreboards[$c->id] = Submission::scoreboard($c->id);

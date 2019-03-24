@@ -67,13 +67,15 @@ if ($data = $this->request->getPostData()) {
         </label>
         <br />
         <label>
-            <span>Highscore (use for multiple submissions 0 or 1)</span><br />
-            <input type="text" name="hs" value="<?=$sub->hs?>" />
+            <span>Highscore (use for multiple submissions)</span><br />
+            <input type="hidden" name="hs" value="0" />
+            <input type="checkbox" name="hs" value="0" <?=$sub->hs?'checked="checked"':''?> />
         </label>
         <br />
         <label>
-            <span>Accepted (use for moderation. Set to 0 to remove)</span><br />
-            <input type="text" name="accepted" value="<?=$sub->accepted?>" />
+            <span>Accepted (use for moderation)</span><br />
+            <input type="hidden" name="accepted" value="0" />
+            <input type="checkbox" name="accepted" value="0" <?=$sub->accepted?'checked="checked"':''?> />
         </label>
         <br />
         <input type="submit" name="Save">

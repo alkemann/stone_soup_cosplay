@@ -8,7 +8,7 @@ class Submission extends BaseModel
     static $connection = "default";
     static $table = "submissions";
     static $fields = [
-        'id', 'challenge_id', 'player_id', 'hs',
+        'id', 'challenge_id', 'player_id', 'hs', 'accepted',
         'score', 'stars', 'morgue_url', 'morgue_text',
         'created'
     ];
