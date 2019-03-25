@@ -14,6 +14,10 @@ table.challenges_list img {
   font-weight: bold;
 }
 
+.challenge dd {
+  margin-bottom: 0.75em;
+}
+
 .challenge img {
   float:right;
   margin: 0 2em 5em 5em;

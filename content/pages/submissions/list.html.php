@@ -27,8 +27,8 @@ if (!$this->request->session('admin')) {
 		foreach ($submissions as $s) :
 	?>
 		
-		<tr>
-			<td><?=$s->challenge()->name?></td>
+		<tr><?php $cha = $s->challenge()?>
+			<td><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></td>
 			<td><?=$s->player()->name?></td>
 			<td>
 
