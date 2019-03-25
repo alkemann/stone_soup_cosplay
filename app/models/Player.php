@@ -69,13 +69,13 @@ class Player extends BaseModel
                 $in = false;
                 foreach ($scores as $sub) {
                     if ($row['pid'] == $sub->player_id) {
-                        $row['week'][] = ['score' => $sub->score, 'stars' => $sub->stars];
+                        $row['week'][$cid] = ['score' => $sub->score, 'stars' => $sub->stars];
                         $in = true;
                         break;
                     }
                 }
                 if (!$in) {
-                    $row['week'][] = null;
+                    $row['week'][$cid] = null;
                 }
             }
             $out[] = $row;

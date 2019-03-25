@@ -18,8 +18,8 @@ if ($active) :
 			<th>Player</th>
 			<th>Total</th>
 			<?php 
-			for ($w=1; $w <= $weeks; $w++) { 
-				echo "<th>Week #{$w}</th>";
+			foreach ($challenges_in_set as $c) {
+				echo "<th>Week #{$c->week}</th>";
 			}
 			?>
 		</tr>
@@ -30,7 +30,10 @@ if ($active) :
 			<td><?=$row['player']?></td>
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php 
-			foreach ($row['week'] as $week) {
+
+			foreach ($challenges_in_set as $c) {
+			// foreach ($row['week'] as $week) {
+				$week = $row['week'][$c->id];
 				if ($week == null) {
 					echo "<td>&nbsp;</td>";
 					continue;

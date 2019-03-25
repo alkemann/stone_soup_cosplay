@@ -15,8 +15,8 @@ use app\models\{Challenge, Submission, Player};
 			<th>Player</th>
 			<th>Total</th>
 			<?php 
-			for ($w=1; $w <= $weeks; $w++) { 
-				echo "<th>Week #{$w}</th>";
+			foreach ($challenges_in_set as $c) {
+				echo "<th>Week #{$c->week}</th>";
 			}
 			?>
 		</tr>
