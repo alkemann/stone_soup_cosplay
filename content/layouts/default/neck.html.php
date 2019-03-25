@@ -8,7 +8,6 @@
     	<a href="/logout">Logout</a>
     
 	<?php else : ?>
-       <a href="/submissions/submit">Submit a run</a>
 	   <a href="/admin">Admin</a>
 	<?php endif; ?>		
     </div>

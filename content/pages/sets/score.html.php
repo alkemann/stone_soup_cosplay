@@ -7,6 +7,11 @@ use app\models\{Challenge, Submission, Player};
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2>Set <?=$set?> scoreboard</h2>
+<ol>
+	<?php foreach ($challenges_in_set as $cha) : ?>
+	<li value="<?=$cha->week?>"><b><?=$cha->name?></b> <span style="font-size: smaller">(<?=$cha->species?> <?=$cha->background?> <?=$cha->gods?>)</span></li>
+	<?php endforeach; ?>
+</ol>
 
 <table>
 	<thead>

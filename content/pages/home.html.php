@@ -8,9 +8,11 @@ if ($active) :
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2>Active challenge Scoreboard</h2>
-<h3><?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h3>
-<p>See current <a href="/challenges/details/set/4/week/2">challenge details here</a>.</p>	
+<h2>Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
+<h3><?=$active->species?> <?=$active->background?> <?=$active->gods?></h3>
+<p>See current <a href="/challenges/details/set/4/week/2">challenge details here</a> or <a href="/submissions/submit">Submit a run</a>.</p>
+<hr />
+<h2>Set <?=$active->setnr?> Scoreboard</h2>
 <table>
 	<thead>
 		<tr>
@@ -55,18 +57,19 @@ if ($active) :
 	<?php endforeach; ?>
 	</tbody>
 </table>
-<br />
-<div style="font-size: smaller"><?php
-for ($i=1; $i < $set; $i++) { 
-	echo '<a href="/sets/score?set='.$i.'" >Set totals '.$i.'</a> ';
-}
-?></div>
 <?php else : // no active challengs ?>
 <h3>No currently active challenges</h3>
 <?php endif; // if active ?>
 <br />
 <hr />
 <h2>Challenge History</h2>
+<div style="font-size: smaller">Hstioric scoreboards: <?php
+$historic_sets = Challenge::historicSets();
+foreach ($historic_sets as $s => $count) {
+	echo '<a href="/sets/score?set='.$s.'" >Set '.$s. ' ('.$count.')</a> ';
+}
+?></div>
+<br />
 <table class="challenges_list">
 	<thead>
 		<tr>

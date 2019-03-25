@@ -18,6 +18,20 @@ class Challenge extends BaseModel
         'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
     ];
    
+    public static function historicSets(): array
+    {
+        $q = "SELECT `setnr`, COUNT(`setnr`) as `count` FROM `submissions` AS `s` ".
+        "LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`) ".
+        "WHERE `hs` = 1 AND `accepted` = 1 AND `score` > 0 GROUP BY `setnr` ORDER BY `setnr` ASC;";
+        $result = static::db()->query($q);
+        if (!$result) return [];
+        $out = [];
+        foreach ($result as $row) {
+            $out[$row['setnr']] = $row['count'];
+        }
+        return $out;
+    }
+
     public static function active(): ?Challenge
     {
         $result = static::findAsArray(['active' => 1, 'draft' => 0], ['limit' => 1]);
