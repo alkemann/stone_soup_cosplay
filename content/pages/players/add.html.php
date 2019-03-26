@@ -6,6 +6,7 @@ if (!$this->request->session('admin')) {
 
 if ($data = $this->request->getPostData()) {
     $data['reddit'] = empty($data['reddit']) ? $data['name'] : $data['reddit'];
+    $data['discord'] = empty($data['discord']) ? $data['name'] : $data['discord'];
     $player = new app\models\Player($data);
     if ($player->save()) {
         session_start();
@@ -27,6 +28,11 @@ if ($data = $this->request->getPostData()) {
         <label>
             <span>Reddit account (leave empty to duplicate "name" field)</span><br />
             <input type="text" name="reddit"  />
+        </label>
+        <br />
+        <label>
+            <span>Discord name (leave empty to duplicate "name" field)</span><br />
+            <input type="text" name="discord"  />
         </label>
         <br />
         <input type="submit" name="Save">
