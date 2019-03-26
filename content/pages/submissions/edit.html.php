@@ -83,14 +83,14 @@ if ($data = $this->request->getPostData()) {
         </label>
         <br />
         <label>
-            <span>Comment</span><br />
-            <input type="text" name="comment" value="<?=$sub->comment?>"  />
-        </label>
-        <br />
-        <label>
             <span>Played online</span><br />
             <input type="hidden" name="online" value="0" />
             <input type="checkbox" name="online" value="1" <?=$sub->online?'checked="checked"':''?> />
+        </label>
+        <br />
+        <label>
+            <span>Comment</span><br />
+            <textarea name="comment" rows="5" cols="100" ><?=$sub->comment?></textarea>
         </label>
         <br />
         <input type="submit" name="Save">

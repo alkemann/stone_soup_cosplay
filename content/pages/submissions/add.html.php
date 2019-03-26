@@ -74,7 +74,11 @@ if ($data = $this->request->getPostData()) {
             <input type="hidden" name="accepted" value="0" />
             <input type="checkbox" name="accepted" value="1" checked="checked" />
         </label>
-
+        <br />
+        <label>
+            <span>Comment</span><br />
+            <textarea name="comment" rows="5" cols="100" ></textarea>
+        </label>
         <!-- 
         <br />
         <span style="font-size: smaller; color: red;">Only URL or dump</span>

@@ -14,7 +14,7 @@
     <div class="page_content">
         <div class="heading">
             <h1><a href="/">Crawl Cosplay Challenge</a></h1>
-            <div class="fineprint">CCC Discord server: <a href="https://discord.gg/ZQ4kk6n" target="_blank">https://discord.gg/ZQ4kk6n</a></div>
+            <div class="fineprint">Come chat with us on the offical CCC Discord server: <a href="https://discord.gg/ZQ4kk6n" target="_blank">https://discord.gg/ZQ4kk6n</a></div>
         </div>
         <hr />
         <div class="content">

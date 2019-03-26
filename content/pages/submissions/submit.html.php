@@ -44,7 +44,7 @@ if (!$active) {
         <br />
         <label>
             <span>Comment</span><br />
-            <input type="text" name="comment" placeholder="Estimate of points and stars?" />
+            <textarea name="comment" placeholder="Estimate of points and stars?" rows="5" cols="100" ></textarea>
         </label>
         <br />
         <!-- 

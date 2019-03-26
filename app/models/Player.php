@@ -8,7 +8,7 @@ class Player extends BaseModel
     static $connection = "default";
     static $table = "players";
     static $fields = [
-        'id', 'name', 'reddit', 'created'
+        'id', 'name', 'reddit', 'discord', 'created'
     ];
     static $relations = [
         'submissions' => ['type' => 'has_many', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'player_id'],
@@ -19,9 +19,30 @@ class Player extends BaseModel
     	$all = static::find([],['order' => '`name` ASC']);
     	$list = [];
     	foreach ($all as $p) {
-    		$list[$p->id] = $p->name;
+            $list[$p->id] = $p->listName();
     	}
     	return $list;
+    }
+
+    public function listName(): string
+    {
+        $name = $this->name;
+        if ($this->name != $this->reddit || $this->name != $this->discord) {
+            $name .= " (";
+        }
+        if ($this->name != $this->reddit) {
+            $name .= $this->reddit;
+        }
+        if ($this->name != $this->discord) {
+            if ($this->name != $this->reddit) {
+                $name .= " ";
+            }
+            $name .= $this->discord;
+        }
+        if ($this->name != $this->reddit || $this->name != $this->discord) {
+            $name .= ")";
+        }
+        return $name;
     }
 
     public static function scoreboard()
