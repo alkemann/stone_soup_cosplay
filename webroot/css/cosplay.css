@@ -13,7 +13,7 @@ table.table_for_layout {
   border: none;
   font-size: 1em;
 }
-table.table_for_layout th {
+table.table_for_layout th, table.table_for_layout td {
   padding-right: 2em;
   border: none;
   background-color: transparent;
