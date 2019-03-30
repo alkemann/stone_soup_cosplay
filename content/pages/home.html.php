@@ -10,7 +10,7 @@ if ($active) :
 ?>
 <h2><?php if ($active->icon): ?><img src="<?=$active->icon?>" class="head-icon" height="24px" /> <?php endif; ?>Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
 <h3><?=$active->species?> <?=$active->background?> <?=$active->gods?></h3>
-<p>See current <a href="/challenges/details/set/4/week/3">challenge details here</a> or <a href="/submissions/submit">Submit a run</a>.</p>
+<p>See current <a href="/challenges/details?id=<?=$active->id?>">challenge details here</a> or <a href="/submissions/submit">Submit a run</a>.</p>
 <hr />
 <h2>Set <?=$active->setnr?> Scoreboard</h2>
 <ol>
