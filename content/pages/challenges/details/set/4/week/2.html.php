@@ -1,7 +1,7 @@
 <div class="challenge">
 
 <h2>Set 4, Week 2: Bai Suzhen, Madame White Snake</h2>
-<img src="https://i.imgur.com/edVQdwC.png" />
+<img src="https://i.imgur.com/edVQdwC.png" class="detail" />
 
 <dl>
 	<dt>Species</dt>

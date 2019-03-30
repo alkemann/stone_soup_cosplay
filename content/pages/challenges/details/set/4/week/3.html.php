@@ -1,7 +1,7 @@
 <div class="challenge">
 
-<h2>Set 4, Week 3: Khufu the Undying Pharaoh/h2>
-<img src="https://i.imgur.com/edVQdwC.png" />
+<h2>Set 4, Week 3: Khufu the Undying Pharaoh</h2>
+<img src="https://i.imgur.com/OQHErB7.png" class="detail" />
 
 <dl>
 	<dt>Species</dt>
