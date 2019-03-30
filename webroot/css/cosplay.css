@@ -2,6 +2,14 @@ input[type="text"] {
 	width: 70%;
 }
 
+.heading a {
+  color: #333;
+}
+
+h2 img {
+  height: 1em;
+}
+
 table.challenges_list img {
   height: 2.5em;
 }
