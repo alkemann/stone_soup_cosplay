@@ -27,7 +27,7 @@ if ($active) :
 			<?php 
 			foreach ($challenges_in_set as $c) {
 				echo '<th>';
-				if ($cha->icon) echo '<img src="'.$cha->icon.'" style="height: 1.5em" /> ';
+				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
 				echo "#{$c->week}</th>";
 			}
 			?>
