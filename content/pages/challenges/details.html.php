@@ -15,7 +15,7 @@ if (!$cha) {
 <div class="challenge">
 
 <h2>Set <?=$cha->setnr?> Week <?=$cha->week?> : <?=$cha->name?></h2>
-<?php if ($cha->icon) : ?><img src="https://i.imgur.com/edVQdwC.png" class="detail" /><?php endif; ?>
+<?php if ($cha->icon) : ?><img src="<?=$cha->icon?>" class="detail" /><?php endif; ?>
 
 <dl>
 	<dt>Species</dt><dd><?=$cha->species?></dd>
