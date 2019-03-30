@@ -1,7 +1,8 @@
 <div class="page information">
     <div class="toplinks">
-    <?php if ($this->request->session('admin')) : ?>
         <a href="/">Home</a>
+        <a href="/history">History</a>
+    <?php if ($this->request->session('admin')) : ?>
         <a href="/challenges/list">Challenges</a>(<a href="/challenges/add">add</a>)
     	<a href="/submissions/list">Approved Subs</a> <a href="/submissions/moderate">Moderate Subs</a> (<a href="/submissions/add">add</a>)
         <a href="/players/list">Players</a>(<a href="/players/add">add</a>)
