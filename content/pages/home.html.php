@@ -15,7 +15,7 @@ if ($active) :
 <h2>Set <?=$active->setnr?> Scoreboard</h2>
 <ol>
 	<?php foreach ($challenges_in_set as $cha) : ?>
-	<li value="<?=$cha->week?>"><b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b> <span style="font-size: smaller">(<?=$cha->species?> <?=$cha->background?> <?=$cha->gods?>)</span></li>
+	<li value="<?=$cha->week?>"><?php if ($cha->icon):?><img src="<?=$cha->icon?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b> <span style="font-size: smaller">(<?=$cha->species?> <?=$cha->background?> <?=$cha->gods?>)</span></li>
 	<?php endforeach; ?>
 </ol>
 <table class="bordered">
@@ -26,7 +26,9 @@ if ($active) :
 			<th>Total</th>
 			<?php 
 			foreach ($challenges_in_set as $c) {
-				echo "<th>Week #{$c->week}</th>";
+				echo '<th>';
+				if ($cha->icon) echo '<img src="'.$cha->icon.'" style="height: 1.5em" /> ';
+				echo "#{$c->week}</th>";
 			}
 			?>
 		</tr>
