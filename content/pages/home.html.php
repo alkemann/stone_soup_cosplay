@@ -13,7 +13,12 @@ if ($active) :
 <p>See current <a href="/challenges/details/set/4/week/3">challenge details here</a> or <a href="/submissions/submit">Submit a run</a>.</p>
 <hr />
 <h2>Set <?=$active->setnr?> Scoreboard</h2>
-<table>
+<ol>
+	<?php foreach ($challenges_in_set as $cha) : ?>
+	<li value="<?=$cha->week?>"><b><?=$cha->name?></b> <span style="font-size: smaller">(<?=$cha->species?> <?=$cha->background?> <?=$cha->gods?>)</span></li>
+	<?php endforeach; ?>
+</ol>
+<table class="bordered">
 	<thead>
 		<tr>
 			<!-- <th>id</th> -->
@@ -27,8 +32,8 @@ if ($active) :
 		</tr>
 	</thead>
 	<tbody><?php 
-	foreach ($scores as $row) : ?>
-		<tr>
+	foreach ($scores as $i => $row) : ?>
+		<tr class="<?=$i%2==0?'odd':'even'?>">
 			<td><?=$row['player']?></td>
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php 
@@ -70,7 +75,7 @@ foreach ($historic_sets as $s => $count) {
 }
 ?></div>
 <br />
-<table class="challenges_list">
+<table class="challenges_list bordered">
 	<thead>
 		<tr>
 			<th>&nbsp;</th>
@@ -88,9 +93,10 @@ foreach ($historic_sets as $s => $count) {
 	<tbody>
 	<?php
 		$challenges = Challenge::findBySets(['draft' => 0]);
+		$i = 0;
 		foreach ($challenges as $c) :
 	?>
-		<tr>
+		<tr class="<?=$i++%2==0?'odd':'even'?>">
 			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
 			<td><?=$c->name?></td>
 			<td><?=$c->setnr?></td>

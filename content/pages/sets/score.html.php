@@ -13,7 +13,7 @@ use app\models\{Challenge, Submission, Player};
 	<?php endforeach; ?>
 </ol>
 
-<table>
+<table class="bordered">
 	<thead>
 		<tr>
 			<!-- <th>id</th> -->
@@ -26,9 +26,9 @@ use app\models\{Challenge, Submission, Player};
 			?>
 		</tr>
 	</thead>
-	<tbody><?php 
+	<tbody><?php $r = 0;
 	foreach ($scores as $row) : ?>
-		<tr>
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$row['player']?></td>
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php 

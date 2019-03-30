@@ -7,7 +7,7 @@ if (!$this->request->session('admin')) {
 
 ?>
 <h2>Players</h2>
-<table>
+<table class="bordered">
 	<thead>
 		<tr>
 			<!-- <th>id</th> -->
@@ -21,10 +21,10 @@ if (!$this->request->session('admin')) {
 	<tbody>
 	<?php
 		$players = Player::scoreboard();
+		$r = 0;
 		foreach ($players as $player) :
 	?>
-		
-		<tr>
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<!-- <td><?=$player->id?></td> -->
 			<td><?=$player->name?> (<?=$player->reddit?>) </td>
 			<td><?=$player->subs?></td>

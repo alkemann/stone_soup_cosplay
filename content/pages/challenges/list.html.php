@@ -7,7 +7,7 @@ if (!$this->request->session('admin')) {
 
 ?>
 <h2>Challenges</h2>
-<table class="challenges_list">
+<table class="challenges_list bordered">
 	<thead>
 		<tr>
 			<th>&nbsp;</th>
@@ -26,10 +26,11 @@ if (!$this->request->session('admin')) {
 	<tbody>
 	<?php
 		$challenges = Challenge::findBySets();
+		$r = 0;
 		foreach ($challenges as $c) :
 	?>
 		
-		<tr <?=($c->active)?'style="active"':''?>>
+		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
 			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
 			<td><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><?=$c->setnr?></td>

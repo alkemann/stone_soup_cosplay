@@ -7,7 +7,7 @@ if (!$this->request->session('admin')) {
 
 ?>
 <h2>Submissions</h2>
-<table>
+<table class="bordered">
 	<thead>
 		<tr>
 			<th>Challenge</th>
@@ -21,10 +21,11 @@ if (!$this->request->session('admin')) {
 	<tbody>
 	<?php
 		$submissions = Submission::find(['accepted' => 0],['order' => '`id` DESC', 'with' => ['player', 'challenge']]);
+		$r = 0;
 		foreach ($submissions as $s) :
 	?>
 		
-		<tr>
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->challenge()->name?></td>
 			<td><?=$s->player()->name?></td>
 			<td>

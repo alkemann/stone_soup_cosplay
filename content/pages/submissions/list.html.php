@@ -7,7 +7,7 @@ if (!$this->request->session('admin')) {
 
 ?>
 <h2>Submissions</h2>
-<table>
+<table class="bordered">
 	<thead>
 		<tr>
 			<th>Challenge</th>
@@ -24,10 +24,12 @@ if (!$this->request->session('admin')) {
 			['accepted' => 1],
 			['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => 50]
 		);
+		$r = 0;
 		foreach ($submissions as $s) :
 	?>
 		
-		<tr><?php $cha = $s->challenge()?>
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
+			<?php $cha = $s->challenge()?>
 			<td><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></td>
 			<td><?=$s->player()->name?></td>
 			<td>
