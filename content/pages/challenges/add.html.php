@@ -59,6 +59,56 @@ if ($data = $this->request->getPostData()) {
 			<input type="text" name="icon" placeholder="https://i.imgur.com/kjsdasd.png" />
 		</label>
 		<br />
+		<label>
+			<span>Conduct 1 Name</span><br />
+			<input type="text" name="conduct_name_1" value="" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 1 Description</span><br />
+			<textarea name="conduct_1" cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Conduct 2 Name</span><br />
+			<input type="text" name="conduct_name_2" value="" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 2 Description</span><br />
+			<textarea name="conduct_2" cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Conduct 3 Name</span><br />
+			<input type="text" name="conduct_name_3" value="" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 3 Description</span><br />
+			<textarea name="conduct_3" cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Bonus 1 Name</span><br />
+			<input type="text" name="bonus_name_1" value="" />
+		</label>
+		<br />
+		<label>
+			<span>Bonus 1 Description</span><br />
+			<textarea name="bonus_1" cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Bonus 2 Name</span><br />
+			<input type="text" name="bonus_name_2" value="" />
+		</label>
+		<br />
+		<label>
+			<span>Bonus 2 Description</span><br />
+			<textarea name="bonus_2" cols="100" rows="3"></textarea>
+		</label>
+		<br />
 		<input type="submit" name="Save">
 	</fieldset>
 </form>

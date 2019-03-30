@@ -12,6 +12,7 @@ class Challenge extends BaseModel
         'icon', 'reddit',
         'background', 'gods', 'species',
         'conduct_1', 'conduct_2', 'conduct_3', 'bonus_1', 'bonus_2',
+        'conduct_name_1', 'conduct_name_2', 'conduct_name_3', 'bonus_name_1', 'bonus_name_2',
         'active', 'draft', 'created'
     ];
      static $relations = [

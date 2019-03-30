@@ -105,7 +105,7 @@ foreach ($historic_sets as $s => $count) {
 			<td><?=$c->gods?></td>
 			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
-			<td><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> <a href="<?=$c->reddit?>">Reddit</a> <a href="/challenges/details/set/<?=$c->setnr?>/week/<?=$c->week?>">Details</a></td>
+			<td><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> <a href="<?=$c->reddit?>">Reddit</a> <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
 		</tr>
 	<?php
 		endforeach;

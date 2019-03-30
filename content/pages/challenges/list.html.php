@@ -40,7 +40,7 @@ if (!$this->request->session('admin')) {
 			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
 			<td><a href="/challenges/scores?id=<?=$c->id?>">See scores</a></td>
-			<td><a href="/challenges/edit?id=<?=$c->id?>">Edit</a> <a href="/challenges/details/set/<?=$c->setnr?>/week/<?=$c->week?>">Details</a></td>
+			<td><a href="/challenges/edit?id=<?=$c->id?>">Edit</a> <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
 		</tr>
 
 	<?php

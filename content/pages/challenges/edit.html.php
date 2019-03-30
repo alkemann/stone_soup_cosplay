@@ -25,7 +25,7 @@ if ($data = $this->request->getPostData()) {
 }
 	
 ?>
-<h2>Adding new Challenge</h2>
+<h2>Edit: <?=$cha->name?></h2>
 <form method="POST">
 	<fieldset>
 		<label>
@@ -78,6 +78,56 @@ if ($data = $this->request->getPostData()) {
 		<label>
 			<span>Character icon image</span><br />
 			<input type="text" name="icon"  value="<?=$cha->icon?>" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 1 Name</span><br />
+			<input type="text" name="conduct_name_1" value="<?=$cha->conduct_name_1?>" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 1 Description</span><br />
+			<textarea name="conduct_1" cols="100" rows="3"><?=$cha->conduct_1?></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Conduct 2 Name</span><br />
+			<input type="text" name="conduct_name_2" value="<?=$cha->conduct_name_2?>" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 2 Description</span><br />
+			<textarea name="conduct_2" cols="100" rows="3"><?=$cha->conduct_2?></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Conduct 3 Name</span><br />
+			<input type="text" name="conduct_name_3" value="<?=$cha->conduct_name_3?>" />
+		</label>
+		<br />
+		<label>
+			<span>Conduct 3 Description</span><br />
+			<textarea name="conduct_3" cols="100" rows="3"><?=$cha->conduct_3?></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Bonus 1 Name</span><br />
+			<input type="text" name="bonus_name_1" value="<?=$cha->bonus_name_1?>" />
+		</label>
+		<br />
+		<label>
+			<span>Bonus 1 Description</span><br />
+			<textarea name="bonus_1" cols="100" rows="3"><?=$cha->bonus_1?></textarea>
+		</label>
+		<br />
+		<label>
+			<span>Bonus 2 Name</span><br />
+			<input type="text" name="bonus_name_2" value="<?=$cha->bonus_name_2?>" />
+		</label>
+		<br />
+		<label>
+			<span>Bonus 2 Description</span><br />
+			<textarea name="bonus_2" cols="100" rows="3"><?=$cha->bonus_2?></textarea>
 		</label>
 		<br />
 		<input type="submit" name="Save">
