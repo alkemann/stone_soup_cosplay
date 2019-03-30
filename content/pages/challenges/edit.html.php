@@ -76,6 +76,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Wiki URL</span><br />
+			<input type="text" name="wiki" value="<?=$cha->wiki?>" />
+		</label>
+		<br />
+		<label>
 			<span>Character icon image</span><br />
 			<input type="text" name="icon"  value="<?=$cha->icon?>" />
 		</label>

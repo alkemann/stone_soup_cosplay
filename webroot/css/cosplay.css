@@ -2,6 +2,24 @@ input[type="text"] {
 	width: 70%;
 }
 
+dd {
+ margin-left: 0;
+ margin-top: 0.2em;
+}
+
+table.table_for_layout {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 1em;
+}
+table.table_for_layout th {
+  padding-right: 2em;
+  border: none;
+  background-color: transparent;
+}
+
+
 .heading a {
   color: #333;
 }
@@ -12,6 +30,11 @@ table.challenges_list img {
 
 .challenge {
   overflow: hidden;
+}
+
+.challenge p.info {
+  font-size: 0.85em;
+  color: #777;
 }
 
 .challenge h3 {

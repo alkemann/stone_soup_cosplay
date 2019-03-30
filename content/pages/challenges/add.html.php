@@ -55,6 +55,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Wiki URL</span><br />
+			<input type="text" name="wiki" placeholder="http://crawl.chaosforge.org/Bai_Suzhen" />
+		</label>
+		<br />
+		<label>
 			<span>Character icon image</span><br />
 			<input type="text" name="icon" placeholder="https://i.imgur.com/kjsdasd.png" />
 		</label>
