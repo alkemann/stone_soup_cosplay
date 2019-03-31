@@ -30,7 +30,7 @@ if (!$this->request->session('admin')) {
 			<td><?=$player->subs?></td>
 			<td><?=$player->score?></td>
 			<td><?=$player->stars?></td>
-			<td><a href="/players/edit?id=<?=$player->id?>">Edit</a></td>
+			<td><a href="/players/edit?id=<?=$player->id?>">Edit</a> <a href="/players/submissions?id=<?=$player->id?>">Submissions</a></td>
 		</tr>
 
 	<?php
