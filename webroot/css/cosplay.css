@@ -19,6 +19,10 @@ table.table_for_layout th, table.table_for_layout td {
   background-color: transparent;
 }
 
+footer {
+  font-size: 0.75em;
+  color: #888;
+}
 
 .heading a {
   color: #333;
