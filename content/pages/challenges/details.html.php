@@ -15,7 +15,7 @@ if (!$cha) {
 <div class="challenge">
 
 <h2>Set <?=$cha->setnr?> Week <?=$cha->week?> : <?=$cha->name?></h2>
-<?php if ($cha->wiki): ?><p>View the <a href="<?=$cha->wiki?>">wikipedia page</a> for the unique this challenge is based on.</p> <?php endif; ?>
+<?php if ($cha->wiki): ?><p>View the <a href="<?=$cha->wiki?>">wiki page</a> for the unique monster this challenge is based on.</p> <?php endif; ?>
 <?php if ($cha->icon) : ?><img src="<?=$cha->icon?>" class="detail" /><?php endif; ?>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
