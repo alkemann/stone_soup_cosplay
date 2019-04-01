@@ -1,12 +1,12 @@
 <div class="page information">
     <div class="toplinks">
         <a href="/">Home</a>
-        <a href="/history">History</a>
+        | <a href="/history">History</a>
     <?php if ($this->request->session('admin')) : ?>
-        <a href="/challenges/list">Challenges</a>(<a href="/challenges/add">add</a>)
-    	<a href="/submissions/list">Approved Subs</a> <a href="/submissions/moderate">Moderate Subs</a> (<a href="/submissions/add">add</a>)
-        <a href="/players/list">Players</a>(<a href="/players/add">add</a>)
-    	<a href="/logout">Logout</a>
+        | Subs <a href="/submissions/list">Official</a> <a href="/submissions/moderate">Moderate</a> <a href="/submissions/add">New</a>
+        | Players <a href="/players/list">List</a> <a href="/players/add">New</a>
+    	| Challenges <a href="/challenges/list">List</a> <a href="/challenges/add">New</a>
+        | <a href="/logout">Logout</a>
     
 	<?php else : ?>
 	   <a href="/admin">Admin</a>
