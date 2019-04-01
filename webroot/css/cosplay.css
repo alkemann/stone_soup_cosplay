@@ -24,7 +24,14 @@ footer {
   color: #888;
 }
 
-.heading a {
+.actions-td {
+  white-space: nowrap;
+}
+.actions-td a, .actions-td a:visited  {
+  color: #336;
+}
+
+.heading a, .heading a:visited {
   color: #333;
 }
 

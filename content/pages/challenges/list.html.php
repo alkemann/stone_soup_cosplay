@@ -10,15 +10,13 @@ if (!$this->request->session('admin')) {
 <table class="challenges_list bordered">
 	<thead>
 		<tr>
-			<th>&nbsp;</th>
+			<th>S.W</th>
+			<th>Icon</th>
 			<th>Name</th>
-			<th>Set</th>
-			<th>Week</th>
 			<th>Background</th>
 			<th>Gods</th>
 			<th>Species</th>
-			<th>Submissions</th>
-			<th>Scores</th>
+			<th>#</th>
 			<th>Actions</th>
 			
 		</tr>
@@ -31,16 +29,14 @@ if (!$this->request->session('admin')) {
 	?>
 		
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
+			<td><?=$c->setnr?>.<?=$c->week?></td>
 			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
-			<td><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
-			<td><?=$c->setnr?></td>
-			<td><?=$c->week?></td>
+			<td class="actions-td"><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><?=$c->background?></td>
 			<td><?=$c->gods?></td>
 			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
-			<td><a href="/challenges/scores?id=<?=$c->id?>">See scores</a></td>
-			<td><a href="/challenges/edit?id=<?=$c->id?>">Edit</a> <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
+			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
 		</tr>
 
 	<?php
