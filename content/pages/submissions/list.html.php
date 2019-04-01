@@ -20,9 +20,13 @@ if (!$this->request->session('admin')) {
 	</thead>
 	<tbody>
 	<?php
-		$submissions = Submission::find(
+		$page_size = 20;
+		$page = $_GET['page'] ?? 1;
+		$offset = (int) ($page - 1) * $page_size;
+
+		$submissions = Submission::findAsArray(
 			['accepted' => 1],
-			['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => 50]
+			['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => $page_size, 'offset' => $offset]
 		);
 		$r = 0;
 		foreach ($submissions as $s) :
@@ -67,3 +71,7 @@ AC: Accepted as official scored submission <br />
 ON/OF: Played Online or Offline<br />
 CO: Submission has comments
 </span>
+<p>
+<?php if ($page > 1) : ?><a href="/submissions/list?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
+<?php if (sizeof($submissions) == $page_size) : ?><a href="/submissions/list?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>
+</p>
