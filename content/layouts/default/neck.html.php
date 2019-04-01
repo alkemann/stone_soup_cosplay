@@ -9,7 +9,7 @@
         | <a href="/logout">Logout</a>
     
 	<?php else : ?>
-	   <a href="/admin">Admin</a>
+	   | <a href="/admin">Admin</a>
 	<?php endif; ?>		
     </div>
     <div class="page_content">
