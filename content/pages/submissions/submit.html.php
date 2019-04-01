@@ -1,14 +1,6 @@
 <?php
 
-use \app\models\{Challenge, Player};
-
-if ($data = $this->request->getPostData()) {
-    $data['accepted'] = $data['hs'] = 0;
-    $sub = new app\models\Submission($data);
-    if ($sub->save()) {
-        return $this->request->redirect('/submissions/list');
-    }
-}
+use \app\models\{Challenge, Player, Submission};
 
 $active = Challenge::active();
 if (!$active) {
@@ -16,10 +8,19 @@ if (!$active) {
     return;
 }
 
+if ($data = $this->request->getPostData()) {
+    $data['challenge_id'] = $active->id;
+    $data['accepted'] = $data['hs'] = 0;
+    $sub = new app\models\Submission($data);
+    if ($sub->save()) {
+        Submission::sendToModeration(['challenge_id' => $active->id, 'player_id' => $data['player_id']]);
+        return $this->request->redirect('/submissions/list');
+    }
+}
+
 ?>
 <h2>Adding new Submission for Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
 <form method="POST">
-    <input type="hidden" name="challenge_id" value="<?=$active->id?>" />
     <fieldset>
         <label>
             <span>Player</span><br />
@@ -33,27 +34,19 @@ if (!$active) {
         <br />
         <label>
             <span>Morgue URL</span><br />
-            <input type="text" name="morgue_url" placeholder="http://example.com" />
+            <input type="text" name="morgue_url" placeholder="http://example.com" required="required" />
         </label>
         <br />
         <label>
             <span>Played online</span><br />
-            <input type="hidden" name="accepted" value="0" />
-            <input type="checkbox" name="accepted" value="1" checked="checked" />
+            <input type="hidden" name="online" value="0" />
+            <input type="checkbox" name="online" value="1" checked="checked" />
         </label>
         <br />
         <label>
             <span>Comment</span><br />
             <textarea name="comment" placeholder="Estimate of points and stars?" rows="5" cols="100" ></textarea>
         </label>
-        <br />
-        <!-- 
-        <span style="font-size: smaller; color: red;">Only URL or dump</span>
-        <br />
-        <label>
-            <span>Morgue Dump (offline)</span><br />
-            <textarea name="morgue_text" placeholder="Blah blah"></textarea>
-        </label> -->
         <br />
         <input type="submit" name="Save">
     </fieldset>
