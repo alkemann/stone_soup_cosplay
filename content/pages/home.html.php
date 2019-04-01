@@ -9,6 +9,7 @@ if ($active) :
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2><?php if ($active->icon): ?><img src="<?=$active->icon?>" class="head-icon" height="24px" /> <?php endif; ?>Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
+<p style="font-style: italic; color: #777;"><?=$active->description?></p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$active->species?></td><td><?=$active->background?><td><?=$active->gods?></td></tr>

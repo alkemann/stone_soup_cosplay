@@ -8,7 +8,7 @@ class Challenge extends BaseModel
     static $connection = "default";
     static $table = "challenges";
     static $fields = [
-        'id', 'name', 'setnr', 'week',
+        'id', 'name', 'description', 'setnr', 'week',
         'icon', 'reddit', 'wiki',
         'background', 'gods', 'species',
         'conduct_1', 'conduct_2', 'conduct_3', 'bonus_1', 'bonus_2',

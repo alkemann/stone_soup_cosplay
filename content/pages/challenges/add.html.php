@@ -19,6 +19,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Description</span><br />
+			<textarea name="description" placeholder="Description of the unique or details about the challenge"  cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<label>
 			<span>Draft</span><br />
 			<input type="hidden" name="draft" value="0" />
 			<input type="checkbox" name="draft" value="1" />

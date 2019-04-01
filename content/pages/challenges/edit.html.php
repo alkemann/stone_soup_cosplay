@@ -34,6 +34,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Description</span><br />
+			<textarea name="description" cols="100" rows="3"><?=$cha->description?></textarea>
+		</label>
+		<br />
+		<label>
 			<span>Draft (Drafts are hidden from public)</span><br />
 			<input type="hidden" name="draft" value="0" />
 			<input type="checkbox" name="draft" value="1" <?=($cha->draft)?'checked="checked"':''?> />
