@@ -23,7 +23,8 @@ if (!$this->request->session('admin')) {
 	</thead>
 	<tbody>
 	<?php
-		$challenges = Challenge::findBySets();
+		// Supports limit and offset as first and second params for pagination, first param includes drafts
+		$challenges = Challenge::findBySets(true); 
 		$r = 0;
 		foreach ($challenges as $c) :
 	?>

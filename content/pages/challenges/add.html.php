@@ -31,12 +31,12 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<label>
 			<span>Set</span><br />
-			<input type="number" name="setnr" placeholder="2" />
+			<input type="number" name="setnr" placeholder="2" required="required" />
 		</label>
 		<br />
 		<label>
 			<span>Week</span><br />
-			<input type="number" name="week" placeholder="2" />
+			<input type="number" name="week" placeholder="2" required="required" />
 		</label>
 		<br />
 		<label>

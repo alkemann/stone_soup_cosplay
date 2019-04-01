@@ -43,6 +43,12 @@ class Challenge extends BaseModel
         }
     }
 
+    public static function deactivateAll(): bool
+    {
+        $res = static::db()->update(static::$table, ['active' => 1], ['active' => 0]);
+        return $res > 0;
+    }
+
     public static function list()
     {
     	$all = static::find(['draft' => 0], ['order' => '`setnr` DESC, `week` DESC']);
@@ -53,17 +59,19 @@ class Challenge extends BaseModel
     	return $list;
     }
 
-    public static function findBySets(array $conditions = [], array $options = []): array
+    public static function findBySets(bool $include_drafts, int $limit = 50, int $offset = 0): array
     {
-        $options['order'] = '`setnr` DESC, `week` DESC';
-        $result = static::find($conditions, $options);
+        $query = 'SELECT `c`.*, COUNT(`s`.`id`) AS `subs` FROM `challenges` AS `c` '.
+            'LEFT JOIN `submissions` AS `s` ON (`s`.`challenge_id` = `c`.`id` AND `s`.`hs` = 1 AND `s`.`accepted` = 1) ';
+        $query .= ($include_drafts) ? '' : 'WHERE `draft` = 0 ';
+        $query .= 'GROUP BY `c`.`id` '.
+            'ORDER BY `c`.`setnr` DESC, `c`.`week` DESC '.
+            "LIMIT {$offset},{$limit};";
+        $result = static::db()->query($query);
         $all = [];
-        foreach ($result as $cha) {
-            $subs = Submission::db()->query('SELECT COUNT(1) AS `count` FROM submissions WHERE `hs` = 1 AND `accepted` = 1 AND challenge_id = ' . (int) $cha->id);
-            $cha->subs = $subs[0]['count'];
-            $all[$cha->id] = $cha;
+        foreach ($result as $row) {
+            $all[$row['id']] = new Challenge($row);
         }
-
         return $all;
     }
 }

@@ -28,7 +28,7 @@ foreach ($historic_sets as $s => $count) {
 	</thead>
 	<tbody>
 	<?php
-		$challenges = Challenge::findBySets(['draft' => 0]);
+		$challenges = Challenge::findBySets(false);
 		$i = 0;
 		foreach ($challenges as $c) :
 	?>

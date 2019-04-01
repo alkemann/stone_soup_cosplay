@@ -20,6 +20,9 @@ if (!$cha) {
 
 
 if ($data = $this->request->getPostData()) {
+	if ($data['active'] == '1' && $cha->active == 0) {
+		Challenge::deactivateAll();
+	}
 	$cha->save($data);
 	return $this->request->redirect('/');
 }
@@ -28,6 +31,9 @@ if ($data = $this->request->getPostData()) {
 <h2>Edit: <?=$cha->name?></h2>
 <form method="POST">
 	<fieldset>
+		<input type="submit" name="Save">
+		<br />
+		<br />
 		<label>
 			<span>Name</span><br />
 			<input type="text" name="name" value="<?=$cha->name?>" />
@@ -45,7 +51,7 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
-			<span>Active (Only 1 must be active!)</span><br />
+			<span>Active (will deactivate currently active)</span><br />
 			<input type="hidden" name="active" value="0" />
 			<input type="checkbox" name="active" value="1" <?=($cha->active)?'checked="checked"':''?> />
 		</label>

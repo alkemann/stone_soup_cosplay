@@ -45,7 +45,6 @@ if ($active) :
 			<?php 
 
 			foreach ($challenges_in_set as $c) {
-			// foreach ($row['week'] as $week) {
 				$week = $row['week'][$c->id];
 				if ($week == null) {
 					echo "<td>&nbsp;</td>";
