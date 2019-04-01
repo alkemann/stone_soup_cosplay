@@ -26,7 +26,7 @@ if (!$this->request->session('admin')) {
 	?>
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<!-- <td><?=$player->id?></td> -->
-			<td><?=$player->name?> (<?=$player->reddit?>) </td>
+			<td><?=$player->listName()?></td>
 			<td><?=$player->subs?></td>
 			<td><?=$player->score?></td>
 			<td><?=$player->stars?></td>

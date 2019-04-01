@@ -38,6 +38,11 @@ if ($data = $this->request->getPostData()) {
             <input type="text" name="reddit"  value="<?=$player->reddit?>"  />
         </label>
         <br />
+        <label>
+            <span>Discord name</span><br />
+            <input type="text" name="discord"  value="<?=$player->reddit?>"  />
+        </label>
+        <br />
         <input type="submit" name="Save">
     </fieldset>
 </form>
