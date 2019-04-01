@@ -1,6 +1,6 @@
 <?php
 
-use app\models\Player;
+use app\models\{Player, Submission};
 
 if (!$this->request->session('admin')) {
     $this->request->redirect('/');
@@ -17,6 +17,18 @@ if (!$p) {
     return $this->request->redirect('/');
 }
 $submissions = $p->submissions();
+$r = usort($submissions, function(Submission $a, Submission $b) : int {
+	$ac = $a->challenge();
+	$bc = $b->challenge();
+	$as = (int) $ac->setnr;
+	$bs = (int) $bc->setnr;
+	$aw = (int) $ac->week;
+	$bw = (int) $bc->week;
+	if ($as == $bs) {
+		return $bw <=> $aw;
+	}
+	return $bs <=> $as;
+});
 
 ?>
 <h2>Submissions by <?=$p->name?></h2>
