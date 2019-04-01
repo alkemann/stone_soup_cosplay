@@ -6,7 +6,7 @@ if (!$this->request->session('admin')) {
 }
 
 ?>
-<h2>Submissions</h2>
+<h2>Latest Submissions</h2>
 <table class="bordered">
 	<thead>
 		<tr>

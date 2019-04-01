@@ -6,7 +6,21 @@ if (!$this->request->session('admin')) {
 }
 
 ?>
-<h2>Submissions</h2>
+<h2>Submissions needing moderation</h2>
+<?php
+	$page_size = 20;
+	$page = $_GET['page'] ?? 1;
+	$offset = (int) ($page - 1) * $page_size;
+
+	$submissions = Submission::findAsArray(
+		['accepted' => 0],
+		['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => $page_size, 'offset' => $offset]);
+
+	if (sizeof($submissions) == 0) {
+		echo '<p>Nothin to moderate</p>';
+		return;
+	}
+?>
 <table class="bordered">
 	<thead>
 		<tr>
@@ -19,18 +33,10 @@ if (!$this->request->session('admin')) {
 		</tr>
 	</thead>
 	<tbody>
-	<?php
-		$page_size = 20;
-		$page = $_GET['page'] ?? 1;
-		$offset = (int) ($page - 1) * $page_size;
-
-		$submissions = Submission::findAsArray(
-			['accepted' => 0],
-			['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => $page_size, 'offset' => $offset]);
-		$r = 0;
-		foreach ($submissions as $s) :
+	<?php 
+	$r = 0;
+	foreach ($submissions as $s) :
 	?>
-		
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->challenge()->name?></td>
 			<td><?=$s->player()->name?></td>
