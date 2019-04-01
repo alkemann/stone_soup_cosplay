@@ -1,4 +1,7 @@
 <?php
+
+use app\models\Submission;
+
 if (!$this->request->session('admin')) {
     $this->request->redirect('/');
 }
@@ -16,17 +19,25 @@ if ($data = $this->request->getPostData()) {
     } else {
         $errors['score'] = "Score must be between 0 and 50";
     }
-    // $pid = $data['player_id'];
-    // $player = app\models\Plauer::get($pid);
-    // if (!$player) {
-    //    $errors['player_id'] = "Player doesn't exist";
-    // }
-    $sub = new app\models\Submission($data);
-    if ($sub->save()) {
-        $_SESSION['message'] = "Submission created";
-        $this->request->redirect('/submissions/list');
+    $sub = new Submission($data);
+
+    $existing = Submission::findAsArray(['challenge_id' => $sub->challenge_id, 'player_id' => $sub->player_id]);
+    if ($existing) {
+        foreach ($existing as $eid => $ex) {
+            $exd = ['accepted' => '0'];
+            if ($ex->score <= $sub->score && $ex->hs == 1) {
+                $exd['hs'] = 0;
+            }
+            if ($ex->score > $sub->score) {
+                $sub->hs = 0;
+                $sub->accepted = 0;
+            }
+            $ex->save($exd);
+        }
     }
-    dd($sub);
+    if ($sub->save()) {
+        return $this->request->redirect('/submissions/list');
+    }
 }
 
 ?>
@@ -71,8 +82,8 @@ if ($data = $this->request->getPostData()) {
         <br />
         <label>
             <span>Played online</span><br />
-            <input type="hidden" name="accepted" value="0" />
-            <input type="checkbox" name="accepted" value="1" checked="checked" />
+            <input type="hidden" name="online" value="0" />
+            <input type="checkbox" name="online" value="1" checked="checked" />
         </label>
         <br />
         <label>
