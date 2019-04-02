@@ -90,7 +90,11 @@ class Player extends BaseModel
                 $in = false;
                 foreach ($scores as $sub) {
                     if ($row['pid'] == $sub->player_id) {
-                        $row['week'][$cid] = ['score' => $sub->score, 'stars' => $sub->stars];
+                        $row['week'][$cid] = [
+                            'score' => $sub->score,
+                            'stars' => $sub->stars,
+                            'morgue' => $sub->morgue_url
+                        ];
                         $in = true;
                         break;
                     }

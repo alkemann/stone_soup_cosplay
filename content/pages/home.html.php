@@ -50,14 +50,17 @@ if ($active) :
 					echo "<td>&nbsp;</td>";
 					continue;
 				}
-				$sc = $week['score']; $st = "";
+				$out = '<td>';
+				if (!empty($week['morgue'])) $out .= '<a href="'.$week['morgue'].'" target="_blank">';
+				$out .= $week['score'];
 				for ($i=0; $i < (int) $week['stars'] ; $i++) {
-					$st .= '*';
+					$out .= '*';
 				}
 				for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) {
-					$st .= '&nbsp;';
+					$out .= '&nbsp;';
 				}
-				echo "<td>{$sc} {$st}</td>";
+				if (!empty($week['morgue'])) $out .= '</a>';
+				echo $out . "</td>";
 			}
 			for ($i=0; $i < $weeks - sizeof($row['week']); $i++) {
 				echo "<td>&nbsp;</td>";
