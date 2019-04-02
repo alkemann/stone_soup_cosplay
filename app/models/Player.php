@@ -55,7 +55,7 @@ class Player extends BaseModel
                     $score += $sub->score;
                     $stars += $sub->stars;
                     $subs += 1;
-                } 
+                }
             }
             $player->subs = $subs;
             $player->score = $score;
