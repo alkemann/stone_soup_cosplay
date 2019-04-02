@@ -15,10 +15,9 @@ if (!$challenge) {
 
 ?>
 <h2>Scores for <?=$challenge->name?></h2>
-<table>
+<table class="bordered">
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
 			<th>Player</th>
 			<th>Score **</th>
 			<th>Morgue</th>
@@ -30,20 +29,20 @@ if (!$challenge) {
 	<tbody>
 	<?php
 		$subs = Submission::scoreboard($challenge->id);
+		$r = 0;
 		foreach ($subs as $s) :
 	?>
-		
-		<tr>
-			<!-- <td><?=$s->id?></td> -->
+
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->player()->name?></td>
 			<td>
-			<?php 
+			<?php
 			echo $s->score . ' ';
-			for ($i=0; $i < (int) $s->stars ; $i++) { 
+			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '*';
-			} 
-			for ($i=0; $i < 2 - (int) $s->stars ; $i++) { 
-				echo '_';
+			}
+			for ($i=0; $i < 2 - (int) $s->stars ; $i++) {
+				echo '&nbsp;';
 			}
 			?>
 			</td>
@@ -51,7 +50,7 @@ if (!$challenge) {
 			<?php if ($is_admin): ?>
 			<td><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 			<?php endif; ?>
-			
+
 		</tr>
 
 	<?php

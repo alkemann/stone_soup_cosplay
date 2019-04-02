@@ -55,7 +55,7 @@ if ($active) :
 					$st .= '*';
 				}
 				for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) {
-					$st .= '_';
+					$st .= '&nbsp;';
 				}
 				echo "<td>{$sc} {$st}</td>";
 			}
