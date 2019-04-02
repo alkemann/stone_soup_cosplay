@@ -48,32 +48,32 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 		$r = 0;
 		foreach ($submissions as $s) :
 	?>
-		
+
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<?php $cha = $s->challenge()?>
 			<td><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></td>
 			<td>
 
-			<?php 
+			<?php
 			echo $s->score . ' ';
-			for ($i=0; $i < (int) $s->stars ; $i++) { 
+			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '*';
-			} 
-			for ($i=0; $i < 2 - (int) $s->stars ; $i++) { 
-				echo '_';
-			} 
+			}
+			for ($i=0; $i < 2 - (int) $s->stars ; $i++) {
+				echo '&nbsp;';
+			}
 			?>
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
 			<td>
 				<?php if ($s->morgue_url) : ?>
-				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a> 
+				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a>
 				<?php endif; ?>
 			</td>
 			<td>
 				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
 
-			</td> 
+			</td>
 		</tr>
 
 	<?php
