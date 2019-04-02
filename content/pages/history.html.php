@@ -4,7 +4,7 @@ use app\models\{Challenge, Submission, Player};
 
 ?>
 <h2>Challenge History</h2>
-<div style="font-size: smaller">Hstioric scoreboards: <?php
+<div style="font-size: smaller">Historic scoreboards: <?php
 $historic_sets = Challenge::historicSets();
 foreach ($historic_sets as $s => $count) {
 	echo '<a href="/sets/score?set='.$s.'" >Set '.$s. ' ('.$count.')</a> ';
