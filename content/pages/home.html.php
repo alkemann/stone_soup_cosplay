@@ -40,7 +40,7 @@ if ($active) :
 	<tbody><?php
 	foreach ($scores as $i => $row) : ?>
 		<tr class="<?=$i%2==0?'odd':'even'?>">
-			<td><?=$row['player']?></td>
+			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php
 
