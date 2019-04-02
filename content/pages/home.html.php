@@ -14,7 +14,7 @@ if ($active) :
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$active->species?></td><td><?=$active->background?><td><?=$active->gods?></td></tr>
 </table>
-<p>See current <a href="/challenges/details?id=<?=$active->id?>">challenge details here</a> or <a href="/submissions/submit">Submit a run</a> or <a href="<?=$active->reddit?>">discuss it on reddit</a>.</p>
+<p>See current <a href="/challenges/details?id=<?=$active->id?>">challenge details here</a> or <a href="/submissions/submit">submit a run</a> or <a href="<?=$active->reddit?>">discuss it on reddit</a>.</p>
 <hr />
 <h2>Set <?=$active->setnr?> Scoreboard</h2>
 <ol>
