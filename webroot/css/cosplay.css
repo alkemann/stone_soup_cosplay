@@ -270,7 +270,7 @@ div.fineprint p {
 }
 
 .page_content {
-    padding: 12px 35px 30px 35px;
+    padding: 0px 5em 30px 5em;
 }
 
 /*
@@ -284,7 +284,7 @@ div.toplinks {
     background: #faffff;
     color: #777;
     text-align: right;
-    padding-top: 3px;
+    padding-top: 10px;
     padding-bottom: 3px;
     padding-right: 15px;
 }
