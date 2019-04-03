@@ -14,7 +14,6 @@ if (!$this->request->session('admin')) {
 			<th>Player</th>
 			<th>Score<span class="star">&#9733;&#9733;</span></th>
 			<th>Flags</th>
-			<th>Morgue</th>
 			<th>Actions</th>
 		</tr>
 	</thead>
@@ -38,23 +37,17 @@ if (!$this->request->session('admin')) {
 			<td><?=$s->player()->name?></td>
 			<td>
 
-			<?php 
+			<?php
+			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) { 
 				echo '<span class="star">&#9733;</span>';
-			} 
+			}
+			if (!empty($s->morgue_url)) echo '</a>';
 			?>
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
-			<td>
-				<?php if ($s->morgue_url) : ?>
-				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a> 
-				<?php endif; ?>
-			</td>
-			<td>
-				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
-
-			</td> 
+			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td> 
 		</tr>
 
 	<?php

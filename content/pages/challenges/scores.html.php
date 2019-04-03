@@ -1,8 +1,11 @@
 <?php
 use app\models\{Player, Challenge, Submission};
 
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 $id = $_GET['id'] ?? false;
-$is_admin = $this->request->session('admin');
 
 if ($id == false) {
 	return $this->request->redirect('/');
@@ -14,16 +17,13 @@ if (!$challenge) {
 }
 
 ?>
-<h2>Scores for <?=$challenge->name?></h2>
+<h2><a href="/challenges/details?id=<?=$challenge->id?>"><img style="height: 1.5em;" src="<?=$challenge->icon?>" /></a> Scores for <a href="<?=$challenge->reddit?>"><?=$challenge->name?></a></h2>
 <table class="bordered">
 	<thead>
 		<tr>
 			<th>Player</th>
 			<th>Score<span class="star">&#9733;&#9733;</span></th>
-			<th>Morgue</th>
-			<?php if ($is_admin): ?>
 			<th>Actions</th>
-			<?php endif; ?>
 		</tr>
 	</thead>
 	<tbody>
@@ -36,18 +36,16 @@ if (!$challenge) {
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->player()->name?></td>
 			<td>
-			<?php
+			<?php 
+			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '<span class="star">&#9733;</span>';
 			}
+			if (!empty($s->morgue_url)) echo '</a>';
 			?>
 			</td>
-			<td><a href="<?=$s->morgue_url?>"><?=$s->morgue_url?></a></td>
-			<?php if ($is_admin): ?>
-			<td><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
-			<?php endif; ?>
-
+			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 		</tr>
 
 	<?php

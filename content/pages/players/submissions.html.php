@@ -70,10 +70,7 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a>
 				<?php endif; ?>
 			</td>
-			<td>
-				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a>
-
-			</td>
+			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 		</tr>
 
 	<?php

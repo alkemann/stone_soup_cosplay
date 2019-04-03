@@ -31,7 +31,7 @@ if (!$this->request->session('admin')) {
 		
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
 			<td><?=$c->setnr?>.<?=$c->week?></td>
-			<td><?php if ($c->icon):?><img src="<?=$c->icon?>" /><?php endif; ?> </td>
+			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td class="actions-td"><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><?=$c->background?></td>
 			<td><?=$c->gods?></td>
