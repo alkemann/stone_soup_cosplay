@@ -14,11 +14,10 @@ if ($data = $this->request->getPostData()) {
     $milestones = array_map($int, $data['milestones']);
     $optionals = array_map($int, $data['optionals']);
     $score = Scorer::score($milestones, $optionals);
-
     $stars = max(0, min(2, sizeof(array_map($int, $data['stars']))));
-
     $data['stars'] = $stars;
     $data['score'] = $score;
+
     $data['challenge_id'] = $active->id;
     $data['accepted'] = $data['hs'] = 0;
     // dd($data, $milestones, $optionals, $stars, $score);

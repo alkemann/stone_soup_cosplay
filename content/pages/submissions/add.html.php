@@ -1,24 +1,22 @@
 <?php
 
 use app\models\Submission;
+use app\Scorer;
 
 if (!$this->request->session('admin')) {
     $this->request->redirect('/');
 }
 
 if ($data = $this->request->getPostData()) {
-    
-    
-    if (0 <= $data['stars'] && $data['stars'] <= 2) {
-        $data['stars'] = (int) $data['stars'];
-    } else {
-        $errors['stars'] = "Stars must be 0, 1 or 2";
+
+    if (!isset($data['score']) || $data['score'] == '') {
+        $int = function($v) { return (int) $v; };
+        $milestones = array_map($int, $data['milestones']);
+        $optionals = array_map($int, $data['optionals']);
+        $score = Scorer::score($milestones, $optionals);
+        $data['score'] = $score;
     }
-    if (0 <= $data['score'] && $data['score'] <= 50) {
-        $data['score'] = (int) $data['score'];
-    } else {
-        $errors['score'] = "Score must be between 0 and 50";
-    }
+
     $sub = new Submission($data);
 
     $existing = Submission::findAsArray(['challenge_id' => $sub->challenge_id, 'player_id' => $sub->player_id]);
@@ -67,8 +65,8 @@ if ($data = $this->request->getPostData()) {
         <br />
         <br />
         <label>
-            <span>Score <sup style="color:red">*</sup></span><br />
-            <input type="number" name="score" placeholder="50" min="0" max="50" required="required" />
+            <span>Score</span><br />
+            <input type="number" name="score" placeholder="50" min="0" max="50" />
         </label>
         <br />
         <br />
@@ -95,6 +93,40 @@ if ($data = $this->request->getPostData()) {
             <textarea name="comment" rows="5" cols="100" ></textarea>
         </label>
         <br />
+        <br />
         <input type="submit" name="Save">
     </fieldset>
+    <br />
+    <br />
+    <fieldset>
+        <legend>Milestones (+5 each)</legend>
+        <?php for ($m=0; $m < 7; $m++) : ?>
+        <label>
+            <input type="checkbox" name="milestones[]" value="<?=$m?>" />
+            <span><?=Scorer::$milestones[$m]?></span><br />
+        </label>
+        <?php endfor; ?>
+    </fieldset>
+    <br />
+    <fieldset>
+        <legend>Conducts (+5 each<sup>*</sup>)</legend>
+        <label>
+            <input type="checkbox" name="optionals[]" value="7" />
+            <span>Conduct 1</span>
+        </label>
+        <br />
+        <label>
+            <input type="checkbox" name="optionals[]" value="8" />
+            <span>Conduct 2</span>
+        </label>
+        <br />
+        <label>
+            <input type="checkbox" name="optionals[]" value="9" />
+            <span>Conduct 3</span>
+        </label>
+        <br />
+    </fieldset>
+    <br />
+    <br />
+    <input type="submit" name="Save">
 </form>
