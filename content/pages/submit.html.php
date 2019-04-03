@@ -11,10 +11,10 @@ if (!$active) {
 
 if ($data = $this->request->getPostData()) {
     $int = function($v) { return (int) $v; };
-    $milestones = array_map($int, $data['milestones']);
-    $optionals = array_map($int, $data['optionals']);
+    $milestones = array_map($int, $data['milestones']??[]);
+    $optionals = array_map($int, $data['optionals']??[]);
     $score = Scorer::score($milestones, $optionals);
-    $stars = max(0, min(2, sizeof(array_map($int, $data['stars']))));
+    $stars = max(0, min(2, sizeof(array_map($int, $data['stars']??[]))));
     $data['stars'] = $stars;
     $data['score'] = $score;
 
