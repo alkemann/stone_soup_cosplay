@@ -8,7 +8,7 @@ if ($active) :
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2><?php if ($active->icon): ?><img src="<?=$active->icon?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=$cha->reddit?>">Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></a></h2>
+<h2><?php if ($active->icon): ?><img src="<?=$active->icon?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=$active->reddit?>">Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></a></h2>
 <p style="font-style: italic; color: #777;"><?=$active->description?></p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
@@ -25,7 +25,6 @@ if ($active) :
 <table class="bordered">
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
 			<th>Player</th>
 			<th>Total</th>
 			<?php
@@ -55,9 +54,6 @@ if ($active) :
 				$out .= $week['score'];
 				for ($i=0; $i < (int) $week['stars'] ; $i++) {
 					$out .= '*';
-				}
-				for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) {
-					$out .= '&nbsp;';
 				}
 				if (!empty($week['morgue'])) $out .= '</a>';
 				echo $out . "</td>";

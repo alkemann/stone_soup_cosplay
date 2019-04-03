@@ -46,17 +46,14 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
         <tr class="<?=$r++%2==0?'odd':'even'?>">
             <?php $cha = $s->challenge()?>
             <td><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></a></td>
-            <td><a href="<?=$s->morgue_url?>" target="_blank">
+            <td><?php if ($s->morgue_url) : ?><a href="<?=$s->morgue_url?>" target="_blank"><?php endif; ?>
             <?php
 
-            echo $s->score . ' ';
+            echo $s->score;
             for ($i=0; $i < (int) $s->stars ; $i++) {
                 echo '*';
             }
-            for ($i=0; $i < 2 - (int) $s->stars ; $i++) {
-                echo '&nbsp;';
-            }
-            ?></a>
+            ?><?php if ($s->morgue_url) : ?></a><?php endif; ?>
             </td>
         </tr>
 

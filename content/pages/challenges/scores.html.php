@@ -37,12 +37,9 @@ if (!$challenge) {
 			<td><?=$s->player()->name?></td>
 			<td>
 			<?php
-			echo $s->score . ' ';
+			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '*';
-			}
-			for ($i=0; $i < 2 - (int) $s->stars ; $i++) {
-				echo '&nbsp;';
 			}
 			?>
 			</td>

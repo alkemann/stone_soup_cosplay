@@ -19,6 +19,20 @@ table.table_for_layout th, table.table_for_layout td {
   background-color: transparent;
 }
 
+tr.set-split {
+  height: 2em;
+  font-size: 1.5em;
+}
+
+.table-menu a {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #744;
+}
+.table-menu a:visited {
+  color: #744;
+}
+
 footer {
   font-size: 0.75em;
   color: #888;

@@ -9,7 +9,7 @@ use app\models\{Challenge, Submission, Player};
 <h2>Set <?=$set?> scoreboard</h2>
 <ol>
 	<?php foreach ($challenges_in_set as $cha) : ?>
-	<li value="<?=$cha->week?>"><b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b>
+	<li value="<?=$cha->week?>"><?php if ($cha->icon):?><img src="<?=$cha->icon?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b>
 	 <span style="font-size: smaller">(<?=$cha->species?> <?=$cha->background?> <?=$cha->gods?>)</span></li>
 	<?php endforeach; ?>
 </ol>
@@ -17,12 +17,13 @@ use app\models\{Challenge, Submission, Player};
 <table class="bordered">
 	<thead>
 		<tr>
-			<!-- <th>id</th> -->
 			<th>Player</th>
 			<th>Total</th>
-			<?php 
+			<?php
 			foreach ($challenges_in_set as $c) {
-				echo "<th>Week #{$c->week}</th>";
+				echo '<th>';
+				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
+				echo "#{$c->week}</th>";
 			}
 			?>
 		</tr>
@@ -30,7 +31,7 @@ use app\models\{Challenge, Submission, Player};
 	<tbody><?php $r = 0;
 	foreach ($scores as $row) : ?>
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
-			<td><?=$row['player']?></td>
+			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
 			<td><?=$row['total']?> <?=$row['stars']?>*</td>
 			<?php 
 			foreach ($row['week'] as $week) {
@@ -38,14 +39,14 @@ use app\models\{Challenge, Submission, Player};
 					echo "<td>&nbsp;</td>";
 					continue;
 				}
-				$sc = $week['score']; $st = "";
-				for ($i=0; $i < (int) $week['stars'] ; $i++) { 
-					$st .= '*';
-				} 
-				for ($i=0; $i < 2 - (int) $week['stars'] ; $i++) { 
-					$st .= '_';
+				$out = '<td>';
+				if (!empty($week['morgue'])) $out .= '<a href="'.$week['morgue'].'" target="_blank">';
+				$out .= $week['score'];
+				for ($i=0; $i < (int) $week['stars'] ; $i++) {
+					$out .= '*';
 				}
-				echo "<td>{$sc} {$st}</td>";
+				if (!empty($week['morgue'])) $out .= '</a>';
+				echo $out . "</td>";
 			}
 			for ($i=0; $i < $weeks - sizeof($row['week']); $i++) { 
 				echo "<td>&nbsp;</td>";
