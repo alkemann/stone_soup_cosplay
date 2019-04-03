@@ -1,0 +1,119 @@
+<?php
+
+use \app\models\{Challenge, Player, Submission};
+use \app\Scorer;
+
+$active = Challenge::active();
+if (!$active) {
+    echo '<h2>No active challenge at this time</h2>';
+    return;
+}
+
+if ($data = $this->request->getPostData()) {
+    $int = function($v) { return (int) $v; };
+    $milestones = array_map($int, $data['milestones']);
+    $optionals = array_map($int, $data['optionals']);
+    $score = Scorer::score($milestones, $optionals);
+
+    $stars = max(0, min(2, sizeof(array_map($int, $data['stars']))));
+
+    $data['stars'] = $stars;
+    $data['score'] = $score;
+    $data['challenge_id'] = $active->id;
+    $data['accepted'] = $data['hs'] = 0;
+    // dd($data, $milestones, $optionals, $stars, $score);
+    $sub = new app\models\Submission($data);
+    if ($sub->save()) {
+        Submission::sendToModeration(['challenge_id' => $active->id, 'player_id' => $data['player_id']]);
+        return $this->request->redirect('/submissions/list');
+    }
+}
+
+?>
+<h2>Adding new Submission for Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
+<form method="POST">
+    <fieldset>
+        <label>
+            <span>Player</span><select name="player_id"> 
+                <?php $players = Player::list();
+                foreach ($players as $id => $name) : ?>
+                <option value="<?=$id?>"><?=$name?></option>
+                <?php endforeach; ?>
+            </select>
+        </label>
+        <br />
+        <br />
+        <label>
+            <span>Morgue URL</span><br />
+            <input type="text" name="morgue_url" placeholder="http://example.com" required="required" />
+        </label>
+        <br />
+        <br />
+        <label>
+            <input type="hidden" name="online" value="0" />
+            <input type="checkbox" name="online" value="1" checked="checked" />
+            <span>Played online</span><br />
+        </label>
+        <br />
+        <label>
+            <span>Comment</span><br />
+            <textarea name="comment" placeholder="Estimate of points and stars?" rows="5" cols="100" ></textarea>
+        </label>
+        <br />
+        <input type="submit" name="Save">
+    </fieldset>
+    <br />
+    <fieldset><legend>Milestones (+5 each)</legend>
+    <?php for ($m=0; $m < 7; $m++) : ?>
+    <label>
+        <input type="checkbox" name="milestones[]" value="<?=$m?>" />
+        <span><?=Scorer::$milestones[$m]?></span><br />
+    </label>
+    <?php endfor; ?>
+    <p style="font-size: 0.75em; color: #999;">The main way to score points. +5 points each, and can be done in any order. (You don't need to tell me which milestones you achieve.)</p>
+    </fieldset>
+    <br />
+    <fieldset><legend>Conducts (+5 each<sup>*</sup>)</legend>
+    <label>
+        <input type="checkbox" name="optionals[]" value="7" />
+        <span><?=$active->conduct_name_1?></span>
+    </label>
+    <i style="font-size: 0.75em;"><?=$active->conduct_1?></i>
+    <br />
+    <br />
+    <label>
+        <input type="checkbox" name="optionals[]" value="8" />
+        <span><?=$active->conduct_name_2?></span>
+    </label>
+    <i style="font-size: 0.75em;"><?=$active->conduct_2?></i>
+    <br />
+    <br />
+    <label>
+        <input type="checkbox" name="optionals[]" value="9" />
+        <span><?=$active->conduct_name_3?></span>
+    </label>
+    <i style="font-size: 0.75em;"><?=$active->conduct_3?></i>
+    <br />
+    <p style="font-size: 0.75em; color: #999;"><sup>*</sup> Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Please indicate which conducts you qualify for when you post your morgue. Small mistakes in following conducts will usually be forgiven.</p>
+    </fieldset>
+    <br />
+    <fieldset><legend>Bonus <span class="star">&#9733;</span></legend>
+    <label>
+        <input type="checkbox" name="stars[]" value="10" />
+        <span><?=$active->bonus_name_1?></span>
+    </label>
+    <i style="font-size: 0.75em;"><?=$active->bonus_1?></i>
+    <br />
+    <br />
+    <label>
+        <input type="checkbox" name="stars[]" value="11" />
+        <span><?=$active->bonus_name_2?></span>
+    </label>
+    <i style="font-size: 0.75em;"><?=$active->bonus_2?></i>
+    <br />
+    <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
+    </fieldset>
+    <br />
+    <input type="submit" name="Save">
+    <br />
+</form>
