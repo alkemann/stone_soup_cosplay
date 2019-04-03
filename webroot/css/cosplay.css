@@ -267,7 +267,7 @@ div.fineprint p {
 }
 
 .page_content {
-    padding: 12px 113px 30px 35px;
+    padding: 12px 35px 30px 35px;
 }
 
 /*
@@ -450,9 +450,14 @@ img.banner {
   font-weight: bold;
   white-space: nowrap;
 }
+body {
+  text-align: center;
+}
 
 .information {
+  text-align: left;
   max-width: 80em;
+  margin: 0 auto;
 }
 
 .information ul {
