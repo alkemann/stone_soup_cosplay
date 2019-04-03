@@ -43,7 +43,7 @@ use app\models\{Challenge, Submission, Player};
 				if (!empty($week['morgue'])) $out .= '<a href="'.$week['morgue'].'" target="_blank">';
 				$out .= $week['score'];
 				for ($i=0; $i < (int) $week['stars'] ; $i++) {
-					$out .= '*';
+					$out .= '<span class="star">&#9733;</span>';
 				}
 				if (!empty($week['morgue'])) $out .= '</a>';
 				echo $out . "</td>";

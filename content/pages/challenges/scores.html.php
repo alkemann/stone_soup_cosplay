@@ -19,7 +19,7 @@ if (!$challenge) {
 	<thead>
 		<tr>
 			<th>Player</th>
-			<th>Score **</th>
+			<th>Score<span class="star">&#9733;&#9733;</span></th>
 			<th>Morgue</th>
 			<?php if ($is_admin): ?>
 			<th>Actions</th>
@@ -39,7 +39,7 @@ if (!$challenge) {
 			<?php
 			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) {
-				echo '*';
+				echo '<span class="star">&#9733;</span>';
 			}
 			?>
 			</td>

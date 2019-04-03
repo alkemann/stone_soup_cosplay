@@ -26,7 +26,7 @@ if (!$this->request->session('admin')) {
 		<tr>
 			<th>Challenge</th>
 			<th>Player</th>
-			<th>Score **</th>
+			<th>Score<span class="star">&#9733;&#9733;</span></th>
 			<th>Flags</th>
 			<th>Morgue</th>
 			<th>Actions</th>
@@ -43,12 +43,9 @@ if (!$this->request->session('admin')) {
 			<td>
 
 			<?php 
-			echo $s->score . ' ';
+			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) { 
-				echo '*';
-			} 
-			for ($i=0; $i < 2 - (int) $s->stars ; $i++) { 
-				echo '_';
+				echo '<span class="star">&#9733;</span>';
 			} 
 			?>
 			</td>

@@ -24,6 +24,11 @@ tr.set-split {
   font-size: 1.5em;
 }
 
+span.star {
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
 .table-menu a {
   font-size: 1.1em;
   font-weight: bold;

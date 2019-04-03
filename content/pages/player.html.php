@@ -51,7 +51,8 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 
             echo $s->score;
             for ($i=0; $i < (int) $s->stars ; $i++) {
-                echo '*';
+                echo '<span class="star">&#9733;</span>';
+
             }
             ?><?php if ($s->morgue_url) : ?></a><?php endif; ?>
             </td>
