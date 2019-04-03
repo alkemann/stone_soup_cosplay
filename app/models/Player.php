@@ -75,7 +75,7 @@ class Player extends BaseModel
                     WHERE `s`.`accepted` = 1 AND `s`.`hs` = 1 AND `c`.`setnr` = {$s}
                     GROUP BY `s`.`player_id`
                 ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-                WHERE `inner`.`total` > 0 ORDER BY `total` DESC";
+                WHERE `inner`.`total` > 0 ORDER BY `total` DESC, `stars` DESC";
         $result = static::db()->query($q);
 
         $challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
