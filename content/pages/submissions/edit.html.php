@@ -40,6 +40,7 @@ if ($data = $this->request->getPostData()) {
             </select>
         </label>
         <br />
+        <br />
         <label>
             <span>Player</span><br />
             <select name="player_id">
@@ -50,16 +51,19 @@ if ($data = $this->request->getPostData()) {
             </select>
         </label>
         <br />
+        <br />
 
         <label>
             <span>Score</span><br />
-            <input type="text" name="score" value="<?=$sub->score?>" />
+            <input type="number" name="score" value="<?=$sub->score?>" min="0" max="50" />
         </label>
         <br />
-        <label>
-            <span>Stars</span><br />
-            <input type="text" name="stars" value="<?=$sub->stars?>" />
-        </label>
+        <br />
+        <span>Stars</span>
+        <label><input type="radio" name="stars" value="0" <?=($sub->stars == 0)?'checked="checked"':''?> /> None</label> &nbsp; 
+        <label><input type="radio" name="stars" value="1" <?=($sub->stars == 1)?'checked="checked"':''?> /> One<span class="star">&#9733;</span></label> &nbsp; 
+        <label><input type="radio" name="stars" value="2" <?=($sub->stars == 2)?'checked="checked"':''?> /> Two<span class="star">&#9733;&#9733;</span></label> 
+        <br />
         <br />
         <label>
             <span>Morgue URL</span><br />
@@ -70,23 +74,27 @@ if ($data = $this->request->getPostData()) {
 
         </label>
         <br />
+        <br />
         <label>
-            <span>Highscore (use for multiple submissions)</span><br />
             <input type="hidden" name="hs" value="0" />
             <input type="checkbox" name="hs" value="1" <?=$sub->hs?'checked="checked"':''?> />
+            <span>Highscore (use for multiple submissions)</span>
         </label>
         <br />
+        <br />
         <label>
-            <span>Accepted (use for moderation)</span><br />
             <input type="hidden" name="accepted" value="0" />
             <input type="checkbox" name="accepted" value="1" <?=$sub->accepted?'checked="checked"':''?> />
+            <span>Accepted (use for moderation)</span>
         </label>
         <br />
+        <br />
         <label>
-            <span>Played online</span><br />
             <input type="hidden" name="online" value="0" />
             <input type="checkbox" name="online" value="1" <?=$sub->online?'checked="checked"':''?> />
+            <span>Played online</span>
         </label>
+        <br />
         <br />
         <label>
             <span>Comment</span><br />

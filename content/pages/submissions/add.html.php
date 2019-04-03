@@ -54,6 +54,7 @@ if ($data = $this->request->getPostData()) {
             </select>
         </label>
         <br />
+        <br />
         <label>
             <span>Player</span><br />
             <select name="player_id">
@@ -64,40 +65,35 @@ if ($data = $this->request->getPostData()) {
             </select>
         </label>
         <br />
-
-        <label>
-            <span>Score</span><br />
-            <input type="text" name="score" value="50" />
-        </label>
         <br />
         <label>
-            <span>Stars</span><br />
-            <input type="text" name="stars" value="2" />
+            <span>Score <sup style="color:red">*</sup></span><br />
+            <input type="number" name="score" placeholder="50" min="0" max="50" required="required" />
         </label>
         <br />
-        <label>
-            <span>Morgue URL</span><br />
-            <input type="text" name="morgue_url" placeholder="http://example.com" />
-        </label>
+        <br />
+        <span>Stars</span>
+        <label><input type="radio" name="stars" value="0" checked="checked" /> None</label> &nbsp; 
+        <label><input type="radio" name="stars" value="1" /> One<span class="star">&#9733;</span></label> &nbsp; 
+        <label><input type="radio" name="stars" value="2" /> Two<span class="star">&#9733;&#9733;</span></label> 
+        <br />
         <br />
         <label>
-            <span>Played online</span><br />
+            <span>Morgue URL <sup style="color:red">*</sup></span><br />
+            <input type="text" name="morgue_url" placeholder="http://example.com" required="required"  />
+        </label>
+        <br />
+        <br />
+        <label>
             <input type="hidden" name="online" value="0" />
             <input type="checkbox" name="online" value="1" checked="checked" />
+            <span>Played online</span><br />
         </label>
         <br />
         <label>
             <span>Comment</span><br />
             <textarea name="comment" rows="5" cols="100" ></textarea>
         </label>
-        <!-- 
-        <br />
-        <span style="font-size: smaller; color: red;">Only URL or dump</span>
-        <br />
-        <label>
-            <span>Morgue Dump (offline)</span><br />
-            <textarea name="morgue_text" placeholder="Blah blah"></textarea>
-        </label> -->
         <br />
         <input type="submit" name="Save">
     </fieldset>

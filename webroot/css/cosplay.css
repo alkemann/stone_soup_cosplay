@@ -1,7 +1,10 @@
 input[type="text"] {
 	width: 70%;
 }
-
+input[type="number"] {
+  width: 3em;
+  padding: 0.2em 0.5em;
+}
 dd {
  margin-left: 0;
  margin-top: 0.2em;
