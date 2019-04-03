@@ -26,7 +26,7 @@ if ($active) :
 	<thead>
 		<tr>
 			<th>Player</th>
-			<th>Total</th>
+			<th>Total <span class="star">&#9733;</span></th>
 			<?php
 			foreach ($challenges_in_set as $c) {
 				echo '<th>';
@@ -40,7 +40,7 @@ if ($active) :
 	foreach ($scores as $i => $row) : ?>
 		<tr class="<?=$i%2==0?'odd':'even'?>">
 			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
-			<td><?=$row['total']?> <?=$row['stars']?>*</td>
+			<td><?=$row['total']?> <?=$row['stars']?><span class="star">&#9733;</span></td>
 			<?php
 
 			foreach ($challenges_in_set as $c) {
