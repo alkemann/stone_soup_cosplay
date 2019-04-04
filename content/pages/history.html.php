@@ -12,7 +12,7 @@ use app\models\{Challenge, Submission, Player};
 				$set = $c->setnr; ?>
 				
 				<tr class="set-split"><th rowspan="2">&nbsp;</th><th colspan="6"><a href="/sets/score?set=<?=$set?>">Set <?=$set?></a></th></tr>
-				<tr><th>Name</th><th>#</th><th>Background</th><th>Gods</th><th>Species</th></tr>
+				<tr><th>Name</th><th>#</th><th>Species</th><th>Background</th><th>Gods</th></tr>
 				<?php
 				continue;
 			}
@@ -21,9 +21,9 @@ use app\models\{Challenge, Submission, Player};
 			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td><?=$c->setnr?>.<?=$c->week?> <a href="<?=$c->reddit?>"><?=$c->name?></a></td>
 			<td><b><?=$c->subs?></b></td>
+			<td><?=$c->species?></td>
 			<td><?=$c->background?></td>
 			<td><?=$c->gods?></td>
-			<td><?=$c->species?></td>
 		</tr>
 	<?php
 		endforeach;
