@@ -13,9 +13,9 @@ if (!$this->request->session('admin')) {
 			<th>S.W</th>
 			<th>Icon</th>
 			<th>Name</th>
+			<th>Species</th>
 			<th>Background</th>
 			<th>Gods</th>
-			<th>Species</th>
 			<th>#</th>
 			<th>Actions</th>
 			
@@ -33,9 +33,9 @@ if (!$this->request->session('admin')) {
 			<td><?=$c->setnr?>.<?=$c->week?></td>
 			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td class="actions-td"><a href="<?=$c->reddit?>"><?=$c->name?></a></td>
+			<td><?=$c->species?></td>
 			<td><?=$c->background?></td>
 			<td><?=$c->gods?></td>
-			<td><?=$c->species?></td>
 			<td><?=$c->subs?></td>
 			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
 		</tr>
