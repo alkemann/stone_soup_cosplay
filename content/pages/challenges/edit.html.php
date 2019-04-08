@@ -40,6 +40,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Shortform description (aka 'MiBe', 'MiFi^Mak' or 'Mino Fi/Skal Mak'</span><br />
+			<input type="text" name="shortform" value="<?=$cha->shortform?>" />
+		</label>
+		<br />
+		<label>
 			<span>Description</span><br />
 			<textarea name="description" cols="100" rows="3"><?=$cha->description?></textarea>
 		</label>

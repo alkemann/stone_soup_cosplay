@@ -19,6 +19,11 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<label>
+			<span>Shortform description (aka 'MiBe', 'MiFi^Mak' or 'Mino Fi/Skal Mak'</span><br />
+			<input type="text" name="shortform" placeholder="MiBe" />
+		</label>
+		<br />
+		<label>
 			<span>Description</span><br />
 			<textarea name="description" placeholder="Description of the unique or details about the challenge"  cols="100" rows="3"></textarea>
 		</label>

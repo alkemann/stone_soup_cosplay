@@ -10,7 +10,7 @@ use app\models\{Challenge, Submission, Player};
 <ol>
 	<?php foreach ($challenges_in_set as $cha) : ?>
 	<li value="<?=$cha->week?>"><?php if ($cha->icon):?><img src="<?=$cha->icon?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b>
-	 <span style="font-size: smaller">(<?=$cha->species?>, <?=$cha->background?>, <?=$cha->gods?>)</span></li>
+	 <span style="font-size: smaller">(<?=$cha->shortform()?>)</span></li>
 	<?php endforeach; ?>
 </ol>
 
