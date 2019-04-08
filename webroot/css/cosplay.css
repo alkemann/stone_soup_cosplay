@@ -41,6 +41,11 @@ span.star {
   color: #744;
 }
 
+.special_rule {
+  color: #A44;
+  font-weight: bold;
+}
+
 footer {
   font-size: 0.75em;
   color: #888;
@@ -58,7 +63,7 @@ footer {
 }
 
 table.challenges_list img {
-  height: 2.75em;
+  height: 3em;
 }
 
 .challenge {

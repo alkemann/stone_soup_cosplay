@@ -144,6 +144,12 @@ if ($data = $this->request->getPostData()) {
 		</label>
 		<br />
 		<br />
+		<label>
+			<span>Special rule</span><br />
+			<textarea name="special_rule" cols="100" rows="3"></textarea>
+		</label>
+		<br />
+		<br />
 		<input type="submit" name="Save">
 	</fieldset>
 </form>

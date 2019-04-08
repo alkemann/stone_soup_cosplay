@@ -24,6 +24,11 @@ if (!$cha) {
 </table>
 <p class="info">The Species, Background, and God choices are all mandatory. You must be worshipping one of the gods listed above before entering Lair, Orc, or Depths, unless this isn't possible in which case you must worship them as soon as you can. Don't do anything to lose your religion, and don't use faded altars.</p>
 
+<?php if ($cha->special_rule) : ?>
+<h3>Special Rule</h3>
+<div class="special_rule"><p><?=$cha->special_rule?></p></div>
+<?php endif; ?>
+
 <h3>Cosplay conduct points</h3>
 <dl>
 	<dt><?=$cha->conduct_name_1?></dt><dd><?=$cha->conduct_1?></dd>
