@@ -32,7 +32,6 @@ if (!$this->request->session('admin')) {
 			<td class="actions-td">
 				<a href="<?=$c->reddit?>"><?=$c->name?></a>
 				<br />(<?=$c->shortform()?>)
-				<?php if ($c->special_rule): ?><br /><i>(<?=$c->special_rule?>)</i><?php endif; ?>
 			</td>
 			<td><?=$c->subs?></td>
 			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
