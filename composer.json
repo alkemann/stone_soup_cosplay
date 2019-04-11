@@ -7,6 +7,9 @@
         "heroku/heroku-buildpack-php": "*"
     },
     "autoload": {
+        "files": [
+            "content\\helpers\\include.php"
+        ],
         "psr-4": {
             "app\\": "app/"
         }

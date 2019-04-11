@@ -29,14 +29,14 @@ if ($data = $this->request->getPostData()) {
 }
 
 ?>
-<h2>Adding new Submission for Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></h2>
+<h2>Adding new Submission for Set <?=e($active->setnr)?> Week <?=e($active->week)?> : <?=e($active->name)?></h2>
 <form method="POST">
     <fieldset>
         <label>
             <span>Player</span><select name="player_id"> 
                 <?php $players = Player::list();
                 foreach ($players as $id => $name) : ?>
-                <option value="<?=$id?>"><?=$name?></option>
+                <option value="<?=e($id)?>"><?=e($name)?></option>
                 <?php endforeach; ?>
             </select>
         </label>
@@ -65,7 +65,7 @@ if ($data = $this->request->getPostData()) {
     <fieldset><legend>Milestones (+5 each)</legend>
     <?php for ($m=0; $m < 7; $m++) : ?>
     <label>
-        <input type="checkbox" name="milestones[]" value="<?=$m?>" />
+        <input type="checkbox" name="milestones[]" value="<?=e($m)?>" />
         <span><?=Scorer::$milestones[$m]?></span><br />
     </label>
     <?php endfor; ?>
@@ -75,23 +75,23 @@ if ($data = $this->request->getPostData()) {
     <fieldset><legend>Conducts (+5 each<sup>*</sup>)</legend>
     <label>
         <input type="checkbox" name="optionals[]" value="7" />
-        <span><?=$active->conduct_name_1?></span>
+        <span><?=e($active->conduct_name_1)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$active->conduct_1?></i>
+    <i style="font-size: 0.75em;"><?=e($active->conduct_1)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="optionals[]" value="8" />
-        <span><?=$active->conduct_name_2?></span>
+        <span><?=e($active->conduct_name_2)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$active->conduct_2?></i>
+    <i style="font-size: 0.75em;"><?=e($active->conduct_2)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="optionals[]" value="9" />
-        <span><?=$active->conduct_name_3?></span>
+        <span><?=e($active->conduct_name_3)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$active->conduct_3?></i>
+    <i style="font-size: 0.75em;"><?=e($active->conduct_3)?></i>
     <br />
     <p style="font-size: 0.75em; color: #999;"><sup>*</sup> Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Please indicate which conducts you qualify for when you post your morgue. Small mistakes in following conducts will usually be forgiven.</p>
     </fieldset>
@@ -99,16 +99,16 @@ if ($data = $this->request->getPostData()) {
     <fieldset><legend>Bonus <span class="star">&#9733;</span></legend>
     <label>
         <input type="checkbox" name="stars[]" value="10" />
-        <span><?=$active->bonus_name_1?></span>
+        <span><?=e($active->bonus_name_1)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$active->bonus_1?></i>
+    <i style="font-size: 0.75em;"><?=e($active->bonus_1)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="stars[]" value="11" />
-        <span><?=$active->bonus_name_2?></span>
+        <span><?=e($active->bonus_name_2)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$active->bonus_2?></i>
+    <i style="font-size: 0.75em;"><?=e($active->bonus_2)?></i>
     <br />
     <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
     </fieldset>

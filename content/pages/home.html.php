@@ -8,21 +8,21 @@ if ($active) :
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2><?php if ($active->icon): ?><img src="<?=$active->icon?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=$active->reddit?>">Set <?=$active->setnr?> Week <?=$active->week?> : <?=$active->name?></a></h2>
-<p style="font-style: italic; color: #777;"><?=$active->description?></p>
+<h2><?php if ($active->icon): ?><img src="<?=e($active->icon)?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=e($active->reddit)?>">Set <?=e($active->setnr)?> Week <?=e($active->week)?> : <?=e($active->name)?></a></h2>
+<p style="font-style: italic; color: #777;"><?=e($active->description)?></p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
-	<tr><td><?=$active->species?></td><td><?=$active->background?><td><?=$active->gods?></td></tr>
+	<tr><td><?=e($active->species)?></td><td><?=e($active->background)?><td><?=e($active->gods)?></td></tr>
 </table>
 <?php if ($active->special_rule) : ?>
-<div class="special_rule"><p><?=$active->special_rule?></p></div>
+<div class="special_rule"><p><?=e($active->special_rule)?></p></div>
 <?php endif; ?>
-<p>See current <a href="/challenges/details?id=<?=$active->id?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=$active->reddit?>">discuss it on reddit</a>.</p>
+<p>See current <a href="/challenges/details?id=<?=e($active->id)?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=e($active->reddit)?>">discuss it on reddit</a>.</p>
 <hr />
-<h2>Set <?=$active->setnr?> Scoreboard</h2>
+<h2>Set <?=e($active->setnr)?> Scoreboard</h2>
 <ol>
 	<?php foreach ($challenges_in_set as $cha) : ?>
-	<li value="<?=$cha->week?>"><?php if ($cha->icon):?><img src="<?=$cha->icon?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b> <span style="font-size: smaller">(<?=$cha->shortform()?>)</span></li>
+	<li value="<?=e($cha->week)?>"><?php if ($cha->icon):?><img src="<?=e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=e($cha->id)?>"><?=e($cha->name)?></a></b> <span style="font-size: smaller">(<?=e($cha->shortform())?>)</span></li>
 	<?php endforeach; ?>
 </ol>
 <table class="bordered">
@@ -42,8 +42,8 @@ if ($active) :
 	<tbody><?php
 	foreach ($scores as $i => $row) : ?>
 		<tr class="<?=$i%2==0?'odd':'even'?>">
-			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
-			<td><?=$row['total']?> <?=$row['stars']?><span class="star">&#9733;</span></td>
+			<td><a href="/player?id=<?=e($row['pid'])?>"><?=e($row['player'])?></a></td>
+			<td><?=e($row['total'])?> <?=e($row['stars'])?><span class="star">&#9733;</span></td>
 			<?php
 
 			foreach ($challenges_in_set as $c) {

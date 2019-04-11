@@ -11,19 +11,19 @@ use app\models\{Challenge, Submission, Player};
 			if ($c->setnr != $set) {
 				$set = $c->setnr; ?>
 				
-				<tr class="set-split"><th rowspan="2">&nbsp;</th><th colspan="6"><a href="/sets/score?set=<?=$set?>">Set <?=$set?></a></th></tr>
+				<tr class="set-split"><th rowspan="2">&nbsp;</th><th colspan="6"><a href="/sets/score?set=<?=e($set)?>">Set <?=e($set)?></a></th></tr>
 				<tr><th>Name</th><th>#</th><th>Species</th><th>Background</th><th>Gods</th></tr>
 				<?php
 				continue;
 			}
 	?>
 		<tr class="<?=$i++%2==0?'odd':'even'?>">
-			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
-			<td><?=$c->setnr?>.<?=$c->week?> <a href="<?=$c->reddit?>"><?=$c->name?></a></td>
-			<td><b><?=$c->subs?></b></td>
-			<td><?=$c->species?></td>
-			<td><?=$c->background?></td>
-			<td><?=$c->gods?></td>
+			<td><a href="/challenges/details?id=<?=e($c->id)?>"><img src="<?=e($c->icon)?>" /></a></td>
+			<td><?=e($c->setnr)?>.<?=e($c->week)?> <a href="<?=e($c->reddit)?>"><?=e($c->name)?></a></td>
+			<td><b><?=e($c->subs)?></b></td>
+			<td><?=e($c->species)?></td>
+			<td><?=e($c->background)?></td>
+			<td><?=e($c->gods)?></td>
 		</tr>
 	<?php
 		endforeach;
