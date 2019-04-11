@@ -15,7 +15,7 @@ if ($active) :
 	<tr><td><?=e($active->species)?></td><td><?=e($active->background)?><td><?=e($active->gods)?></td></tr>
 </table>
 <?php if ($active->special_rule) : ?>
-<div class="special_rule"><p><?=e($active->special_rule)?></p></div>
+<div class="special_rule"><p><?=em($active->special_rule)?></p></div>
 <?php endif; ?>
 <p>See current <a href="/challenges/details?id=<?=e($active->id)?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=e($active->reddit)?>">discuss it on reddit</a>.</p>
 <hr />

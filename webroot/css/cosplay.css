@@ -9,6 +9,9 @@ dd {
  margin-left: 0;
  margin-top: 0.2em;
 }
+dd p {
+  margin-top: 0;
+}
 
 table.table_for_layout {
   padding: 0;

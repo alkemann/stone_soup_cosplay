@@ -1,7 +1,8 @@
 {
     "require": {
         "alkemann/h2l": "^0.39.1",
-        "alkemann/debug": "^0.4.0"
+        "alkemann/debug": "^0.4.0",
+        "erusev/parsedown": "^1.7"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
