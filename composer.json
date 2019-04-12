@@ -1,6 +1,6 @@
 {
     "require": {
-        "alkemann/h2l": "^0.39.1",
+        "alkemann/h2l": "^0.40",
         "alkemann/debug": "^0.4.0",
         "erusev/parsedown": "^1.7"
     },
@@ -8,9 +8,6 @@
         "heroku/heroku-buildpack-php": "*"
     },
     "autoload": {
-        "files": [
-            "content\\helpers\\include.php"
-        ],
         "psr-4": {
             "app\\": "app/"
         }

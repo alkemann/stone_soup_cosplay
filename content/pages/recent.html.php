@@ -27,8 +27,8 @@ use app\models\Submission;
 		
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<?php $cha = $s->challenge()?>
-			<td><a href="/challenges/details?id=<?=e($s->challenge_id)?>"><?=e($cha->setnr)?>.<?=e($cha->week)?> <?=e($cha->name)?></td>
-			<td><a href="/player?id=<?=e($s->player_id)?>"><?=e($s->player()->name)?></a></td>
+			<td><a href="/challenges/details?id=<?=$e($s->challenge_id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></td>
+			<td><a href="/player?id=<?=$e($s->player_id)?>"><?=$e($s->player()->name)?></a></td>
 			<td>
 
 			<?php

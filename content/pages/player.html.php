@@ -28,7 +28,7 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 });
 
 ?>
-<h2>Submissions by <?=e($p->name)?></h2>
+<h2>Submissions by <?=$e($p->name)?></h2>
 
 <table class="bordered">
     <thead>
@@ -45,8 +45,8 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 
         <tr class="<?=$r++%2==0?'odd':'even'?>">
             <?php $cha = $s->challenge()?>
-            <td><a href="/challenges/details?id=<?=e($cha->id)?>"><?=e($cha->setnr)?>.<?=e($cha->week)?> <?=e($cha->name)?></a></td>
-            <td><?php if ($s->morgue_url) : ?><a href="<?=e($s->morgue_url)?>" target="_blank"><?php endif; ?>
+            <td><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></a></td>
+            <td><?php if ($s->morgue_url) : ?><a href="<?=$e($s->morgue_url)?>" target="_blank"><?php endif; ?>
             <?php
 
             echo $s->score;

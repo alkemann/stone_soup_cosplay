@@ -15,24 +15,19 @@ set_error_handler('app\handleWarning', E_WARNING);
 // Include configuration files
 require_once($CONFIG_PATH . 'environments.php');
 require_once($CONFIG_PATH . 'routes.php');
+require_once($CONFIG_PATH . 'helpers.php');
 // ***********
 
 use alkemann\h2l\{
-    Dispatch, Log, Request, Response, util\Chain
+    Dispatch, Environment, Log
 };
 
 $dispatch = new Dispatch($_REQUEST, $_SERVER, $_GET, $_POST);
 $dispatch->setRouteFromRouter();
 
-// Middleware to add a log response for request and what response handler is chosen
-$log_request_middleware = function(Request $request, Chain $chain): ?Response {
-    Log::debug("== REQUEST: {$request->method()} '{$request->url()}' ==");
-    $response = $chain->next($request);
-    if ($response) Log::debug("== Response Handler: " . get_class($response));
-    else Log::debug("== Null Response");
-    return $response;
-};
-$dispatch->registerMiddle($log_request_middleware);
+foreach (Environment::middlewares() as $middle) {
+	$dispatch->registerMiddle($middle);
+}
 
 $response = $dispatch->response();
 if ($response) {
