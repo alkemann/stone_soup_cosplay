@@ -20,7 +20,7 @@ The `vendor/bin/local` injects the database credentials. Assumes that the db `co
 
 ### Install windows
 
-TODO
+I suggest you use [git bash](https://gitforwindows.org) which allows the composer and heroku clis to work as on *nix.
 
 ## File structure
 
