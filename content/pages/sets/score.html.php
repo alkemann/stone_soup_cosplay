@@ -7,12 +7,15 @@ use app\models\{Challenge, Submission, Player};
 	$weeks = sizeof($challenges_in_set);
 ?>
 <h2>Set <?=$set?> scoreboard</h2>
-<ol>
-	<?php foreach ($challenges_in_set as $cha) : ?>
-	<li value="<?=$cha->week?>"><?php if ($cha->icon):?><img src="<?=$cha->icon?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$cha->id?>"><?=$cha->name?></a></b>
-	 <span style="font-size: smaller">(<?=$cha->shortform()?>)</span></li>
-	<?php endforeach; ?>
-</ol>
+<table class="set-list">
+<?php foreach ($challenges_in_set as $cha) : ?>
+	<tr>
+		<td>Week <?=$e($cha->week)?>.</td>
+		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
+		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
+	</tr>	
+<?php endforeach; ?>
+</table>
 
 <table class="bordered">
 	<thead>
@@ -21,9 +24,9 @@ use app\models\{Challenge, Submission, Player};
 			<th>Total<span class="star">&#9733;</span></th>
 			<?php
 			foreach ($challenges_in_set as $c) {
-				echo '<th>';
+				echo "<th>{$c->week}.";
 				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
-				echo "#{$c->week}</th>";
+				echo "</th>";
 			}
 			?>
 		</tr>
