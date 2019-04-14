@@ -1,7 +1,7 @@
 <div class="page information">
     <div class="toplinks">
         <a href="/">Home</a>
-        <a href="/">About</a>
+        | <a href="/about">About</a>
         | <a href="/history">History</a>
         | <a href="/recent">Recent submissions</a>
     <?php if ($this->request->session('admin')) : ?>
