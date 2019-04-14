@@ -9,6 +9,7 @@ if ($active) :
 ?>
 <h2><?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=$e($active->reddit)?>">Set <?=$e($active->setnr)?> Week <?=$e($active->week)?> : <?=$e($active->name)?></a></h2>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
+<p>See current <a href="/challenges/details?id=<?=$e($active->id)?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=$e($active->reddit)?>">discuss it on reddit</a>.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($active->species)?></td><td><?=$e($active->background)?><td><?=$e($active->gods)?></td></tr>
@@ -16,7 +17,6 @@ if ($active) :
 <?php if ($active->special_rule) : ?>
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
-<p>See current <a href="/challenges/details?id=<?=$e($active->id)?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=$e($active->reddit)?>">discuss it on reddit</a>.</p>
 <hr />
 <h2>Set <?=$e($active->setnr)?> Scoreboard</h2>
 <ol>

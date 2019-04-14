@@ -16,7 +16,14 @@ if (!$cha) {
 
 <h2><a href="<?=$e($cha->reddit)?>">Set <?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></a></h2>
 <p style="font-style: italic; color: #777;"><?=$e($cha->description)?></p>
-<?php if ($cha->wiki): ?><p>View the <a href="<?=$e($cha->wiki)?>">wiki page</a> for the unique monster this challenge is based on.</p> <?php endif; ?>
+<p>
+	<?php if ($cha->active) : ?>
+	<a href="/submit">Submit a run</a> | 
+	<?php endif;?>
+	<a href="<?=$e($cha->reddit)?>">Reddit</a><?php if ($cha->wiki): ?> | 
+	<a href="<?=$e($cha->wiki)?>">Wiki page</a><?php endif; ?>
+</p>
+
 <?php if ($cha->icon) : ?><img src="<?=$e($cha->icon)?>" class="detail" /><?php endif; ?>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
