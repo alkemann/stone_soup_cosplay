@@ -7,9 +7,12 @@ if ($active) :
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2><?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="24px" /> <?php endif; ?><a href="<?=$e($active->reddit)?>">Set <?=$e($active->setnr)?> Week <?=$e($active->week)?> : <?=$e($active->name)?></a></h2>
+<h2>
+	Current challenge Set <?=$e($active->setnr)?> Week <?=$e($active->week)?>: <a href="<?=$e($active->reddit)?>"><?=$e($active->name)?></a>
+	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
+</h2>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
-<p>See current <a href="/challenges/details?id=<?=$e($active->id)?>">challenge details here</a> or <a href="/submit">submit a run</a> or <a href="<?=$e($active->reddit)?>">discuss it on reddit</a>.</p>
+<p><a href="/challenges/details?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit">Submit a run</a> | <a href="<?=$e($active->reddit)?>">Discuss it on reddit</a> | Challenge ends on Friday at noon GMT.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($active->species)?></td><td><?=$e($active->background)?><td><?=$e($active->gods)?></td></tr>
@@ -17,13 +20,20 @@ if ($active) :
 <?php if ($active->special_rule) : ?>
 <div class="special_rule"><p><?=$em($active->special_rule)?></p></div>
 <?php endif; ?>
+
 <hr />
-<h2>Set <?=$e($active->setnr)?> Scoreboard</h2>
-<ol>
-	<?php foreach ($challenges_in_set as $cha) : ?>
-	<li value="<?=$e($cha->week)?>"><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b> <span style="font-size: smaller">(<?=$e($cha->shortform())?>)</span></li>
-	<?php endforeach; ?>
-</ol>
+
+<h2>Scoreboard for Set <?=$e($active->setnr)?></h2>
+<table class="set-list">
+<?php foreach ($challenges_in_set as $cha) : ?>
+	<tr>
+		<td>Week <?=$e($cha->week)?>.</td>
+		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
+		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
+	</tr>	
+<?php endforeach; ?>
+</table>
+
 <table class="bordered">
 	<thead>
 		<tr>
@@ -31,9 +41,9 @@ if ($active) :
 			<th>Total <span class="star">&#9733;</span></th>
 			<?php
 			foreach ($challenges_in_set as $c) {
-				echo '<th>';
+				echo "<th>{$c->week}. ";
 				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
-				echo "#{$c->week}</th>";
+				echo "</th>";
 			}
 			?>
 		</tr>
