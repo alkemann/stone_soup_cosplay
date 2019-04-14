@@ -1,6 +1,7 @@
 <div class="page information">
     <div class="toplinks">
         <a href="/">Home</a>
+        <a href="/">About</a>
         | <a href="/history">History</a>
         | <a href="/recent">Recent submissions</a>
     <?php if ($this->request->session('admin')) : ?>
@@ -8,10 +9,10 @@
         | Players <a href="/players/list">List</a> <a href="/players/add">New</a>
     	| Challenges <a href="/challenges/list">List</a> <a href="/challenges/add">New</a>
         | <a href="/logout">Logout</a>
-    
+
 	<?php else : ?>
 	   | <a href="/admin">Admin</a>
-	<?php endif; ?>		
+	<?php endif; ?>
     </div>
     <div class="page_content">
         <div class="heading">
