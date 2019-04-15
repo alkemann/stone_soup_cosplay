@@ -17,11 +17,12 @@ if ($data = $this->request->getPostData()) {
     $stars = max(0, min(2, sizeof(array_map($int, $data['stars']??[]))));
     $data['stars'] = $stars;
     $data['score'] = $score;
-
+    if (empty($data['player_id'])) unset($data['player_id']);
     $data['challenge_id'] = $active->id;
     $data['accepted'] = $data['hs'] = 0;
     // dd($data, $milestones, $optionals, $stars, $score);
     $sub = new app\models\Submission($data);
+    // dd($sub->data());
     if ($sub->save()) {
         Submission::sendToModeration(['challenge_id' => $active->id, 'player_id' => $data['player_id']]);
         return $this->request->redirect('/submissions/list');
@@ -34,6 +35,7 @@ if ($data = $this->request->getPostData()) {
     <fieldset>
         <label>
             <span>Player</span><select name="player_id"> 
+                <option value="">NEW PLAYER</option>
                 <?php $players = Player::list();
                 foreach ($players as $id => $name) : ?>
                 <option value="<?=$e($id)?>"><?=$e($name)?></option>
@@ -56,7 +58,7 @@ if ($data = $this->request->getPostData()) {
         <br />
         <label>
             <span>Comment</span><br />
-            <textarea name="comment" placeholder="Estimate of points and stars?" rows="5" cols="100" ></textarea>
+            <textarea name="comment" placeholder="Estimate of points and stars? Username (for new offline players)?" rows="5" cols="100" ></textarea>
         </label>
         <br />
         <input type="submit" name="Save">

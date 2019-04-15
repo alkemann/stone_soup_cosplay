@@ -27,7 +27,7 @@ if ($data = $this->request->getPostData()) {
 }
 
 ?>
-<h2>Edit Submission for <?=$sub->challenge()->name?> : <?=$sub->player()->name?></h2>
+<h2>Edit Submission for <?=$sub->challenge()->name?> : <?=$sub->player_id ? $sub->player()->name : 'NEW PLAYER'?></h2>
 <form method="POST">
     <fieldset>
         <label>
@@ -43,13 +43,15 @@ if ($data = $this->request->getPostData()) {
         <br />
         <label>
             <span>Player</span><br />
-            <select name="player_id">
+            <select name="player_id" required="required">
+                <option value="">_</option>
                 <?php $players = \app\models\Player::list();
                 foreach ($players as $pid => $name) : ?>
                 <option value="<?=$pid?>" <?php echo ($sub->player_id == $pid) ? 'selected="selected"':'';?> ><?=$name?></option>
                 <?php endforeach; ?>
             </select>
         </label>
+        <a href="/players/add">Add a new player</a>
         <br />
         <br />
 

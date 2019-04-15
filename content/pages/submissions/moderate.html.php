@@ -38,7 +38,7 @@ if (!$this->request->session('admin')) {
 	?>
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->challenge()->name?></td>
-			<td><?=$s->player()->name?></td>
+			<td><?=$s->player_id ? $s->player()->name : 'NEW PLAYER'?></td>
 			<td>
 
 			<?php 
