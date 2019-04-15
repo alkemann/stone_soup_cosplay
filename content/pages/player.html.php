@@ -30,7 +30,7 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 ?>
 <h2>Submissions by <?=$e($p->name)?></h2>
 
-<table class="bordered">
+<table class="bordered player-list">
     <thead>
         <tr>
             <th>Challenge</th>
@@ -43,7 +43,7 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
         foreach ($submissions as $s) :
     ?>
 
-        <tr class="<?=$r++%2==0?'odd':'even'?>">
+        <tr class="<?=$r++%2==0?'odd':'even'?> <?=$s->hs?'hs':'late'?>">
             <?php $cha = $s->challenge()?>
             <td><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></a></td>
             <td><?php if ($s->morgue_url) : ?><a href="<?=$e($s->morgue_url)?>" target="_blank"><?php endif; ?>
@@ -63,3 +63,5 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
     ?>
     </tbody>
 </table>
+<p><b style="color:#333;">Scoring entries.</b> <i style="color:#333;">Non-scoring late or duplicate entries.</i></p>
+

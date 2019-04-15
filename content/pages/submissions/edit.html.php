@@ -99,6 +99,13 @@ if ($data = $this->request->getPostData()) {
         <br />
         <br />
         <label>
+            <input type="hidden" name="late" value="0" />
+            <input type="checkbox" name="late" value="1" <?=$sub->late?'checked="checked"':''?> />
+            <span>Late Entry?</span>
+        </label>
+        <br />
+        <br />
+        <label>
             <span>Comment</span><br />
             <textarea name="comment" rows="5" cols="100" ><?=$sub->comment?></textarea>
         </label>
