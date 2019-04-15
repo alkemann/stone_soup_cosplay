@@ -34,6 +34,14 @@ table.set-list td {
   padding-right: 1.5em;
 }
 
+table.set-list tr td:first-child {
+  white-space: nowrap;
+  text-align: right;
+}
+table.set-list tr td:nth-child(2) {
+  white-space: nowrap;
+}
+
 table.table_for_layout {
   padding: 0;
   margin: 0;
