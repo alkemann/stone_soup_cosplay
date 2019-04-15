@@ -19,6 +19,8 @@ if (!$cha) {
 <p>
 	<?php if ($cha->active) : ?>
 	<a href="/submit">Submit a run</a> | 
+	<?php else: ?>
+	<a href="/submit?id=<?=$cha->id?>">Submit a late run</a> | 
 	<?php endif;?>
 	<a href="<?=$e($cha->reddit)?>">Reddit</a><?php if ($cha->wiki): ?> | 
 	<a href="<?=$e($cha->wiki)?>">Wiki page</a><?php endif; ?>

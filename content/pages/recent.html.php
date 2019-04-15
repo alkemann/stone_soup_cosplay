@@ -3,7 +3,7 @@ use app\models\Submission;
 
 ?>
 <h2>Recent Submissions</h2>
-<table class="bordered">
+<table class="bordered player-list">
 	<thead>
 		<tr>
 			<th>Challenge</th>
@@ -25,7 +25,7 @@ use app\models\Submission;
 		foreach ($submissions as $s) :
 	?>
 		
-		<tr class="<?=$r++%2==0?'odd':'even'?>">
+		<tr class="<?=$r++%2==0?'odd':'even'?> <?=$s->hs?'hs':'late'?>">
 			<?php $cha = $s->challenge()?>
 			<td><a href="/challenges/details?id=<?=$e($s->challenge_id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></td>
 			<td><a href="/player?id=<?=$e($s->player_id)?>"><?=$e($s->player()->name)?></a></td>
@@ -47,7 +47,8 @@ use app\models\Submission;
 	?>
 	</tbody>
 </table>
-<span style="font-size: 10px;">Shows 50 latest approved submissions.</span>
+<p><b style="color:#333;">Scoring entries.</b> <i style="color:#333;">Non-scoring late or duplicate entries.</i> Shows 50 latest approved submissions.</p>
+
 <p>
 <?php if ($page > 1) : ?><a href="/recent?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
 <?php if (sizeof($submissions) == $page_size) : ?><a href="/recent?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>

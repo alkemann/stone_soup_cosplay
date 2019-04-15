@@ -3,10 +3,17 @@
 use \app\models\{Challenge, Player, Submission};
 use \app\Scorer;
 
-$active = Challenge::active();
-if (!$active) {
-    echo '<h2>No active challenge at this time</h2>';
-    return;
+$id = $_GET['id'] ?? false;
+
+if ($id) {
+    $cha = Challenge::get($id);
+} else {
+    $cha = Challenge::active();
+}
+
+
+if (!$cha || $cha->draft) {
+    return $this->request->redirect('/');
 }
 
 if ($data = $this->request->getPostData()) {
@@ -18,20 +25,20 @@ if ($data = $this->request->getPostData()) {
     $data['stars'] = $stars;
     $data['score'] = $score;
     if (empty($data['player_id'])) unset($data['player_id']);
-    $data['challenge_id'] = $active->id;
+    $data['challenge_id'] = $cha->id;
     $data['accepted'] = $data['hs'] = 0;
-    // dd($data, $milestones, $optionals, $stars, $score);
+    $data['late'] = $cha->active == 1 ? 0 : 1;
     $sub = new app\models\Submission($data);
-    // dd($sub->data());
     if ($sub->save()) {
-        Submission::sendToModeration(['challenge_id' => $active->id, 'player_id' => $data['player_id']]);
-        return $this->request->redirect('/submissions/list');
+        Submission::sendToModeration(['challenge_id' => $cha->id, 'player_id' => $data['player_id']]);
+        return $this->request->redirect('/');
     }
 }
 
 ?>
-<h2>Adding new Submission for Set <?=$e($active->setnr)?> Week <?=$e($active->week)?> : <?=$e($active->name)?></h2>
+<h2>Adding new Submission for Set <?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></h2>
 <form method="POST">
+    <input type="hidden" name="challenge_id" value="<?=$cha->id?>">
     <fieldset>
         <label>
             <span>Player</span><select name="player_id"> 
@@ -77,23 +84,23 @@ if ($data = $this->request->getPostData()) {
     <fieldset><legend>Conducts (+5 each<sup>*</sup>)</legend>
     <label>
         <input type="checkbox" name="optionals[]" value="7" />
-        <span><?=$e($active->conduct_name_1)?></span>
+        <span><?=$e($cha->conduct_name_1)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$e($active->conduct_1)?></i>
+    <i style="font-size: 0.75em;"><?=$e($cha->conduct_1)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="optionals[]" value="8" />
-        <span><?=$e($active->conduct_name_2)?></span>
+        <span><?=$e($cha->conduct_name_2)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$e($active->conduct_2)?></i>
+    <i style="font-size: 0.75em;"><?=$e($cha->conduct_2)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="optionals[]" value="9" />
-        <span><?=$e($active->conduct_name_3)?></span>
+        <span><?=$e($cha->conduct_name_3)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$e($active->conduct_3)?></i>
+    <i style="font-size: 0.75em;"><?=$e($cha->conduct_3)?></i>
     <br />
     <p style="font-size: 0.75em; color: #999;"><sup>*</sup> Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Please indicate which conducts you qualify for when you post your morgue. Small mistakes in following conducts will usually be forgiven.</p>
     </fieldset>
@@ -101,16 +108,16 @@ if ($data = $this->request->getPostData()) {
     <fieldset><legend>Bonus <span class="star">&#9733;</span></legend>
     <label>
         <input type="checkbox" name="stars[]" value="10" />
-        <span><?=$e($active->bonus_name_1)?></span>
+        <span><?=$e($cha->bonus_name_1)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$e($active->bonus_1)?></i>
+    <i style="font-size: 0.75em;"><?=$e($cha->bonus_1)?></i>
     <br />
     <br />
     <label>
         <input type="checkbox" name="stars[]" value="11" />
-        <span><?=$e($active->bonus_name_2)?></span>
+        <span><?=$e($cha->bonus_name_2)?></span>
     </label>
-    <i style="font-size: 0.75em;"><?=$e($active->bonus_2)?></i>
+    <i style="font-size: 0.75em;"><?=$e($cha->bonus_2)?></i>
     <br />
     <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
     </fieldset>
