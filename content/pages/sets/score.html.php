@@ -6,7 +6,8 @@ use app\models\{Challenge, Submission, Player};
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 ?>
-<h2>Set <?=$set?> scoreboard</h2>
+<h2>Set <?=$set?></h2>
+
 <table class="set-list">
 <?php foreach ($challenges_in_set as $cha) : ?>
 	<tr>
@@ -16,6 +17,7 @@ use app\models\{Challenge, Submission, Player};
 	</tr>	
 <?php endforeach; ?>
 </table>
+<?php if ($set != 1) : ?>
 
 <table class="bordered">
 	<thead>
@@ -59,3 +61,10 @@ use app\models\{Challenge, Submission, Player};
 	<?php endforeach; ?>
 	</tbody>
 </table>
+
+
+<?php else : ?>
+<p class="disclaimer">The Cosplay Challenge was originally run as a continuous series, before the concept of dividing it into sets was introduced. The initial challenges are all grouped as "Set 1."</p>
+
+<p class="disclaimer">The scoring system was different, with a perfect score being 70 points. The totals have been adjusted here so that players wishing to try these challenges can submit runs using the current scoring scheme. See <a href="https://www.reddit.com/r/dcss/comments/9rlseu/casual_cosplay_challenge_week_15_boris_mucj_plus/">the reddit thread for week 15</a> for the original score totals.</p>
+<?php endif; ?>
