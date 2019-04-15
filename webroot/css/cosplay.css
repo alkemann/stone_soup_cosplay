@@ -21,8 +21,8 @@ tr.late td {
 tr.hs td {
  font-weight: bold;
 }
-table.bordered a, table.bordered a:visited {
-  color: #444;
+a, a:visited {
+  color: #444 !important;
 }
 
 table.set-list {

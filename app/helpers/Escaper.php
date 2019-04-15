@@ -10,9 +10,9 @@ class Escaper
 	}
 
 
-	public static function escape(string $s): string
+	public static function escape(?string $s): string
 	{
-		return htmlspecialchars($s);
+		return is_string($s) ? htmlspecialchars($s) : '';
 	}
 
 	public static function escapeWithMarkdown(string $s): string
