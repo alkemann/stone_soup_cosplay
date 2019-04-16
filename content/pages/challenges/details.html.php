@@ -11,6 +11,12 @@ $cha = Challenge::get($id);
 if (!$cha) {
 	return $this->request->redirect('/');
 }
+
+$is_admin = $this->request->session('admin');
+if ($cha->draft && !$is_admin) {
+	return $this->request->redirect('/');
+}
+
 ?>
 <div class="challenge">
 

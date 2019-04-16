@@ -30,11 +30,11 @@ if (!$this->request->session('admin')) {
 			<td><?=$c->setnr?>.<?=$c->week?></td>
 			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td class="actions-td">
-				<a href="<?=$c->reddit?>"><?=$c->name?></a>
+				<a href="/challenges/details?id=<?=$c->id?>"><?=$c->name?></a>
 				<br />(<?=$c->shortform()?>)
 			</td>
 			<td><?=$c->subs?></td>
-			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="/challenges/details?id=<?=$c->id?>">Details</a></td>
+			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="<?=$c->reddit?>">Reddit</a></td>
 		</tr>
 
 	<?php

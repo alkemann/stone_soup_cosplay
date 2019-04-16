@@ -19,7 +19,10 @@ use app\models\{Challenge, Submission, Player};
 ?>
 	<tr>
 		<td>Week <?=$e($cha->week)?>.</td>
-		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
+		<td><?php if ($cha->icon):?>
+			<a href="/challenges/details?id=<?=$e($cha->id)?>"><img src="<?=$e($cha->icon)?>" style="height: 1em" /></a><?php endif; ?> 
+			<b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b>
+		</td>
 		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
 	</tr>	
 <?php endforeach; ?>
@@ -40,7 +43,7 @@ use app\models\{Challenge, Submission, Player};
 				}
 
 				echo "<th>{$c->week}.";
-				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
+				if ($cha->icon) echo '<a href="/challenges/details?id='.$c->id.'"><img src="'.$c->icon.'" style="height: 1.5em" /></a>';
 				echo "</th>";
 			}
 			?>
