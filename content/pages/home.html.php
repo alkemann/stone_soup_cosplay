@@ -53,8 +53,8 @@ if ($active) :
 				echo '<th rowspan="' . (sizeof($scores) + 1) . '">&nbsp;</th>';
 				$made_seperator = true; // only make one seperator if multiple bonuses
 			}
-							echo "<th>{$c->week}. ";
-			if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
+			echo '<th>' . $e($c->week) . '. ';
+			if ($cha->icon) echo '<a href="/challenges/details?id='.$c->id.'"><img src="'.$e($c->icon).'" style="height: 1.5em" /></a>';
 			echo "</th>";
 		}
 		?>
@@ -73,7 +73,7 @@ if ($active) :
 					continue;
 				}
 				$out = '<td>';
-				if (!empty($week['morgue'])) $out .= '<a href="'.$week['morgue'].'" target="_blank">';
+				if (!empty($week['morgue'])) $out .= '<a href="'. $e($week['morgue']) .'" target="_blank">';
 				$out .= $week['score'];
 				for ($i=0; $i < (int) $week['stars'] ; $i++) {
 					$out .= '<span class="star">&#9733;</span>';
