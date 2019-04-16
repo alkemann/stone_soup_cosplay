@@ -67,6 +67,13 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<br />
 		<label>
+			<input type="hidden" name="bonus" value="0" />
+			<input type="checkbox" name="bonus" value="1" <?=($cha->bonus)?'checked="checked"':''?> />
+			<span>Bonus challenge (won't count for set scoreboard)</span>
+		</label>
+		<br />
+		<br />
+		<label>
 			<span>Set</span><br />
 			<input type="number" name="setnr"  value="<?=$cha->setnr?>"/>
 		</label>

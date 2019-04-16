@@ -9,7 +9,14 @@ use app\models\{Challenge, Submission, Player};
 <h2>Set <?=$set?></h2>
 
 <table class="set-list">
-<?php foreach ($challenges_in_set as $cha) : ?>
+<?php 
+	$made_seperator = false;
+	foreach ($challenges_in_set as $cha) : 
+		if ($cha->bonus && !$made_seperator) {
+			echo '<tr><td colspan="3">&nbsp;</td></tr>';
+			$made_seperator = true; // only make one seperator if multiple bonuses
+		}
+?>
 	<tr>
 		<td>Week <?=$e($cha->week)?>.</td>
 		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
@@ -20,20 +27,25 @@ use app\models\{Challenge, Submission, Player};
 <?php if ($set != 1) : ?>
 
 <table class="bordered">
-	<thead>
 		<tr>
 			<th>Player</th>
 			<th>Total<span class="star">&#9733;</span></th>
 			<?php
+			$made_seperator = false;
 			foreach ($challenges_in_set as $c) {
+
+				if ($c->bonus && !$made_seperator) {
+					echo '<th rowspan="' . (sizeof($scores) + 1) . '">&nbsp;</th>';
+					$made_seperator = true; // only make one seperator if multiple bonuses
+				}
+
 				echo "<th>{$c->week}.";
 				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
 				echo "</th>";
 			}
 			?>
 		</tr>
-	</thead>
-	<tbody><?php $r = 0;
+	<?php $r = 0;
 	foreach ($scores as $row) : ?>
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><a href="/player?id=<?=$row['pid']?>"><?=$row['player']?></a></td>
@@ -59,7 +71,6 @@ use app\models\{Challenge, Submission, Player};
 			?>
 		</tr>
 	<?php endforeach; ?>
-	</tbody>
 </table>
 
 

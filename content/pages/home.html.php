@@ -25,7 +25,14 @@ if ($active) :
 
 <h2>Scoreboard for Set <?=$e($active->setnr)?></h2>
 <table class="set-list">
-<?php foreach ($challenges_in_set as $cha) : ?>
+<?php 
+	$made_seperator = false;
+	foreach ($challenges_in_set as $cha) : 
+		if ($cha->bonus && !$made_seperator) {
+			echo '<tr><td colspan="3">&nbsp;</td></tr>';
+			$made_seperator = true; // only make one seperator if multiple bonuses
+		}
+?>
 	<tr>
 		<td>Week <?=$e($cha->week)?>.</td>
 		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
@@ -35,20 +42,24 @@ if ($active) :
 </table>
 
 <table class="bordered">
-	<thead>
-		<tr>
-			<th>Player</th>
-			<th>Total <span class="star">&#9733;</span></th>
-			<?php
-			foreach ($challenges_in_set as $c) {
-				echo "<th>{$c->week}. ";
-				if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
-				echo "</th>";
+	<tr>
+		<th>Player</th>
+		<th>Total <span class="star">&#9733;</span></th>
+		<?php
+		$made_seperator = false;
+		foreach ($challenges_in_set as $c) {
+
+			if ($c->bonus && !$made_seperator) {
+				echo '<th rowspan="' . (sizeof($scores) + 1) . '">&nbsp;</th>';
+				$made_seperator = true; // only make one seperator if multiple bonuses
 			}
-			?>
-		</tr>
-	</thead>
-	<tbody><?php
+							echo "<th>{$c->week}. ";
+			if ($cha->icon) echo '<img src="'.$c->icon.'" style="height: 1.5em" /> ';
+			echo "</th>";
+		}
+		?>
+	</tr>
+	<?php
 	foreach ($scores as $i => $row) : ?>
 		<tr class="<?=$i%2==0?'odd':'even'?>">
 			<td><a href="/player?id=<?=$e($row['pid'])?>"><?=$e($row['player'])?></a></td>
@@ -76,7 +87,6 @@ if ($active) :
 			?>
 		</tr>
 	<?php endforeach; ?>
-	</tbody>
 </table>
 <?php else : // no active challengs ?>
 <h3>No currently active challenges</h3>
