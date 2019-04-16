@@ -33,7 +33,7 @@
 
 <p>The Crawl Cosplay Challenge is run by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a>.</p>
 
-<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by Alkemann, based on the one from the<a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
+<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by Alkemann, based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
 
 <h4>Inspiration and influences:</h4>
 
