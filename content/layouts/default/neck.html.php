@@ -1,3 +1,4 @@
+<div id="top-wall">&nbsp;</div>
 <div class="page information">
     <div class="toplinks">
         <a href="/">Home</a>
