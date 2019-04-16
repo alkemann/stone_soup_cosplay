@@ -10,7 +10,8 @@
 
 <h3>Rules and Scoring</h3>
 
-<p><strong>Milestones:</strong> These remain the same from one week to the next, and are the main way of scoring points. Each milestone earns you 5 points, for a total of 35 if you win the game, and can be done in any order. You can only earn points from each milestone once per game (entering Lair and then Orc doesn't get you 10 points).</p>
+<h4>Milestones</h4> 
+<p>These remain the same from one week to the next, and are the main way of scoring points. Each milestone earns you 5 points, for a total of 35 if you win the game, and can be done in any order. You can only earn points from each milestone once per game (entering Lair and then Orc doesn't get you 10 points).</p>
 
 <ul><li>Reach XL3.</li>
 <li>Enter Lair, Orc, or Depths.</li>
@@ -20,9 +21,11 @@
 <li>Collect three runes.</li>
 <li>Win the game.</li></ul>
 
-<p><strong>Cosplay Conducts</strong>: Each week will have three <em>optional</em> conducts for you to follow, that vary with every challenge. Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Small mistakes in following the conducts will usually be forgiven, but make sure you ask.</p>
+<h4>Cosplay Conducts</h4>
+<p>Each week will have three <em>optional</em> conducts for you to follow, that vary with every challenge. Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Small mistakes in following the conducts will usually be forgiven, but make sure you ask.</p>
 
-<p><strong>Bonus Challenges:</strong> Each week will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional. Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill. Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars. Small mistakes in following the bonus challenges will usually be forgiven.</p>
+<h4>Bonus Challenges:</h4> 
+<p>Each week will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional. Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill. Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars. Small mistakes in following the bonus challenges will usually be forgiven.</p>
 
 <p>It is possible, and even likely, that several players will end up with a perfect score. This is not considered a problem, and there is no tie-breaker.</p>
 
@@ -30,9 +33,9 @@
 
 <p>The Crawl Cosplay Challenge is run by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a>.</p>
 
-<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace</p>
+<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by Alkemann, based on the one from the<a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
 
-<p>Inspiration and influences:</p>
+<h4>Inspiration and influences:</h4>
 
 <ul><li>Casual League challenges by <a href="http://crawl.akrasiac.org/scoring/players/miek.html" target="_blank">triorph aka miek</a></li>
 <li>Scrub League and other challenges by <a href="http://crawl.akrasiac.org/scoring/players/vajrapani.html" target="_blank">VajRapani</a></li>
