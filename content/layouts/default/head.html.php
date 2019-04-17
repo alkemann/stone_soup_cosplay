@@ -9,3 +9,4 @@
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 </head>
 <body class="page_back">
+<div class="page_floor">
