@@ -5,7 +5,5 @@
 		</div>
 	</div>
 </div>
-<div id="left-wall">&nbsp;</div>
-<div id="right-wall">&nbsp;</div>
 </body>
 </html>
