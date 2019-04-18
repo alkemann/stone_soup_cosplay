@@ -15,8 +15,9 @@ class Escaper
 		return is_string($s) ? htmlspecialchars($s) : '';
 	}
 
-	public static function escapeWithMarkdown(string $s): string
+	public static function escapeWithMarkdown(?string $s): string
 	{
+		if (empty($s)) return '';
 		$Parsedown = new \Parsedown();
 		$Parsedown->setMarkupEscaped(true);
 		$Parsedown->setSafeMode(true);

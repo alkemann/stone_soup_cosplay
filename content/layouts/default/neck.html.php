@@ -21,5 +21,8 @@
         </div>
         <br />
         <hr />
-        <div class="content">
-
+        <div class="content" onclick="window.location = '/dismiss';">
+        <?php if ($msg = $this->request->session()->get('message')) : ?>
+            <div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
+        <?php endif; ?>
+        </div>

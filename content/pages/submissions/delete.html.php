@@ -13,8 +13,9 @@ if ($id == false) {
 
 $sub = Submission::get($id);
 if (!$sub || $sub->delete() == false) {
-	return $this->request->redirect('/');
+	$this->request->session()->set('message', 'Something went wrong there. Sorry!');
+	return $this->request->redirect('/submissions/moderate');
 }
-
+$this->request->session()->set('message', 'Submission deleted!');
 return $this->request->redirect('/submissions/moderate');
 
