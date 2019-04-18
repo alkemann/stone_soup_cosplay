@@ -123,5 +123,6 @@ if ($data = $this->request->getPostData()) {
     </fieldset>
     <br />
     <input type="submit" name="Save">
+    <p>Submissions will not be displayed until approved by an admin.</p>
     <br />
 </form>
