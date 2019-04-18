@@ -6,5 +6,6 @@
 	</div>
 </div>
 </div>
+<div id="page_footer">&nbsp;</div>
 </body>
 </html>
