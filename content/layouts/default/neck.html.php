@@ -2,7 +2,7 @@
     <div class="toplinks">
         <a href="/">Home</a>
         | <a href="/about">About</a>
-        | <a href="/history">History</a>
+        | <a href="/history">Past Challenges</a>
         | <a href="/recent">Recent submissions</a>
     <?php if ($this->request->session('admin')) : ?>
         | Subs <a href="/submissions/list">Official</a> <a href="/submissions/moderate">Moderate</a> <a href="/submissions/add">New</a>
