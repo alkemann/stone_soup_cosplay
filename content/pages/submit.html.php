@@ -69,7 +69,7 @@ if ($data = $this->request->getPostData()) {
             <textarea name="comment" placeholder="Estimate of points and stars? Username (for new offline players)?" rows="5" cols="100" ></textarea>
         </label>
         <br />
-        <input type="submit" name="Save">
+        <input type="submit" value="Submit Run" />
     </fieldset>
     <br />
     <fieldset><legend>Milestones (+5 each)</legend>
@@ -123,7 +123,7 @@ if ($data = $this->request->getPostData()) {
     <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
     </fieldset>
     <br />
-    <input type="submit" name="Save">
+    <input type="submit" value="Submit Run" />
     <p>Submissions will not be displayed until approved by an admin.</p>
     <br />
 </form>
