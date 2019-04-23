@@ -73,9 +73,19 @@ if ($data = $this->request->getPostData()) {
     </fieldset>
     <br />
     <fieldset><legend>Milestones (+5 each)</legend>
+    <div class="try-hard"><input type="button" id="try-click" onclick="javascript:tryhard();" title="Enable all conducts and milestones" value="Try Hard" /></div>
+    <script type="text/javascript">
+        function tryhard() {
+            checkboxes = document.getElementsByClassName('tryhard');
+            for (var i = checkboxes.length - 1; i >= 0; i--) {
+                checkboxes[i]
+                checkboxes[i].checked = !checkboxes[i].checked;
+            }
+        }
+    </script>
     <?php for ($m=0; $m < 7; $m++) : ?>
     <label>
-        <input type="checkbox" name="milestones[]" value="<?=$e($m)?>" />
+        <input class="milestone tryhard" type="checkbox" name="milestones[]" value="<?=$e($m)?>" />
         <span><?=Scorer::$milestones[$m]?></span><br />
     </label>
     <?php endfor; ?>
@@ -84,21 +94,21 @@ if ($data = $this->request->getPostData()) {
     <br />
     <fieldset><legend>Conducts (+5 each<sup>*</sup>)</legend>
     <label>
-        <input type="checkbox" name="optionals[]" value="7" />
+        <input class="conduct tryhard" type="checkbox" name="optionals[]" value="7" />
         <span><?=$e($cha->conduct_name_1)?></span>
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->conduct_1)?></i>
     <br />
     <br />
     <label>
-        <input type="checkbox" name="optionals[]" value="8" />
+        <input class="conduct tryhard" type="checkbox" name="optionals[]" value="8" />
         <span><?=$e($cha->conduct_name_2)?></span>
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->conduct_2)?></i>
     <br />
     <br />
     <label>
-        <input type="checkbox" name="optionals[]" value="9" />
+        <input class="conduct tryhard" type="checkbox" name="optionals[]" value="9" />
         <span><?=$e($cha->conduct_name_3)?></span>
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->conduct_3)?></i>
@@ -108,14 +118,14 @@ if ($data = $this->request->getPostData()) {
     <br />
     <fieldset><legend>Bonus <span class="star">&#9733;</span></legend>
     <label>
-        <input type="checkbox" name="stars[]" value="10" />
+        <input class="stars tryhard" type="checkbox" name="stars[]" value="10" />
         <span><?=$e($cha->bonus_name_1)?></span>
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->bonus_1)?></i>
     <br />
     <br />
     <label>
-        <input type="checkbox" name="stars[]" value="11" />
+        <input class="stars tryhard" type="checkbox" name="stars[]" value="11" />
         <span><?=$e($cha->bonus_name_2)?></span>
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->bonus_2)?></i>

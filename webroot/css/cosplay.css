@@ -28,6 +28,14 @@ a:visited {
     color: #ccc !important;
 }
 
+.try-hard {
+    padding: 0.5em 0 1em 0;
+}
+
+.try-hard a, .try-hard a:visited {
+    color: #ddd;
+}
+
 .message {
     margin: 1em 1em 0;
     padding: 1em 1em;
