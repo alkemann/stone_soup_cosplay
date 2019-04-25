@@ -35,9 +35,10 @@ if (!$this->request->session('admin')) {
 	<?php 
 	$r = 0;
 	foreach ($submissions as $s) :
+		$c = $s->challenge();
 	?>
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
-			<td><?=$s->challenge()->name?></td>
+			<td><?=$c->setnr?>.<?=$c->week?> <?=$c->name?></td>
 			<td><?=$s->player_id ? $s->player()->name : 'NEW PLAYER'?></td>
 			<td>
 
