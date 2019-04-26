@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://www.crawlcosplay.com/img/pic-05.2.png" />
+    <meta property="og:image:url" content="http://www.crawlcosplay.com/img/pic-05.2.png" />
     <title>Crawl Cosplay Challenge</title>
     <link rel="icon" href="/img/urand_dragonmask.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
