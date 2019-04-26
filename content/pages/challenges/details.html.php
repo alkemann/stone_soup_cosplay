@@ -37,7 +37,7 @@ if ($cha->draft && !$is_admin) {
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($cha->species)?></td><td><?=$e($cha->background)?><td><?=$e($cha->gods)?></td></tr>
 </table>
-<p class="info">The Species, Background, and God choices are all mandatory. You must be worshipping one of the gods listed above before entering Lair, Orc, or Depths, unless this isn't possible in which case you must worship them as soon as you can. Don't do anything to lose your religion, and don't use faded altars.</p>
+<p class="info">The Species, Background, and God choices are all mandatory. You must be worshipping one of the gods listed above before entering Lair, Orc, or Depths, unless this isn't possible in which case you must worship them as soon as you can. Don't do anything to lose your religion, and don't use faded altars (except for challenges when you can follow any god).</p>
 
 <?php if ($cha->special_rule) : ?>
 <h3>Special Rule</h3>
