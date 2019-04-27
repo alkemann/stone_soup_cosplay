@@ -6,7 +6,11 @@
 
 <p>New challenges are posted Fridays at approximately Midnight EST/5AM GMT. You will have until the following Friday at 7 AM EST/Noon GMT to enter your game, though games started before that date and entered not too long after are generally accepted. Challenges will not run when official DCSS tournaments or other large tournaments/challenges (e.g <a href="http://csclub.uwaterloo.ca/~ebering/crawl/csdc/index.html" target="_blank">CSDC</a>) are going on. 
 
-<p>Challenges can be played in either the latest stable or trunk version, and occasionally other versions. You can play online or offline, and can make as many attempts as you want before the deadline.</p>
+<p>Challenges can be played in either the latest stable or trunk version, and occasionally other versions when specified. You can play online or offline, and can make as many attempts as you want before the deadline.</p>
+
+<h3>How to Enter</h3>
+
+<p>The page for each challenge has a "Submit a run" link, where you can paste a link to a morgue, and enter your score. Online, finished games can use the direct link to the morgue in the submission; offline and/or in-progress games should be uploaded to a site like <a href="https://pastebin.com/>pastebin</a>, <a href="https://www.dropbox.com/">dropbox</a>, or any other similar site. Submissions will be approved by a site administrator, who will verify your score.</p>
 
 <h3>Rules and Scoring</h3>
 
@@ -22,7 +26,7 @@
 <li>Win the game.</li></ul>
 
 <h4>Cosplay Conducts</h4>
-<p>Each week will have three <em>optional</em> conducts for you to follow, that vary with every challenge. Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Small mistakes in following the conducts will usually be forgiven, but make sure you ask.</p>
+<p>Each week will have three <em>optional</em> conducts for you to follow, that vary with every challenge. Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down. (So if you achieve 3 milestones (15 points) you can earn up to 7 points from conduct bonuses, for a total of 22 points.) Small mistakes in following the conducts will usually be forgiven, but make sure you ask.</p>
 
 <h4>Bonus Challenges:</h4> 
 <p>Each week will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional. Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill. Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars. Small mistakes in following the bonus challenges will usually be forgiven.</p>
@@ -33,7 +37,7 @@
 
 <p>The Crawl Cosplay Challenge is run by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a>.</p>
 
-<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by Alkemann, based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
+<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by kitchen_ace and Alkemann, loosely based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
 
 <h4>Inspiration and influences:</h4>
 
