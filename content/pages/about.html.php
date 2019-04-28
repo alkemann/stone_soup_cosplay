@@ -10,7 +10,7 @@
 
 <h3>How to Enter</h3>
 
-<p>The page for each challenge has a "Submit a run" link, where you can paste a link to a morgue, and enter your score. Online, finished games can use the direct link to the morgue in the submission; offline and/or in-progress games should be uploaded to a site like <a href="https://pastebin.com/>pastebin</a>, <a href="https://www.dropbox.com/">dropbox</a>, or any other similar site. Submissions will be approved by a site administrator, who will verify your score.</p>
+<p>The page for each challenge has a "Submit a run" link, where you can paste a link to a morgue, and enter your score. Online, finished games can use the direct link to the morgue in the submission; offline and/or in-progress games should be uploaded to a site like <a href="https://pastebin.com/">pastebin</a>, <a href="https://www.dropbox.com/">dropbox</a>, or any other similar site. Submissions will be approved by a site administrator, who will verify your score.</p>
 
 <h3>Rules and Scoring</h3>
 
