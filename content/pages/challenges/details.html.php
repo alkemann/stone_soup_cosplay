@@ -17,6 +17,9 @@ if ($cha->draft && !$is_admin) {
 	return $this->request->redirect('/');
 }
 
+$name = $e($cha->name);
+$this->setData("page_title", "{$name} - Crawl Cosplay Challenge")
+
 ?>
 <div class="challenge">
 

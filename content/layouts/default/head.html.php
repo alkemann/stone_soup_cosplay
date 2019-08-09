@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta property="og:image:url" content="http://www.crawlcosplay.com/img/pic-05.2.png" />
-    <title>Crawl Cosplay Challenge</title>
+    <title><?=$page_title ?? 'Crawl Cosplay Challenge'?></title>
     <link rel="icon" href="/img/urand_dragonmask.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cosplay.css?v=<?=time()?>">
