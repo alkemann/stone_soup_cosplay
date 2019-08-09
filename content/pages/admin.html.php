@@ -5,7 +5,7 @@ if ($data = $this->request->getPostData()) {
 	if ($data['passphrase'] == 'think of the sun') {
 		session_start();
 		$_SESSION['admin'] = true;
-		$this->request->redirect('/');
+		$this->request->redirect('/submissions/moderate');
 	}
 
 }
