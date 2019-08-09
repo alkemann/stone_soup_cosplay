@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6e7cfd109d6298a66482bb51f0c91fa",
+    "content-hash": "bf42b1bed7037fb94af194499870f045",
     "packages": [
         {
             "name": "alkemann/debug",
@@ -44,16 +44,16 @@
         },
         {
             "name": "alkemann/h2l",
-            "version": "v0.40.0",
+            "version": "v0.45.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "5f0c8e535bbe99c9de99b9703df2289d6555e5e7"
+                "reference": "ac0ff0dfd800c9a875efad0d516cf01384a2b4f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/5f0c8e535bbe99c9de99b9703df2289d6555e5e7",
-                "reference": "5f0c8e535bbe99c9de99b9703df2289d6555e5e7",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/ac0ff0dfd800c9a875efad0d516cf01384a2b4f0",
+                "reference": "ac0ff0dfd800c9a875efad0d516cf01384a2b4f0",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
             },
             "require-dev": {
                 "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^5.2"
+                "phpunit/phpunit": "^7.5.14"
             },
             "suggest": {
                 "alkemann/debug": "Convenient var_dump replaces for debug and development, require-dev only",
@@ -100,7 +100,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-04-12T13:26:43+00:00"
+            "time": "2019-08-09T12:09:25+00:00"
         },
         {
             "name": "erusev/parsedown",
