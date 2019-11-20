@@ -15,17 +15,17 @@ if (!$this->request->session('admin')) {
 			<th>Name</th>
 			<th>#</th>
 			<th>Actions</th>
-			
+
 		</tr>
 	</thead>
 	<tbody>
 	<?php
 		// Supports limit and offset as first and second params for pagination, first param includes drafts
-		$challenges = Challenge::findBySets(true); 
+		$challenges = Challenge::findBySets(true, 75);
 		$r = 0;
 		foreach ($challenges as $c) :
 	?>
-		
+
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
 			<td><?=$c->setnr?>.<?=$c->week?></td>
 			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
