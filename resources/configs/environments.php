@@ -11,8 +11,15 @@ Environment::add([
     'debug' => true,
     'logs_path' => $base . 'resources' . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR,
     'content_path' => $base . 'content' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR,
-    'layout_path'  => $base . 'content' . DIRECTORY_SEPARATOR . 'layouts' . DIRECTORY_SEPARATOR
+    'layout_path'  => $base . 'content' . DIRECTORY_SEPARATOR . 'layouts' . DIRECTORY_SEPARATOR,
 ], Environment::ALL);
+
+// Set admin phrase to value from environment or random bytes if not set
+$admin_phrase = getenv('ADMIN');
+if ($admin_phrase === false) {
+    $admin_phrase = random_bytes(16);
+}
+Environment::put('admin_phrase', $admin_phrase, Environment::ALL);
 
 $env = getenv('ENV');
 Environment::setEnvironment($env ? $env : Environment::LOCAL); // Check for valid value?

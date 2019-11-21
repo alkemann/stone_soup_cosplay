@@ -1,11 +1,22 @@
 <?php
 
-if ($data = $this->request->getPostData()) {
+use alkemann\h2l\{ Environment, Log };
 
-	if ($data['passphrase'] == 'think of the sun') {
+if ($data = $this->request->getPostData()) {
+	$key = Environment::get('admin_phrase');
+	if (empty($key)) {
+		Log::error("No Admin phrase configured");
+		$this->request->redirect('/');
+		return;
+	}
+
+	if ($data['passphrase'] === $key) {
 		session_start();
 		$_SESSION['admin'] = true;
 		$this->request->redirect('/admin/submissions/moderate');
+		return;
+	} else {
+		Log::warning("Admin phrase failed : [{$data['passphrase']}] != [{$key}]");
 	}
 
 }
