@@ -47,7 +47,7 @@ $this->setData("page_title", "{$name} - Crawl Cosplay Challenge")
 <div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
 <?php endif; ?>
 
-<div style="clear:both;width: 250px; float:right; padding: 0 2em 5em;">
+<div class="score-sidebar">
 <h3>Submissions</h3>
 <br />
 <table class="bordered">
