@@ -34,7 +34,7 @@ if ($data = $this->request->getPostData()) {
         }
     }
     if ($sub->save()) {
-        return $this->request->redirect('/submissions/list');
+        return $this->request->redirect('/admin/submissions/list');
     }
 }
 

@@ -11,7 +11,7 @@ if ($data = $this->request->getPostData()) {
     if ($player->save()) {
         session_start();
         $_SESSION['message'] = "Player created";
-        return $this->request->redirect('/players/list');
+        return $this->request->redirect('/admin/players/list');
     }
     dd($player);
 }

@@ -21,7 +21,7 @@ if ($data = $this->request->getPostData()) {
     $data['score'] = (int) $data['score'];
     $data['stars'] = (int) $data['stars'];
     if ($sub->save($data)) {
-        return $this->request->redirect('/submissions/list');
+        return $this->request->redirect('/admin/submissions/list');
     }
     dd($sub);
 }
@@ -51,7 +51,7 @@ if ($data = $this->request->getPostData()) {
                 <?php endforeach; ?>
             </select>
         </label>
-        <a href="/players/add">Add a new player</a>
+        <a href="/admin/players/add">Add a new player</a>
         <br />
         <br />
 
