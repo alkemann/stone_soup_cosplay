@@ -251,6 +251,18 @@ div.sidebar_content {
     background: white;
     border: 1px solid #000;
 }
+
+div.score-sidebar {
+    float: right;
+    clear: both;
+    text-align: right;
+    width: 250px;
+    padding: 0 2em 5em;
+}
+div.score-sidebar table {
+    float: right;
+}
+
 div.inset {
     background: #fffae0;
     padding: 10px;

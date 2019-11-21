@@ -1,6 +1,6 @@
 <?php
 
-use app\models\Challenge;
+use app\models\{Challenge, Submission};
 
 $id = $_GET['id'] ?? false;
 if ($id == false) {
@@ -46,6 +46,49 @@ $this->setData("page_title", "{$name} - Crawl Cosplay Challenge")
 <h3>Special Rule</h3>
 <div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
 <?php endif; ?>
+
+<div class="score-sidebar">
+<h3>Submissions</h3>
+<br />
+<table class="bordered">
+	<thead>
+		<tr>
+			<th>Player</th>
+			<th>Score<span class="star">&#9733;&#9733;</span></th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php
+		$subs = Submission::scoreboard($id);
+		$r = 0;
+		foreach ($subs as $s) :
+	?>
+
+		<tr class="<?=$r++%2==0?'odd':'even'?>">
+			<?php
+				$player = $s->player();
+				$player_name = $player->name;
+				$player_id = $player->name;
+			?>
+			<td><a href="/player?id=<?=$player_id?>"><?=$e($player_name)?></a></td>
+			<td>
+			<?php
+			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
+			echo $s->score;
+			for ($i=0; $i < (int) $s->stars ; $i++) {
+				echo '<span class="star">&#9733;</span>';
+			}
+			if (!empty($s->morgue_url)) echo '</a>';
+			?>
+			</td>
+		</tr>
+
+	<?php
+		endforeach;
+	?>
+	</tbody>
+</table>
+</div>
 
 <h3>Cosplay conduct points</h3>
 <dl>
