@@ -1,10 +1,6 @@
 <?php
 use app\models\Player;
 
-if (!$this->request->session('admin')) {
-	$this->request->redirect('/');
-}
-
 ?>
 <h2>Players</h2>
 <table class="bordered">

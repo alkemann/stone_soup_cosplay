@@ -3,10 +3,6 @@
 use app\models\Submission;
 use app\Scorer;
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
 if ($data = $this->request->getPostData()) {
 
     if (!isset($data['score']) || $data['score'] == '') {

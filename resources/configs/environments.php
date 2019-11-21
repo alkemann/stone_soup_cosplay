@@ -2,7 +2,8 @@
 
 namespace app\environments;
 
-use alkemann\h2l\{ Environment, Connections, data\PDO, Log, Request, Response, util\Chain};
+use alkemann\h2l\{ Environment, Connections, data\PDO, Log, Request, Response};
+use alkemann\h2l\util\{ Chain, Http };
 
 $base = dirname(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR ;
 
@@ -25,14 +26,23 @@ if ($mysql_url) {
     Connections::add('default', function() use ($options) { return new PDO($options); });
 }
 
-
 // Middleware to add a log response for request and what response handler is chosen
 $log_request_middleware = function(Request $request, Chain $chain): ?Response {
-    Log::debug("== REQUEST: {$request->method()} '{$request->url()}' ==");
+    Log::info("== REQUEST: {$request->method()} '{$request->url()}' ==");
+    return $chain->next($request);
+};
+Environment::addMiddle($log_request_middleware, Environment::ALL);
+
+$admin_middleware = function(Request $request, Chain $chain): ?Response {
+    if (strpos(trim($request->url(), '/'), 'admin') === 0) {
+        Log::info("Admin request");
+        if (!$request->session('admin')) {
+            $request->redirect('/');
+            return null;
+        }
+    }
     $response = $chain->next($request);
-    if ($response) Log::debug("== Response Handler: " . get_class($response));
-    else Log::debug("== Null Response");
     return $response;
 };
+Environment::addMiddle($admin_middleware, Environment::ALL);
 
-Environment::addMiddle($log_request_middleware, Environment::ALL);

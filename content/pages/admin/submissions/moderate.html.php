@@ -1,10 +1,6 @@
 <?php
 use app\models\Submission;
 
-if (!$this->request->session('admin')) {
-	$this->request->redirect('/');
-}
-
 ?>
 <h2>Submissions needing moderation</h2>
 <?php

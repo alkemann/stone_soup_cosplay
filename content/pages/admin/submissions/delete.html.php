@@ -1,10 +1,6 @@
 <?php
 use app\models\{Player, Challenge, Submission};
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
