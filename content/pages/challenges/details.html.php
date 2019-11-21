@@ -68,7 +68,7 @@ $this->setData("page_title", "{$name} - Crawl Cosplay Challenge")
 			<?php
 				$player = $s->player();
 				$player_name = $player->name;
-				$player_id = $player->name;
+				$player_id = $player->id;
 			?>
 			<td><a href="/player?id=<?=$player_id?>"><?=$e($player_name)?></a></td>
 			<td>

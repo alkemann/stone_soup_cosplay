@@ -1,15 +1,18 @@
 <?php
 
 use app\models\{Player, Submission};
+use alkemann\h2l\Log;
 
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
+    Log::warning("Player page visited without ID parameter");
     return $this->request->redirect('/');
 }
 
 $p = Player::get($id);
 if (!$p) {
+    Log::warning("Player [$id] does not exist!");
     return $this->request->redirect('/');
 }
 
