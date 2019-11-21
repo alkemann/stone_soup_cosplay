@@ -32,7 +32,7 @@ if (!$this->request->session('admin')) {
 		</tr>
 	</thead>
 	<tbody>
-	<?php 
+	<?php
 	$r = 0;
 	foreach ($submissions as $s) :
 		$c = $s->challenge();
@@ -42,10 +42,10 @@ if (!$this->request->session('admin')) {
 			<td><?=$s->player_id ? $s->player()->name : 'NEW PLAYER'?></td>
 			<td>
 
-			<?php 
+			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
-			for ($i=0; $i < (int) $s->stars ; $i++) { 
+			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '<span class="star">&#9733;</span>';
 			}
 			if (!empty($s->morgue_url)) echo '</a>';

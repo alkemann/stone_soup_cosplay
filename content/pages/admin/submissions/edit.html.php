@@ -62,16 +62,16 @@ if ($data = $this->request->getPostData()) {
         <br />
         <br />
         <span>Stars</span>
-        <label><input type="radio" name="stars" value="0" <?=($sub->stars == 0)?'checked="checked"':''?> /> None</label> &nbsp; 
-        <label><input type="radio" name="stars" value="1" <?=($sub->stars == 1)?'checked="checked"':''?> /> One<span class="star">&#9733;</span></label> &nbsp; 
-        <label><input type="radio" name="stars" value="2" <?=($sub->stars == 2)?'checked="checked"':''?> /> Two<span class="star">&#9733;&#9733;</span></label> 
+        <label><input type="radio" name="stars" value="0" <?=($sub->stars == 0)?'checked="checked"':''?> /> None</label> &nbsp;
+        <label><input type="radio" name="stars" value="1" <?=($sub->stars == 1)?'checked="checked"':''?> /> One<span class="star">&#9733;</span></label> &nbsp;
+        <label><input type="radio" name="stars" value="2" <?=($sub->stars == 2)?'checked="checked"':''?> /> Two<span class="star">&#9733;&#9733;</span></label>
         <br />
         <br />
         <label>
             <span>Morgue URL</span><br />
             <input type="text" name="morgue_url" value="<?=$sub->morgue_url?>" /> <br />
             <?php if ($sub->morgue_url) : ?>
-                <a href="<?=$sub->morgue_url?>" target="_blank">View Morgue</a> 
+                <a href="<?=$sub->morgue_url?>" target="_blank">View Morgue</a>
             <?php endif; ?>
 
         </label>

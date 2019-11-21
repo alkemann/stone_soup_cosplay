@@ -36,7 +36,7 @@ if (!$challenge) {
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->player()->name?></td>
 			<td>
-			<?php 
+			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) {

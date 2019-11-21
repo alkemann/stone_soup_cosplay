@@ -30,7 +30,7 @@ if (!$this->request->session('admin')) {
 		$r = 0;
 		foreach ($submissions as $s) :
 	?>
-		
+
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<?php $cha = $s->challenge()?>
 			<td><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></td>
@@ -40,7 +40,7 @@ if (!$this->request->session('admin')) {
 			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
-			for ($i=0; $i < (int) $s->stars ; $i++) { 
+			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '<span class="star">&#9733;</span>';
 			}
 			if (!empty($s->morgue_url)) echo '</a>';
