@@ -1,10 +1,6 @@
 <?php
 use app\models\{Player, Challenge, Submission};
 
-if (!$this->request->session('admin')) {
-	$this->request->redirect('/');
-}
-
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
@@ -17,7 +13,7 @@ if (!$challenge) {
 }
 
 ?>
-<h2><a href="/challenges/details?id=<?=$challenge->id?>"><img style="height: 1.5em;" src="<?=$challenge->icon?>" /></a> Scores for <a href="<?=$challenge->reddit?>"><?=$challenge->name?></a></h2>
+<h2><a href="/admin/challenges/details?id=<?=$challenge->id?>"><img style="height: 1.5em;" src="<?=$challenge->icon?>" /></a> Scores for <a href="<?=$challenge->reddit?>"><?=$challenge->name?></a></h2>
 <table class="bordered">
 	<thead>
 		<tr>
@@ -36,7 +32,7 @@ if (!$challenge) {
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<td><?=$s->player()->name?></td>
 			<td>
-			<?php 
+			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
 			for ($i=0; $i < (int) $s->stars ; $i++) {
@@ -45,7 +41,7 @@ if (!$challenge) {
 			if (!empty($s->morgue_url)) echo '</a>';
 			?>
 			</td>
-			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
+			<td class="actions-td"><a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 		</tr>
 
 	<?php

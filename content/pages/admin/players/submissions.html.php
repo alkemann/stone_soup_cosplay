@@ -2,10 +2,6 @@
 
 use app\models\{Player, Submission};
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
@@ -70,7 +66,7 @@ $r = usort($submissions, function(Submission $a, Submission $b) : int {
 				<a href="<?=$s->morgue_url?>" target="_blank">View Morgue</a>
 				<?php endif; ?>
 			</td>
-			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td>
+			<td class="actions-td"><a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a></td>
 		</tr>
 
 	<?php

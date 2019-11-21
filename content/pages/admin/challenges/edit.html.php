@@ -2,11 +2,6 @@
 
 use app\models\Challenge;
 
-if (!$this->request->session('admin')) {
-	$this->request->redirect('/');
-}
-
-
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
@@ -26,7 +21,7 @@ if ($data = $this->request->getPostData()) {
 	$cha->save($data);
 	return $this->request->redirect('/');
 }
-	
+
 ?>
 <h2>Edit: <?=$cha->name?></h2>
 <form method="POST">

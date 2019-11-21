@@ -2,11 +2,6 @@
 
 use app\models\Player;
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
-
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
