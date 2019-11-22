@@ -4,63 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf42b1bed7037fb94af194499870f045",
+    "content-hash": "0bf091a2c0f5747442ff7704d0e92872",
     "packages": [
         {
-            "name": "alkemann/debug",
-            "version": "v0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alkemann/debug.git",
-                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/debug/zipball/98cb0638ba39e396d3807acfc85060063e0dd788",
-                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "alkemann\\debug\\": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Morland",
-                    "email": "alek.morland@gmail.com"
-                }
-            ],
-            "description": "Debug tool for dumping data, prettily",
-            "time": "2017-08-11T13:51:28+00:00"
-        },
-        {
             "name": "alkemann/h2l",
-            "version": "v0.45.1",
+            "version": "v0.54.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "ac0ff0dfd800c9a875efad0d516cf01384a2b4f0"
+                "reference": "943e0beaf74452cc402e11d912702f1f738ad805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/ac0ff0dfd800c9a875efad0d516cf01384a2b4f0",
-                "reference": "ac0ff0dfd800c9a875efad0d516cf01384a2b4f0",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/943e0beaf74452cc402e11d912702f1f738ad805",
+                "reference": "943e0beaf74452cc402e11d912702f1f738ad805",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.0"
+                "php": "^7.3.0"
             },
             "require-dev": {
                 "mongodb/mongodb": "^1.1",
+                "phpstan/phpstan-shim": "^0.11.19",
                 "phpunit/phpunit": "^7.5.14"
             },
             "suggest": {
@@ -100,7 +65,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-08-09T12:09:25+00:00"
+            "time": "2019-11-14T10:18:22+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -151,48 +116,40 @@
     ],
     "packages-dev": [
         {
-            "name": "heroku/heroku-buildpack-php",
-            "version": "v153",
+            "name": "alkemann/debug",
+            "version": "v0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "59b9c4daeebd70eadc4ae3d394429e3f357c56e8"
+                "url": "https://github.com/alkemann/debug.git",
+                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/59b9c4daeebd70eadc4ae3d394429e3f357c56e8",
-                "reference": "59b9c4daeebd70eadc4ae3d394429e3f357c56e8",
+                "url": "https://api.github.com/repos/alkemann/debug/zipball/98cb0638ba39e396d3807acfc85060063e0dd788",
+                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788",
                 "shasum": ""
             },
-            "bin": [
-                "bin/heroku-hhvm-apache2",
-                "bin/heroku-hhvm-nginx",
-                "bin/heroku-php-apache2",
-                "bin/heroku-php-nginx"
-            ],
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "alkemann\\debug\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "David Zuelke",
-                    "email": "dz@heroku.com"
+                    "name": "Alexander Morland",
+                    "email": "alek.morland@gmail.com"
                 }
             ],
-            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP/HHVM and Apache2/Nginx as on Heroku",
-            "homepage": "https://github.com/heroku/heroku-buildpack-php",
-            "keywords": [
-                "apache",
-                "apache2",
-                "foreman",
-                "heroku",
-                "hhvm",
-                "nginx",
-                "php"
-            ],
-            "time": "2019-03-19T00:24:16+00:00"
+            "description": "Debug tool for dumping data, prettily",
+            "time": "2017-08-11T13:51:28+00:00"
         }
     ],
     "aliases": [],

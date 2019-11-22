@@ -1,11 +1,10 @@
 {
     "require": {
-        "alkemann/h2l": "^0.45",
-        "alkemann/debug": "^0.4.0",
+        "alkemann/h2l": "^0.54",
         "erusev/parsedown": "^1.7"
     },
     "require-dev": {
-        "heroku/heroku-buildpack-php": "*"
+        "alkemann/debug": "^0.4.0"
     },
     "autoload": {
         "psr-4": {
