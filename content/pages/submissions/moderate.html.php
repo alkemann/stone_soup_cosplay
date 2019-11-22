@@ -1,6 +1,10 @@
 <?php
 use app\models\Submission;
 
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Submissions needing moderation</h2>
 <?php
@@ -28,7 +32,7 @@ use app\models\Submission;
 		</tr>
 	</thead>
 	<tbody>
-	<?php
+	<?php 
 	$r = 0;
 	foreach ($submissions as $s) :
 		$c = $s->challenge();
@@ -38,10 +42,10 @@ use app\models\Submission;
 			<td><?=$s->player_id ? $s->player()->name : 'NEW PLAYER'?></td>
 			<td>
 
-			<?php
+			<?php 
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
-			for ($i=0; $i < (int) $s->stars ; $i++) {
+			for ($i=0; $i < (int) $s->stars ; $i++) { 
 				echo '<span class="star">&#9733;</span>';
 			}
 			if (!empty($s->morgue_url)) echo '</a>';
@@ -49,8 +53,8 @@ use app\models\Submission;
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
 			<td class="actions-td">
-				<a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a> | <a href="/admin/submissions/delete?id=<?=$s->id?>">Remove</a>
-			</td>
+				<a href="/submissions/edit?id=<?=$s->id?>">Edit</a> | <a href="/submissions/delete?id=<?=$s->id?>">Remove</a>
+			</td> 
 		</tr>
 
 	<?php
@@ -64,6 +68,6 @@ AC: Accepted as official scored submission <br />
 CO: Submission has comments
 </span>
 <p>
-<?php if ($page > 1) : ?><a href="/admin/submissions/list?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
-<?php if (sizeof($submissions) == $page_size) : ?><a href="/admin/submissions/list?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>
+<?php if ($page > 1) : ?><a href="/submissions/list?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
+<?php if (sizeof($submissions) == $page_size) : ?><a href="/submissions/list?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>
 </p>

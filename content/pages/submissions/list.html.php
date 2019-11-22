@@ -1,6 +1,10 @@
 <?php
 use app\models\Submission;
 
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Latest Submissions</h2>
 <table class="bordered">
@@ -26,7 +30,7 @@ use app\models\Submission;
 		$r = 0;
 		foreach ($submissions as $s) :
 	?>
-
+		
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
 			<?php $cha = $s->challenge()?>
 			<td><?=$cha->setnr?>.<?=$cha->week?> <?=$cha->name?></td>
@@ -36,14 +40,14 @@ use app\models\Submission;
 			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
-			for ($i=0; $i < (int) $s->stars ; $i++) {
+			for ($i=0; $i < (int) $s->stars ; $i++) { 
 				echo '<span class="star">&#9733;</span>';
 			}
 			if (!empty($s->morgue_url)) echo '</a>';
 			?>
 			</td>
 			<td><?=$s->online==1?'ON':'OF'?> <?=$s->hs==1?'HS':'---'?> <?=$s->accepted==1?'AC':'---'?> <?=$s->comment?'CO':'---'?></td>
-			<td class="actions-td"><a href="/admin/submissions/edit?id=<?=$s->id?>">Edit</a></td>
+			<td class="actions-td"><a href="/submissions/edit?id=<?=$s->id?>">Edit</a></td> 
 		</tr>
 
 	<?php
@@ -58,6 +62,6 @@ ON/OF: Played Online or Offline<br />
 CO: Submission has comments
 </span>
 <p>
-<?php if ($page > 1) : ?><a href="/admin/submissions/list?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
-<?php if (sizeof($submissions) == $page_size) : ?><a href="/admin/submissions/list?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>
+<?php if ($page > 1) : ?><a href="/submissions/list?page=<?=($page-1)?>">Previous Page</a> <?php endif; ?>
+<?php if (sizeof($submissions) == $page_size) : ?><a href="/submissions/list?page=<?=($page+1)?>">Next Page</a> <?php endif; ?>
 </p>

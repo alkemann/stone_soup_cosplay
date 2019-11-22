@@ -1,6 +1,10 @@
 <?php
 use app\models\Challenge;
 
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Challenges</h2>
 <table class="challenges_list bordered">
@@ -24,13 +28,13 @@ use app\models\Challenge;
 
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=($c->active)?'active':''?>">
 			<td><?=$c->setnr?>.<?=$c->week?></td>
-			<td><a href="/admin/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
+			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td class="actions-td">
-				<a href="/admin/challenges/details?id=<?=$c->id?>"><?=$c->name?></a>
+				<a href="/challenges/details?id=<?=$c->id?>"><?=$c->name?></a>
 				<br />(<?=$c->shortform()?>)
 			</td>
 			<td><?=$c->subs?></td>
-			<td class="actions-td"><a href="/admin/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/admin/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="<?=$c->reddit?>">Reddit</a></td>
+			<td class="actions-td"><a href="/challenges/scores?id=<?=$c->id?>">Scores</a> | <a href="/challenges/edit?id=<?=$c->id?>">Edit</a> | <a href="<?=$c->reddit?>">Reddit</a></td>
 		</tr>
 
 	<?php

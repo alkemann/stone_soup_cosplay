@@ -1,11 +1,14 @@
 <?php
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
 
 if ($data = $this->request->getPostData()) {
 	$challenge = new app\models\Challenge($this->request->getPostData());
 	$challenge->save();
 	$this->request->redirect('/');
 }
-
+	
 ?>
 <h2>Adding new Challenge</h2>
 <form method="POST">

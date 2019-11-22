@@ -11,7 +11,6 @@ WEBPORT=${1:-8080}
 
 export CLEARDB_DATABASE_URL="mysql://${USER}:${PASS}@${HOST}/${DB}?reconnect=true"
 export ENV='LOCAL'
-export ADMIN='think of the sun'
 open http://localhost:$WEBPORT
 php -S localhost:$WEBPORT -t webroot webroot/server.php &
 SERVER_PID=$!

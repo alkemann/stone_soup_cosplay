@@ -1,6 +1,10 @@
 <?php
 use app\models\Player;
 
+if (!$this->request->session('admin')) {
+	$this->request->redirect('/');
+}
+
 ?>
 <h2>Players</h2>
 <table class="bordered">
@@ -26,7 +30,7 @@ use app\models\Player;
 			<td><?=$player->subs?></td>
 			<td><?=$player->score?></td>
 			<td><?=$player->stars?></td>
-			<td class="actions-td"><a href="/admin/players/edit?id=<?=$player->id?>">Edit</a> | <a href="/admin/players/submissions?id=<?=$player->id?>">Submissions</a></td>
+			<td class="actions-td"><a href="/players/edit?id=<?=$player->id?>">Edit</a> | <a href="/players/submissions?id=<?=$player->id?>">Submissions</a></td>
 		</tr>
 
 	<?php
