@@ -19,7 +19,7 @@ require_once($CONFIG_PATH . 'helpers.php');
 // ***********
 
 use alkemann\h2l\{
-    Dispatch, Environment, Log
+    Dispatch, Environment, Log, util\Http
 };
 
 $dispatch = new Dispatch($_REQUEST, $_SERVER, $_GET, $_POST);
@@ -32,6 +32,9 @@ foreach (Environment::middlewares() as $middle) {
 $response = $dispatch->response();
 if ($response) {
     echo $response->render();
-    // Log response code and content type after render echo
-    Log::debug("== RESPONSE: {$response->code()} {$response->contentType()} ==");
+    $code = $response->code();
+    $msg = Http::httpCodeToMessage($code);
+    Log::info("== RESPONSE: {$code} {$msg} : {$response->contentType()} ==");
+} else {
+    Log::error("== NULL RESPONSE ==");
 }

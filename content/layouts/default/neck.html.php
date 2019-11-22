@@ -5,13 +5,13 @@
         | <a href="/history">Past Challenges</a>
         | <a href="/recent">Recent submissions</a>
     <?php if ($this->request->session('admin')) : ?>
-        | Subs <a href="/submissions/list">Official</a> <a href="/submissions/moderate">Moderate</a> <a href="/submissions/add">New</a>
-        | Players <a href="/players/list">List</a> <a href="/players/add">New</a>
-    	| Challenges <a href="/challenges/list">List</a> <a href="/challenges/add">New</a>
+        | Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
+        | Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
+    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
         | <a href="/logout">Logout</a>
 
 	<?php else : ?>
-	   | <a href="/admin">Admin</a>
+	   | <a href="/backoffice">Admin</a>
 	<?php endif; ?>
     </div>
     <div class="page_content">

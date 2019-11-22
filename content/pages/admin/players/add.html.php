@@ -1,9 +1,5 @@
 <?php
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
 if ($data = $this->request->getPostData()) {
     $data['reddit'] = empty($data['reddit']) ? $data['name'] : $data['reddit'];
     $data['discord'] = empty($data['discord']) ? $data['name'] : $data['discord'];
@@ -11,7 +7,7 @@ if ($data = $this->request->getPostData()) {
     if ($player->save()) {
         session_start();
         $_SESSION['message'] = "Player created";
-        return $this->request->redirect('/players/list');
+        return $this->request->redirect('/admin/players/list');
     }
     dd($player);
 }

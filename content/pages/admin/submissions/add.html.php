@@ -3,10 +3,6 @@
 use app\models\Submission;
 use app\Scorer;
 
-if (!$this->request->session('admin')) {
-    $this->request->redirect('/');
-}
-
 if ($data = $this->request->getPostData()) {
 
     if (!isset($data['score']) || $data['score'] == '') {
@@ -34,7 +30,7 @@ if ($data = $this->request->getPostData()) {
         }
     }
     if ($sub->save()) {
-        return $this->request->redirect('/submissions/list');
+        return $this->request->redirect('/admin/submissions/list');
     }
 }
 
@@ -71,9 +67,9 @@ if ($data = $this->request->getPostData()) {
         <br />
         <br />
         <span>Stars</span>
-        <label><input type="radio" name="stars" value="0" checked="checked" /> None</label> &nbsp; 
-        <label><input type="radio" name="stars" value="1" /> One<span class="star">&#9733;</span></label> &nbsp; 
-        <label><input type="radio" name="stars" value="2" /> Two<span class="star">&#9733;&#9733;</span></label> 
+        <label><input type="radio" name="stars" value="0" checked="checked" /> None</label> &nbsp;
+        <label><input type="radio" name="stars" value="1" /> One<span class="star">&#9733;</span></label> &nbsp;
+        <label><input type="radio" name="stars" value="2" /> Two<span class="star">&#9733;&#9733;</span></label>
         <br />
         <br />
         <label>
