@@ -517,7 +517,7 @@ pre {
 }
 .banner-desc div.container {
     display: table-cell;
-    vertical-align: middle 
+    vertical-align: middle
 }
 .banner-desc div {
     clear: both;
@@ -544,6 +544,11 @@ pre {
 .changed {
     color: #228 !important;
 }
+
+.error {
+    color: red;
+}
+
 /*
 img.detail {
     background: #fff;
