@@ -10,8 +10,6 @@ if ($data = $this->request->getPostData()) {
 
 }
 
-alkemann\h2l\Log::debug(getenv("ADMIN"));
-
 ?>
 <h2>Admin Authentication</h2>
 
