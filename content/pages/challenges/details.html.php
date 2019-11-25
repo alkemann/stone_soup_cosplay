@@ -18,7 +18,9 @@ if ($cha->draft && !$is_admin) {
 }
 
 $name = $e($cha->name);
-$this->setData("page_title", "{$name} - Crawl Cosplay Challenge")
+$this->setData("page_title", "{$name} - Crawl Cosplay Challenge");
+
+$this->setData("meta", ['filename' => $cha->icon]);
 
 ?>
 <div class="challenge">

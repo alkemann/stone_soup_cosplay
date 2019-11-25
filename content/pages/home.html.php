@@ -6,6 +6,7 @@ if ($active) :
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
+	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2>
 	Current challenge Set <?=$e($active->setnr)?> Week <?=$e($active->week)?>: <a href="<?=$e($active->reddit)?>"><?=$e($active->name)?></a>
