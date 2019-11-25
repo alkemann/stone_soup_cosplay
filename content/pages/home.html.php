@@ -29,9 +29,9 @@ if ($active) :
 
 <h2>Scoreboard for Set <?=$e($active->setnr)?></h2>
 <table class="set-list">
-<?php 
+<?php
 	$made_seperator = false;
-	foreach ($challenges_in_set as $cha) : 
+	foreach ($challenges_in_set as $cha) :
 		if ($cha->bonus && !$made_seperator) {
 			echo '<tr><td colspan="3">&nbsp;</td></tr>';
 			$made_seperator = true; // only make one seperator if multiple bonuses
@@ -41,7 +41,7 @@ if ($active) :
 		<td>Week <?=$e($cha->week)?>.</td>
 		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
 		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
-	</tr>	
+	</tr>
 <?php endforeach; ?>
 </table>
 

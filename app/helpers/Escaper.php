@@ -9,7 +9,6 @@ class Escaper
 		return ['e' => 'app\helpers\Escaper::escape', 'em' => 'app\helpers\Escaper::escapeWithMarkdown'];
 	}
 
-
 	public static function escape(?string $s): string
 	{
 		return is_string($s) ? htmlspecialchars($s) : '';
