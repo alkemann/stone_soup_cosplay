@@ -1,6 +1,6 @@
 {
     "require": {
-        "alkemann/h2l": "^0.54",
+        "alkemann/h2l": "^0.55",
         "erusev/parsedown": "^1.7"
     },
     "require-dev": {

@@ -24,8 +24,7 @@ if ($active) :
 
 <hr />
 
-<p style="color:cyan;">Watch Malcolm Rose play the Pandemonium Lord challenge: <a href="https://www.twitch.tv/videos/511158172">https://www.twitch.tv/videos/511158172</a></p>
-<p style="color:cyan;">Interested in having your own streams on the Cosplay Challenge website? Let us know in the comments on reddit!</p>
+<?php echo $this->part('latest_twitch'); ?>
 
 <h2>Scoreboard for Set <?=$e($active->setnr)?></h2>
 <table class="set-list">
@@ -92,7 +91,9 @@ if ($active) :
 		</tr>
 	<?php endforeach; ?>
 </table>
-<?php else : // no active challengs ?>
-<h3>No currently active challenges</h3>
-<p>Maybe take a look at the <a href="/history">Challenge History</a>?</p>
-<?php endif; // if active ?>
+
+
+<?php else : // no active challengs
+	echo $this->part('pause');
+endif;
+?>

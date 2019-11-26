@@ -10,6 +10,7 @@ $base = dirname(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR ;
 Environment::add([
     'debug' => true,
     'logs_path' => $base . 'resources' . DIRECTORY_SEPARATOR . 'logs' . DIRECTORY_SEPARATOR,
+    'parts_path' => $base . 'content' . DIRECTORY_SEPARATOR . 'parts' . DIRECTORY_SEPARATOR,
     'content_path' => $base . 'content' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR,
     'layout_path'  => $base . 'content' . DIRECTORY_SEPARATOR . 'layouts' . DIRECTORY_SEPARATOR,
 ], Environment::ALL);

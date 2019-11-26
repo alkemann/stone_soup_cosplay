@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bf091a2c0f5747442ff7704d0e92872",
+    "content-hash": "0a72355617db9715bdaff885778808e9",
     "packages": [
         {
             "name": "alkemann/h2l",
-            "version": "v0.54.0",
+            "version": "v0.55.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "943e0beaf74452cc402e11d912702f1f738ad805"
+                "reference": "fd9c16926c1c044f87314e712ca572b30b616500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/943e0beaf74452cc402e11d912702f1f738ad805",
-                "reference": "943e0beaf74452cc402e11d912702f1f738ad805",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/fd9c16926c1c044f87314e712ca572b30b616500",
+                "reference": "fd9c16926c1c044f87314e712ca572b30b616500",
                 "shasum": ""
             },
             "require": {
@@ -65,7 +65,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2019-11-14T10:18:22+00:00"
+            "time": "2019-11-26T13:22:56+00:00"
         },
         {
             "name": "erusev/parsedown",
