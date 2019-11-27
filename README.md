@@ -5,7 +5,7 @@ Dungeon Crawl Stone Soup scoreboard keeper for the Cosplay challenges
 
 ### Requirements
 
- - PHP 7.1
+ - PHP 7.3
  - MySQL or compatible database
  - Composer (php package manager)
  
