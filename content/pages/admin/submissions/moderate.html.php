@@ -13,7 +13,7 @@ use app\models\Submission;
 		['order' => '`id` DESC', 'with' => ['player', 'challenge'], 'limit' => $page_size, 'offset' => $offset]);
 
 	if (sizeof($submissions) == 0) {
-		echo '<p>Nothin to moderate</p>';
+		echo '<p>Nothing to moderate</p>';
 		return;
 	}
 ?>
