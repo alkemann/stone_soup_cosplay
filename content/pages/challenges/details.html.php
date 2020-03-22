@@ -117,7 +117,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<li>Collect your third rune.
 	<li>Win the game.
 </ul>
-<p class="info">The main way to score points. +5 points each, and can be done in any order. (You don't need to tell us which milestones you achieve.)</p>
+<p class="info">The main way to score points. +5 points each, and can be done in any order.</p>
 
 
 </div>
