@@ -26,7 +26,7 @@ use app\models\Challenge;
 			<td><?=$c->setnr?>.<?=$c->week?></td>
 			<td><a href="/challenges/details?id=<?=$c->id?>"><img src="<?=$c->icon?>" /></a></td>
 			<td class="actions-td">
-				<a href="/admin/challenges/details?id=<?=$c->id?>"><?=$c->name?></a>
+				<a href="/challenges/details?id=<?=$c->id?>"><?=$c->name?></a>
 				<br />(<?=$c->shortform()?>)
 			</td>
 			<td><?=$c->subs?></td>
