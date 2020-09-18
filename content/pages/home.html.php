@@ -24,7 +24,8 @@ if ($active) :
 
 <hr />
 
-<?php echo $this->part('latest_twitch'); ?>
+<!-- disable video news bar for now
+<!-- ?php echo $this->part('latest_twitch'); ?> -->
 
 <h2>Scoreboard for Set <?=$e($active->setnr)?></h2>
 <table class="set-list">
