@@ -28,4 +28,8 @@ class Submission extends BaseModel
         return static::db()->update(static::$table, $conditions, ['accepted' => 0, 'hs' => 0]) > 0;
     }
 
+    public function isScoring(): bool
+    {
+        return $this->hs == 1 && $this->accepted == 1;
+    }
 }

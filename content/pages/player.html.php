@@ -37,6 +37,9 @@ $board = [];
 $first_set = 999;
 $last_set = 0;
 foreach ($submissions as $sub) {
+    if ($sub->isScoring() === false) {
+        continue;
+    }
     $cha = $sub->challenge();
     $set = (int) $cha->setnr;
     $week = (int) $cha->week;
