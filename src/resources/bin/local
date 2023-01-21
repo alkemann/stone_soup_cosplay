@@ -1,33 +1,20 @@
 #!/bin/bash
 
-# Change to correct values
-USER=root
-PASS=root
-HOST=localhost
-DB=cosplay
+WEBPORT=${APP_PORT:-8080}
 
-# Can override the port through `bin/local.sh 8088`
-WEBPORT=${1:-8080}
-
-export CLEARDB_DATABASE_URL="mysql://${USER}:${PASS}@${HOST}/${DB}?reconnect=true"
+export CLEARDB_DATABASE_URL="mysql://${DB_USER}:${DB_PASS}@${DB_HOST}/${DB_SCHEMA}?reconnect=true"
 export ENV='LOCAL'
-export ADMIN='think of the sun'
-open http://localhost:$WEBPORT
-php -S localhost:$WEBPORT -t webroot webroot/server.php &
+export ADMIN="${APP_PASS}"
+
+php -S 0.0.0.0:$WEBPORT -t webroot webroot/server.php &
 SERVER_PID=$!
 
-
-echo " "
-echo " - Backend server runnin on http://localhost:${WEBPORT} with PID: ${SERVER_PID}"
-echo " "
+echo "Cosplay app server started on port ${WEBPORT} with PID: ${SERVER_PID}"
 
 function gracefullyExit {
-  echo " "
-  echo " - Stopping Backend Server"
+  echo "Stopping cosplay app server..."
   kill $SERVER_PID
-
-  echo " - DONE"
-  echo " "
+  echo "DONE"
   exit 0
 }
 

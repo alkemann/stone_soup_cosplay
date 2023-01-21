@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: cosplay-app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    environment:
+      - APP_PASS=${APP_PASS}
+      - DB_HOST=${DB_HOST}
+      - DB_PASS=${DB_PASS}
+      - DB_SCHEMA=${DB_SCHEMA}
+      - DB_USER=${DB_USER}
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+  db:
+    container_name: cosplay-db
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_DATABASE=${DB_SCHEMA}
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASS}
+    ports:
+    - "${DB_PORT}:3306"
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:
+    driver: local
