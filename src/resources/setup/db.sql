@@ -52,6 +52,7 @@ CREATE TABLE `challenges` (
   `wiki` text,
   `shortform` varchar(128) DEFAULT NULL,
   `special_rule` text,
+  `bonus` int(11),
   PRIMARY KEY (`id`),
   KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=301 DEFAULT CHARSET=utf8;
@@ -99,6 +100,18 @@ UNLOCK TABLES;
 # Dump of table players
 # ------------------------------------------------------------
 
+DROP TABLE IF EXISTS `players`;
+
+CREATE TABLE `players` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  `reddit` text,
+  `discord` text,
+  `created` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=301 DEFAULT CHARSET=utf8;
+
 LOCK TABLES `players` WRITE;
 /*!40000 ALTER TABLE `players` DISABLE KEYS */;
 
@@ -145,6 +158,26 @@ UNLOCK TABLES;
 
 # Dump of table submissions
 # ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `submissions`;
+
+CREATE TABLE `submissions` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `challenge_id` int(11) unsigned NOT NULL,
+  `player_id` int(11) unsigned NOT NULL,
+  `score` int(11) unsigned NOT NULL,
+  `stars` int(11) unsigned NOT NULL,
+  `morgue_url` text,
+  `morgue_text` text,
+  `created` datetime DEFAULT CURRENT_TIMESTAMP,
+  `hs` int(11) unsigned,
+  `accepted` int(6) unsigned,
+  `online` int(6) unsigned,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  `comment` text,
+  PRIMARY KEY (`id`),
+  KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=301 DEFAULT CHARSET=utf8;
 
 LOCK TABLES `submissions` WRITE;
 /*!40000 ALTER TABLE `submissions` DISABLE KEYS */;
