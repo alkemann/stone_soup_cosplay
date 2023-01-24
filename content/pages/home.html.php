@@ -9,7 +9,7 @@ if ($active) :
 	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2>
-	Current challenge Set <?=$e($active->setnr)?> Week <?=$e($active->week)?>: <a href="<?=$e($active->reddit)?>"><?=$e($active->name)?></a>
+	Current challenge Set <?=$e($active->setnr)?> Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
 	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
 </h2>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
