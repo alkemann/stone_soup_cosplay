@@ -25,7 +25,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 ?>
 <div class="challenge">
 
-<h2><a href="<?=$e($cha->reddit)?>">Set <?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></a></h2>
+<h2>Set <?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></h2>
 <p style="font-style: italic; color: #777;"><?=$e($cha->description)?></p>
 <p>
 	<?php if ($cha->active) : ?>
