@@ -35,7 +35,7 @@
 
 <h3>Credits</h3>
 
-<p>The Crawl Cosplay Challenges were created mostly by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a> and are currently run by is run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa_69</a>.</p>
+<p>The Crawl Cosplay Challenges were created mostly by <a href="https://www.reddit.com/user/kitchen_ace/" target="_blank">kitchen_ace</a> and are currently run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa_69</a>.</p>
 
 <p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace. CSS by kitchen_ace and Alkemann, loosely based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
 
