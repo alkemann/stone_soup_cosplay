@@ -6,7 +6,7 @@
 
 <p>New challenges are posted Fridays. Challenges will not run when official DCSS tournaments or other large tournaments/challenges (e.g <a href="http://csclub.uwaterloo.ca/~ebering/crawl/csdc/index.html" target="_blank">CSDC</a>) are going on. 
 
-<p>Challenges can be played in either the latest stable or trunk version, and occasionally other versions when specified. You can play online or offline, and can make as many attempts as you want before the deadline.</p>
+<p>Challenges can be played in whatever version including trunk and forks. You can play online or offline, and can make as many attempts as you want.</p>
 
 <h3>How to Enter</h3>
 
