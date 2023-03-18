@@ -57,6 +57,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 		<tr>
 			<th>Player</th>
 			<th>Score<span class="star">&#9733;&#9733;</span></th>
+			<th>Year</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -64,6 +65,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 		$subs = Submission::scoreboard($id);
 		$r = 0;
 		foreach ($subs as $s) :
+			$year_created = explode('-', $s->created)[0];
 	?>
 
 		<tr class="<?=$r++%2==0?'odd':'even'?>">
@@ -83,6 +85,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 			if (!empty($s->morgue_url)) echo '</a>';
 			?>
 			</td>
+			<td><?=$year_created ?></td>
 		</tr>
 
 	<?php
