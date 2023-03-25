@@ -177,7 +177,7 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<br />
 		<label>
-			<span>Special Rule</span><br />
+			<span>Special Rule or Note</span><br />
 			<textarea name="special_rule" cols="100" rows="3"><?=$cha->special_rule?></textarea>
 		</label>
 		<br />
