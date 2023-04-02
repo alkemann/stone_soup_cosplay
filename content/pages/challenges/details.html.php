@@ -108,7 +108,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<dt>1. <?=$e($cha->bonus_name_1)?></dt><dd><?=$em($cha->bonus_1)?></dd>
 	<dt>2. <?=$e($cha->bonus_name_2)?></dt><dd><?=$em($cha->bonus_2)?></dd>
 </dl>
-<p class="info">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
+<p class="info">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Small mistakes will usually be forgiven.</p>
 
 <h3>Milestones</h3>
 <ul>
