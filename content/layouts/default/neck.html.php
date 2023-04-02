@@ -2,7 +2,7 @@
     <div class="toplinks">
         <a href="/">Home</a>
         | <a href="/about">About</a>
-        | <a href="/history">Past Challenges</a>
+        | <a href="/history">All Challenges</a>
         | <a href="/recent">Recent submissions</a>
     <?php if ($this->request->session('admin')) : ?>
         | Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
@@ -17,7 +17,7 @@
     <div class="page_content">
         <div class="heading">
             <h1><a href="/">Crawl Cosplay Challenge</a></h1>
-            <div class="fineprint">Come chat with us on the official CCC Discord server: <a href="https://discord.gg/ZQ4kk6n" target="_blank">https://discord.gg/ZQ4kk6n</a></div>
+            <div class="fineprint">Come chat with us on the <a href="https://discord.gg/ZQ4kk6n" target="_blank">official CCC Discord server</a></div>
         </div>
         <br />
         <hr />
