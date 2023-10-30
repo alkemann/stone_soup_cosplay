@@ -32,4 +32,9 @@ class Submission extends BaseModel
     {
         return $this->hs == 1 && $this->accepted == 1;
     }
+
+    public static function getNumberOfUnscoredSubmissions(): int
+    {
+        return static::db()->count(static::$table, ['accepted' => 0]);
+    }
 }
