@@ -35,7 +35,7 @@ class Submission extends BaseModel
 
     public static function getNumberOfUnscoredSubmissions(): int
     {
-        $result = static::db()->findAsArray(static::$table, ['accepted' => 0]);
+        $result = static::findAsArray(['accepted' => 0]);
         return count($result);
     }
 }
