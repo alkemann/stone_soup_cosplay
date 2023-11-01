@@ -21,7 +21,7 @@
             <div class="fineprint">Come chat with us on the <a href="https://discord.gg/ZQ4kk6n" target="_blank">official CCC Discord server</a></div>
         </div>
         <br />
-        <hr />
+        <img src="/img/HR-right.png"><br />
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
             <div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
