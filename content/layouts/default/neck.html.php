@@ -3,7 +3,7 @@
         <a href="/">Home</a>
         | <a href="/about">About</a>
         | <a href="/history">All Challenges</a>
-        | <a href="/recent">Accepted Submissions</a>
+        | <a href="/recent">Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
     <?php if ($this->request->session('admin')) : ?>
         | Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
