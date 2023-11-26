@@ -33,7 +33,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php else: ?>
 	<a href="/submit?id=<?=$cha->id?>">Submit a run</a> |
 	<?php endif;?>
-	<a href="<?=$e($cha->reddit)?>">Reddit</a><?php if ($cha->wiki): ?> |
+	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>">Wiki page</a><?php endif; ?>
 </p>
 
