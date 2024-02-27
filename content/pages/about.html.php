@@ -6,7 +6,7 @@
 
 <p>New challenges are posted Mondays. Challenges will not run when official DCSS tournaments or other large tournaments/challenges (e.g <a href="http://csclub.uwaterloo.ca/~ebering/crawl/csdc/index.html" target="_blank">CSDC</a>) are going on. 
 
-<p>Challenges can be played in whatever version including trunk and forks. You can play online or offline, and can make as many attempts as you want. If you'd like to change the player doll to the Unique's tile, add the following to your RC file: tile_player_tile = mons:Grinder</p>
+<p>Challenges can be played in whatever version including trunk and forks. You can play online or offline, and can make as many attempts as you want. If you'd like to change the player doll to the Unique's tile, add the following to your RC file: tile_player_tile = tile:MONS_WIGLAF</p>
 
 <h3>How to Enter</h3>
 
