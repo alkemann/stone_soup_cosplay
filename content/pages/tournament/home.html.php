@@ -11,9 +11,12 @@ if ($active) :
 	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2>
-	Tournament for Trunk v0.<?=$e($active->setnr)?> Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
-	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
+	Tournament for Trunk v0.<?=$e($active->setnr)?> 
 </h2>
+<h3>
+	Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
+	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
+</h3>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
 <p><a href="/challenges/details?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit">Submit a run</a> | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> | Next challenge starts on Friday at 0:00 UTC.</p>
 <table class="table_for_layout">
