@@ -2,7 +2,9 @@
 use app\models\{Challenge, Submission, Player};
 $active = Challenge::active();
 if ($active) :
-	$set = $active->setnr;
+<!-- 	$set = $active->setnr;
+<!-- hard code test for Trunk v0.32 to see what happens	 -->
+	$set = 32;
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
@@ -94,7 +96,7 @@ if ($active) :
 </table>
 
 
-<?php else : // no active challengs
+<?php else : // no active challenge
 	echo $this->part('pause');
 endif;
 ?>
