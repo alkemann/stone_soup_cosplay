@@ -35,9 +35,23 @@ class Challenge extends BaseModel
 
     public static function active(): ?Challenge
     {
-        $result = static::findAsArray(['active' => 1, 'draft' => 0], ['limit' => 1]);
+        $query = "SELECT * FROM `challenges` WHERE `active` = 1 AND `draft` = 0 AND `setnr` < 32 ORDER BY `setnr` DESC, `week` DESC LIMIT 1;";
+        $result = static::db()->query($query);
         if ($result) {
-            return array_pop($result);
+            $data = array_pop($result);
+            return new Challenge($data);
+        } else {
+            return null;
+        }
+    }
+
+    public static function tournamentActive(): ?Challenge
+    {
+        $query = "SELECT * FROM `challenges` WHERE `active` = 1 AND `draft` = 0 AND `setnr` >= 32 ORDER BY `setnr` DESC, `week` DESC LIMIT 1;";
+        $result = static::db()->query($query);
+        if ($result) {
+            $data = array_pop($result);
+            return new Challenge($data);
         } else {
             return null;
         }
@@ -59,11 +73,16 @@ class Challenge extends BaseModel
     	return $list;
     }
 
-    public static function findBySets(bool $include_drafts, int $limit = 50, int $offset = 0): array
+    public static function findBySets(bool $include_drafts, int $limit = 50, int $offset = 0, bool $include_tournament = false): array
     {
         $query = 'SELECT `c`.*, COUNT(`s`.`id`) AS `subs` FROM `challenges` AS `c` '.
             'LEFT JOIN `submissions` AS `s` ON (`s`.`challenge_id` = `c`.`id` AND `s`.`hs` = 1 AND `s`.`accepted` = 1) ';
-        $query .= ($include_drafts) ? '' : 'WHERE `draft` = 0 ';
+        if ($include_tournament) {
+            $query .= 'WHERE 1=1 ';
+        } else {
+            $query .= 'WHERE `c`.`setnr` < 32 ';
+        }
+        $query .= ($include_drafts) ? '' : 'AND `draft` = 0 ';
         $query .= 'GROUP BY `c`.`id` '.
             'ORDER BY `c`.`setnr` DESC, `c`.`week` DESC '.
             "LIMIT {$offset},{$limit};";

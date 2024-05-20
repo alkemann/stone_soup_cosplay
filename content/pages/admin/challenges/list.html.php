@@ -17,7 +17,7 @@ use app\models\Challenge;
 	<tbody>
 	<?php
 		// Supports limit and offset as first and second params for pagination, first param includes drafts
-		$challenges = Challenge::findBySets(true, 100);
+		$challenges = Challenge::findBySets(true, 100, 0, true);
 		$r = 0;
 		foreach ($challenges as $c) :
 	?>
