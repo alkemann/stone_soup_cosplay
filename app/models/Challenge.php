@@ -18,7 +18,7 @@ class Challenge extends BaseModel
      static $relations = [
         'submissions' => ['type' => 'belongs_to', 'class' => Submission::class, 'local' => 'id', 'foreign' => 'challenge_id']
     ];
-   
+
     public static function historicSets(): array
     {
         $q = "SELECT `setnr`, COUNT(`setnr`) as `count` FROM `submissions` AS `s` ".
