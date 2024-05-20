@@ -19,7 +19,8 @@ abstract class BaseModel implements \JsonSerializable
         else return $data[0];
     }
 
-    public function jsonSerialize()
+
+    public function jsonSerialize() : mixed
     {
         return $this->to('array');
     }

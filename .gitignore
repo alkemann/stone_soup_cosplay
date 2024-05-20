@@ -1,3 +1,6 @@
 webroot/server.php
 vendor
 
+.DS_Store
+db
+local.sh

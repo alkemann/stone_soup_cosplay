@@ -1,24 +1,22 @@
 <?php
 use app\models\{Challenge, Submission, Player};
-$active = Challenge::active();
+$active = Challenge::tournamentActive();
 if ($active) :
-<!-- 	$set = $active->setnr;
-<!-- hard code test for Trunk v0.32 to see what happens	 -->
-	$set = 32;
+ 	$set = $active->setnr;
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
 	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2>
-	Tournament for Trunk v0.<?=$e($active->setnr)?> 
+	Tournament for Trunk v0.<?=$e($active->setnr)?>
 </h2>
 <h3>
 	Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
 	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
 </h3>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
-<p><a href="/challenges/details?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit">Submit a run</a> | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> | Next challenge starts on Friday at 0:00 UTC.</p>
+<p><a href="/challenges/details?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit?id=<?=$e($active->id)?>">Submit a run</a> | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> | Next challenge starts on Friday at 0:00 UTC.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($active->species)?></td><td><?=$e($active->background)?><td><?=$e($active->gods)?></td></tr>
@@ -29,7 +27,7 @@ if ($active) :
 
 <img src="/img/HR-right.png"><br />
 
-<!-- disable video news bar for now
+<!-- disable video news bar for now -->
 <!-- ?php echo $this->part('latest_twitch'); ?> -->
 
 <h2>Tournament Scoreboard for Trunk v0.<?=$e($active->setnr)?></h2>

@@ -2,6 +2,7 @@
     <div class="toplinks">
         <a href="/">Home</a>
         | <a href="/about">About</a>
+        | <a href="/tournament/home">Tournament</a>
         | <a href="/history">All Challenges</a>
         | <a href="/recent">Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
