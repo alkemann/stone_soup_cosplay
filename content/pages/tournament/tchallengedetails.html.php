@@ -31,7 +31,8 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<?php if ($cha->active) : ?>
 	<a href="/submit">Submit a run</a> 
 	<?php else: ?>
-	<a href="/submit?id=<?=$cha->id?>">Submit a run</a> 
+		<!-- do not accept submissions for non active tournament challenges	-->
+		<!--	<a href="/submit?id=<?=$cha->id?>">Submit a run</a> 		--> 
 	<?php endif;?>
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>">Wiki page</a><?php endif; ?>
