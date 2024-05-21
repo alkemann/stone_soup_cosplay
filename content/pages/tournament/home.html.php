@@ -16,7 +16,7 @@ if ($active) :
 	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
 </h3>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
-<p><a href="/challenges/details?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit?id=<?=$e($active->id)?>">Submit a run</a> | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> | Next challenge starts on Friday at 0:00 UTC.</p>
+<p><a href="/tournament/tchallengedetails?id=<?=$e($active->id)?>">Challenge details</a>  | <a href="/submit?id=<?=$e($active->id)?>">Submit a run</a> | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> | Next challenge starts on Friday at 0:00 UTC.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
 	<tr><td><?=$e($active->species)?></td><td><?=$e($active->background)?><td><?=$e($active->gods)?></td></tr>
@@ -42,7 +42,7 @@ if ($active) :
 ?>
 	<tr>
 		<td>Week <?=$e($cha->week)?>.</td>
-		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
+		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/tournament/tchallengedetails?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
 		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
 	</tr>
 <?php endforeach; ?>
