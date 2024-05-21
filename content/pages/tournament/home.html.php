@@ -9,7 +9,7 @@ if ($active) :
 	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2>
-	Crawl Cosplay Trunk Tournament for DCSS trunk v0.<?=$e($active->setnr)?>
+	Crawl Cosplay Trunk Tournament (CCTT) for DCSS trunk v0.<?=$e($active->setnr)?>
 </h2>
 <h3>
 	Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
