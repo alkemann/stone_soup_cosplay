@@ -95,8 +95,13 @@ if ($active) :
 
 
 <?php else : // no active challengs
-	// echo $this->part('pause');
 	echo "<h3>There is currently no active challenge for the weekly Crawl Cosplay Challenge (CCC) series.</h3>";
-	echo "<p>For your info, you can still submit a run/morgue for <a href="https://cosplay.kelbi.org/history">any CCC challenges</a>.</p>";
+	echo '<p>For your info, you can still submit a run/morgue for <a href="https://cosplay.kelbi.org/history">any CCC challenges</a>.</p>';
+
+	$tournament_challenge = Challenge::tournamentActive();
+	if ($tournament_challenge) {
+		echo '<p>There is an active tournament right now you can participate in! <a href="/tournament/home">Go there now!</a>';
+  	}
+	
 endif;
 ?>
