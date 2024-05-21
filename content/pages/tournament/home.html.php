@@ -98,6 +98,7 @@ if ($active) :
 
 
 <?php else : // no active challenge
-	echo $this->part('pause');
+	// echo $this->part('pause');
+	There is currently no active Crawl Cosplay Trunk Tournament (TTCC).
 endif;
 ?>
