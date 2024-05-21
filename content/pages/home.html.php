@@ -95,6 +95,8 @@ if ($active) :
 
 
 <?php else : // no active challengs
-	echo $this->part('pause');
+	// echo $this->part('pause');
+	<h3>There is currently no active challenge for the weekly Crawl Cosplay Challenge (CCC) series.</h3>
+	<p>For your info, you can still submit a run/morgue for <a href="https://cosplay.kelbi.org/history">any CCC challenges</a>.</p>
 endif;
 ?>
