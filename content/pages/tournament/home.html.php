@@ -1,5 +1,8 @@
 <?php
 use app\models\{Challenge, Submission, Player};
+
+$this->layout = 'tournament';
+
 $active = Challenge::tournamentActive();
 if ($active) :
  	$set = $active->setnr;

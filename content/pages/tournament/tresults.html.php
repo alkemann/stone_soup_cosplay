@@ -1,6 +1,8 @@
 <?php
 use app\models\{Challenge, Submission, Player};
 
+	$this->layout = 'tournament';
+
 	$set = $_GET['set'] ?? 1;
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);

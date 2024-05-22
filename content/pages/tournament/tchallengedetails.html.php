@@ -2,6 +2,8 @@
 
 use app\models\{Challenge, Submission};
 
+$this->layout = 'tournament';
+
 $id = $_GET['id'] ?? false;
 if ($id == false) {
 	return $this->request->redirect('/');

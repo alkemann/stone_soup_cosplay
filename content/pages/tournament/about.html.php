@@ -1,3 +1,4 @@
+<?php $this->layout = 'tournament'; ?>
 <h2>About: Crawl Cosplay Trunk Tournament (CCTT)</h2>
 
 <p>The <b>Crawl Cosplay Trunk Tournament</b> is a 4-week tournament with a different challenge each week highlighting major Trunk changes since the previous stable version.
