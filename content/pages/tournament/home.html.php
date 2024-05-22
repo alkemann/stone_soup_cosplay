@@ -102,6 +102,6 @@ if ($active) :
 
 <?php else : // no active challenge
 	// echo $this->part('pause');
-	echo "There is currently no active Crawl Cosplay Trunk Tournament (TTCC).";
+	echo "<h3>There is currently no active Crawl Cosplay Trunk Tournament (TTCC)</h3>.";
 endif;
 ?>
