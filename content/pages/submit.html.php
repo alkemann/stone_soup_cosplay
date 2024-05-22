@@ -10,9 +10,13 @@ if ($id) {
 } else {
     $cha = Challenge::active();
 }
+if (!$cha) {
+    $cha = Challenge::tournamentActive();
+}
 
 
 if (!$cha || $cha->draft) {
+    $this->request->session()->set('message', 'No active challenge found.');
     return $this->request->redirect('/');
 }
 
@@ -42,7 +46,7 @@ if ($data = $this->request->getPostData()) {
     <input type="hidden" name="challenge_id" value="<?=$cha->id?>">
     <fieldset>
         <label>
-            <span>Player</span><select name="player_id"> 
+            <span>Player</span><select name="player_id">
                 <option value="">NEW PLAYER</option>
                 <?php $players = Player::list();
                 foreach ($players as $id => $name) : ?>
