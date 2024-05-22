@@ -14,6 +14,9 @@ if (!$cha) {
     $cha = Challenge::tournamentActive();
 }
 
+if ($cha && $cha->setnr > 30 && !$cha->active) {
+    return $this->request->redirect('/');
+}
 
 if (!$cha || $cha->draft) {
     $this->request->session()->set('message', 'No active challenge found.');
