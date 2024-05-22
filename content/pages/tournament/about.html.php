@@ -19,7 +19,7 @@
  Submissions will be approved by a moderator, who will verify your morgue and your score, and create a username for your future submissions.</p>
 
 <h3>Restrictions for tournament play</h3>
-<p><b>- Submitted runs must be played in trunk on one of the <a href="https://crawl.develz.org/play.htm" target="_blank"> official online server.</a></b></p>
+<p><b>- Submitted runs must be played in trunk on one of the <a href="https://crawl.develz.org/play.htm" target="_blank"> official online servers</a></b>.</p>
 <p><b>- Seeded games are NOT accepted.</b></p>
 <p>- You can make as many attempts as you want.</p>
 <p>- Morgues must be submitted while a challenge is active. No late submissions!</p>
