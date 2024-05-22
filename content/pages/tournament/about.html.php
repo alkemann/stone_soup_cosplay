@@ -2,12 +2,13 @@
 <h2>About: Crawl Cosplay Trunk Tournament (CCTT)</h2>
 
 <p>The <b>Crawl Cosplay Trunk Tournament</b> is a 4-week tournament with a different challenge each week highlighting major Trunk changes since the previous stable version.
- It is based on the weekly <a href="http://cosplay.kelbi.org/" target="_blank">Crawl Cosplay Challenge</a> series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a> (DCSS).</p>
+ It is based on the weekly <a href="http://cosplay.kelbi.org/" target="_blank">Crawl Cosplay Challenge</a> (CCC) series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a> (DCSS).</p>
 
 <p>Each week will feature a DCSS Unique character for you to play, with one or more options for starting species and background, as well as which god you must worship.
   These are all mandatory and you must worship your god before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths). 
   Also, you can't do anything to lose your religion, including abandoning your god. 
   The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements.</p>
+<p>In the event of a tie for top spot, a very difficult bonus challenge is envisioned.</p>
 
 <p>The next tournament challenge will be posted Friday at 0:00 UTC.</p>
 
