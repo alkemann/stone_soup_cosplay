@@ -14,8 +14,12 @@ if (!$cha) {
     $cha = Challenge::tournamentActive();
 }
 
-if ($cha && $cha->setnr > 30 && !$cha->active) {
-    return $this->request->redirect('/');
+if ($cha && $cha->setnr > 30) {
+    if ($cha->active) {
+        $this->layout = 'tournament';
+    } else {
+        return $this->request->redirect('/');
+    }
 }
 
 if (!$cha || $cha->draft) {
