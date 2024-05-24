@@ -1,12 +1,14 @@
 <div class="page information">
     <div class="toplinks">
         <a href="/">Home</a>
-	| <a href="/about">About CCC</a>
+        | <a href="/about">About CCC</a>
         | <a href="/history">All CCC Challenges</a>
+        | <a href="/recent">Submissions</a>
+	<br>
         | <a href="/tournament/about">About Tournament (CCTT)</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
-        | <a href="/recent">Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
+	<br>
     <?php if ($this->request->session('admin')) : ?>
 	<br>
           Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
