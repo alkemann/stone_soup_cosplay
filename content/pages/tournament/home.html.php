@@ -15,7 +15,7 @@ if ($active) :
 	Crawl Cosplay Trunk Tournament (CCTT) for DCSS trunk v0.<?=$e($active->setnr)?>
 </h2>
 <h3>
-	Week <?=$e($active->week)?>: <a href="/challenges/details?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
+	Week <?=$e($active->week)?>: <a href="/tournament/tchallengedetails?id=<?=$e($active->id)?>"><?=$e($active->name)?></a>
 	<?php if ($active->icon): ?><img src="<?=$e($active->icon)?>" class="head-icon" height="30px" /> <?php endif; ?>
 </h3>
 <p style="font-style: italic; color: #777;"><?=$e($active->description)?></p>
