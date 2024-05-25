@@ -4,10 +4,10 @@
         | <a href="/about">About CCC</a>
         | <a href="/history">All CCC Challenges</a>
         | <a href="/recent">Submissions</a>
-	<br>
-        | <a href="/tournament/about">About Tournament (CCTT)</a>
-	| <a href="/tournament/home">Tournament (CCTT)</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
+	<br>
+          <a href="/tournament/about">About Tournament (CCTT)</a>
+	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
     <?php if ($this->request->session('admin')) : ?>
           Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
@@ -16,7 +16,7 @@
         | <a href="/logout">Logout</a>
 
 	<?php else : ?>
-	   | <a href="/backoffice">Admin</a>
+	     <a href="/backoffice">Admin</a>
 	<?php endif; ?>
     </div>
     <div class="page_content">
