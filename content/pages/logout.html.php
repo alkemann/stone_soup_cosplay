@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-$this->request->redirect('/');
+$this->request->redirect('/backoffice');
