@@ -1,39 +1,18 @@
-<h2 style="color:rgb(69, 136, 5);">About Cosplay Academy</h2>
-The Crawl CosPlay Academy (CCA) is intended as a prequel to the weekly 
-<a href="http://www.crawlcosplay.com/" target="_blank" title="Visit the CCC website">Crawl Cosplay Challenge</a> (CCC)...and yet, 
+<h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy</h2>
+The Crawl Cosplay Academy (CCA) is intended as a prequel to the weekly 
+<a href="/" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
 on its own, it is so much more.
-As a prequel, it's for players who don't feel they have the skills necessary  to compete in the Crawl Cosplay Challenge at a level
+As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level
 that isn't just beginner.
 In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
 haven't won at least a game with each of the four playstyles.
 
 <h3>Process</h3>
 After you complete a good game (with either a win or <abbr title="Yet Another Sad Death">YASD</abbr>), you <a href="/submit">Submit your Morgue</a> to track your progress.
-If you did not win the game, you get assigned a ghost XL title*:
-<br><br>
-<table>
-  <tr><th>XL</th><th>Title</th></tr>
-  <tr><td>&nbsp3</td><td>Weakling</td></tr>
-  <tr><td>&nbsp6</td><td>Amateur</td></tr>
-  <tr><td>&nbsp9</td><td>Novice</td></tr>
-  <tr><td>12</td><td>Journeyman</td></tr>
-  <tr><td>15</td><td>Adept</td></tr>
-  <tr><td>18</td><td>Veteran</td></tr>
-  <tr><td>21</td><td>Master</td></tr>
-  <tr><td>24+</td><td>Legendary</td></tr>
-</table>
 <br />
 <p>There are 4 playstyles with 3 uniques each:
   <a href="/melee">Melee Weapons</a>, <a href="/ranged">Ranged Weapons</a>, 
   <a href="hybrid">Hybrid</a>, and    <a href="magic">Magic</a>. </p>
-
-<p>When you do win, you'll be awarded the Bronze medal for that playstyle.
-  With a 2nd win from the different playstyle, you'll be awarded a Silver medal.
-  And again a 3rd win in a 3rd category will grant you the Gold medal.</p>
-  Finally, when you have a win in each of the 4 playstyle, you'll be fully Certified by the CosPlay Academy.
-
-<p>Also, once you have a win, you'll be added to the <a href="/certified">Honour Roll</a> allowing you to see also the accomplishment of other crawlers.</p>
-<p>Here's an example of a detailed player profile:</p>
 <br />
 <table>
   <tr><th colspan="2"> Playstyle:</th><th colspan="3">Melee</th><th colspan="3">Ranged</th><th colspan="3">Hybrid</th><th colspan="3">Magic</th></tr>
@@ -63,5 +42,3 @@ If you did not win the game, you get assigned a ghost XL title*:
 </table>
 Once you are certified, you'll likely feel ready to compete at an intermediate to advanced level in the weekly 
 <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
-<p>_______<br />
-* taken from: <a href="https://github.com/crawl/crawl/blob/master/crawl-ref/source/describe.cc#L4661">https://github.com/crawl/crawl/blob/master/crawl-ref/source/describe.cc#L4661</a></p>
