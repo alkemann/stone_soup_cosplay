@@ -1,18 +1,15 @@
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy</h2>
-The Crawl Cosplay Academy (CCA) is intended as a prequel to the weekly 
-<a href="/" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
+The <b>Crawl Cosplay Academy</b> (CCA) is intended as a prequel to the weekly <a href="/" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
 on its own, it is so much more.
-As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level
-that isn't just beginner.
-In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
+<p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
+<p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
 haven't won at least a game with each of the four playstyles.
 
 <h3>Process</h3>
-After you complete a good game (with either a win or <abbr title="Yet Another Sad Death">YASD</abbr>), you <a href="/submit">Submit your Morgue</a> to track your progress.
+After you complete a good game (with either a win or <abbr title="Yet Another Sad Death">YASD</abbr>), you <b>Submit your Morgue</b> to track your progress.
 <br />
 <p>There are 4 playstyles with 3 uniques each:
-  <a href="/melee">Melee Weapons</a>, <a href="/ranged">Ranged Weapons</a>, 
-  <a href="hybrid">Hybrid</a>, and    <a href="magic">Magic</a>. </p>
+  </b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
 <br />
 <table>
   <tr><th colspan="2"> Playstyle:</th><th colspan="3">Melee</th><th colspan="3">Ranged</th><th colspan="3">Hybrid</th><th colspan="3">Magic</th></tr>
