@@ -5,12 +5,12 @@ With the Crawl Cosplay Academy (CCA), you'll play easier combos of different pla
 hopefully win many games sooner than later, while playing characters based on 
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
 <h3>Ready?</h3>
-Want to know more before jumping in? Read the <a href="/about">About</a> section.
+Want to know more before jumping in? Read the <a href="/academy/about">About</a> section.
 <h3>Set...</h3>
-If you have never won a game, your first Academy goal is to play one of the "melee brutes" listed below since they are considered to be the
+If you have never won a game, your first Academy goal is to play one of the "Melee Brutes" listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.
 <br>
-  Click on one of the Uniques below for the challenge's suggested 3 conducts and 2 bonuses:  
+Just click on one of the Uniques below for the challenge's suggested 3 conducts and 2 bonuses:  
 <h4><b>Melee Brutes</b></h4>
   <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
@@ -28,7 +28,8 @@ If you have never won a game, your first Academy goal is to play one of the "mel
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
 <h3>GO!</h3>
-Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>. 
+Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>.
+Your best 2 runs for each challenge willbe kept in the website's database...so sumbit as often as you like.
 <br /><br />
 <h3>Need more help?</h3>
 <p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Crawl Cosplay Discord server</a>.
