@@ -11,10 +11,10 @@ If you have never won a game, your first Academy goal is to play one of the "mel
 <br>
 <h3>GO!</h3>
 <h4><b>Melee</b></h4>
-  <p><a href="/academy/challengedetails?id=251" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a></p>
-  <p><a href="/academy/challengedetails?id=291" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a></p>
-  <p><a href="/academy/challengedetails?id=171" title="Saint Roka, the Hill Orc Monk (HOMo)"><img src="/img/Saint_Roka.png"></a></p>
-<h4><b>Ranged</b></h4>
+  <p><a href="/academy/challengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a></p>
+  <p><a href="/academy/challengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a></p>
+  <p><a href="/academy/challengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a></p>
+<h4><b>Ranged Weapon</b></h4>
   <p><a href="/academy/challengedetails?id=231" title="Nessos, the Centaur Hunter (CeHu)"><img src="/img/Nessos.png"></a></p>
   <p><a href="/academy/challengedetails?id=081" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a></p>
   <p><a href="/academy/challengedetails?id=271" title="Sonja, the Kobole Assassin (KoAs)"><img src="/img/Sonja.png"></a></p>
