@@ -1,3 +1,4 @@
+<?php $this->layout = 'academy'; ?>
 <h2>Welcome green Crawler!</h2>
 <p><img src="/img/Snorg.png" style="float:right;width:48px;height:48px;">Want to improve your gameplay while having fun doing it? 
 With the Crawl Cosplay Academy (CCA), you'll play easier combos of different playstyles as you learn to survive longer. And 
