@@ -12,12 +12,10 @@ After you complete a good game (with either a win or <abbr title="Yet Another Sa
 <p>There are 4 playstyles with 3 uniques each:
   </b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
 <br />
-<table>
-  <tr><th colspan="2"> Playstyle:</th><th colspan="3">Melee</th><th colspan="3">Ranged</th><th colspan="3">Hybrid</th><th colspan="3">Magic</th></tr>
-  <tr><td></td><td>
+<h4>Melee Brutes</h4>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
-      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a></td></tr>
+      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a>
 <h4><b>Ranged Weapons</b></h4>
     <tr><td></td><td>
       <a href="/academy/achallengedetails?id=929" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a>
@@ -36,6 +34,6 @@ After you complete a good game (with either a win or <abbr title="Yet Another Sa
 </table>
 Once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly 
 <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
-
-Happy Crawling! 
+<br><br>
+Happy Crawling!<br> 
 RoGGa ;-p
