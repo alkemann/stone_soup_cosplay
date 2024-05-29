@@ -15,9 +15,9 @@ If you have never won a game, your first Academy goal is to play one of the "mel
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
       <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a></p>
 <h4><b>Ranged Weapons</b></h4>
-  <p> <a href="/academy/achallengedetails?id=929" title="Nessos, the Centaur Hunter (CeHu)"><img src="/img/Nessos.png"></a> 
-      <a href="/academy/achallengedetails?id=930" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a>
-      <a href="/academy/achallengedetails?id=931" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png"></a></p>
+  <p> <a href="/academy/achallengedetails?id=929" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a>
+      <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png"></a>
+      <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png"></a> </p>
 <h4><b>Hybrid: Melee with some Magic</b></h4>
   <p> <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
       <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Skald (MfSk)"><img src="/img/Ilsuiw.png"></a> 
