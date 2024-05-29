@@ -9,6 +9,9 @@
           <a href="/tournament/about">About Tournament (CCTT)</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
+          <a href="/tournament/about">About Academy (CCA)</a>
+	| <a href="/tournament/index">Crawl Cosplay Academy (CCA)</a>
+	<br>
     <?php if ($this->request->session('admin')) : ?>
           Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
         | Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
@@ -21,8 +24,8 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/"><img src="/img/ccc_stone_soup_icon-512x512.png" width="36" height="36" />Crawl Cosplay Challenge<img src="/img/ccc_stone_soup_icon-512x512.png" width="36" height="36" /></a></h1>
-            <div class="fineprint">Come chat with us on the <a href="https://discord.gg/ZQ4kk6n" target="_blank">official CCC Discord server<img src="/img/discord.png"></a></div>
+            <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="36" height="36" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="36" height="36" /></a></h1>
+            <div class="fineprint">Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord.png"></a></div>
         </div>
         <br />
         <img src="/img/HR-right.png"><br />
