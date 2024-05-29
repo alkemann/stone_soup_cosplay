@@ -9,7 +9,6 @@ Want to know more before jumping in? Read the <a href="/about">About</a> section
 If you have never won a game, your first Academy goal is to play one of the "melee brutes" listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.
 <br>
-<h3>GO!</h3>
   Click on one of the Uniques below for the challenge's suggested 3 conducts and 2 bonuses:  
 <h4><b>Melee Brutes</b></h4>
   <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
@@ -27,8 +26,8 @@ If you have never won a game, your first Academy goal is to play one of the "mel
   <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.png"></a> 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
-<h3>Submit your Morgue</h3>
-Once you have completed one of your better games, <a href="/submit">Submit your Morgue</a> and a moderator will approve it.</a>. 
+<h3>GO!</h3>
+Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>. 
 <br /><br />
 <h3>Need more help?</h3>
 <p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Crawl Cosplay Discord server</a>.
