@@ -1,3 +1,4 @@
+<?php $this->layout = 'academy'; ?>
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy</h2>
 The <b>Crawl Cosplay Academy</b> (CCA) is intended as a prequel to the weekly <a href="/" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
 on its own, it is so much more.
