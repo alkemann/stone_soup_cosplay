@@ -26,7 +26,7 @@ Just click on one of the Uniques below for the challenge's suggested 3 conducts 
 <h4><b>Mostly Magic</b></h4>
   <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Hedge Wizard (DrHW)"><img src="/img/Tiamat.png"></a> 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
-      <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
+      <a href="/academy/achallengedetails?id=937" title="Jorgrun, the Mountain Dwarf Earth Elementalist (MDEE)"><img src="/img/Jorgrun.png"></a></p>
 <h3>GO!</h3>
 Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>.
 Your best 2 runs for each challenge willbe kept in the website's database...so sumbit as often as you like.
