@@ -24,7 +24,7 @@ Just click on one of the Uniques below for the challenge's suggested 3 conducts 
       <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png"></a> 
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a></p>
 <h4><b>Mostly Magic</b></h4>
-  <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.png"></a> 
+  <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Hedge Wizard (DrHW)"><img src="/img/Tiamat.png"></a> 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
 <h3>GO!</h3>
