@@ -31,5 +31,5 @@ Just click on one of the Uniques below for the challenge's suggested 3 conducts 
 Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>.
 Your best 2 runs for each challenge willbe kept in the website's database...so sumbit as often as you like.
 <br /><br />
-<h3>Need more help?</h3>
+<h3>Need more help?...or have some questions</h3>
 <p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Crawl Cosplay Discord server</a>.
