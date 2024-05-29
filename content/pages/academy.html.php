@@ -10,25 +10,25 @@ If you have never won a game, your first Academy goal is to play one of the "mel
 <b><i>easier</i></b> combos of the easiest category.
 <br>
 <h3>GO!</h3>
-<h4><b>Melee</b></h4>
-  <p><a href="/academy/challengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a></p>
-  <p><a href="/academy/challengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a></p>
-  <p><a href="/academy/challengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a></p>
-<h4><b>Ranged Weapon</b></h4>
-  <p><a href="/academy/challengedetails?id=231" title="Nessos, the Centaur Hunter (CeHu)"><img src="/img/Nessos.png"></a></p>
-  <p><a href="/academy/challengedetails?id=081" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a></p>
-  <p><a href="/academy/challengedetails?id=271" title="Sonja, the Kobole Assassin (KoAs)"><img src="/img/Sonja.png"></a></p>
-<h4><b>Hybrid</b></h4>
-  <p><a href="/academy/challengedetails?id=051" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a></p>
-  <p><a href="/academy/challengedetails?id=741" title="Ilsuiw, the Merfolk Skald (MfSk)"><img src="/img/Ilsuiw.png"></a></p>
-  <p><a href="/academy/challengedetails?id=331" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a></p>
-<h4><b>Magic</b></h4>
-  <p><a href="/academy/challengedetails?id=871" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.png"></a></p>
-  <p><a href="/academy/challengedetails?id=331" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a></p>
-  <p><a href="/academy/challengedetails?id=351" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
+  Click on one of the Uniques below for the challenge's suggested 3 conducts and 2 bonuses:  
+<h4><b>Melee Brutes</b></h4>
+  <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
+      <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
+      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a></p>
+<h4><b>Ranged Weapons</b></h4>
+  <p> <a href="/academy/achallengedetails?id=929" title="Nessos, the Centaur Hunter (CeHu)"><img src="/img/Nessos.png"></a> 
+      <a href="/academy/achallengedetails?id=930" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png"></a>
+      <a href="/academy/achallengedetails?id=931" title="Sonja, the Kobole Assassin (KoAs)"><img src="/img/Sonja.png"></a></p>
+<h4><b>Hybrid: Melee with some Magic</b></h4>
+  <p> <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
+      <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Skald (MfSk)"><img src="/img/Ilsuiw.png"></a> 
+      <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a></p>
+<h4><b>Mostly Magic</b></h4>
+  <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.png"></a> 
+      <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
+      <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a></p>
 <h3>Submit your Morgue</h3>
 Once you have completed one of your better games, <a href="/submit">Submit your Morgue</a> and a moderator will approve it.</a>. 
-Also, feel free to submit your old morgues that used any of the Unique's specific combos.
 <br /><br />
 <h3>Need more help?</h3>
 <p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Crawl Cosplay Discord server</a>.
