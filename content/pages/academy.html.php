@@ -20,7 +20,7 @@ If you have never won a game, your first Academy goal is to play one of the "mel
       <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png"></a> </p>
 <h4><b>Hybrid: Melee with some Magic</b></h4>
   <p> <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
-      <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Skald (MfSk)"><img src="/img/Ilsuiw.png"></a> 
+      <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png"></a> 
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a></p>
 <h4><b>Mostly Magic</b></h4>
   <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.png"></a> 
