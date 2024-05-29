@@ -44,11 +44,13 @@ $this->setData("meta", ['filename' => $cha->icon]);
 </table>
 <p class="info">The Species, Background, and God choices are all mandatory. You must be worshipping one of the gods listed above before entering Lair, Orc, or Depths, unless this isn't possible in which case you must worship them as soon as you can. Don't use faded altars (except in challenges where you can choose any god), and don't do anything to lose your religion unless otherwise specified.</p>
 
-<?php if ($cha->special_rule) : ?>
-<h3>Special Rule or Notes</h3>
-<div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
-<?php endif; ?>
-
+<!-- 
+	<?php if ($cha->special_rule) : ?>
+		<h3>Special Rule or Notes</h3>
+		<div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
+	<?php endif; ?>
+-->
+	
 <div class="score-sidebar">
 <h3>Submissions</h3>
 <br />
