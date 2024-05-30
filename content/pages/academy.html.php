@@ -1,9 +1,5 @@
 <?php $this->layout = 'academy'; ?>
 <h2>Welcome green Crawler!</h2>
-<p><img src="/img/Snorg.png" style="float:right;width:48px;height:48px;">Want to improve your gameplay while having fun doing it? 
-With the Crawl Cosplay Academy (CCA), you'll play easier combos of different playstyles as you learn to survive longer. And 
-hopefully win many games sooner than later, while playing characters based on 
-<a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
 <h3>Ready?</h3>
 Want to know more before jumping in? Read the <a href="/academy/about">About</a> section.
 <h3>Set...</h3>
