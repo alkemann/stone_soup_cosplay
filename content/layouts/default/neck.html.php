@@ -7,7 +7,7 @@
           <a href="/tournament/about">About Tournament (CCTT)</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
-          <a href="/recent">Submissions</a>
+          <a href="/recent">All Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
 	<br>
     <?php if ($this->request->session('admin')) : ?>
