@@ -20,14 +20,14 @@ if ($cha->draft && !$is_admin) {
 }
 
 $name = $e($cha->name);
-$this->setData("page_title", "{$name} - Crawl Cosplay Challenge");
+$this->setData("page_title", "{$name} - Crawl Cosplay Trunk Tournament");
 
 $this->setData("meta", ['filename' => $cha->icon]);
 
 ?>
 <div class="challenge">
 
-<h2>Set <?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></h2>
+<h2>Trunk Tournament for trunk v0.<?=$e($cha->setnr)?> Week <?=$e($cha->week)?> : <?=$e($cha->name)?></h2>
 <p style="font-style: italic; color: #777;"><?=$e($cha->description)?></p>
 <p>
 	<?php if ($cha->active) : ?>
