@@ -25,7 +25,7 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="36" height="36" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="36" height="36" /></a></h1>
+            <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
             <div class="fineprint">Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord.png"></a></div>
         </div>
         <br />
