@@ -3,7 +3,7 @@
 <h3>Ready?</h3>
 Want to know more before jumping in? Read the <a href="/academy/about_cca">About</a> section.
 <h3>Set...</h3>
-If you have never won a game, your first Academy goal is to play one of the "Melee Brutes" listed below since they are considered to be the
+If you have never won a game, your first Academy goal is to play one of the <b>"Melee Brutes"</b>b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.
 <br>
 Just click on one of the Uniques below for the challenge's suggested 3 conducts and 2 bonuses:  
@@ -24,7 +24,7 @@ Just click on one of the Uniques below for the challenge's suggested 3 conducts 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Jorgrun, the Mountain Dwarf Earth Elementalist (MDEE)"><img src="/img/Jorgrun.png"></a></p>
 <h3>GO!</h3>
-Play your DCSS and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>.
+Play your DCSS Unique and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge;s detail page and a moderator will approve it.</a>.
 Your best 2 runs for each challenge willbe kept in the website's database...so sumbit as often as you like.
 <br /><br />
 <h3>Need more help?...or have some questions</h3>
