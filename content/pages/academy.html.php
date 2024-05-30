@@ -1,7 +1,7 @@
 <?php $this->layout = 'academy'; ?>
 <h2>Welcome green Crawler!</h2>
 <h3>Ready?</h3>
-Want to know more before jumping in? Read the <a href="/academy/about">About</a> section.
+Want to know more before jumping in? Read the <a href="/academy/about_cca">About</a> section.
 <h3>Set...</h3>
 If you have never won a game, your first Academy goal is to play one of the "Melee Brutes" listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.
