@@ -7,6 +7,9 @@
           <a href="/tournament/about">About Tournament (CCTT)</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
+          <a href="/academy/about_cca">About CCA</a>
+	| <a href="/academy">Academy (CCA)</a>
+	<br>
           <a href="/recent">All Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
 	<br>
