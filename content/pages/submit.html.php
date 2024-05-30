@@ -124,7 +124,7 @@ if ($data = $this->request->getPostData()) {
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->conduct_3)?></i>
     <br />
-    <p style="font-size: 0.75em; color: #999;"><sup>*</sup> Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Please indicate which conducts you qualify for when you post your morgue. Small mistakes in following conducts will usually be forgiven.</p>
+    <p style="font-size: 0.75em; color: #999;"><sup>*</sup> Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Please indicate which conducts you qualify for when you post your morgue.</p>
     </fieldset>
     <br />
     <fieldset><legend>Bonus <span class="star">&#9733;</span></legend>
@@ -141,7 +141,7 @@ if ($data = $this->request->getPostData()) {
     </label>
     <i style="font-size: 0.75em;"><?=$e($cha->bonus_2)?></i>
     <br />
-    <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for. Small mistakes will usually be forgiven.</p>
+    <p style="font-size: 0.75em; color: #999;">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Please indicate challenges that you qualify for.</p>
     </fieldset>
     <br />
     <input type="submit" value="Submit Run" />
