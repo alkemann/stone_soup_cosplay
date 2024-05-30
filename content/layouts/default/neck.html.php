@@ -25,7 +25,7 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/"><img src="/img/ccc_stone_soup_icon-512x512.png" width="36" height="36" />Crawl Cosplay Challenge<img src="/img/ccc_stone_soup_icon-512x512.png" width="36" height="36" /></a></h1>
+            <h1><a href="/"><img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Challenge<img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
             <div class="fineprint">Come chat with us on the <a href="https://discord.gg/ZQ4kk6n" target="_blank">official CCC Discord server<img src="/img/discord.png"></a></div>
         </div>
         <br />
