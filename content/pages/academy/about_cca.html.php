@@ -11,7 +11,7 @@ After you complete a good game (with either a win or <abbr title="Yet Another Sa
 <br />
 <p>There are 4 playstyles with 3 uniques each:
   </b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
-<br />
+
 <h4><b>Melee Brutes</b></h4>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
