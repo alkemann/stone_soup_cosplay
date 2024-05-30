@@ -298,13 +298,13 @@ div.fineprint p {
 }
 .page_floor {
     background: #ccc;
-    background-image: url("/img/bg_tournament_floor.png");
+    background-image: url("/img/bg_dungeon2_floor.png");
     padding: 32px;
 }
 /* <div id="page_footer">&nbsp;
 </div> */
  div#page_footer {
-    background-image: url("/img/cca_background_walls.png");
+    background-image: url("/img/bg_dungeon2_wall.png");
     margin: 0;
     padding: 0;
     height: 32px;
