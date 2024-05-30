@@ -7,7 +7,7 @@
           <a href="/tournament/about">About CCTT</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
-          <a href="/academy/about">About CCA</a>
+          <a href="/academy/about_cca">About CCA</a>
 	| <a href="/academy">Crawl Cosplay Academy (CCA)</a>
 	<br>
 	  <a href="/recent">All Submissions</a>
