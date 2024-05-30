@@ -4,9 +4,9 @@ use app\models\Challenge;
 ?>
 <h2>Challenges</h2>
 IMPORTANT ADMIN NOTES: 
-<p>Set#s 32 and above are reserved for the Crawl Cosplay Trunk Tournaments (CCTT). So set #32 is for the Trunk v0.32 tournament.</p>
-<p>Set #0 is reserved for Crawl Cosplay Academy(CCA). Do NOT make any of those 12 challenges "Active".</p>
-
+<p>- Set#s 32 and above are reserved for the Crawl Cosplay Trunk Tournaments (CCTT). So set #32 is for the Trunk v0.32 tournament.</p>
+<p>- Set #0 is reserved for Crawl Cosplay Academy(CCA). Do NOT make any of those 12 challenges "Active".</p>
+<br>
 <table class="challenges_list bordered">
 	<thead>
 		<tr>
