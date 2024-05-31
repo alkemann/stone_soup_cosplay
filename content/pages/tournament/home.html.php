@@ -22,7 +22,7 @@ if ($active) :
 <p><a href="/tournament/tchallengedetails?id=<?=$e($active->id)?>">Challenge details</a>  
  | <a href="/submit?id=<?=$e($active->id)?>">Submit a run</a>
  | <a href="https://discord.gg/ZQ4kk6n">Discuss it in CCC's Discord</a> 
- |<a href="<?=$e($active->reddit)?>">Reddit post</a>
+ | <a href="<?=$e($active->reddit)?>">Reddit post</a>
  | Next challenge starts on Friday at 0:00 UTC.</p>
 <table class="table_for_layout">
 	<tr><th>Species</th><th>Background<th>Gods</th></tr>
