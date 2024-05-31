@@ -1,7 +1,7 @@
 <div class="page information">
     <div class="toplinks">
           <a href="/">Home</a>
-        | <a href="/about">About CCC</a>
+        | <a href="/about_ccc">About CCC</a>
         | <a href="/history">All CCC Challenges</a>
 	<br>
           <a href="/tournament/about">About CCTT</a>
