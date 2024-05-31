@@ -12,7 +12,9 @@ on its own, it is so much more.
 <p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
 <p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
 haven't won at least a game with each of the four playstyles.
-
+<br>
+<p></p>
+  
 <h3>Your Process</h3>
 <p>There are 4 playstyles with 3 uniques each:
   </b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
@@ -32,6 +34,10 @@ haven't won at least a game with each of the four playstyles.
   <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat_green.png"></a> 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a>
+<br>
+<p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
+   NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece YASD!
+<p>The 2 bonuses can usually be accomplished after clearing the Dungeon (D), Lair (L) & the Orcish Mines (O).</p>
 <br>
 After you complete a good game (with either a win or <abbr title="Yet Another Sad Death">YASD</abbr>), you <b>Submit your Morgue</b> to track your progress.
 <br />
