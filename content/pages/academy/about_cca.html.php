@@ -12,7 +12,7 @@ The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href=
 on its own, it is so much more.
 <p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
 <p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
-haven't won at least a game with each of the four playstyles.
+haven't won at least a couple of games.
 <br>
 <p></p>
   
