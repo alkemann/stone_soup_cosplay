@@ -45,12 +45,13 @@ haven't won at least a couple of games.
 <p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
    NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece <abbr title="Yet Another Sad Death">YASD</abbr>!
 <p>Conducts 1 & 2 will usually be related to decisions you need to take in the early game, and the 3rd conduct will usually be a small challenge to add some fun.</p>
-<p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually involve something like: "...and get your first rune!" as a caveate.</p>
+<p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveate.</p>
 <br>
 After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr>) or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>Submit your Morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentionned.
 <br />
-Once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly 
-<a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
+Feel free to submit a morgue as soon as you've improved your score. You best 2 runs for a specific challenge will be keptin the website's database.
+<h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
+You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
 <br>
 <h3>Miscelaneous</h3>
 - to view your morgue/dump press the # key in game.<br>
