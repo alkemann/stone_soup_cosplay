@@ -4,7 +4,7 @@
         | <a href="/about">About CCC</a>
         | <a href="/history">All CCC Challenges</a>
 	<br>
-          <a href="/tournament/about">About Tournament (CCTT)</a>
+          <a href="/tournament/about">About CCTT</a>
 	| <a href="/tournament/home">Tournament (CCTT)</a>
 	<br>
           <a href="/academy/about_cca">About CCA</a>
