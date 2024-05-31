@@ -36,8 +36,9 @@ haven't won at least a game with each of the four playstyles.
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a>
 <br>
 <p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
-   NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece YASD!
-<p>The 2 bonuses can usually be accomplished after clearing the Dungeon (D), Lair (L) & the Orcish Mines (O).</p>
+   NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece <abbr title="Yet Another Sad Death">YASD</abbr>!
+<p>Conducts 1 &2 will usually be related to decisions you need to take in the early game, and the 3rd conduct will usually be a small challenge to add some fun.</p>
+<p>The 1st bonus can usually be accomplished after clearing the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will involve something like: "...andget your first rune" as a caveate.</p>
 <br>
 After you complete a good game (with either a win or <abbr title="Yet Another Sad Death">YASD</abbr>), you <b>Submit your Morgue</b> to track your progress.
 <br />
