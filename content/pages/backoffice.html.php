@@ -1,3 +1,4 @@
+<?php $this->layout = 'admin'; ?>
 <?php
 
 use alkemann\h2l\{ Environment, Log };
