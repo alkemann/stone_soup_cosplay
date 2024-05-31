@@ -63,7 +63,7 @@ if ($tournament_submissions) :
 ?>
 <h2>Submissions by <?=$e($p->name)?></h2>
 
-<h3>Crawl Cosplay Trunk Tournaments</h3>
+<h3>Crawl Cosplay Trunk Tournaments (CCTT)</h3>
 <table class="bordered player-list">
     <thead>
         <tr>
@@ -140,7 +140,7 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
     }
 }
 ?>
-<h3>Regular Crawl Cosplay Challenges</h3>
+<h3>Regular weekly Crawl Cosplay Challenges (CCC)</h3>
 
 
 <table class="bordered player-list">
