@@ -1,3 +1,4 @@
+<?php $this->layout = 'admin'; ?>
 <?php
 
 use app\models\{Player, Submission};
