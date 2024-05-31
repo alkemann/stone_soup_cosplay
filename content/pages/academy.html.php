@@ -1,12 +1,12 @@
 <?php $this->layout = 'academy'; ?>
 <h2>Welcome green Crawler!</h2>
 <h3>Ready?</h3>
-Want to know more before jumping in? Read the <a href="/academy/about_cca">About</a> section.
+Want to know more before jumping in? Read the <a href="/academy/about_cca">About CCA</a> webpage.
 <h3>Set...</h3>
 If you have never won a game, your first Academy goal is to play one of the <b>"Melee Brutes"</b>b> listed below since they are considered to be the
 <b><i>easier</i></b> combos of the easiest category.
 <br>
-Just click on one of the Uniques for the challenge's suggested 3 conducts and 2 bonuses.
+Just click on one of the Uniques for the challenge's details listing the suggested 3 conducts and 2 bonuses.
 <h4><b>Melee Brutes</b></h4>
   <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
