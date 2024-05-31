@@ -63,7 +63,7 @@ if ($tournament_submissions) :
 ?>
 <h2>Submissions by <?=$e($p->name)?></h2>
 
-<h3>Crawl Cosplay Trynk Tournaments</h3>
+<h3>Crawl Cosplay Trunk Tournaments</h3>
 <table class="bordered player-list">
     <thead>
         <tr>
