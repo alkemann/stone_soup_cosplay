@@ -1,7 +1,8 @@
 <div class="page information">
     <div class="toplinks">
-        <a href="/">Home</a>
+        <a href="/">Crawl Cosplay Homepage, the 3-in-1 server</a>
         | <a href="/about">About CCC</a>
+	| <a href="/ccc_home">Weekly active CCC</a> 
         | <a href="/history">All CCC Challenges</a>
 	<br>
           <a href="/tournament/about">About CCTT</a>
