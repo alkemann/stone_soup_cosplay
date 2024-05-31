@@ -54,10 +54,10 @@ Feel free to submit a morgue as soon as you've improved your score. You best 2 r
 You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
 <br>
 <h3>Miscelaneous</h3>
-- to view your morgue/dump press the # key in game.<br>
-- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:<br>
+<p>- to view your morgue/dump press the # key in game.</p>
+<p>- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:</p>
 <code>      tile_show_threat_levels = tough,nasty,unusual</code>
-
+<br>
 Happy Crawling!<br> 
-RoGGa ;-p
+RoGGa, alkemann (our webdev) and the @Crawl_Cosplay_VIPs in discord
 <br>
