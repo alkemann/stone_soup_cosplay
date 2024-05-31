@@ -44,6 +44,11 @@ After you complete a good game (with either a win or <abbr title="Yet Another Sa
 Once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly 
 <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
 <br>
+<h3>Miscelaneous</h3>
+- to view your morgue/dump press the # key in game.<br>
+- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:<br>
+<code>      tile_show_threat_levels = tough,nasty,unusual</code>
+
 Happy Crawling!<br> 
 RoGGa ;-p
 <br>
