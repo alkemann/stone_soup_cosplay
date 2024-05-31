@@ -105,14 +105,15 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<dt>2. <?=$e($cha->conduct_name_2)?></dt><dd><?=$em($cha->conduct_2)?></dd>
 	<dt>3. <?=$e($cha->conduct_name_3)?></dt><dd><?=$em($cha->conduct_3)?></dd>
 </dl>
-<p class="info">Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 4 milestones (20 points) you can earn up to 10 points from conduct bonuses.) Small mistakes in following conducts will usually be forgiven.</p>
-
+<p class="info">Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 3 milestones (15 points) you can earn up to 7 points from conducts.) Small mistakes in following conducts will usually be forgiven.</p>
+NOTE: for CCA, the first 2 conducts are usually to help you make choices at startup or in early game, while the 3rd conduct is usuall a small fun challenge. 
 <h3>Bonus challenges</h3>
 <dl>
 	<dt>1. <?=$e($cha->bonus_name_1)?></dt><dd><?=$em($cha->bonus_1)?></dd>
 	<dt>2. <?=$e($cha->bonus_name_2)?></dt><dd><?=$em($cha->bonus_2)?></dd>
 </dl>
 <p class="info">Bonus challenges are worth one star each, similar to banners in Crawl tournaments. Small mistakes will usually be forgiven.</p>
+<p>The 1st bonus can usually be accomplished after clearing the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will involve something like: "...and get your first rune!" as a caveate.</p>
 
 <h3>Milestones</h3>
 <ul>
