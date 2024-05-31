@@ -24,7 +24,7 @@
     <div class="page_content">
         <div class="heading">
             <h1><a href="/tournament/home"><img src="/img/stone_soup_icon-32x32.png">Crawl Cosplay Trunk Tournament<img src="/img/stone_soup_icon-32x32.png"></a></h1>
-            <div class="fineprint">Come chat with us on the <a href="https://discord.gg/ZQ4kk6n" target="_blank">official CCC Discord server<img src="/img/discord.png"></a></div>
+            <div class="fineprint">Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></div>
         </div>
         <br />
         <img src="/img/HR-right.png"><br />
