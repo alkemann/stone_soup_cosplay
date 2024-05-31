@@ -17,7 +17,8 @@ haven't won at least a game with each of the four playstyles.
   
 <h3>Your Process</h3>
 <p>There are 4 playstyles with 3 uniques each:
-  </b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
+  <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
+  Over over the Uniques' graphic to see their descriptions, and click on one of them to open the CCA Challenge's details page.
 <h4><b>Melee Brutes</b></h4>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
