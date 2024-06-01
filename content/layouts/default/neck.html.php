@@ -11,7 +11,7 @@
           <a href="/academy/about_cca">About CCA</a>
 	| <a href="/academy">Academy (CCA)</a>
 	<br>
-          <a href="/recent">All Submissions</a>
+          <a href="/recent">All CC Submissions</a>
         (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
 	<br>
     <?php if ($this->request->session('admin')) : ?>
