@@ -21,23 +21,23 @@ haven't won at least a couple of games.
   <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
   Hover over a Unique's graphic to see their descriptions, and then click on one of them to open the Unique's challenge's details page.
 <table><tr>
-    <td><p><b>Melee Brutes</b></p>
+    <td><p><b>Melee Brutes</b></p><p></p>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
       <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a>
     </td>
-    <td><p><b>Ranged Weapons</b></p>
+    <td><p><b>Ranged Weapons</b></p><p></p>
       <a href="/academy/achallengedetails?id=929" title="Joseph, the Human Hunter (HuHu)"><img src="/img/Joseph.png"></a>
       <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png"></a>
       <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png"></a>
     </td>
-    <td><p><b><abbr title="Melee mostly with some Magic">Hybrid</b></p>
+    <td><p><b><abbr title="Melee mostly with some Magic">Hybrid</b></p><p></p>
       <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
       <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png"></a> 
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a>
     </td>
     <td><p><b>Mostly Magic</b></p>
-      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat_green.png"></a> 
+      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.gif"></a> 
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
       <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a>
     </td>
