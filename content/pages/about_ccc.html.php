@@ -1,3 +1,4 @@
+<?php $this->layout = 'ccc'; ?>
 <h2>About weekly Crawl Cosplay Challenges (CCC) series</h2>
 
 <p>The Crawl Cosplay Challenge is a weekly series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a>, using crawl's uniques as the basis for challenges. The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements. Challenges are run in five-week 'sets' with the occasional bonus round, and are suitable for players of all skill levels — the Challenge is about personal achievement rather than competition.</p>
