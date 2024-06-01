@@ -28,12 +28,6 @@ use app\models\{Challenge, Submission, Player};
 <?php endforeach; ?>
 </table>
 
-<?php if ($set == 1) : ?>
-<p class="disclaimer">The Cosplay Challenge was originally run as a continuous series, before the concept of dividing it into sets was introduced. The initial challenges are all grouped as "Set 1."</p>
-
-<p class="disclaimer">The scoring system was different, with a perfect score being 70 points. The totals have been adjusted here so that players wishing to try these challenges can submit runs using the current scoring scheme. See <a href="https://www.reddit.com/r/dcss/comments/9rlseu/casual_cosplay_challenge_week_15_boris_mucj_plus/">the reddit thread for week 15</a> for the original score totals.</p>
-<?php endif; ?>
-
 <table class="bordered">
 		<tr>
 			<th>Player</th>
