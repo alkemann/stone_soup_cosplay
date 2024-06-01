@@ -1,3 +1,4 @@
+<?php $this->layout = 'ccc'; ?>
 <?php
 
 use app\models\{Challenge, Submission};
