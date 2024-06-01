@@ -13,3 +13,4 @@ Select your pleasure among the following options:
 
 <h3>Want to chat?</h3>
 Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a>
+<br>
