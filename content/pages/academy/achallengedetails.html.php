@@ -29,11 +29,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 <h2><?=$e($cha->name)?></h2>
 <p style="font-style: italic; color: #777;"><?=$e($cha->description)?></p>
 <p>
-	<?php if ($cha->active) : ?>
-	<a href="/submit">Submit a run</a> 
-	<?php else: ?>
-	<a href="/submit?id=<?=$cha->id?>">Submit a run</a> 
-	<?php endif;?>
+	<a href="/academy/submit_cca">Submit a CCA run</a> 
 	<?php if ($cha->wiki): ?> |
 	<a href="<?=$e($cha->wiki)?>">Wiki page</a><?php endif; ?>
 </p>
