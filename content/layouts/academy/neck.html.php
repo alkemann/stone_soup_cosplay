@@ -1,6 +1,6 @@
 <div class="page information">
     <div class="toplinks">
-	<table>
+	<table align="right">
 	    <tr><td>  <a href="/">Crawl Cosplay Home</a></td>
 		<td>| <a href="/about_ccc">About CCC</a></td>
 		<td>| <a href="/ccc_home">Weekly active CCC</a></td>
@@ -15,9 +15,9 @@
 		<td>| <a href="/academy">Academy (CCA)</a>
 	    </tr>	
      	    <tr><td></td><td></td>
-		<td>  <a href="/recent">All Submissions</a></tr>td>
+		<td>  <a href="/recent">All Submissions</a></td>
 	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
-	    </tr>	
+	    </tr>
 	</table>
 	<?php if ($this->request->session('admin')) : ?>
 	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
