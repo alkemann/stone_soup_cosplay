@@ -102,7 +102,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<dt>3. <?=$e($cha->conduct_name_3)?></dt><dd><?=$em($cha->conduct_3)?></dd>
 </dl>
 <p class="info">Conducts are worth +5 points each, to a maximum of half your score from milestones, rounded down. (So if you achieve 3 milestones (15 points) you can earn up to 7 points from conducts.) Small mistakes in following conducts will usually be forgiven.</p>
-<p class="info">NOTE: for CCA, the first 2 conducts are usually to help you make choices at startup or in early game, while the 3rd conduct is usuall a small fun challenge.</p>
+<p class="info">NOTE: for CCA, the first 2 conducts are usually to help you make choices at startup or in early game, while the 3rd conduct is usually a small fun challenge.</p>
 <h3>Bonus challenges</h3>
 <dl>
 	<dt>1. <?=$e($cha->bonus_name_1)?></dt><dd><?=$em($cha->bonus_1)?></dd>
