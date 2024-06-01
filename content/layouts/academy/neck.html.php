@@ -7,15 +7,15 @@
 	        <td>| <a href="/history">All CCC Challenges</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
-		<td>  <a href="/tournament/about">About CCTT</a></td>
+		<td>\ <a href="/tournament/about">About CCTT</a></td>
 		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
-	        <td>  <a href="/academy/about_cca">About CCA</a>
+	        <td>| <a href="/academy/about_cca">About CCA</a>
 		<td>| <a href="/academy">Academy (CCA)</a>
 	    </tr>	
      	    <tr><td></td><td></td>
-		<td>  <a href="/recent">All Submissions</a></td>
+		<td>| <a href="/recent">All Submissions</a></td>
 	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
 	    </tr>
 	</table>
