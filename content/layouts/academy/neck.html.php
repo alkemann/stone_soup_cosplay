@@ -1,27 +1,31 @@
 <div class="page information">
     <div class="toplinks">
-          <a href="/">Crawl Cosplay Home</a>
-	| <a href="/about_ccc">About CCC</a>
-	| <a href="/ccc_home">Weekly active CCC</a>
-        | <a href="/history">All CCC Challenges</a>
-	<br>
-          <a href="/tournament/about">About CCTT</a>
-	| <a href="/tournament/home">Tournament (CCTT)</a>
-	<br>
-          <a href="/academy/about_cca">About CCA</a>
-	| <a href="/academy">Academy (CCA)</a>
-	<br>
-	  <a href="/recent">All Submissions</a>
-          (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
-	<br>
-    <?php if ($this->request->session('admin')) : ?>
-          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
-        | Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
-    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
-        | <a href="/logout">Logout</a>
-
+	<table>
+	    <tr><td>  <a href="/">Crawl Cosplay Home</a></td>
+		<td>| <a href="/about_ccc">About CCC</a></td>
+		<td>| <a href="/ccc_home">Weekly active CCC</a></td>
+	        <td>| <a href="/history">All CCC Challenges</a></td>
+	    </tr>	
+     	    <tr><td></td><td></td>
+		<td>  <a href="/tournament/about">About CCTT<</td>/a></td>
+		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
+	    </tr>	
+     	    <tr><td></td><td></td>
+	        <td>  <a href="/academy/about_cca">About CCA</a>
+		<td>| <a href="/academy">Academy (CCA)</a>
+	    </tr>	
+     	    <tr><td></td><td></td>
+		<td>  <a href="/recent">All Submissions</a></tr>td>
+	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
+	    </tr>	
+	</table>
+	<?php if ($this->request->session('admin')) : ?>
+	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
+        	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
+	    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
+        	| <a href="/logout">Logout</a>
 	<?php else : ?>
-	     <a href="/backoffice">Admin</a>
+	           <a href="/backoffice">Admin</a>
 	<?php endif; ?>
     </div>
     <div class="page_content">
