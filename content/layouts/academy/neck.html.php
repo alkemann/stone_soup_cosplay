@@ -7,7 +7,7 @@
 	        <td>| <a href="/history">All CCC Challenges</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
-		<td>\ <a href="/tournament/about">About CCTT</a></td>
+		<td>| <a href="/tournament/about">About CCTT</a></td>
 		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
