@@ -5,7 +5,7 @@
     <title><?=$page_title ?? 'Crawl Cosplay Academy (CCA)'?></title>
     <link rel="icon" href="/img/feat-dg_entrance.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
-    <link rel="stylesheet" href="/css/academy.css?v=<?=time()?>">
+    <link rel="stylesheet" href="/css/cca.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <?php
