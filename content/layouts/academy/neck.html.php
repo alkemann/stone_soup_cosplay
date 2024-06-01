@@ -7,7 +7,7 @@
 	        <td>| <a href="/history">All CCC Challenges</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
-		<td>  <a href="/tournament/about">About CCTT<</td>/a></td>
+		<td>  <a href="/tournament/about">About CCTT</a></td>
 		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
@@ -25,7 +25,7 @@
 	    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
         	| <a href="/logout">Logout</a>
 	<?php else : ?>
-	           <a href="/backoffice">Admin</a>
+	          <div class="fineprint"><a href="/backoffice">Admin</a></div>
 	<?php endif; ?>
     </div>
     <div class="page_content">
