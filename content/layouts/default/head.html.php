@@ -18,7 +18,7 @@
         $meta += [
             'width' => 256,
             'height' => 256,
-            'alt' => "DCSS Cosplay Challenge",
+            'alt' => "Crawl Cosplay server",
             'type' => "image/png",
         ];
         if (strpos($meta['filename'], 'https') === 0) {
