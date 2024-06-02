@@ -31,10 +31,10 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></a><</h1>
+            <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
             <div class="fineprint">Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></div>
         </div>
-        <br />
+        <br /><br /><br /><br /><br />
         <img src="/img/HR-right.png"><br />
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
