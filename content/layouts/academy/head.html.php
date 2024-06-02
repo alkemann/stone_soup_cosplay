@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/cca.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
+<style>
+	h1{font-size: 48px;}
+</style>
+
 <?php
 
     if (isset($meta) && is_array($meta) && isset($meta['filename'])) {
