@@ -1,4 +1,4 @@
-<h2>Welcome DCSS Crawler to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>
+<h2>Welcome to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>
 
 Select your pleasure among the following options:
 
