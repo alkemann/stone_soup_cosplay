@@ -60,9 +60,11 @@ a:visited {
 }
 
 table.neck {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
     float: none;
     padding: 0;
-    margin: 0;
     border: none;
     font-size: 12px;
     margin: 0 0 2em 0;
