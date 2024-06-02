@@ -8,7 +8,7 @@
 	    </tr>	
      	    <tr><td></td><td></td>
 		<td>| <a href="/tournament/about">About CCTT</a></td>
-		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
+		<td>| <a href="/tournament/home">Tournament (CCTT) NEW!</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
 	        <td>| <a href="/academy/about_cca">About CCA</a> NEW!
