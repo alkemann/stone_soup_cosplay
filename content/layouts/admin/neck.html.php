@@ -26,7 +26,7 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><a href="/"><img src="/img/cc_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay admin<img src="/img/cc_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
+            <h1><a href="/"><img src="/img/cc_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay /admin/<img src="/img/cc_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
         </div>
         <br />
         <img src="/img/HR-right.png"><br />
