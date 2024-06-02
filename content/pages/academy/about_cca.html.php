@@ -20,7 +20,7 @@ haven't won at least a couple of games.
 <p>There are 4 playstyles with 3 uniques each:
   <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
   Hover over a Unique's graphic to see their descriptions, and then click on one of them to open the Unique's challenge's details page.
-<table><tr>
+<table class="center" ><tr>
     <td><p><b>Melee Brutes</b></p><p></p>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
