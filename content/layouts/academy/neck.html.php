@@ -2,8 +2,8 @@
     <div class="toplinks">
 	<p>  <a href="/">Crawl Cosplay Home</a>
 	   | <a href="/history">All CCC Challenges</a>
-	   | <a href="/about_ccc">About CCC</a></td>
-	   | <a href="/ccc_home">Weekly active CCC</a>
+	   | <a href="/about_ccc">About CCC</a>
+	   | <a href="/ccc_home">Weekly active CCC</a>&nbsp&nbsp&nbsp&nbsp&nbsp
     	</p>
 	<p>| <a href="/tournament/about">About CCTT</a>
 	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
@@ -12,7 +12,7 @@
 	   | <a href="/academy">Academy (CCA)</a> NEW!
 	</p>
 	<p>| <a href="/recent">All Submissions</a>
-	   (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
+	   (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
 	</p>
 
 	<?php if ($this->request->session('admin')) : ?>
