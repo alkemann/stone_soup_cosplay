@@ -59,6 +59,12 @@ a:visited {
     color: #A44;
 }
 
+table.neck {
+    border: none;
+    font-size: 110%;
+    margin: 0 0 2em 0;
+}
+
 table.set-list {
     border: none;
     font-size: 110%;
