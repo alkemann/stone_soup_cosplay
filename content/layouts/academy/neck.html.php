@@ -1,6 +1,6 @@
 <div class="page information">
     <div class="toplinks">
-	<table class="neck" align="right" cellpadding="0" cellspacing="0" border="0">
+	<table class="neck" align="right" cellspacing="0">
 	    <tr><td>  <a href="/">Crawl Cosplay Home</a></td>
 	        <td>| <a href="/history">All CCC Challenges</a></td>
 		<td>| <a href="/about_ccc">About CCC</a></td>
