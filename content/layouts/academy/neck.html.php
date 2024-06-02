@@ -29,6 +29,8 @@
 	          <div class="fineprint"><a href="/backoffice">Admin</a></div>
 	<?php endif; ?>
     </div>
+        <br />
+        <img src="/img/HR-right.png"><br />
     <div class="page_content">
         <div class="heading">
             <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
