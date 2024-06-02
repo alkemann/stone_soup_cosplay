@@ -2,14 +2,14 @@
     <div class="toplinks">
 	<p>  <a href="/">Crawl Cosplay Home</a>
 	   | <a href="/history">All CCC Challenges</a>
-	   | <a href="/about_ccc">About CCC</a>
+	   | <a href="/about_ccc">About CCC</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 	   | <a href="/ccc_home">Weekly active CCC</a>&nbsp&nbsp&nbsp&nbsp&nbsp
     	</p>
-	<p>| <a href="/tournament/about">About CCTT</a>
+	<p>| <a href="/tournament/about">About CCTT</a>&nbsp&nbsp&nbsp&nbsp&nbsp
 	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
     	</p>
-	<p>| <a href="/academy/about_cca">About CCA</a> NEW!
-	   | <a href="/academy">Academy (CCA)</a> NEW!&nbsp&nbsp&nbsp&nbsp
+	<p>| <a href="/academy/about_cca">About CCA</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	   | <a href="/academy">Academy (CCA)</a>&nbsp&nbsp&nbsp&nbsp&nbspNEW!
 	</p>
 	<p>| <a href="/recent">All Submissions</a>
 	   - to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>&nbsp&nbsp&nbsp&nbsp
