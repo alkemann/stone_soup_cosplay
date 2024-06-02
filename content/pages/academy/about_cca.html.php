@@ -8,7 +8,7 @@ hopefully win many games sooner than later, while playing characters based on
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
 
 <h3>The gists</h3>
-The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
+The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/ccc_home" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
 on its own, it is so much more.
 <p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
 <p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
