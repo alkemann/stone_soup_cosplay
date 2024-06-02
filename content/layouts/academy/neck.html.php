@@ -9,10 +9,10 @@
 	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
     	</p>
 	<p>| <a href="/academy/about_cca">About CCA</a> NEW!
-	   | <a href="/academy">Academy (CCA)</a> NEW!
+	   | <a href="/academy">Academy (CCA)</a> NEW!&nbsp&nbsp&nbsp&nbsp
 	</p>
 	<p>| <a href="/recent">All Submissions</a>
-	   (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
+	   (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)&nbsp&nbsp&nbsp&nbsp
 	</p>
 
 	<?php if ($this->request->session('admin')) : ?>
