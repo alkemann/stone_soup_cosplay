@@ -2,17 +2,17 @@
     <div class="toplinks">
 	<table align="right" cellpadding="0" cellspacing="0" border="0">
 	    <tr><td>  <a href="/">Crawl Cosplay Home</a></td>
+	        <td>| <a href="/history">All CCC Challenges</a></td>
 		<td>| <a href="/about_ccc">About CCC</a></td>
 		<td>| <a href="/ccc_home">Weekly active CCC</a></td>
-	        <td>| <a href="/history">All CCC Challenges</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
 		<td>| <a href="/tournament/about">About CCTT</a></td>
 		<td>| <a href="/tournament/home">Tournament (CCTT)</a></td>
 	    </tr>	
      	    <tr><td></td><td></td>
-	        <td>| <a href="/academy/about_cca">About CCA</a>
-		<td>| <a href="/academy">Academy (CCA)</a>
+	        <td>| <a href="/academy/about_cca">About CCA</a> NEW!
+		<td>| <a href="/academy">Academy (CCA)</a> NEW!
 	    </tr>	
      	    <tr><td></td><td></td>
 		<td>| <a href="/recent">All Submissions</a></td>
