@@ -40,7 +40,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 	<tr><td><?=$e($cha->species)?></td><td><?=$e($cha->background)?><td><?=$e($cha->gods)?></td></tr>
 </table>
 <p class="info">The Species, Background, and God choices are all mandatory. You must be worshipping one of the gods listed above before entering Lair, Orcish Mines, the Vaults or Depths, unless this isn't possible in which case you must worship them as soon as you can. Don't use faded altars (except in challenges where you can choose any god), and don't do anything to lose your religion unless otherwise specified.</p>
-<p>NOTE: Except for Beogh, Ignis, Jiyva and Lugonu, an altar for the other gods will ALWAYS show up by D:10.</p>
+<p class="info">NOTE: Except for Beogh, Ignis, Jiyva and Lugonu, an altar for the other gods will ALWAYS show up by D:10.</p>
 
 <!-- 
 	<?php if ($cha->special_rule) : ?>
