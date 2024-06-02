@@ -1,24 +1,19 @@
 <div class="page information">
     <div class="toplinks">
-	<table class="neck" align="right" cellspacing="0">
-	    <tr><td>  <a href="/">Crawl Cosplay Home</a></td>
-	        <td>| <a href="/history">All CCC Challenges</a></td>
-		<td>| <a href="/about_ccc">About CCC</a></td>
-		<td>| <a href="/ccc_home">Weekly active CCC</a></td>
-	    </tr>	
-     	    <tr><td></td><td></td>
-		<td>| <a href="/tournament/about">About CCTT</a></td>
-		<td>| <a href="/tournament/home">Tournament (CCTT) NEW!</a></td>
-	    </tr>	
-     	    <tr><td></td><td></td>
-	        <td>| <a href="/academy/about_cca">About CCA</a> NEW!
-		<td>| <a href="/academy">Academy (CCA)</a> NEW!
-	    </tr>	
-     	    <tr><td></td><td><
-		<td>| <a href="/recent">All Submissions</a></td>
-	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
-	    </tr>
-	</table>
+	<p>  <a href="/">Crawl Cosplay Home</a>
+	   | <a href="/history">All CCC Challenges</a>
+	   | <a href="/about_ccc">About CCC</a></td>
+	   | <a href="/ccc_home">Weekly active CCC</a>
+    	</p>
+	<p>| <a href="/tournament/about">About CCTT</a>
+	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
+    	</p>
+	<p>| <a href="/academy/about_cca">About CCA</a> NEW!
+	   | <a href="/academy">Academy (CCA)</a> NEW!
+	</p>
+	<p>| <a href="/recent">All Submissions</a>
+	   (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
+	</p>
 
 	<?php if ($this->request->session('admin')) : ?>
 	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
