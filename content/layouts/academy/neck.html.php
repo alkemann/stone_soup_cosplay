@@ -14,12 +14,12 @@
 	        <td>| <a href="/academy/about_cca">About CCA</a> NEW!
 		<td>| <a href="/academy">Academy (CCA)</a> NEW!
 	    </tr>	
-     	    <tr><td></td><td></td>
+     	    <tr><td></td><td><
 		<td>| <a href="/recent">All Submissions</a></td>
 	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
 	    </tr>
 	</table>
-	<br><br><br><br><br>
+
 	<?php if ($this->request->session('admin')) : ?>
 	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
         	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
