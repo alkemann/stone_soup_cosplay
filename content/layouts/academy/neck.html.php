@@ -19,7 +19,7 @@
 	        <td>  (to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)<td>
 	    </tr>
 	</table>
-	<br />
+	<br><br><br><br><br><br>
 	<?php if ($this->request->session('admin')) : ?>
 	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
         	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
@@ -34,8 +34,6 @@
             <h1><a href="/"><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></a></h1>
             <div class="fineprint">Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></div>
         </div>
-        <br /><br /><br /><br /><br />
-        <img src="/img/HR-right.png"><br />
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
             <div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
