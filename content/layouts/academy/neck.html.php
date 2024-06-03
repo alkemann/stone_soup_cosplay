@@ -26,20 +26,16 @@
             <div class="fineprint"><center>Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a></center></div>
         </div>
 		<div class="fineprint" align="right">
-			<a href="/recent">All Submissions</a>
-			<br>
-	   		to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>
-			<br>
+	   		To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>
+			<?php if ($this->request->session('admin')) : ?>
+	        		| Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
+		        	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
+	    			| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
+		        	| <a href="/logout">Logout</a>
+			<?php else : ?>
+	          		<a href="/backoffice">Admin</a>
+			<?php endif; ?>
 		</div>
-		<?php if ($this->request->session('admin')) : ?>
-	          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
-        	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
-	    	| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
-        	| <a href="/logout">Logout</a>
-		<?php else : ?>
-	          <div class="fineprint"><a href="/backoffice">Admin</a></div>
-		<?php endif; ?>
-
         <br><img src="/img/HR-right.png"><br>
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
