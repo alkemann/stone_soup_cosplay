@@ -1,3 +1,7 @@
+.centerTable { 
+    margin: 0px auto; 
+}
+
 input[type="text"] {
     width: 70%;
 }
