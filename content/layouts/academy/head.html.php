@@ -33,7 +33,7 @@ h1	{
   position: absolute;
   right: 0;
   background-color: #000000;
-  min-width: 350px;
+  min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }

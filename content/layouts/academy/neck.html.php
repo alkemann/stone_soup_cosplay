@@ -2,9 +2,9 @@
 	<div class="dropdown" style="float:left;">
 		<button class="dropbtn">About</button>
 		<div class="dropdown-content" style="left:0;">
-			<a href="/academy/about_cca">Crawl Cosplay Academy (CCA)</a>
+			<a href="/academy/about_cca">Crawl Cosplay Academy (CCA) - NEW!</a>
 			<a href="/about_ccc">Crawl Cosplay Challenge (CCC)</a>
-			<a href="/tournament/about">Crawl Cosplay Trunk Tournament (CCTT)</a>
+			<a href="/tournament/about">Crawl Cosplay Trunk Tournament (CCTT) - NEW!</a>
 		</div>
 	</div>
 
@@ -12,10 +12,10 @@
 		<button class="dropbtn">Crawl Cosplay</button>
 		<div class="dropdown-content">
 			<a href="/">Crawl Cosplay Home</a>
-			<a href="/academy">Crawl Cosplay Academy (CCA)</a>
+			<a href="/academy">Crawl Cosplay Academy (CCA) - NEW!</a>
 			<a href="/ccc_home">Crawl Cosplay Challenge (CCC)</a>
-			<a href="/history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-> all CCC challenges</a>
-			<a href="/tournament/home">Crawl Cosplay Trunk Tournament (CCTT)</a>
+			<a href="/history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; all CCC challenges</a>
+			<a href="/tournament/home">Crawl Cosplay Trunk Tournament (CCTT) - NEW!</a>
 		</div>
 	</div>
 
