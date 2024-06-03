@@ -55,8 +55,8 @@ You can start whenever but once you have 4 wins with one in each of the 4 playst
 <br>
 <h3>Miscelaneous</h3>
 <p>- to view your morgue/dump press the # key in game.</p>
-<p>- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:</p>
-<code>      tile_show_threat_levels = tough,nasty,unusual</code>
+<p>- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
+<code>      tile_show_threat_levels = tough,nasty,unusual</code></p>
 <br>
 Happy Crawling!<br> 
 RoGGa, alkemann (our webdev) and the @Crawl_Cosplay_VIPs in discord
