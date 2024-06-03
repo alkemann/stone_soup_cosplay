@@ -22,7 +22,7 @@
     <div class="toplinks"><br></div>
     <div class="page_content">
         <div class="heading">
-            <h1><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></h1>
+            <h1><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /> Crawl Cosplay Academy <img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></h1>
             <div class="fineprint"><center>Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a></center></div>
         </div>
 	<div class="fineprint" align="right">
