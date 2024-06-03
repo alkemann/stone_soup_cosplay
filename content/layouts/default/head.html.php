@@ -2,14 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?=$page_title ?? 'Crawl Cosplay-the 3-in-1 website'?></title>
+    <title><?=$page_title ?? 'Crawl Cosplay - the 3-in-1 website'?></title>
     <link rel="icon" href="/img/feat-dg_entrance.png" type="image/png">
     <!-- <link rel="stylesheet" 	href="/css/reset.css"> -->
     <link rel="stylesheet" href="/css/cosplay.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <style>
-	h1{font-size: 48px;}
+h1	{
+	font-size: 48px;
+	text-align: center;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #000000;
+  min-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 </style>
 
 <?php
