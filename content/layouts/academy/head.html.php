@@ -9,7 +9,10 @@
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <style>
-	h1{font-size: 48px;}
+h1	{
+	font-size: 48px;
+	text-align: center;
+}
 
 .dropbtn {
   background-color: #000000;
@@ -30,7 +33,7 @@
   position: absolute;
   right: 0;
   background-color: #000000;
-  min-width: 300px;
+  min-width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -42,7 +45,7 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #3e8e41;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
