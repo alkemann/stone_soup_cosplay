@@ -1,5 +1,25 @@
 <div class="page information">
-    <div class="toplinks"></div>
+	<div class="dropdown" style="float:left;">
+		<button class="dropbtn">About</button>
+		<div class="dropdown-content" style="left:0;">
+			<a href="/academy/about_cca">Crawl Cosplay Academy (CCA)</a>
+			<a href="/about_ccc">Crawl Cosplay Challenge (CCC)</a>
+			<a href="/tournament/about">Crawl Cosplay Trunk Tournament (CCTT)</a>
+		</div>
+	</div>
+
+	<div class="dropdown" style="float:right;">
+		<button class="dropbtn">Crawl Cosplay</button>
+		<div class="dropdown-content">
+			<a href="/">Crawl Cosplay Home</a>
+			<a href="/academy">Crawl Cosplay Academy (CCA)</a>
+			<a href="/ccc_home">Crawl Cosplay Challenge (CCC)</a>
+			<a href="/history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-> all CCC challenges</a>
+			<a href="/tournament/home">Crawl Cosplay Trunk Tournament (CCTT)</a>
+		</div>
+	</div>
+
+    <div class="toplinks"><br></div>
     <div class="page_content">
         <div class="heading">
             <h1><img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Academy<img src="/img/cca_stone_soup_icon-512x512.png" width="48" height="48" /></h1>

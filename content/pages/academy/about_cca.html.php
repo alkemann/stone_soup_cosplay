@@ -46,6 +46,7 @@ haven't won at least a couple of games.
    NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece <abbr title="Yet Another Sad Death">YASD</abbr>!
 <p>Conducts 1 & 2 will usually be related to decisions you need to take in the early game, and the 3rd conduct will usually be a small challenge to add some fun.</p>
 <p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveat.</p>
+<p>All of the conducts and bonuses are optional.</p>
 <br>
 After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr>) or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>Submit your Morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentionned.
 <br />
