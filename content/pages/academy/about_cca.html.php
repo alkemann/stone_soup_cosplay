@@ -52,7 +52,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <br />
 Feel free to submit a morgue as soon as you've improved your score. You best 2 runs for a specific challenge will be keptin the website's database.
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
-You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/ccc_home">Crawl Cosplay Challenge</a>.
+<p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/ccc_home">Crawl Cosplay Challenge</a>.</p>
 <br>
 <h3>Miscelaneous</h3>
 <p><ul> to view your morgue/dump press the # key in-game.</p>
