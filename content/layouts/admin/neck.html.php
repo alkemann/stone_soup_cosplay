@@ -1,16 +1,26 @@
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">About</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="/academy/about_cca">Crawl Cosplay Academy</a>
+    <a href="/about_ccc">Crawl Cosplay Challenge</a>
+    <a href="/tournament/about">Crawl Cosplay Trunk Tournament</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Crawl Cosplay</button>
+  <div class="dropdown-content">
+    <a href="/">Crawl Cosplay Home</a>
+    <a href="/academy">Crawl Cosplay Academy - NEW!</a>
+    <a href="/ccc_home">Crawl Cosplay Challenge</a>
+    <a href="/tournament/home">Crawl Cosplay Trunk Tournament - NEW!</a>
+  </div>
+</div>
+
 <div class="page information">
     <div class="toplinks">
-    <a href="/">Crawl Cosplay Home</a>
-	   | <a href="/history">All CCC Challenges</a>
-	   | <a href="/about_ccc">About CCC</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-	   | <a href="/ccc_home">Weekly active CCC</a>&nbsp&nbsp&nbsp&nbsp&nbsp
-    	<br>
-	   | <a href="/tournament/about">About CCTT</a>&nbsp&nbsp&nbsp&nbsp&nbsp
-	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
-    	<br>
-	   | <a href="/academy/about_cca">About CCA</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-	   | <a href="/academy">Academy (CCA)</a>&nbsp&nbsp&nbsp&nbsp&nbspNEW!
-	<br>
+	     <a href="/history">All CCC Challenges</a>
 	   | <a href="/recent">All Submissions</a>
 	   - to be moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>&nbsp&nbsp&nbsp&nbsp
 	<br>

@@ -26,7 +26,7 @@ Just click on one of the Uniques for the challenge's details listing the suggest
 <h3>GO!</h3>
 Play a game of your favourite DCSS Uniques and once you have completed one of your better games, <b>Submit your Morgue</b> on the challenge's detail page and a moderator will approve it.
 Your best 2 runs for each challenge will be kept in the website's database...so sumbit as often as you like.
-<br /><br />
+<br>
 <h3>Need more help?...or have some questions</h3>
 <p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Crawl Cosplay Discord server</a> in the #academy_cca text channel.
 <br>
