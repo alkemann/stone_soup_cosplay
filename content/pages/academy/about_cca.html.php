@@ -49,14 +49,15 @@ haven't won at least a couple of games.</p>
 <br>
 After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr> or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>submit your morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentioned.
 <br />
-<p>Feel free to submit a morgue as soon as you've improved your score. You best 2 runs for a specific challenge will be keptin the website's database.</p>
+<p>Feel free to submit a morgue as soon as you've improved your score. Your best 2 runs for a specific challenge will be kept in the website's database.</p>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
 <p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc_home">Crawl Cosplay Challenge</a>.</p>
 <br>
 <h3>Miscellaneous</h3>
-<p><ul> to view your morgue/dump press the # key in-game.</p>
-<p><ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
-<br><pre><b>      tile_show_threat_levels = tough,nasty,unusual</b></pre></p>
+<ul> to view your morgue/dump press the # key in-game.</ul>
+<ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:</ul>
+<br>
+<pre><b>      tile_show_threat_levels = tough,nasty,unusual</b></pre>
 <p>Happy Crawling!</p>
 RoGGa, alkemann (our webdev) and the @VIPs_Crawl_Cosplay in discord
 <br>
