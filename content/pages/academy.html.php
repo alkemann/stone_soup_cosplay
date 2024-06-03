@@ -75,7 +75,7 @@ Just click on one of the Uniques for the challenge's details listing the suggest
 <h4><b>Melee Brutes</b></h4>
   <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png" width="48" height="48"></a> 
-      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png" width="48" height="48"></a></p>
+      <a href="/academy/achallengedetails?id=928" title="Wiglaf, the Mountain Dwarf Gladiator (MDGl)"><img src="/img/Wiglaf.png" width="48" height="48"></a></p>
 <h4><b>Ranged Weapons</b></h4>
   <p> <a href="/academy/achallengedetails?id=929" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png" width="48" height="48"></a>
       <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png" width="48" height="48"></a>
