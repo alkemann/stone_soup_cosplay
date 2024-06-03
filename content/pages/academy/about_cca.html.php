@@ -31,7 +31,7 @@ haven't won at least a couple of games.
       <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png"></a>
       <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png"></a>
     </td>
-    <td><p><b><abbr title="Melee mostly with some Magic">Hybrid</b></p><p></p>
+    <td><p><b><abbr title="Melee mostly with some Magic">Hybrid</b></abbr></p><p></p>
       <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
       <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png"></a> 
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a>
@@ -45,19 +45,19 @@ haven't won at least a couple of games.
 <p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
    NOTE: Do not go passed D:12 before clearing the Lair and the Orcish Mines, as you will likely experiece <abbr title="Yet Another Sad Death">YASD</abbr>!
 <p>Conducts 1 & 2 will usually be related to decisions you need to take in the early game, and the 3rd conduct will usually be a small challenge to add some fun.</p>
-<p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveate.</p>
+<p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveat.</p>
 <br>
 After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr>) or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>Submit your Morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentionned.
 <br />
 Feel free to submit a morgue as soon as you've improved your score. You best 2 runs for a specific challenge will be keptin the website's database.
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
-You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/">Crawl Cosplay Challenge</a>.
+You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/ccc_home">Crawl Cosplay Challenge</a>.
 <br>
 <h3>Miscelaneous</h3>
 <p>- to view your morgue/dump press the # key in game.</p>
 <p>- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
 <code>      tile_show_threat_levels = tough,nasty,unusual</code></p>
 <br>
-Happy Crawling!<br> 
+<p>Happy Crawling!</p>
 RoGGa, alkemann (our webdev) and the @Crawl_Cosplay_VIPs in discord
 <br>
