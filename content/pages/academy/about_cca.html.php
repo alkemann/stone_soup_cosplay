@@ -59,5 +59,5 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <p><ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
 <br><code><b>      tile_show_threat_levels = tough,nasty,unusual</b></code></p>
 <p>Happy Crawling!</p>
-RoGGa, alkemann (our webdev) and the @Crawl_Cosplay_VIPs in discord
+RoGGa, alkemann (our webdev) and the @VIPs_Crawl_Cosplay in discord
 <br>
