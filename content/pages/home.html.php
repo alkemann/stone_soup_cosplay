@@ -3,7 +3,7 @@
 Select your pleasure among the following options:
 
 <h4><a href="/academy">Crawl Cosplay Academy</a> (CCA) ...in development.</h4>
-<ul><li>For those new to DCSS or who haven't yet a couple of time.</li></ul>
+<ul><li>For those new to DCSS or who haven't yet won a couple of time.</li></ul>
 
 <h4><a href="/ccc_home">Crawl Cosplay Challenges</a> (CCC) ...on hold during CCTT#1</h4>
 <ul><li>The original weekly challenge posted on Reddit since 2019!</li></ul>
