@@ -2,7 +2,7 @@
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
 
 <h3>TLDR</h3>
-<p><img src="/img/Snorg.png" style="float:right;width:48px;height:48px;">Want to improve your gameplay while having fun doing it? 
+<p><img src="/img/Snorg.png" style="float:right">Want to improve your gameplay while having fun doing it? 
 With the Crawl Cosplay Academy (CCA), you'll play easier combos of different playstyles as you learn to survive longer. And 
 hopefully win many games sooner than later, while playing characters based on 
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
@@ -20,7 +20,7 @@ haven't won at least a couple of games.
 <p>There are 4 playstyles with 3 uniques each:
   <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
   Hover over a Unique's graphic to see their descriptions, and then click on one of them to open the Unique's challenge's details page.
-<table class="center" ><tr>
+<table class="centerTable"><tr>
     <td><p><b>Melee Brutes</b></p><p></p>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
