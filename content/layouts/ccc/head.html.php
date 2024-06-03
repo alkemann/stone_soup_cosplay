@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="/css/ccc.css?v=<?=time()?>">
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
+<style>
+	h1{font-size: 48px;}
+</style>
+
 <?php
 
     if (isset($meta) && is_array($meta) && isset($meta['filename'])) {
         $meta += [
             'width' => 256,
             'height' => 256,
-            'alt' => "Crawl Cosplay Academy",
+            'alt' => "Crawl Cosplay Challenge",
             'type' => "image/png",
         ];
         if (strpos($meta['filename'], 'https') === 0) {
