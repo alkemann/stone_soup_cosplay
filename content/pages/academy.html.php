@@ -60,6 +60,9 @@ Your best 2 runs for each challenge will be kept in the website's database...so 
 <?php endforeach; ?>
 </table>
 
+<div class="score-sidebar">
+<h3>Submissions</h3>
+<br />
 <table class="bordered">
 	<tr>
 		<th>Player</th>
@@ -107,3 +110,4 @@ Your best 2 runs for each challenge will be kept in the website's database...so 
 		</tr>
 	<?php endforeach; ?>
 </table>
+</div>
