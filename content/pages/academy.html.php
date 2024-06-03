@@ -13,23 +13,6 @@ if ($active) :
 ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 
-<table class="set-list">
-<?php
-	$made_seperator = false;
-	foreach ($challenges_in_set as $cha) :
-		if ($cha->bonus && !$made_seperator) {
-			echo '<tr><td colspan="3">&nbsp;</td></tr>';
-			$made_seperator = true; // only make one seperator if multiple bonuses
-		}
-?>
-	<tr>
-		<td>Week <?=$e($cha->week)?>.</td>
-		<td><?php if ($cha->icon):?><img src="<?=$e($cha->icon)?>" style="height: 1em" /><?php endif; ?> <b><a href="/tournament/tchallengedetails?id=<?=$e($cha->id)?>"><?=$e($cha->name)?></a></b></td>
-		<td><span style="font-size: smaller"><?=$e($cha->shortform())?></span></td>
-	</tr>
-<?php endforeach; ?>
-</table>
-
 <div class="score-sidebar">
 <h3>Scoreboard</h3>
 <br />
