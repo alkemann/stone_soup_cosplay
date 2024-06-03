@@ -1,4 +1,4 @@
-<?php $this->layout = 'academy'; ?>
+<?php $this->layout = 'cca'; ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 <h3>Ready?</h3>
 Want to know more before jumping in? Read the <a href="/academy/about_cca">About CCA</a> webpage.
