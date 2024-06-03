@@ -2,20 +2,19 @@
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
 
 <h3>TLDR</h3>
-<p><img src="/img/Snorg.png" style="float:right">Want to improve your gameplay while having fun doing it? 
+<p><img src="/img/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay while having fun doing it? 
 With the Crawl Cosplay Academy (CCA), you'll play easier combos of different playstyles as you learn to survive longer. And 
 hopefully win many games sooner than later, while playing characters based on 
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
 
 <h3>The gists</h3>
-The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/ccc_home" target="_blank">Crawl Cosplay Challenge</a> (CCC)...and yet, 
+The <b>Crawl Cosplay Academy</b> is intended as a prequel to the weekly <a href="/ccc_home" target="_blank">Crawl Cosplay Challenge</a> (CCC) and yet, 
 on its own, it is so much more.
 <p>As a prequel, it's for players who don't feel they have the skills necessary to compete in the Crawl Cosplay Challenge at a level that isn't just beginner.</p>
 <p>In general though, the audience is <abbr title="Dungeon Craw: Stone Soup">DCSS</abbr> players who are fairly new to the game or 
-haven't won at least a couple of games.
+haven't won at least a couple of games.</p>
 <br>
-<p></p>
-  
+
 <h3>Your Process</h3>
 <p>There are 4 playstyles with 3 uniques each:
   <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
@@ -48,13 +47,13 @@ haven't won at least a couple of games.
 <p>The 1st bonus can usually be accomplished by the time you've cleared the Dungeon (D), Lair (L) & the Orcish Mines (O), while the 2nd bonus will be a bit more challenging and will usually end with something like: "...and get your first rune!" as a caveat.</p>
 <p>All of the conducts and bonuses are optional.</p>
 <br>
-After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr> or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>Submit your Morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentionned.
+After you complete a good game (with either a <abbr title="aka Yet Another Victory Post (YAVP)">win</abbr> or <abbr title="Yet Another Sad Death">YASD</abbr>), just <b>submit your morgue</b> on the Unique's challenge details webpage. To track your progress, click on your name on that last page mentioned.
 <br />
 <p>Feel free to submit a morgue as soon as you've improved your score. You best 2 runs for a specific challenge will be keptin the website's database.</p>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
 <p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc_home">Crawl Cosplay Challenge</a>.</p>
 <br>
-<h3>Miscelaneous</h3>
+<h3>Miscellaneous</h3>
 <p><ul> to view your morgue/dump press the # key in-game.</p>
 <p><ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
 <br><pre><b>      tile_show_threat_levels = tough,nasty,unusual</b></pre></p>
