@@ -9,6 +9,11 @@
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <style>
+
+.centerTable { 
+    margin: 0px auto; 
+    border: none;
+}
 h1	{
 	font-size: 48px;
 	text-align: center;
