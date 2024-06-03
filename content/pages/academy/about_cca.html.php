@@ -23,7 +23,7 @@ haven't won at least a couple of games.</p>
 <td><p><b>-----------Melee Brutes-----------</b></p><p></p>
       <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png" width="72" height="72"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png" width="72" height="72"></a> 
-      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png" width="72" height="72"></a>
+      <a href="/academy/achallengedetails?id=928" title="Wiglaf, the Mountain Dwarf Gladiator (MDGl)"><img src="/img/Wiglaf.png" width="72" height="72"></a>
     </td>
     <td><p><b>----------Ranged Weapons----------</b></p><p></p>
       <a href="/academy/achallengedetails?id=929" title="Joseph, the Human Hunter (HuHu)"><img src="/img/Joseph.png" width="72" height="72"></a>
