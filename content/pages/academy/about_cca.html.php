@@ -1,4 +1,4 @@
-<?php $this->layout = 'academy'; ?>
+<?php $this->layout = 'cca'; ?>
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
 
 <h3>TLDR</h3>
