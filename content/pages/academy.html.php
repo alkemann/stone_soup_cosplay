@@ -73,18 +73,22 @@ If you have never won a game, your first Academy goal is to play one of the <b>"
 <br>
 Just click on one of the Uniques for the challenge's details listing the suggested 3 conducts and 2 bonuses.
 <h4><b>Melee Brutes</b></h4>
+  <p>Focus primarily on the Strength attribute, prefer to wear heavy armor, and typically spend most of their time in melee combat. Skills to focus on are your primary weapon, fighting, armour, shields, throwing, evocations, and invocations (if applicable).</p>
   <p> <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=928" title="Wiglaf, the Mountain Dwarf Gladiator (MDGl)"><img src="/img/Wiglaf.png" width="48" height="48"></a></p>
 <h4><b>Ranged Weapons</b></h4>
+  <p>Focus primarily on the Dexterity attribute, prefer to wear medium armor, and can fight up close or at range. Skills to focus on are your primary weapon, fighting, dodging, stealth, hexes, evocations, and invocations (if applicable).</p>
   <p> <a href="/academy/achallengedetails?id=929" title="Joseph, the Halfling Hunter (HaHu)"><img src="/img/Joseph.png" width="48" height="48"></a>
       <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png" width="48" height="48"></a>
       <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png" width="48" height="48"></a> </p>
 <h4><b>Hybrid: Melee with some Magic</b></h4>
+  <p>An assortment of less straightforward builds including shapeshifter and summoner/necromancer.</p>
   <p> <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png" width="48" height="48"></a></p>
-<h4><b>Mostly Magic</b></h4>
+<h4><b>Mages: Mostly Magic</b></h4>
+  <p>Focus primarily on the Intelligence attribute, prefer to wear light armor (robes in particular), and often but not always fight at long range. Skills to focus on are roughly two magic school(s), spellcasting, fighting, stealth, evocations, and invocations (if applicable).</p>
   <p> <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Hedge Wizard (DrHW)"><img src="/img/Tiamat.gif" width="36" height="48"></a>
       <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png" width="48" height="48"></a> 
       <a href="/academy/achallengedetails?id=937" title="Jorgrun, the Mountain Dwarf Earth Elementalist (MDEE)"><img src="/img/Jorgrun.png" width="48" height="48"></a></p>
