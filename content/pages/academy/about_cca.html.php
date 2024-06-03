@@ -21,25 +21,25 @@ haven't won at least a couple of games.
   <b>Melee Weapons</b>, <b>Ranged Weapons</b>, <b>Hybrid</b>, and <b>Magic</b>. </p>
   Hover over a Unique's graphic to see their descriptions, and then click on one of them to open the Unique's challenge's details page.
 <table class="centerTable"><tr>
-    <td><p><b>Melee Brutes</b></p><p></p>
-      <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png"></a> 
-      <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png"></a> 
-      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png"></a>
+<td><p><b>------Melee Brutes------</b></p><p></p>
+      <a href="/academy/achallengedetails?id=926" title="Snorg, the Troll Berzerker (TrBe)"><img src="/img/Snorg.png" width="48" height="48"></a> 
+      <a href="/academy/achallengedetails?id=927" title="Asterion, the Minotaur Fighter (MiFi)"><img src="/img/Asterion.png" width="48" height="48"></a> 
+      <a href="/academy/achallengedetails?id=928" title="Edmund, the Human Gladiator (HuGl)"><img src="/img/Edmund.png" width="48" height="48"></a>
     </td>
-    <td><p><b>Ranged Weapons</b></p><p></p>
-      <a href="/academy/achallengedetails?id=929" title="Joseph, the Human Hunter (HuHu)"><img src="/img/Joseph.png"></a>
-      <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png"></a>
-      <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png"></a>
+    <td><p><b>-----Ranged Weapons-----</b></p><p></p>
+      <a href="/academy/achallengedetails?id=929" title="Joseph, the Human Hunter (HuHu)"><img src="/img/Joseph.png" width="48" height="48"></a>
+      <a href="/academy/achallengedetails?id=930" title="Sonja, the Kobole Brigan (KoBr)"><img src="/img/Sonja.png" width="48" height="48"></a>
+      <a href="/academy/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/Vashnia.png" width="48" height="48"></a>
     </td>
-    <td><p><b><abbr title="Melee mostly with some Magic">Hybrid</b></abbr></p><p></p>
-      <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png"></a> 
-      <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png"></a> 
-      <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png"></a>
+    <td><p><b>---------<abbr title="Melee mostly with some Magic">Hybrid</abbr>---------</b></p><p></p>
+      <a href="/academy/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/Grum.png" width="48" height="48"></a>
+      <a href="/academy/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/Ilsuiw_water.png" width="48" height="48"></a>
+      <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/Jory.png" width="48" height="48"></a>
     </td>
-    <td><p><b>Mostly Magic</b></p>
-      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.gif"></a> 
-      <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png"></a> 
-      <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png"></a>
+    <td><p><b>-----Mostly Magic-----</b></p>
+      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.gif" width="36" height="48"></a> 
+      <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png" width="48" height="48"></a> 
+      <a href="/academy/achallengedetails?id=937" title="Josephine, the Deep Dwarf Necromancer (DDNe)"><img src="/img/Josephine.png" width="48" height="48"></a>
     </td>
 </table>
 <p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
@@ -54,10 +54,9 @@ Feel free to submit a morgue as soon as you've improved your score. You best 2 r
 You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="http://www.crawlcosplay.com/ccc_home">Crawl Cosplay Challenge</a>.
 <br>
 <h3>Miscelaneous</h3>
-<p>- to view your morgue/dump press the # key in game.</p>
-<p>- add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
-<code>      tile_show_threat_levels = tough,nasty,unusual</code></p>
-<br>
+<p><ul> to view your morgue/dump press the # key in-game.</p>
+<p><ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:
+<br><code>      tile_show_threat_levels = tough,nasty,unusual</code></p>
 <p>Happy Crawling!</p>
 RoGGa, alkemann (our webdev) and the @Crawl_Cosplay_VIPs in discord
 <br>
