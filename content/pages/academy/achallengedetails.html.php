@@ -1,4 +1,4 @@
-<?php $this->layout = 'academy'; ?>
+<?php $this->layout = 'cca'; ?>
 <?php
 
 use app\models\{Challenge, Submission};
