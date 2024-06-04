@@ -10,6 +10,14 @@
 
 <style>
 
+div.score-sidebar-cca {
+    float: right;
+    clear: both;
+    text-align: right;
+    width: 550px;
+    padding: 0 2em 5em;
+}
+	
 .centerTable { 
     margin: 0px auto; 
     border: none;
@@ -38,7 +46,7 @@ h1	{
   display: none;
   position: absolute;
   right: 0;
-  background-color: #7D623C;
+  background-color: #000000;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
