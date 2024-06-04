@@ -1,5 +1,5 @@
-# Crawl Cosplay Challenge
-Dungeon Crawl Stone Soup scoreboard keeper for the Cosplay challenges
+# Crawl Cosplay
+Dungeon Crawl Stone Soup scoreboard keeper for the Crawl Cosplay 3-in-1 website
 
 ## Local Development
 
@@ -31,4 +31,3 @@ I suggest you use [git bash](https://gitforwindows.org) which allows the compose
  - `tests` contains some backend logic tests
  - `webroot` everything in this folder is available directly as files in the web. Contains the images and style files
  - `vendor` contains the dependencies, should not be edited and is automatically handledby the Composer package mgnt.
- 
