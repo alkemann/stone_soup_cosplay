@@ -6,12 +6,12 @@ use app\models\Challenge;
 $id = $_GET['id'] ?? false;
 
 if ($id == false) {
-	return $this->request->redirect('/');
+	return $this->request->redirect('/admin/list');
 }
 
 $cha = Challenge::get($id);
 if (!$cha) {
-	return $this->request->redirect('/');
+	return $this->request->redirect('//admin/list');
 }
 
 
@@ -178,7 +178,7 @@ if ($data = $this->request->getPostData()) {
 		<br />
 		<br />
 		<label>
-			<span>Special Rule or Note</span><br />
+			<span>Special Rule or Notes (or Strategy for CCA challenges)</span><br />
 			<textarea name="special_rule" cols="100" rows="3"><?=$cha->special_rule?></textarea>
 		</label>
 		<br />
