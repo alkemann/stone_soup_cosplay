@@ -1,6 +1,6 @@
 <div class="page information">
 	<div class="dropdown" style="float:left;">
-		<button class="dropbtn">About</button>
+		<button class="dropbtn">About...</button>
 		<div class="dropdown-content" style="left:0;">
 			<a href="/academy/about_cca">Crawl Cosplay Academy (CCA) - NEW!</a>
 			<a href="/about_ccc">Crawl Cosplay Challenge (CCC)</a>
@@ -9,7 +9,7 @@
 	</div>
 
 	<div class="dropdown" style="float:right;">
-		<button class="dropbtn">Crawl Cosplay</button>
+		<button class="dropbtn">Crawl Cosplay menu</button>
 		<div class="dropdown-content">
 			<a href="/">Crawl Cosplay Home</a>
 			<a href="/academy">Crawl Cosplay Academy (CCA) - NEW!</a>
