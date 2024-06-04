@@ -21,7 +21,7 @@ h1	{
 }
 
 .dropbtn {
-  background-color: #CEA105;
+  background-color: #7D623C;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -38,7 +38,7 @@ h1	{
   display: none;
   position: absolute;
   right: 0;
-  background-color: #000000;
+  background-color: #7D623C;
   min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -51,9 +51,9 @@ h1	{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #3e8e41;}
+.dropdown-content a:hover {background-color: #7D623C;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #7D623C;}
 
 </style>
 
