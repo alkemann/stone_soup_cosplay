@@ -2,14 +2,17 @@
 
 Select your pleasure among the following options:
 
-<h4><a href="/academy">Crawl Cosplay Academy</a> (CCA) ...in development.</h4>
-<ul><li>For those new to DCSS or who haven't yet won a couple of time.</li></ul>
+<h3><a href="/academy">Crawl Cosplay Academy</a> (CCA) ...in development.</h3>
+<ul><li>For those new to DCSS or who haven't yet won a couple of time.</li>
+    <li>Read <a href="https://cosplay.kelbi.org/academy/about_cca">About CCA</a></li></ul>
 
-<h4><a href="/ccc_home">Crawl Cosplay Challenges</a> (CCC) ...on hold during CCTT#1</h4>
-<ul><li>The original weekly challenge posted on Reddit since 2019!</li></ul>
+<h3><a href="/ccc_home">Crawl Cosplay Challenges</a> (CCC) ...on hold during CCTT#1</h3>
+<ul><li>The original weekly challenge posted on Reddit since 2019!</li>
+    <li>Read <a href="https://cosplay.kelbi.org/about_ccc">About CCC</a>.</li></ul>
 
-<h4><a href="/tournament/home">Crawl Cosplay Trunk Tournament</a> (CCTT) ...new and active.</h4>
-<ul><li>A tournament lasting about a month with each week highlighting some of the latest Trunk changes.</li></ul>
+<h3><a href="/tournament/home">Crawl Cosplay Trunk Tournament</a> (CCTT) ...new and active.</h3>
+<ul><li>A tournament lasting about a month with each week highlighting some of the latest Trunk changes.</li>
+    <li>Read <a href="https://cosplay.kelbi.org/tournament/about">About CCTT</a>.</li></ul>
 
 <h3>Want to chat?</h3>
 Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a>
