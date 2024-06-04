@@ -9,18 +9,16 @@
 	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
     	<br>
 	   | <a href="/recent">All Submissions</a>
-	<div class="fineprint" align="right">
-             To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
-	     <br>
-        	<?php if ($this->request->session('admin')) : ?>
-                	Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
-        		| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
-    			| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
-        		| <a href="/logout">Logout</a>
-		<?php else : ?>
-	     		<a href="/backoffice">Admin</a>
-		<?php endif; ?>
-	</div>
+	   - To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
+	 <br>
+        <?php if ($this->request->session('admin')) : ?>
+               	Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
+        	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
+    		| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
+        	| <a href="/logout">Logout</a>
+	<?php else : ?>
+		<a href="/backoffice">Admin</a>
+	<?php endif; ?>
     </div>
     <div class="page_content">
         <div class="heading">
