@@ -5,7 +5,7 @@ use app\models\{Challenge, Submission, Player};
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
-//	$this->setData("meta", ['filename' => $active->icon]);
+	$this->setData("meta", ['filename' => 1->icon]);
 ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 
