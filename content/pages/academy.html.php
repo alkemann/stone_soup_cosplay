@@ -9,8 +9,8 @@ use app\models\{Challenge, Submission, Player};
 ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 
-<div class="score-sidebar">
-<h3>Scoreboard</h3>
+<div class="score-sidebar-cca">
+<h3>Crawl Cosplay Academy Scoreboard</h3>
 <br />
 <table class="bordered">
 	<tr>
