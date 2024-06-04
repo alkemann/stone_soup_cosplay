@@ -19,10 +19,13 @@ if (!$p) {
 $submissions = $p->submissions();
 $tournament_submissions = [];
 $normal_submissions = [];
+$acadamy_sumissions = [];
 
-array_reduce($submissions, function($carry, Submission $s) use (&$tournament_submissions, &$normal_submissions) {
+array_reduce($submissions, function($carry, Submission $s) use (&$tournament_submissions, &$normal_submissions, &$acadamy_sumissions) {
     if ($s->challenge()->setnr > 30) {
         $tournament_submissions[] = $s;
+    } elseif ($s->challenge()->setnr == 0) {
+        $acadamy_sumissions[] = $s;
     } else {
         $normal_submissions[] = $s;
     }
@@ -187,9 +190,40 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
 
 <br/>
 
+<?php 
+if ($acadamy_sumissions) : 
+
+    $has_non_scoring = false;
+    $board = [];
+    $first_set = 999;
+    $last_set = 0;
+    foreach ($acadamy_sumissions as $sub) {
+        if ($sub->isScoring() === false) {
+            continue;
+        }
+        $cha = $sub->challenge();
+        $set = (int) $cha->setnr;
+        $week = (int) $cha->week;
+        if ($sub->hs === false || $week > 5) {
+            $has_non_scoring = true;
+            continue;
+        }
+        $first_set = $first_set < $set ? $first_set : $set;
+        $last_set = $last_set > $set ? $last_set : $set;
+        $board[$set][$week] = $sub;
+        if (!isset($board[$set]['total'])) $board[$set]['total'] = 0;
+        if (!isset($board[$set]['stars'])) $board[$set]['stars'] = 0;
+        $board[$set]['total'] += $sub->score;
+        $board[$set]['stars'] += $sub->stars;
+    }
+    for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
+        if (isset($board[$set_key]) == false) {
+            $board[$set_key]['total'] = 0;
+            $board[$set_key]['stars'] = 0;
+        }
+    }
+?>
 <h3>Crawl Cosplay Academy (CCA)</h3>
-
-
 <table class="bordered player-list">
     <thead>
         <tr>
@@ -211,8 +245,9 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
     <tbody>
     <?php
         $r = 0;
-        for ($set_key=0; $set_key >= $first_set; $set_key--) : ?>
+        $set_key = 0;
         <tr class="<?=$r++%2==0?'odd':'even'?>">
+            <th>Set <?=$set_key?></th>
             <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
         <?php for ($i=1; $i <= 5; $i++) : ?>
             <?php
@@ -233,11 +268,11 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
             </td>
         <?php endfor; ?>
         </tr>
-    <?php endfor; ?>
     </tbody>
 </table>
-
-<?php if ($has_non_scoring) : ?>
+<?php
+endif; // acadamy submissions
+if ($has_non_scoring) : ?>
 
 <h3>Non-scoring entries</h3>
 <table class="bordered player-list">
