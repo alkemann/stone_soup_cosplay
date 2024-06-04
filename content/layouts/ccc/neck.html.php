@@ -31,8 +31,8 @@
     </div>
     <div class="page_content">
         <div class="heading">
-            <h1><center><img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48" />Crawl Cosplay Challenge<img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48"></center></h1>
-            <div class="fineprint">Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></div>
+            <h1><center><img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48"> Crawl Cosplay Challenge <img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48"></center></h1>
+            <div class="fineprint"><center>Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></center>center></div>
         </div>
         <br />
         <img src="/img/HR-right.png"><br />
