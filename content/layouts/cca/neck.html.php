@@ -1,7 +1,7 @@
 <div class="page information">
 	<div class="dropdown" style="float:left;">
 		<button class="dropbtn">Menu</button>
-		<div class="dropdown-content">
+		<div class="dropdown-content" style="left:0;">
 			<a href="/">Crawl Cosplay Home</a>
 			<a href="/academy">Crawl Cosplay Academy (CCA) - NEW!</a>
 			<a href="/academy/about_cca"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCA</a>
