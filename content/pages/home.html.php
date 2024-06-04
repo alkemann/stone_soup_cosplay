@@ -17,3 +17,6 @@ Select your pleasure among the following options:
 <h3>Want to chat?</h3>
 Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a> with over 200 members!
 <br>
+Happy Crawling,<br>
+RoGGa, our webdev Alkemann, and the @VIPs_Crawl_Coplay members who help make this site what it is. :-D<br>
+<br>
