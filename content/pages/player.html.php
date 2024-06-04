@@ -187,9 +187,59 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
 
 <br/>
 
+<h3>Crawl Cosplay Academy (CCA)</h3>
+
+
+<table class="bordered player-list">
+    <thead>
+        <tr>
+            <th>Total</th>
+            <th> 1. </th>
+            <th> 2. </th>
+            <th> 3. </th>
+            <th> 4. </th>
+            <th> 5. </th>
+            <th> 6. </th>
+            <th> 7. </th>
+            <th> 8. </th>
+            <th> 9. </th>
+            <th>10. </th>
+            <th>11. </th>
+            <th>12. </th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+        $r = 0;
+        for ($set_key=0; $set_key >= $first_set; $set_key--) : ?>
+        <tr class="<?=$r++%2==0?'odd':'even'?>">
+            <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
+        <?php for ($i=1; $i <= 5; $i++) : ?>
+            <?php
+                $sub = $board[$set_key][$i] ?? false;
+                if ($sub === false) {
+                    echo '<td>&nbsp;</td>';
+                    continue;
+                }?>
+            <td>
+                <?php if ($sub->morgue_url) : ?><a href="<?=$e($sub->morgue_url)?>" target="_blank"><?php endif; ?>
+                <?php
+                echo $sub->score;
+                for ($stars=0; $stars < (int) $sub->stars ; $stars++) {
+                    echo '<span class="star">&#9733;</span>';
+                }
+                ?>
+                <?php if ($sub->morgue_url) : ?></a><?php endif; ?>
+            </td>
+        <?php endfor; ?>
+        </tr>
+    <?php endfor; ?>
+    </tbody>
+</table>
+
 <?php if ($has_non_scoring) : ?>
 
-<h3>Late or non-scoring entries</h3>
+<h3>Non-scoring entries</h3>
 <table class="bordered player-list">
     <thead>
         <tr>
