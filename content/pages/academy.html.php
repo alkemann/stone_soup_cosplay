@@ -1,15 +1,11 @@
 <?php $this->layout = 'cca';
 use app\models\{Challenge, Submission, Player};
 
-$this->layout = 'tournament';
-
-$active = Challenge::tournamentActive();
-if ($active) :
- 	$set = 0;
+ 	$set = 0;  //set #0 is reserver for the CCA's 12 challenges
 	$scores = Player::scoreboardForSet($set);
 	$challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);
 	$weeks = sizeof($challenges_in_set);
-	$this->setData("meta", ['filename' => $active->icon]);
+//	$this->setData("meta", ['filename' => $active->icon]);
 ?>
 <h2 style="color:rgb(69, 136, 5);">Welcome green Crawler!</h2>
 
