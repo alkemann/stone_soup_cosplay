@@ -1,5 +1,5 @@
 <div class="page information">
-	<div class="dropdown" style="float:right;">
+	<div class="dropdown" style="float:left;">
 		<button class="dropbtn">Menu</button>
 		<div class="dropdown-content">
 			<a href="/">Crawl Cosplay Home</a>
