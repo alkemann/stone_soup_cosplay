@@ -9,7 +9,7 @@
 	   | <a href="/tournament/home">Tournament (CCTT)</a> NEW!
     	<br>
 	   | <a href="/recent">All Submissions</a>
-	   - To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>)
+	   - To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>&nbsp&nbsp&nbsp
 	 <br>
         <?php if ($this->request->session('admin')) : ?>
                	Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
