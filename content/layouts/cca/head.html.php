@@ -14,7 +14,7 @@ div.score-sidebar-cca {
     float: right;
     clear: both;
     text-align: right;
-    width: 550px;
+    width: 575px;
     padding: 0 2em 5em;
 }
 	

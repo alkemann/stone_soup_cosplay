@@ -20,7 +20,7 @@
             		<h1><center><img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48"> Crawl Cosplay Challenge <img src="/img/ccc_stone_soup_icon-512x512.png" width="48" height="48"></center></h1>
 		        <div class="fineprint"><center>Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></center></div>
         	</div>
-		<div class="fineprint">
+		<div class="fineprint" align="right">
 			<?php if ($this->request->session('admin')) : ?>
 			          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
      	 		  	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
