@@ -15,7 +15,7 @@ h1	{
 }
 
 .dropbtn {
-  background-color: #000000;
+  background-color: #7D623C;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -45,9 +45,9 @@ h1	{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #3e8e41;}
+.dropdown-content a:hover {background-color: #7D623C;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #7D623C;}
 </style>
 
 <?php
