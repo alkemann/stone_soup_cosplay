@@ -9,6 +9,11 @@
     <!-- <link rel="stylesheet" href="https://crawl.develz.org/tournament/0.23/tourney-score.css"> -->
 
 <style>
+#table_for_float_image {
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+}
+	
 h1	{
 	font-size: 48px;
 	text-align: center;
