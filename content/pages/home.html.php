@@ -1,5 +1,5 @@
-<h2>Welcome to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>
 <img src="/img/title_psiweapon_roxanne.png" style="float:right">
+<h2>Welcome to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>
 Select your pleasure among the following options:
 
 <h3><a href="/academy">Crawl Cosplay Academy</a> (CCA) ...in development.</h3>
