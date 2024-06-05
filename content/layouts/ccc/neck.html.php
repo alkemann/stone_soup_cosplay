@@ -21,6 +21,7 @@
 		        <div class="fineprint"><center>Come chat with us on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a></center></div>
         	</div>
 		<div class="fineprint" align="right">
+   			To be Moderated: <?php echo app\models\Submission::getNumberOfUnscoredSubmissions() ?>
 			<?php if ($this->request->session('admin')) : ?>
 			          Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
      	 		  	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
