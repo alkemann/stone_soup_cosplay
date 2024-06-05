@@ -25,7 +25,7 @@
     			| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
 	        	| <a href="/logout">Logout</a>
 		<?php else : ?>
-          		| <a href="/backoffice">Admin</a>
+          		| <a href="/admin/backoffice">Admin</a>
 		<?php endif; ?>
 	</div>
         <img src="/img/HR-right.png"><br />
