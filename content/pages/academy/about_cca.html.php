@@ -2,7 +2,7 @@
 <h2 style="color:rgb(69, 136, 5);">About Crawl Cosplay Academy (CCA)</h2>
 
 <h3>TLDR</h3>
-<p><img src="/img/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay while having fun doing it? 
+<p><img src="/img/uniques/Snorg.png" width="72" height="72" style="float:right">Want to improve your gameplay while having fun doing it? 
 With the Crawl Cosplay Academy (CCA), you'll play easier combos of different playstyles as you learn to survive longer. And 
 hopefully win many games sooner than later, while playing characters based on 
 <a href="http://crawl.chaosforge.org/Unique_monster" target="_blank">DCSS Uniques</a> such as our maskot, <b><i>Snorg</b></i>:
