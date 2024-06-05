@@ -36,9 +36,9 @@ haven't won at least a couple of games.</p>
       <a href="/academy/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/uniques/Jory.png" width="72" height="72"></a>
     </td>
     <td><p><b>----------Mostly Magic----------</b></p>
-      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/Tiamat.gif" width="48" height="72"></a> 
-      <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/Fannar.png" width="72" height="72"></a> 
-      <a href="/academy/achallengedetails?id=937" title="Jorgrun, the Mountain Dwarf Earth Elementalist (MDEE)"><img src="/img/Jorgrun.png" width="72" height="72"></a>
+      <a href="/academy/achallengedetails?id=935" title="Tiamat, the Draconian Wizard (DrWz)"><img src="/img/uniques/Tiamat.gif" width="48" height="72"></a> 
+      <a href="/academy/achallengedetails?id=936" title="Fannar, the Deep Elf Ice Elementalist (DEIE)"><img src="/img/uniques/Fannar.png" width="72" height="72"></a> 
+      <a href="/academy/achallengedetails?id=937" title="Jorgrun, the Mountain Dwarf Earth Elementalist (MDEE)"><img src="/img/uniques/Jorgrun.png" width="72" height="72"></a>
     </td>
 </table>
 <p>Each CCA challenge has 3 conducts and 2 bonuses. The 3 conducts are specific to getting you to the Lair and/or Orcish Mines entrance(s).</p>
