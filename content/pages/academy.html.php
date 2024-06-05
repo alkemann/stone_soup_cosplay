@@ -23,7 +23,7 @@ use app\models\{Challenge, Submission, Player};
 				echo '<th rowspan="' . (sizeof($scores) + 1) . '">&nbsp;</th>';
 				$made_seperator = true; // only make one seperator if multiple bonuses
 			}
-			echo '<th>' // . $e($c->week) . '. ';
+			echo '<th>' 	// . $e($c->week) . '. ';
 			if ($c->icon) echo '<img src="'.$e($c->icon).'" style="height: 2.5em" /></a>';
 			echo "</th>";
 		}
