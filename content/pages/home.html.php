@@ -11,13 +11,13 @@
 <img src="/img/titles/title_psiweapon_roxanne.png" style="float:right">
 Select your pleasure among the following options:
 
-<h3><a href="/academy">Crawl Cosplay Academy</a> (CCA) ...in development.</h3>
+<h3><a href="/cca/cca">Crawl Cosplay Academy</a> (CCA) ...in development.</h3>
 <ul><li>For those new to DCSS or who haven't yet won a couple of time.</li>
-    <li>Read <a href="https://cosplay.kelbi.org/academy/about_cca">About CCA</a></li></ul>
+    <li>Read <a href="https://cosplay.kelbi.org/cca/about_cca">About CCA</a></li></ul>
 
-<h3><a href="/ccc_home">Crawl Cosplay Challenges</a> (CCC) ...on hold during CCTT#1</h3>
+<h3><a href="/ccc/ccc">Crawl Cosplay Challenges</a> (CCC) ...on hold during CCTT#1</h3>
 <ul><li>The original weekly challenge posted on Reddit since 2019!</li>
-    <li>Read <a href="https://cosplay.kelbi.org/about_ccc">About CCC</a>.</li></ul>
+    <li>Read <a href="https://cosplay.kelbi.org/ccc/about_ccc">About CCC</a>.</li></ul>
 
 <h3><a href="/tournament/home">Crawl Cosplay Trunk Tournament</a> (CCTT) ...new and active.</h3>
 <ul><li>A tournament lasting about a month with each week highlighting some of the latest Trunk changes.</li>
