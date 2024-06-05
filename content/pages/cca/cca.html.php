@@ -24,7 +24,7 @@ use app\models\{Challenge, Submission, Player};
 				$made_seperator = true; // only make one seperator if multiple bonuses
 			}
 			echo '<th>'; 	// . $e($c->week) . '. ';
-			if ($c->icon) echo '<img src="'.$e($c->icon).'" style="height: 2.5em" /></a>';
+			if ($c->icon) echo '<img src="'.$e($c->icon).'" style="height: 3em" /><a href="/tournament/tchallengedetails?id=<?=$e($c->id)?>"><?=$e($c->name)?></a>';
 			echo "</th>";
 		}
 		?>
