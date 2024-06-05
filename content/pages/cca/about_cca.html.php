@@ -59,7 +59,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <ul> to view your morgue/dump press the # key in-game.</ul>
 <ul> add the following to you RCfile (online) or your init.txt file (offline) to have intermediate monsters show up with a yellow backgroung:</ul>
 <br>
-<pre><b>      tile_show_threat_levels = tough,nasty,unusual</b>      </pre>
+<centre><pre><b>    tile_show_threat_levels = tough,nasty,unusual</b>    </pre></centre>
 <p>Happy Crawling!</p>
-RoGGa, alkemann (our webdev) and the @VIPs_Crawl_Cosplay in discord
+<p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, alkemann (our webdev) and the @VIPs_Crawl_Cosplay in discord.</p>
 <br>
