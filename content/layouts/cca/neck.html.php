@@ -25,7 +25,7 @@
         		| Subs <a href="/admin/submissions/list">Official</a> <a href="/admin/submissions/moderate">Moderate</a> <a href="/admin/submissions/add">New</a>
 	        	| Players <a href="/admin/players/list">List</a> <a href="/admin/players/add">New</a>
     			| Challenges <a href="/admin/challenges/list">List</a> <a href="/admin/challenges/add">New</a>
-	        	| <a href="/logout">Logout</a>
+	        	| <a href="/admin/logout">Logout</a>
 		<?php else : ?>
           		| <a href="/admin/backoffice">Admin</a>
 		<?php endif; ?>
