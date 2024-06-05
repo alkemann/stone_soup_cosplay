@@ -52,7 +52,7 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <p>Feel free to submit a morgue as soon as you've improved your score. Your best 2 runs for a specific challenge will be kept in the website's database.</p>
 <h2>Q&A</h2>
 <h3>Need more help than what's on the challenge details' page?</h3>
-<p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18">. Our @VIPs_Crawl_Cosplay group is there to help!</p>
+<p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. Our @VIPs_Crawl_Cosplay group is there to help!</p>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
 <p>You can start whenever but once you have 4 wins with one in each of the 4 playstyles, you'll likely feel ready to <b>compete</b> at an intermediate level in the weekly <a href="/ccc_home">Crawl Cosplay Challenge</a>.</p>
 <h2>Miscellaneous</h3>
