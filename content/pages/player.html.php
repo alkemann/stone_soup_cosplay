@@ -223,7 +223,7 @@ if ($acadamy_sumissions) :
         }
     }
 ?>
-<h3>Crawl Cosplay Academy (CCA)</h3>
+<h3>Crawl Cosplay Academy (CCA) - 12 challenges</h3>
 <table class="bordered player-list">
     <thead>
         <tr>
@@ -246,7 +246,7 @@ if ($acadamy_sumissions) :
     <?php
         $r = 0;
         $set_key = 0;
-        <tr class="<?=$r++%2==0?'odd':'even'?>">
+        echo '<tr class="'<?=$r++%2==0?'odd':'even'?>'">';
             <th>Set <?=$set_key?></th>
             <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
         <?php for ($i=1; $i <= 5; $i++) : ?>
