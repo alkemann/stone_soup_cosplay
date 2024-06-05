@@ -30,7 +30,7 @@
           		| <a href="/admin/backoffice">Admin</a>
 		<?php endif; ?>
 	</div>
-        <br><img src="/img/HR-right.png"><br>
+        <img src="/img/HR-right.png"><br>
         <div class="content" onclick="window.location = '/dismiss';">
         <?php if ($msg = $this->request->session()->get('message')) : ?>
             <div class="message"><?=$msg?> <br /><br /><a href="/dismiss">--more--</a></div>
