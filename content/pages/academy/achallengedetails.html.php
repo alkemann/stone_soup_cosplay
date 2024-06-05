@@ -44,7 +44,7 @@ $this->setData("meta", ['filename' => $cha->icon]);
 
 <?php if ($cha->special_rule) : ?>
 	<h3>Strategy</h3>
-	<div class="special_rule"><p><?=$em($cha->special_rule)?></p></div>
+	<div class="special_rule"><p style="color:green;"><?=$em($cha->special_rule)?></p></div>
 <?php endif; ?>
 	
 <div class="score-sidebar">
