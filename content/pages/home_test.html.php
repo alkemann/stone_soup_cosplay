@@ -1,6 +1,6 @@
 <?php 
-    $dir_path = "/img/titles";
-    $files = scandir(__DIR__ $dir_path);
+    $dir_path = "/../../img/titles";
+    $files = scandir($dir_path);
     $count = count($files);
     $index = rand(2, ($count-1));
     $filename = $files[$index];
