@@ -4,7 +4,7 @@
 <p>The Crawl Cosplay Challenge is a weekly series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a>, using crawl's uniques as the basis for challenges. The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements. Challenges are run in five-week 'sets' with the occasional bonus round, and are suitable for players of all skill levels — the Challenge is about personal achievement rather than competition.</p>
 
 <p>Each week will feature a character for you to play, with one or more options for starting species and background, as well as which god(s) you must worship. These choices are all mandatory. Unless otherwise specified, you must worship one of the options for gods before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths), and you can't do anything to lose your religion, including abandoning your god.</p>
-<img src="/img/uniques/Amaemon.png" width="72" height="72" style="float:left">
+<img src="/img/uniques/Amaemon.png" width="72" height="72" style="float:right">
 <p>New challenges are posted Mondays. Challenges will not run when official DCSS tournaments or other large tournaments/challenges (e.g <a href="http://csclub.uwaterloo.ca/~ebering/crawl/csdc/index.html" target="_blank">CSDC</a>) are going on. 
 
 <p>Challenges can be played in whatever version including trunk and forks. You can play online or offline, and can make as many attempts as you want. If you'd like to change the player doll to the Unique's tile, add the following to your RC file: tile_player_tile = tile:MONS_WIGLAF</p>
@@ -30,7 +30,7 @@
 <p>Each week will have three <em>optional</em> conducts for you to follow, that vary with every challenge. Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down. (So if you achieve 3 milestones (15 points) you can earn up to 7 points from conduct bonuses, for a total of 22 points.) Small mistakes in following the conducts will usually be forgiven, but make sure you ask.</p>
 
 <h4>Bonus Challenges:</h4> 
-<img src="/img/uniques/Blorkula.png" width="72" height="72" style="float:left">
+<img src="/img/uniques/Blorkula.png" width="72" height="72" style="float:right">
 <p>Each week will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional. Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill. Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars. Small mistakes in following the bonus challenges will usually be forgiven.</p>
 
 <p>It is possible, and even likely, that several players will end up with a perfect score. This is not considered a problem, and there is no tie-breaker.</p>
