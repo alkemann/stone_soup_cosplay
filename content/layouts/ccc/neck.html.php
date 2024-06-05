@@ -5,9 +5,9 @@
 			<a href="/">Crawl Cosplay Home</a>
 			<a href="/academy">Crawl Cosplay Academy (CCA) - NEW!</a>
 			<a href="/academy/about_cca"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCA</a>
-			<a href="/ccc_home">Crawl Cosplay Challenge (CCC)</a>
-			<a href="/about_ccc"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCC</a>
-			<a href="/history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; all CCC challenges</a>
+			<a href="/ccc/ccc">Crawl Cosplay Challenge (CCC)</a>
+			<a href="/ccc/about_ccc"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCC</a>
+			<a href="/ccc/all_ccc_history"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; all CCC challenges</a>
 			<a href="/tournament/home">Crawl Cosplay Trunk Tournament (CCTT) - NEW!</a>
 			<a href="/tournament/about"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&#8627; About CCTT</a>
 		</div>
