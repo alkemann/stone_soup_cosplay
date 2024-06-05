@@ -298,7 +298,7 @@ div.fineprint p {
 }
 .page_floor {
     background: #ccc;
-    background-image: url("/img/bg_dungeon2_floor.png");
+    background-image: url("/img/backgrounds/bg_dungeon2_floor.png");
     padding: 32px;
 }
 /* <div id="page_footer">&nbsp;
