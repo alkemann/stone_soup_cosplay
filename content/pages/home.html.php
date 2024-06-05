@@ -5,9 +5,11 @@
 //    $index = rand(2, ($count-1));
 //    $filename = $files[$index];
 
-//    echo '<h2>Welcome to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>';
+//    echo '
+    <h2>Welcome to the <b>Crawl Cosplay</b> 3-in-1 website!</h2>
+//    ';
 //    echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'" style="float:right">';
-//?>
+// ?>
 <img src="/img/titles/title_psiweapon_roxanne.png" style="float:right">
 Select your pleasure among the following options:
 
@@ -24,8 +26,10 @@ Select your pleasure among the following options:
     <li>Read <a href="https://cosplay.kelbi.org/tournament/about">About CCTT</a>.</li></ul>
 
 <h3>Want to chat?</h3>
-Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a> with over 200 members!
+<p>Come chat with us on our <a href="https://discord.gg/ZQ4kk6n" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18" ></a> with over 200 members!</p>
 <br>
-Happy Crawling,<br>
-RoGGa, our webdev Alkemann, and the @VIPs_Crawl_Coplay members who help make this site what it is. :-D<br>
+<p>Happy Crawling,</p>
+<br>
+<p>RoGGa, our webdev Alkemann, and the @VIPs_Crawl_Coplay members who help make this site what it is. :-D</p>
+<br>
 <br>
