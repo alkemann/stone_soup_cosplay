@@ -51,6 +51,8 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <br />
 <p>Feel free to submit a morgue as soon as you've improved your score. Your best 2 runs for a specific challenge will be kept in the website's database.</p>
 <h2>Q&A</h2>
+<h3>Why aren't easy combos like Minotaur Fighter (MiFi) or Minotaur Beserker (MiBe) not one of the 12 CCA challenges?</h3>
+<p>Simple, you won't find some of the easiest combos such as MiFi and GrEE because there are not any DCSS Uniques that fill those combos.</p><br>
 <h3>Need more help than what's on the challenge details' page?</h3>
 <p>Ask all your questions to the Crawl Cosplay community on our <a href="https://discord.gg/WdbyURBcYp" target="_blank">Discord server<img src="/img/discord_transparent_border.png" width="18" height="18"></a>. Our @VIPs group will likely be available to help!</p><br>
 <h3>When should I start playing the weekly Crawl Cosplay Challenges?</h3>
