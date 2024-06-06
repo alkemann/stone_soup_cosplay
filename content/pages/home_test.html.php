@@ -1,5 +1,5 @@
 <?php 
-    $dir_path = "/var/www/html/img/titles/";
+    $dir_path = "img/titles";
     $files = scandir($dir_path);
     $count = count($files);
     $index = rand(2, ($count-1));
