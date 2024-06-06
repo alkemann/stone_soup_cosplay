@@ -61,5 +61,5 @@ After you complete a good game (with either a <abbr title="aka Yet Another Victo
 <br>
 <centre><pre><b>    tile_show_threat_levels = tough,nasty,unusual</b>    </pre></centre>
 <p>Happy Crawling!</p>
-<p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, alkemann (our webdev) and the @VIPs_Crawl_Cosplay in discord.</p>
+<p>RoGGa, PieDemon (aka Tsarmina) for most of the 12 challenges' write-ups, alkemann (our webdev) and the @VIPs in discord.</p>
 <br>
