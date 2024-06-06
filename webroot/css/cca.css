@@ -102,9 +102,9 @@ span.star {
     color: #744;
 }
 .special_rule {
-    color: #A44;
-    font-weight: bold;
+    color: green;
 }
+
 footer {
     font-size: 0.75em;
     color: #DDD;
