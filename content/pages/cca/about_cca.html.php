@@ -31,7 +31,7 @@ haven't won at least a couple of games.</p>
       <a href="/cca/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/uniques/Vashnia.png" width="72" height="72"></a>
     </td>
     <td><p><b>---------------<abbr title="Melee mostly with some Magic">Hybrid</abbr>---------------</b></p><p></p>
-      <a href="/cca/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/uniques/Grum.png" width="72" height="72"></a>
+      <a href="/cca/achallengedetails?id=932" title="Jeremiah, the Barachi Summoner (BaSu)"><img src="/img/uniques/Jeremiah.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/uniques/Ilsuiw_water.png" width="72" height="72"></a>
       <a href="/cca/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/uniques/Jory.png" width="72" height="72"></a>
     </td>
