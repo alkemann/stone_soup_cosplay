@@ -18,8 +18,8 @@ use app\models\{Challenge, Submission, Player};
 			}
 	?>
 		<tr class="<?=$i++%2==0?'odd':'even'?>">
-			<td><a href="/challenges/details?id=<?=$e($c->id)?>"><img src="<?=$e($c->icon)?>" /></a></td>
-			<td style="font-size: 1.25em;"><?=$e($c->setnr)?>.<?=$e($c->week)?> <a href="/challenges/details?id=<?=$e($c->id)?>"><?=$e($c->name)?></a></td>
+			<td><a href="/ccc/challengedetails?id=<?=$e($c->id)?>"><img src="<?=$e($c->icon)?>" /></a></td>
+			<td style="font-size: 1.25em;"><?=$e($c->setnr)?>.<?=$e($c->week)?> <a href="/ccc/challengedetails?id=<?=$e($c->id)?>"><?=$e($c->name)?></a></td>
 			<td><b><?=$e($c->subs)?></b></td>
 			<td><?=$e($c->species)?></td>
 			<td><?=$e($c->background)?></td>
