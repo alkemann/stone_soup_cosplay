@@ -249,9 +249,8 @@ if ($acadamy_sumissions) :
         $set_key = 0;
     ?>
         <tr class="'<?=$r++%2==0?'odd':'even'?>'">
-        <th>CCA</th>
         <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
-        <?php for ($i=1; $i <= 5; $i++) : ?>
+        <?php for ($i=1; $i <= 12; $i++) : ?>
             <?php
                 $sub = $board[$set_key][$i] ?? false;
                 if ($sub === false) {
