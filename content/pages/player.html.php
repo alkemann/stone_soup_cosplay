@@ -292,7 +292,7 @@ if ($has_non_scoring) : ?>
     ?>
 
         <tr class="<?=$r++%2==0?'odd':'even'?>">
-            <td><a href="/challenges/details?id=<?=$e($cha->id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></a></td>
+            <td><a href="/ccc/challengedetails?id=<?=$e($cha->id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></a></td>
             <td><?php if ($s->morgue_url) : ?><a href="<?=$e($s->morgue_url)?>" target="_blank"><?php endif; ?>
             <?php
 
