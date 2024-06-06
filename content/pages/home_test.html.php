@@ -1,6 +1,5 @@
 <?php 
-    echo $_SERVER['HTTP_REFERER'];
-    $dir_path = "cosplay.kelbi.org/img/titles";
+    $dir_path = "/var/www/html/images/titles/";
     $files = scandir($dir_path);
     $count = count($files);
     $index = rand(2, ($count-1));
