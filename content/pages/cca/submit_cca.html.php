@@ -81,7 +81,7 @@ if ($data = $this->request->getPostData()) {
             <textarea name="comment" placeholder="Estimate of points and stars? Username (for new offline players)?" rows="5" cols="100" ></textarea>
         </label>
         <br />
-        <input type="submit" value="Submit Run" />
+        <input type="submit" value="Submit Run" /cca/cca>
     </fieldset>
     <br />
     <fieldset><legend>Milestones (+5 each)</legend>
