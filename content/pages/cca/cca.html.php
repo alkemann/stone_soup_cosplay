@@ -79,7 +79,7 @@ Just click on one of the Uniques for the challenge's details listing the suggest
       <a href="/cca/achallengedetails?id=931" title="Vashnia, the Naga Hunter (NaHu)"><img src="/img/uniques/Vashnia.png" width="48" height="48"></a> </p>
 <h4><b>Hybrid: Melee with some Magic</b></h4>
   <p>An assortment of less straightforward builds including shapeshifter and summoner/necromancer.</p>
-  <p> <a href="/cca/achallengedetails?id=932" title="Grum, the Gnoll Summoner (GnSu)"><img src="/img/uniques/Grum.png" width="48" height="48"></a> 
+  <p> <a href="/cca/achallengedetails?id=932" title="Jeremiah, the Barachi Summoner (BaSu)"><img src="/img/uniques/Jeremiah.png" width="48" height="48"></a> 
       <a href="/cca/achallengedetails?id=933" title="Ilsuiw, the Merfolk Warper (MfWr)"><img src="/img/uniques/Ilsuiw_water.png" width="48" height="48"></a> 
       <a href="/cca/achallengedetails?id=934" title="Jory, the Vampire Enchanter (VpEn)"><img src="/img/uniques/Jory.png" width="48" height="48"></a></p>
 <h4><b>Mages: Mostly Magic</b></h4>
