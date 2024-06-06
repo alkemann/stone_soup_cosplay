@@ -85,7 +85,7 @@ if ($data = $this->request->getPostData()) {
     </fieldset>
     <br />
     <fieldset><legend>Milestones (+5 each)</legend>
-    <div class="try-hard"><input type="button" id="try-click" onclick="javascript:tryhard();" title="Enable all conducts and milestones" value="Try Hard" /></div>
+    <div class="try-hard"><input type="button" id="try-click" onclick="javascript:tryhard();" title="Enable all conducts and milestones" value="50**" /></div>
     <script type="text/javascript">
         function tryhard() {
             checkboxes = document.getElementsByClassName('tryhard');
