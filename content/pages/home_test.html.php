@@ -1,5 +1,5 @@
 <?php 
-    echo $_SERVER['HTTP_REFERER']
+    echo $_SERVER['HTTP_REFERER'];
     $dir_path = "cosplay.kelbi.org/img/titles";
     $files = scandir($dir_path);
     $count = count($files);
