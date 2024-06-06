@@ -70,13 +70,14 @@ if ($tournament_submissions) :
 <table class="bordered player-list">
     <thead>
         <tr>
-            <th>&nbsp;</th>
+            <th>Trunk</th>
             <th>Total</th>
             <th>Wk 1</th>
             <th>Wk 2</th>
             <th>Wk 3</th>
             <th>Wk 4</th>
             <th>Wk 5</th>
+            <th>Wk 6</th>
         </tr>
     </thead>
     <tbody>
@@ -84,7 +85,7 @@ if ($tournament_submissions) :
         $r = 0;
         for ($set_key=$last_set; $set_key >= $first_set; $set_key--) : ?>
         <tr class="<?=$r++%2==0?'odd':'even'?>">
-            <th>Set <?=$set_key?></th>
+            <th>v0.<?=$set_key?></th>
             <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
         <?php for ($i=1; $i <= 5; $i++) : ?>
             <?php
