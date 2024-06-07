@@ -1,6 +1,15 @@
 <?php $this->layout = 'ccc'; ?>
-<h2>About weekly Crawl Cosplay Challenges (CCC) series</h2>
-<img src="/img/uniques/Aizul.png" width="72" height="72" style="float:right">
+<?php 
+    $dir_path = "img/uniques";
+    $files = scandir($dir_path);
+    $count = count($files);
+    $index = rand(2, ($count-1));
+    $filename = $files[$index];
+
+    echo '<h2>About weekly Crawl Cosplay Challenges (CCC) series</h2>';
+    echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'" width="72" height="72" style="float:right">';
+?>
+
 <p>The Crawl Cosplay Challenge is a weekly series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a>, using crawl's uniques as the basis for challenges. The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements. Challenges are run in five-week 'sets' with the occasional bonus round, and are suitable for players of all skill levels — the Challenge is about personal achievement rather than competition.</p>
 
 <p>Each week will feature a character for you to play, with one or more options for starting species and background, as well as which god(s) you must worship. These choices are all mandatory. Unless otherwise specified, you must worship one of the options for gods before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths), and you can't do anything to lose your religion, including abandoning your god.</p>
