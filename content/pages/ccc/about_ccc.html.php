@@ -20,7 +20,7 @@
 
 <p>Each week will feature a character for you to play, with one or more options for starting species and background, as well as which god(s) you must worship. These choices are all mandatory. Unless otherwise specified, you must worship one of the options for gods before entering any multi-level branch besides the dungeon (e.g. Lair, Orc, Depths), and you can't do anything to lose your religion, including abandoning your god.</p>
 <?php
-    echo '<img src="'.$dir_path."/".$filename2.'" alt="'.$filename2.'" width="72" height="72" style="float:right">'; 
+    echo '<img src="/'.$dir_path."/".$filename2.'" alt="'.$filename2.'" width="72" height="72" style="float:right">'; 
 ?>
 <p>New challenges are posted Mondays. Challenges will not run when official DCSS tournaments or other large tournaments/challenges (e.g <a href="http://csclub.uwaterloo.ca/~ebering/crawl/csdc/index.html" target="_blank">CSDC</a>) are going on. 
 
