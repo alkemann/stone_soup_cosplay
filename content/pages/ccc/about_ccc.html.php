@@ -3,11 +3,17 @@
     $dir_path = "img/uniques";
     $files = scandir($dir_path);
     $count = count($files);
-    $index = rand(2, ($count-1));
-    $filename = $files[$index];
+    $index1 = rand(2, ($count-1));
+    $index2 = rand(2, ($count-1));
+    $index3 = rand(2, ($count-1));
+    $index4 = rand(2, ($count-1));
+    $filename1 = $files[$index1];
+    $filename2 = $files[$index2];
+    $filename3 = $files[$index3];
+    $filename4 = $files[$index4];
 
     echo '<h2>About weekly Crawl Cosplay Challenges (CCC) series</h2>';
-    echo '<img src="'.$dir_path."/".$filename.'" alt="'.$filename.'" width="72" height="72" style="float:right">';
+    echo '<img src="'.$dir_path."/".$filename1.'" alt="'.$filename1.'" width="72" height="72" style="float:right">';
 ?>
 
 <p>The Crawl Cosplay Challenge is a weekly series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a>, using crawl's uniques as the basis for challenges. The goal is not to emulate the unique's behaviour exactly, but to get a good starting point on playing games with interesting requirements. Challenges are run in five-week 'sets' with the occasional bonus round, and are suitable for players of all skill levels — the Challenge is about personal achievement rather than competition.</p>
