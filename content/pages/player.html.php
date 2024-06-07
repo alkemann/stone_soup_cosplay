@@ -150,7 +150,7 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
 <table class="bordered player-list">
     <thead>
         <tr>
-            <th>&nbsp;</th>
+            <th>Set</th>
             <th>Total</th>
             <th>Wk 1</th>
             <th>Wk 2</th>
@@ -164,7 +164,7 @@ for ($set_key=$last_set; $set_key >= $first_set; $set_key--) {
         $r = 0;
         for ($set_key=$last_set; $set_key >= $first_set; $set_key--) : ?>
         <tr class="<?=$r++%2==0?'odd':'even'?>">
-            <th>Set <?=$set_key?></th>
+            <th><?=$set_key?></th>
             <td><?=$board[$set_key]['total']?> <?=$board[$set_key]['stars']?><span class="star">&#9733;</span></td>
         <?php for ($i=1; $i <= 5; $i++) : ?>
             <?php
