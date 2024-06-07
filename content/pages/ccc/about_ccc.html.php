@@ -35,7 +35,7 @@
 <h4>Milestones</h4> 
 <p>These remain the same from one week to the next, and are the main way of scoring points. Each milestone earns you 5 points, for a total of 35 if you win the game, and can be done in any order. You can only earn points from each milestone once per game (entering Lair and then Orc doesn't get you 10 points).</p>
 <?php
-    echo '<img src="'.$dir_path."/".$filename3.'" alt="'.$filename3.'" width="72" height="72" style="float:right">'; 
+    echo '<img src="/'.$dir_path."/".$filename3.'" alt="'.$filename3.'" width="72" height="72" style="float:right">'; 
 ?>
 <ul><li>Reach XL3.</li>
 <li>Enter Lair, Orc, or Depths.</li>
@@ -50,7 +50,7 @@
 
 <h4>Bonus Challenges:</h4> 
 <?php
-    echo '<img src="'.$dir_path."/".$filename4.'" alt="'.$filename4.'" width="72" height="72" style="float:right">'; 
+    echo '<img src="/'.$dir_path."/".$filename4.'" alt="'.$filename4.'" width="72" height="72" style="float:right">'; 
 ?>
 <p>Each week will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional. Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill. Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars. Small mistakes in following the bonus challenges will usually be forgiven.</p>
 
