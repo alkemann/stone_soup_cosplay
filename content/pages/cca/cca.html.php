@@ -16,12 +16,11 @@ use app\models\{Challenge, Submission, Player};
 		<th>Player</th>
 		<th style="white-space:nowrap">Total <span class="star">&#9733;</span></th>
 		<?php
-		$made_seperator = false;
 		foreach ($challenges_in_set as $c) {
 
-			echo '<th><td>';
+			echo '<th>';
 			echo '<img src="<?=$e($c->icon)?>" style="height: 2.5em" /><a href="/cca/achallengedetails?id=<?=$e($c->id)?>"><?=$e($c->name)?></a>';
-			echo "</td></th>";
+			echo "</th>";
 		}
 		?>
 	</tr>
