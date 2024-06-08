@@ -7,7 +7,7 @@ use app\models\{Challenge, Submission, Player};
 	<tbody>
 	<?php
 		//$challenges = Challenge::findBySets(false, 150);
-		$challenges = Challenge::findBySetsTEST(false, 150, false, true);
+		$challenges = Challenge::findBySetsTEST(false, 150, 0, false, false, true);
 
 		$i = 1; $set = 1; //$challenges[0]->setnr;
 		foreach ($challenges as $c) :
