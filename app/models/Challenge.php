@@ -96,7 +96,7 @@ class Challenge extends BaseModel
 
 
     //temporary function, to be removed -- just for test purposes
-     public static function findBySetsTEST(bool $include_drafts, int $limit = 50, int $offset = 0, bool $include_tournament = false, $include_academy = true, bool $chronological = false): array
+     public static function findBySetsTEST(bool $include_drafts, int $limit = 50, int $offset = 0, bool $include_tournament = false, bool $include_academy = true, bool $chronological = false): array
     {
         $query = 'SELECT `c`.*, COUNT(`s`.`id`) AS `subs` FROM `challenges` AS `c` '.
             'LEFT JOIN `submissions` AS `s` ON (`s`.`challenge_id` = `c`.`id` AND `s`.`hs` = 1 AND `s`.`accepted` = 1) ';
