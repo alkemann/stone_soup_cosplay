@@ -1,5 +1,20 @@
 <?php $this->layout = 'tournament'; ?>
-<h2>About: Crawl Cosplay Trunk Tournament (CCTT)</h2>
+<?php 
+    $dir_path = "img/uniques";
+    $files = scandir($dir_path);
+    $count = count($files);
+    $index1 = rand(2, ($count-1));
+    $index2 = rand(2, ($count-1));
+    $index3 = rand(2, ($count-1));
+    $index4 = rand(2, ($count-1));
+    $filename1 = $files[$index1];
+    $filename2 = $files[$index2];
+    $filename3 = $files[$index3];
+    $filename4 = $files[$index4];
+
+    echo '<h2>About Crawl Cosplay Trunk Tournament (CCTT)</h2>';
+    echo '<img src="/'.$dir_path."/".$filename1.'" alt="'.$filename1.'" width="72" height="72" style="float:right">';
+?>
 
 <p>The <b>Crawl Cosplay Trunk Tournament</b> is a 4-week tournament with a different challenge each week highlighting major Trunk changes since the previous stable version.
  It is based on the weekly <a href="http://cosplay.kelbi.org/" target="_blank">Crawl Cosplay Challenge</a> (CCC) series for <a href="http://crawl.develz.org/" target="_blank">Dungeon Crawl Stone Soup</a> (DCSS).</p>
@@ -13,6 +28,9 @@
 <p>The next tournament challenge will be posted Friday at 0:00 UTC.</p>
 
 <h3>How to Enter</h3>
+<?php
+    echo '<img src="/'.$dir_path."/".$filename2.'" alt="'.$filename2.'" width="72" height="72" style="float:right">'; 
+?>
 
 <p>The current challenge's details page has a "Submit a run" link.
  For those who haven't participated in CCC or CCTT before, just paste a link to your online morgue, and enter your playername and score in the comments. 
@@ -29,7 +47,9 @@
 <p> tile_player_tile = tile:MONS_WIGLAF</p>
 
 <h3>Rules and Scoring</h3>
-
+<?php
+    echo '<img src="/'.$dir_path."/".$filename3.'" alt="'.$filename3.'" width="72" height="72" style="float:right">'; 
+?>
 <h4>Milestones</h4> 
 <p>These remain the same from one week to the next, and are the main way of scoring points.
   Each milestone earns you 5 points, for a total of 35 if you win the game, and can be done in any order.
@@ -48,7 +68,10 @@
   Following or completing each conduct is worth 5 points, to a maximum of half your score from milestones, rounded down.
   (So if you achieve 3 milestones (15 points) you can earn up to 7 points from conduct bonuses, for a total of 22 points.)</p>
 
-<h4>Bonus Challenges:</h4> 
+<h4>Bonus Challenges:</h4>
+<?php
+    echo '<img src="/'.$dir_path."/".$filename4.'" alt="'.$filename4.'" width="72" height="72" style="float:right">'; 
+?>
 <p>Each of the 4 challenges will also have two <em>optional</em> bonus challenges, that are usually difficult or unconventional.
   Completing a bonus challenge doesn't affect your score, but gets you a <strong>star</strong>, a small trophy to recognize your skill.
   Each week has one star that requires you to win the game, and another that doesn't. You don't need to follow any of the cosplay conducts to earn stars.</p>
