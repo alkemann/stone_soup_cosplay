@@ -6,7 +6,9 @@ use app\models\{Challenge, Submission, Player};
 <table class="challenges_list bordered">
 	<tbody>
 	<?php
-		$challenges = Challenge::findBySets(false, 150);
+		//$challenges = Challenge::findBySets(false, 150);
+		$challenges = Challenge::findBySetsTEST(false, 150, false, true);
+
 		$i = 1; $set = 1; //$challenges[0]->setnr;
 		foreach ($challenges as $c) :
 			if ($c->setnr != $set) {
