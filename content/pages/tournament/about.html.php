@@ -81,7 +81,7 @@
 <p>The Crawl Cosplay Trunk Tournament was created and is run by <a href="https://www.reddit.com/user/RoGGa_69/" target="_blank">RoGGa</a>
   with the help from some of the Crawl Cosplay Challenge regulars.</p>
 
-<p>This website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa and kitchen_ace.
-  CSS by kitchen_ace and Alkemann, loosely based on the one from the <a href="https://github.com/zxc23/dcss-scoreboard" target="_blank">DCSS Scoreboard</a>, with images from DCSS.</p>
-
+<p>This CCTT part of the website was developed by <a href="https://github.com/alkemann" target="_blank">Alkemann</a>, with assistance from RoGGa.</p>
 <p>A big thank you to floraline for hosting CCC and the tournament on the old CKO server.</p>
+
+<p>See the <a href="/ccc/about_ccc">CCC about page</a> for more detailed credits about the original website in 2019.</p>
