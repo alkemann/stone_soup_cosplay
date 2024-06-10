@@ -96,9 +96,18 @@ VALUES
 UNLOCK TABLES;
 
 
-# Dump of table players
-# ------------------------------------------------------------
-
+DROP TABLE IF EXISTS `players`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `players` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(256) NOT NULL,
+  `reddit` varchar(256) NOT NULL,
+  `discord` varchar(256) NOT NULL,
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_players_name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 LOCK TABLES `players` WRITE;
 /*!40000 ALTER TABLE `players` DISABLE KEYS */;
 
@@ -139,12 +148,27 @@ VALUES
 	(341,'chumloofah','chumloofah','chumloofah','2019-03-28 23:12:30'),
 	(351,'samspot','samspot','samspot','2019-03-28 23:14:17');
 
-/*!40000 ALTER TABLE `players` ENABLE KEYS */;
 UNLOCK TABLES;
 
+DROP TABLE IF EXISTS `submissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `submissions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `challenge_id` int(11) NOT NULL,
+  `player_id` int(11) NOT NULL,
+  `score` int(11) DEFAULT '0',
+  `stars` tinyint(4) DEFAULT '0',
+  `morgue_url` varchar(512) DEFAULT NULL,
+  `morgue_text` text,
+  `created` datetime DEFAULT CURRENT_TIMESTAMP,
+  `hs` tinyint(4) DEFAULT '0',
+  `accepted` tinyint(4) DEFAULT '0',
+  `online` tinyint(4) DEFAULT '0',
+  `comment` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
-# Dump of table submissions
-# ------------------------------------------------------------
 
 LOCK TABLES `submissions` WRITE;
 /*!40000 ALTER TABLE `submissions` DISABLE KEYS */;

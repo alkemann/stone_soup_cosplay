@@ -49,7 +49,7 @@ function handleError(\Throwable $e): void
  * @param $line
  * @param $meta
  */
-function handleWarning($errno, $message, $file, $line, $meta): void
+function handleWarning($errno, $message, $file, $line, $meta = ""): void
 {
     if (Environment::get('debug')) {
         header("Content-type: text/html");

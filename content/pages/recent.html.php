@@ -24,7 +24,7 @@ use app\models\Submission;
 		$r = 0;
 		foreach ($submissions as $s) :
 	?>
-		
+
 		<tr class="<?=$r++%2==0?'odd':'even'?> <?=$s->hs?'hs':'late'?>">
 			<?php $cha = $s->challenge()?>
 			<td><a href="/challenges/details?id=<?=$e($s->challenge_id)?>"><?=$e($cha->setnr)?>.<?=$e($cha->week)?> <?=$e($cha->name)?></td>
@@ -34,7 +34,7 @@ use app\models\Submission;
 			<?php
 			if (!empty($s->morgue_url)) echo '<a href="'.$s->morgue_url.'" target="_blank">';
 			echo $s->score;
-			for ($i=0; $i < (int) $s->stars ; $i++) { 
+			for ($i=0; $i < (int) $s->stars ; $i++) {
 				echo '<span class="star">&#9733;</span>';
 			}
 			if (!empty($s->morgue_url)) echo '</a>';

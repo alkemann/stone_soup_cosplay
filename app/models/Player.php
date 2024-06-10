@@ -72,10 +72,10 @@ class Player extends BaseModel
                     SELECT `s`.`player_id` AS `pid`, SUM(`s`.`score`) AS `total`, SUM(`s`.`stars`) AS `sky`
                     FROM `submissions` AS `s`
                     LEFT JOIN `challenges` AS `c` ON (`s`.`challenge_id` = `c`.`id`)
-                    WHERE `s`.`accepted` = 1 AND `s`.`hs` = 1 AND `c`.`setnr` = {$s} AND `c`.`bonus` = 0
+                    WHERE `s`.`accepted` = 1 AND `s`.`hs` = 1 AND `c`.`setnr` = {$s}
                     GROUP BY `s`.`player_id`
                 ) AS `inner` ON (`p`.`id` = `inner`.`pid`)
-                WHERE `inner`.`total` > 0 ORDER BY `total` DESC, `stars` DESC, `player` ASC";
+                WHERE `inner`.`total` > 0 ORDER BY `total` DESC, `stars` DESC, `player` ASC"; // AND `c`.`bonus` = 0
         $result = static::db()->query($q);
 
         $challenges_in_set = Challenge::findAsArray(['setnr' => $set, 'draft' => 0], ['order' => '`week` ASC']);

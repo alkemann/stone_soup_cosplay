@@ -61,6 +61,12 @@ CREATE TABLE `players` (
 -- Table structure for table `submissions`
 --
 
+
+
+-- INSERT INTO `submissions` (`id`, `challenge_id`, `player_id`, `score`, `stars`, `morgue_url`, `morgue_text`, `created`, `hs`, `accepted`, `online`, `comment`)
+-- VALUES
+--	(21,1,31,50,2,'https://underhound.eu/crawl/morgue/Ge0ff/morgue-Ge0ff-20190318-104647.txt',NULL,'2019-03-23 13:55:25',1,1,1,''),
+
 DROP TABLE IF EXISTS `submissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
@@ -73,6 +79,10 @@ CREATE TABLE `submissions` (
   `morgue_url` varchar(512) DEFAULT NULL,
   `morgue_text` text,
   `created` datetime DEFAULT CURRENT_TIMESTAMP,
+  `hs` tinyint(4) DEFAULT '0',
+  `accepted` tinyint(4) DEFAULT '0',
+  `online` tinyint(4) DEFAULT '0',
+  `comment` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?=$page_title ?? 'Crawl Cosplay Challenge'?></title>
     <link rel="icon" href="/img/feat-dg_entrance.png" type="image/png">
-    <link rel="stylesheet" href="/css/tournament.css?v=<?=time()?>">
+    <link rel="stylesheet" href="/css/tournament.css"> <!-- ?v=<?=time()?> -->
 <?php
 
     if (isset($meta) && is_array($meta) && isset($meta['filename'])) {
