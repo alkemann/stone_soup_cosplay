@@ -46,6 +46,7 @@ use app\models\{Challenge, Submission, Player};
 				echo "<td>&nbsp;</td>";
 			}
 			?>
+	?>
 		</tr>
 	<?php endforeach; ?>
 </table>
